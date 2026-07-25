@@ -29,6 +29,7 @@
         "*://play.limitlesstcg.com/*",
         "*://limitlessvgc.com/*",
         "*://www.limitlessvgc.com/*",
+        "*://standings.limitlessvgc.com/*",
         "file:///*"
       ],
       "js": ["content.js"],
@@ -51,6 +52,7 @@
         "*://play.limitlesstcg.com/*",
         "*://limitlessvgc.com/*",
         "*://www.limitlessvgc.com/*",
+        "*://standings.limitlessvgc.com/*",
         "file:///*"
       ]
     }

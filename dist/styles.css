@@ -30,7 +30,7 @@
    so recolouring every match would discard information the page is conveying.
    On those sites the dashed underline alone marks a term as hoverable. */
 html[data-vgc-site="pokepaste"] .vgc-hover,
-html[data-vgc-site="limitless"] .vgc-hover {
+html[data-vgc-site^="limitless"] .vgc-hover {
     color: inherit;
 }
 

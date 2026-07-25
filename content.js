@@ -226,6 +226,25 @@ const SITE_PROFILES = [
             { category: 'item', after: /^\s*Ability:/i },
         ],
     },
+    {
+        // The standings app keeps .item and .ability but is otherwise a separate
+        // build: there is no .teamlist wrapper, the species is a link, and the move
+        // list is a plain <ul> carrying only layout classes. It therefore needs its
+        // own container — reusing this one on the other Limitless sites would widen
+        // scanning there from team lists to their whole content area.
+        id: 'limitless-standings',
+        hosts: ['standings.limitlessvgc.com'],
+        containers: '.container.content',
+        scopes: [
+            { selector: '.item', category: 'item' },
+            { selector: '.ability', category: 'ability' },
+            { selector: 'a[href*="/pokemon/"]', category: 'pokemon' },
+            { selector: 'ul li', category: 'move' },
+        ],
+        cues: [
+            { category: 'item', after: /^\s*Ability:/i },
+        ],
+    },
 ];
 
 // Saved replay files opened from disk have no hostname, and they are Showdown pages,

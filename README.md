@@ -9,6 +9,7 @@ A professional-grade Google Chrome and Firefox extension designed to inject comp
 | **Pokémon Showdown** (`play.` / `replay.`) | The battle log and chat (`.battle-history`) | Wording — "Pikachu **used** Metronome!" is a move, "Incineroar**'s** Metronome" is an item |
 | **PokePaste** (`pokepast.es`) | Each set (`article pre`) | Set format — the item is whatever follows **`@`**, an ability follows `Ability:`, a move follows `-` |
 | **Limitless** (`play.limitlesstcg.com`, `limitlessvgc.com`) | Team lists (`.teamlist`) and the usage tables on `/pokemon/<name>` (`.stats-tables`) | Markup — the item, ability, and move lists are separate elements (`.item`, `.ability`, `.attacks`/`.moves`), and each usage table is titled by its heading |
+| **Limitless Standings** (`standings.limitlessvgc.com`) | Page content (`.container.content`) | Markup — `.item` and `.ability` as above; the species is a `/pokemon/` link and moves are the `<ul>` beside them |
 
 Scanning is confined to the containers above, so navigation, chat headers, and page furniture are left alone. On PokePaste and Limitless the site's own text colouring is preserved and only the dashed underline is added; on Showdown, terms are recoloured as before.
 
@@ -69,7 +70,7 @@ These files record the evolution of the UI and can be used for future reference:
 ## 🔐 Permissions
 
 - **`storage`** — remembers the single on/off toggle from the popup. Nothing else is stored, and nothing is ever sent anywhere; the extension makes no network requests.
-- **Site access to `play.pokemonshowdown.com`, `replay.pokemonshowdown.com`, `pokepast.es`, `play.limitlesstcg.com`, and `limitlessvgc.com`** — where the scanner runs. Each is listed exactly (plus `www.`), so no other subdomain is granted access.
+- **Site access to `play.pokemonshowdown.com`, `replay.pokemonshowdown.com`, `pokepast.es`, `play.limitlesstcg.com`, `limitlessvgc.com`, and `standings.limitlessvgc.com`** — where the scanner runs. Each host is listed exactly (plus `www.`), so no other subdomain is granted access.
 - **Site access to `file:///*`** — so the extension also works on replay `.html` files you have saved locally. Chrome keeps this switched **off** by default; it only applies if you turn on *Allow access to file URLs* for this extension in `chrome://extensions`. If you never open saved replays, leave it off, or delete the two `file:///*` entries from `manifest.json`.
 
 ---
