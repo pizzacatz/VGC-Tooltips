@@ -1,0 +1,9705 @@
+{
+    "Bulbasaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "45/49/49/65/65/45"
+    },
+    "Ivysaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "60/62/63/80/80/60"
+    },
+    "Venusaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/82/83/100/100/80"
+    },
+    "Venusaur-Mega": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/100/123/122/120/80"
+    },
+    "Venusaur-Gmax": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/82/83/100/100/80"
+    },
+    "Charmander": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "39/52/43/60/50/65"
+    },
+    "Charmeleon": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "58/64/58/80/65/80"
+    },
+    "Charizard": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "78/84/78/109/85/100"
+    },
+    "Charizard-Mega-X": {
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "stats": "78/130/111/130/85/100"
+    },
+    "Charizard-Mega-Y": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "78/104/78/159/115/100"
+    },
+    "Charizard-Gmax": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "78/84/78/109/85/100"
+    },
+    "Squirtle": {
+        "types": [
+            "Water"
+        ],
+        "stats": "44/48/65/50/64/43"
+    },
+    "Wartortle": {
+        "types": [
+            "Water"
+        ],
+        "stats": "59/63/80/65/80/58"
+    },
+    "Blastoise": {
+        "types": [
+            "Water"
+        ],
+        "stats": "79/83/100/85/105/78"
+    },
+    "Blastoise-Mega": {
+        "types": [
+            "Water"
+        ],
+        "stats": "79/103/120/135/115/78"
+    },
+    "Blastoise-Gmax": {
+        "types": [
+            "Water"
+        ],
+        "stats": "79/83/100/85/105/78"
+    },
+    "Caterpie": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "45/30/35/20/20/45"
+    },
+    "Metapod": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "50/20/55/25/25/30"
+    },
+    "Butterfree": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "60/45/50/90/80/70"
+    },
+    "Butterfree-Gmax": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "60/45/50/90/80/70"
+    },
+    "Weedle": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "40/35/30/20/20/50"
+    },
+    "Kakuna": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "45/25/50/25/25/35"
+    },
+    "Beedrill": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "65/90/40/45/80/75"
+    },
+    "Beedrill-Mega": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "65/150/40/15/80/145"
+    },
+    "Pidgey": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "40/45/40/35/35/56"
+    },
+    "Pidgeotto": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "63/60/55/50/50/71"
+    },
+    "Pidgeot": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "83/80/75/70/70/101"
+    },
+    "Pidgeot-Mega": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "83/80/80/135/80/121"
+    },
+    "Rattata": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "30/56/35/25/35/72"
+    },
+    "Rattata-Alola": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "30/56/35/25/35/72"
+    },
+    "Raticate": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/81/60/50/70/97"
+    },
+    "Raticate-Alola": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "75/71/70/40/80/77"
+    },
+    "Raticate-Alola-Totem": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "75/71/70/40/80/77"
+    },
+    "Spearow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "40/60/30/31/31/70"
+    },
+    "Fearow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "65/90/65/61/61/100"
+    },
+    "Ekans": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "35/60/44/40/54/55"
+    },
+    "Arbok": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "60/95/69/65/79/80"
+    },
+    "Pikachu": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Cosplay": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Rock-Star": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Belle": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Pop-Star": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-PhD": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Libre": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Original": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Hoenn": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Sinnoh": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Unova": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Kalos": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Alola": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Partner": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-Starter": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "45/80/50/75/60/120"
+    },
+    "Pikachu-Gmax": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Pikachu-World": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/50/50/90"
+    },
+    "Raichu": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/90/55/90/80/110"
+    },
+    "Raichu-Alola": {
+        "types": [
+            "Electric",
+            "Psychic"
+        ],
+        "stats": "60/85/50/95/85/110"
+    },
+    "Raichu-Mega-X": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/135/95/90/95/110"
+    },
+    "Raichu-Mega-Y": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/100/55/160/80/130"
+    },
+    "Sandshrew": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "50/75/85/20/30/40"
+    },
+    "Sandshrew-Alola": {
+        "types": [
+            "Ice",
+            "Steel"
+        ],
+        "stats": "50/75/90/10/35/40"
+    },
+    "Sandslash": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "75/100/110/45/55/65"
+    },
+    "Sandslash-Alola": {
+        "types": [
+            "Ice",
+            "Steel"
+        ],
+        "stats": "75/100/120/25/65/65"
+    },
+    "Nidoran-F": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "55/47/52/40/40/41"
+    },
+    "Nidorina": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "70/62/67/55/55/56"
+    },
+    "Nidoqueen": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "stats": "90/92/87/75/85/76"
+    },
+    "Nidoran-M": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "46/57/40/40/40/50"
+    },
+    "Nidorino": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "61/72/57/55/55/65"
+    },
+    "Nidoking": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "stats": "81/102/77/85/75/85"
+    },
+    "Clefairy": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "70/45/48/60/65/35"
+    },
+    "Clefable": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "95/70/73/95/90/60"
+    },
+    "Clefable-Mega": {
+        "types": [
+            "Fairy",
+            "Flying"
+        ],
+        "stats": "95/80/93/135/110/70"
+    },
+    "Vulpix": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "38/41/40/50/65/65"
+    },
+    "Vulpix-Alola": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "38/41/40/50/65/65"
+    },
+    "Ninetales": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "73/76/75/81/100/100"
+    },
+    "Ninetales-Alola": {
+        "types": [
+            "Ice",
+            "Fairy"
+        ],
+        "stats": "73/67/75/81/100/109"
+    },
+    "Jigglypuff": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "stats": "115/45/20/45/25/20"
+    },
+    "Wigglytuff": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "stats": "140/70/45/85/50/45"
+    },
+    "Zubat": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "stats": "40/45/35/30/40/55"
+    },
+    "Golbat": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "stats": "75/80/70/65/75/90"
+    },
+    "Oddish": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "45/50/55/75/65/30"
+    },
+    "Gloom": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "60/65/70/85/75/40"
+    },
+    "Vileplume": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "75/80/85/110/90/50"
+    },
+    "Paras": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "stats": "35/70/55/45/55/25"
+    },
+    "Parasect": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "stats": "60/95/80/60/80/30"
+    },
+    "Venonat": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "60/55/50/40/55/45"
+    },
+    "Venomoth": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "70/65/60/90/75/90"
+    },
+    "Diglett": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "10/55/25/35/45/95"
+    },
+    "Diglett-Alola": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "10/55/30/35/45/90"
+    },
+    "Dugtrio": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "35/100/50/50/70/120"
+    },
+    "Dugtrio-Alola": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "35/100/60/50/70/110"
+    },
+    "Meowth": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "40/45/35/40/40/90"
+    },
+    "Meowth-Alola": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "40/35/35/50/40/90"
+    },
+    "Meowth-Galar": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "50/65/55/40/40/40"
+    },
+    "Meowth-Gmax": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "40/45/35/40/40/90"
+    },
+    "Persian": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "65/70/60/65/65/115"
+    },
+    "Persian-Alola": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "65/60/60/75/65/115"
+    },
+    "Psyduck": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/52/48/65/50/55"
+    },
+    "Golduck": {
+        "types": [
+            "Water"
+        ],
+        "stats": "80/82/78/95/80/85"
+    },
+    "Mankey": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "40/80/35/35/45/70"
+    },
+    "Primeape": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "65/105/60/60/70/95"
+    },
+    "Growlithe": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "55/70/45/70/50/60"
+    },
+    "Growlithe-Hisui": {
+        "types": [
+            "Fire",
+            "Rock"
+        ],
+        "stats": "60/75/45/65/50/55"
+    },
+    "Arcanine": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "90/110/80/100/80/95"
+    },
+    "Arcanine-Hisui": {
+        "types": [
+            "Fire",
+            "Rock"
+        ],
+        "stats": "95/115/80/95/80/90"
+    },
+    "Poliwag": {
+        "types": [
+            "Water"
+        ],
+        "stats": "40/50/40/40/40/90"
+    },
+    "Poliwhirl": {
+        "types": [
+            "Water"
+        ],
+        "stats": "65/65/65/50/50/90"
+    },
+    "Poliwrath": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "stats": "90/95/95/70/90/70"
+    },
+    "Abra": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "25/20/15/105/55/90"
+    },
+    "Kadabra": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "40/35/30/120/70/105"
+    },
+    "Alakazam": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "55/50/45/135/95/120"
+    },
+    "Alakazam-Mega": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "55/50/65/175/105/150"
+    },
+    "Machop": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "70/80/50/35/35/35"
+    },
+    "Machoke": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "80/100/70/50/60/45"
+    },
+    "Machamp": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "90/130/80/65/85/55"
+    },
+    "Machamp-Gmax": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "90/130/80/65/85/55"
+    },
+    "Bellsprout": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "50/75/35/70/30/40"
+    },
+    "Weepinbell": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "65/90/50/85/45/55"
+    },
+    "Victreebel": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/105/65/100/70/70"
+    },
+    "Victreebel-Mega": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/125/85/135/95/70"
+    },
+    "Tentacool": {
+        "types": [
+            "Water",
+            "Poison"
+        ],
+        "stats": "40/40/35/50/100/70"
+    },
+    "Tentacruel": {
+        "types": [
+            "Water",
+            "Poison"
+        ],
+        "stats": "80/70/65/80/120/100"
+    },
+    "Geodude": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "stats": "40/80/100/30/30/20"
+    },
+    "Geodude-Alola": {
+        "types": [
+            "Rock",
+            "Electric"
+        ],
+        "stats": "40/80/100/30/30/20"
+    },
+    "Graveler": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "stats": "55/95/115/45/45/35"
+    },
+    "Graveler-Alola": {
+        "types": [
+            "Rock",
+            "Electric"
+        ],
+        "stats": "55/95/115/45/45/35"
+    },
+    "Golem": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "stats": "80/120/130/55/65/45"
+    },
+    "Golem-Alola": {
+        "types": [
+            "Rock",
+            "Electric"
+        ],
+        "stats": "80/120/130/55/65/45"
+    },
+    "Ponyta": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "50/85/55/65/65/90"
+    },
+    "Ponyta-Galar": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "50/85/55/65/65/90"
+    },
+    "Rapidash": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "65/100/70/80/80/105"
+    },
+    "Rapidash-Galar": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "65/100/70/80/80/105"
+    },
+    "Slowpoke": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "90/65/65/40/40/15"
+    },
+    "Slowpoke-Galar": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "90/65/65/40/40/15"
+    },
+    "Slowbro": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "95/75/110/100/80/30"
+    },
+    "Slowbro-Mega": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "95/75/180/130/80/30"
+    },
+    "Slowbro-Galar": {
+        "types": [
+            "Poison",
+            "Psychic"
+        ],
+        "stats": "95/100/95/100/70/30"
+    },
+    "Magnemite": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "stats": "25/35/70/95/55/45"
+    },
+    "Magneton": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "stats": "50/60/95/120/70/70"
+    },
+    "Farfetch’d": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "52/90/55/58/62/60"
+    },
+    "Farfetch’d-Galar": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "52/95/55/58/62/55"
+    },
+    "Doduo": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "35/85/45/35/35/75"
+    },
+    "Dodrio": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "60/110/70/60/60/110"
+    },
+    "Seel": {
+        "types": [
+            "Water"
+        ],
+        "stats": "65/45/55/45/70/45"
+    },
+    "Dewgong": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "stats": "90/70/80/70/95/70"
+    },
+    "Grimer": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "80/80/50/40/50/25"
+    },
+    "Grimer-Alola": {
+        "types": [
+            "Poison",
+            "Dark"
+        ],
+        "stats": "80/80/50/40/50/25"
+    },
+    "Muk": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "105/105/75/65/100/50"
+    },
+    "Muk-Alola": {
+        "types": [
+            "Poison",
+            "Dark"
+        ],
+        "stats": "105/105/75/65/100/50"
+    },
+    "Shellder": {
+        "types": [
+            "Water"
+        ],
+        "stats": "30/65/100/45/25/40"
+    },
+    "Cloyster": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "stats": "50/95/180/85/45/70"
+    },
+    "Gastly": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "stats": "30/35/30/100/35/80"
+    },
+    "Haunter": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "stats": "45/50/45/115/55/95"
+    },
+    "Gengar": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "stats": "60/65/60/130/75/110"
+    },
+    "Gengar-Mega": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "stats": "60/65/80/170/95/130"
+    },
+    "Gengar-Gmax": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "stats": "60/65/60/130/75/110"
+    },
+    "Onix": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "stats": "35/45/160/30/45/70"
+    },
+    "Drowzee": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "60/48/45/43/90/42"
+    },
+    "Hypno": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "85/73/70/73/115/67"
+    },
+    "Krabby": {
+        "types": [
+            "Water"
+        ],
+        "stats": "30/105/90/25/25/50"
+    },
+    "Kingler": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/130/115/50/50/75"
+    },
+    "Kingler-Gmax": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/130/115/50/50/75"
+    },
+    "Voltorb": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "40/30/50/55/55/100"
+    },
+    "Voltorb-Hisui": {
+        "types": [
+            "Electric",
+            "Grass"
+        ],
+        "stats": "40/30/50/55/55/100"
+    },
+    "Electrode": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/50/70/80/80/150"
+    },
+    "Electrode-Hisui": {
+        "types": [
+            "Electric",
+            "Grass"
+        ],
+        "stats": "60/50/70/80/80/150"
+    },
+    "Exeggcute": {
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "stats": "60/40/80/60/45/40"
+    },
+    "Exeggutor": {
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "stats": "95/95/85/125/75/55"
+    },
+    "Exeggutor-Alola": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "95/105/85/125/75/45"
+    },
+    "Cubone": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "50/50/95/40/50/35"
+    },
+    "Marowak": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "60/80/110/50/80/45"
+    },
+    "Marowak-Alola": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "60/80/110/50/80/45"
+    },
+    "Marowak-Alola-Totem": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "60/80/110/50/80/45"
+    },
+    "Hitmonlee": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "50/120/53/35/110/87"
+    },
+    "Hitmonchan": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "50/105/79/35/110/76"
+    },
+    "Lickitung": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "90/55/75/60/75/30"
+    },
+    "Koffing": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "40/65/95/60/45/35"
+    },
+    "Weezing": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "65/90/120/85/70/60"
+    },
+    "Weezing-Galar": {
+        "types": [
+            "Poison",
+            "Fairy"
+        ],
+        "stats": "65/90/120/85/70/60"
+    },
+    "Rhyhorn": {
+        "types": [
+            "Ground",
+            "Rock"
+        ],
+        "stats": "80/85/95/30/30/25"
+    },
+    "Rhydon": {
+        "types": [
+            "Ground",
+            "Rock"
+        ],
+        "stats": "105/130/120/45/45/40"
+    },
+    "Chansey": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "250/5/5/35/105/50"
+    },
+    "Tangela": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "65/55/115/100/40/60"
+    },
+    "Kangaskhan": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "105/95/80/40/80/90"
+    },
+    "Kangaskhan-Mega": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "105/125/100/60/100/100"
+    },
+    "Horsea": {
+        "types": [
+            "Water"
+        ],
+        "stats": "30/40/70/70/25/60"
+    },
+    "Seadra": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/65/95/95/45/85"
+    },
+    "Goldeen": {
+        "types": [
+            "Water"
+        ],
+        "stats": "45/67/60/35/50/63"
+    },
+    "Seaking": {
+        "types": [
+            "Water"
+        ],
+        "stats": "80/92/65/65/80/68"
+    },
+    "Staryu": {
+        "types": [
+            "Water"
+        ],
+        "stats": "30/45/55/70/55/85"
+    },
+    "Starmie": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "60/75/85/100/85/115"
+    },
+    "Starmie-Mega": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "60/100/105/130/105/120"
+    },
+    "Mr. Mime": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "40/45/65/100/120/90"
+    },
+    "Mr. Mime-Galar": {
+        "types": [
+            "Ice",
+            "Psychic"
+        ],
+        "stats": "50/65/65/90/90/100"
+    },
+    "Scyther": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "70/110/80/55/80/105"
+    },
+    "Jynx": {
+        "types": [
+            "Ice",
+            "Psychic"
+        ],
+        "stats": "65/50/35/115/95/95"
+    },
+    "Electabuzz": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "65/83/57/95/85/105"
+    },
+    "Magmar": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "65/95/57/100/85/93"
+    },
+    "Pinsir": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "65/125/100/55/70/85"
+    },
+    "Pinsir-Mega": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "65/155/120/65/90/105"
+    },
+    "Tauros": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "75/100/95/40/70/110"
+    },
+    "Tauros-Paldea-Combat": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "75/110/105/30/70/100"
+    },
+    "Tauros-Paldea-Blaze": {
+        "types": [
+            "Fighting",
+            "Fire"
+        ],
+        "stats": "75/110/105/30/70/100"
+    },
+    "Tauros-Paldea-Aqua": {
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "stats": "75/110/105/30/70/100"
+    },
+    "Magikarp": {
+        "types": [
+            "Water"
+        ],
+        "stats": "20/10/55/15/20/80"
+    },
+    "Gyarados": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "95/125/79/60/100/81"
+    },
+    "Gyarados-Mega": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "95/155/109/70/130/81"
+    },
+    "Lapras": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "stats": "130/85/80/85/95/60"
+    },
+    "Lapras-Gmax": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "stats": "130/85/80/85/95/60"
+    },
+    "Ditto": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "48/48/48/48/48/48"
+    },
+    "Eevee": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/55/50/45/65/55"
+    },
+    "Eevee-Starter": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "65/75/70/65/85/75"
+    },
+    "Eevee-Gmax": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/55/50/45/65/55"
+    },
+    "Vaporeon": {
+        "types": [
+            "Water"
+        ],
+        "stats": "130/65/60/110/95/65"
+    },
+    "Jolteon": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "65/65/60/110/95/130"
+    },
+    "Flareon": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "65/130/60/95/110/65"
+    },
+    "Porygon": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "65/60/70/85/75/40"
+    },
+    "Omanyte": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "stats": "35/40/100/90/55/35"
+    },
+    "Omastar": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "stats": "70/60/125/115/70/55"
+    },
+    "Kabuto": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "stats": "30/80/90/55/45/55"
+    },
+    "Kabutops": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "stats": "60/115/105/65/70/80"
+    },
+    "Aerodactyl": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "80/105/65/60/75/130"
+    },
+    "Aerodactyl-Mega": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "80/135/85/70/95/150"
+    },
+    "Snorlax": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "160/110/65/65/110/30"
+    },
+    "Snorlax-Gmax": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "160/110/65/65/110/30"
+    },
+    "Articuno": {
+        "types": [
+            "Ice",
+            "Flying"
+        ],
+        "stats": "90/85/100/95/125/85"
+    },
+    "Articuno-Galar": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "90/85/85/125/100/95"
+    },
+    "Zapdos": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "90/90/85/125/90/100"
+    },
+    "Zapdos-Galar": {
+        "types": [
+            "Fighting",
+            "Flying"
+        ],
+        "stats": "90/125/90/85/90/100"
+    },
+    "Moltres": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "90/100/90/125/85/90"
+    },
+    "Moltres-Galar": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "90/85/90/100/125/90"
+    },
+    "Dratini": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "41/64/45/50/50/50"
+    },
+    "Dragonair": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "61/84/65/70/70/70"
+    },
+    "Dragonite": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "91/134/95/100/100/80"
+    },
+    "Dragonite-Mega": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "91/124/115/145/125/100"
+    },
+    "Mewtwo": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "106/110/90/154/90/130"
+    },
+    "Mewtwo-Mega-X": {
+        "types": [
+            "Psychic",
+            "Fighting"
+        ],
+        "stats": "106/190/100/154/100/130"
+    },
+    "Mewtwo-Mega-Y": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "106/150/70/194/120/140"
+    },
+    "Mew": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Chikorita": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "45/49/65/49/65/45"
+    },
+    "Bayleef": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "60/62/80/63/80/60"
+    },
+    "Meganium": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "80/82/100/83/100/80"
+    },
+    "Meganium-Mega": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "80/92/115/143/115/80"
+    },
+    "Cyndaquil": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "39/52/43/60/50/65"
+    },
+    "Quilava": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "58/64/58/80/65/80"
+    },
+    "Typhlosion": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "78/84/78/109/85/100"
+    },
+    "Typhlosion-Hisui": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "73/84/78/119/85/95"
+    },
+    "Totodile": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/65/64/44/48/43"
+    },
+    "Croconaw": {
+        "types": [
+            "Water"
+        ],
+        "stats": "65/80/80/59/63/58"
+    },
+    "Feraligatr": {
+        "types": [
+            "Water"
+        ],
+        "stats": "85/105/100/79/83/78"
+    },
+    "Feraligatr-Mega": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "85/160/125/89/93/78"
+    },
+    "Sentret": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "35/46/34/35/45/20"
+    },
+    "Furret": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "85/76/64/45/55/90"
+    },
+    "Hoothoot": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "60/30/30/36/56/50"
+    },
+    "Noctowl": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "100/50/50/86/96/70"
+    },
+    "Ledyba": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "40/20/30/40/80/55"
+    },
+    "Ledian": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "55/35/50/55/110/85"
+    },
+    "Spinarak": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "40/60/40/40/40/30"
+    },
+    "Ariados": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "70/90/70/60/70/40"
+    },
+    "Crobat": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "stats": "85/90/80/70/80/130"
+    },
+    "Chinchou": {
+        "types": [
+            "Water",
+            "Electric"
+        ],
+        "stats": "75/38/38/56/56/67"
+    },
+    "Lanturn": {
+        "types": [
+            "Water",
+            "Electric"
+        ],
+        "stats": "125/58/58/76/76/67"
+    },
+    "Pichu": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "20/40/15/35/35/60"
+    },
+    "Pichu-Spiky-eared": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "20/40/15/35/35/60"
+    },
+    "Cleffa": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "50/25/28/45/55/15"
+    },
+    "Igglybuff": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "stats": "90/30/15/40/20/15"
+    },
+    "Togepi": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "35/20/65/40/65/20"
+    },
+    "Togetic": {
+        "types": [
+            "Fairy",
+            "Flying"
+        ],
+        "stats": "55/40/85/80/105/40"
+    },
+    "Natu": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "40/50/45/70/45/70"
+    },
+    "Xatu": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "65/75/70/95/70/95"
+    },
+    "Mareep": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "55/40/40/65/45/35"
+    },
+    "Flaaffy": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "70/55/55/80/60/45"
+    },
+    "Ampharos": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "90/75/85/115/90/55"
+    },
+    "Ampharos-Mega": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "90/95/105/165/110/45"
+    },
+    "Bellossom": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "75/80/95/90/100/50"
+    },
+    "Marill": {
+        "types": [
+            "Water",
+            "Fairy"
+        ],
+        "stats": "70/20/50/20/50/40"
+    },
+    "Azumarill": {
+        "types": [
+            "Water",
+            "Fairy"
+        ],
+        "stats": "100/50/80/60/80/50"
+    },
+    "Sudowoodo": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "70/100/115/30/65/30"
+    },
+    "Politoed": {
+        "types": [
+            "Water"
+        ],
+        "stats": "90/75/75/90/100/70"
+    },
+    "Hoppip": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "35/35/40/35/55/50"
+    },
+    "Skiploom": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "55/45/50/45/65/80"
+    },
+    "Jumpluff": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "75/55/70/55/95/110"
+    },
+    "Aipom": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/70/55/40/55/85"
+    },
+    "Sunkern": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "30/30/30/30/30/30"
+    },
+    "Sunflora": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "75/75/55/105/85/30"
+    },
+    "Yanma": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "65/65/45/75/45/95"
+    },
+    "Wooper": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "55/45/45/25/25/15"
+    },
+    "Wooper-Paldea": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "stats": "55/45/45/25/25/15"
+    },
+    "Quagsire": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "95/85/85/65/65/35"
+    },
+    "Espeon": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "65/65/60/130/95/110"
+    },
+    "Umbreon": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "95/65/110/60/130/65"
+    },
+    "Murkrow": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "60/85/42/85/42/91"
+    },
+    "Slowking": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "95/75/80/100/110/30"
+    },
+    "Slowking-Galar": {
+        "types": [
+            "Poison",
+            "Psychic"
+        ],
+        "stats": "95/65/80/110/110/30"
+    },
+    "Misdreavus": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "60/60/60/85/85/85"
+    },
+    "Unown": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "48/72/48/72/48/48"
+    },
+    "Wobbuffet": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "190/33/58/33/58/33"
+    },
+    "Girafarig": {
+        "types": [
+            "Normal",
+            "Psychic"
+        ],
+        "stats": "70/80/65/90/65/85"
+    },
+    "Pineco": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "50/65/90/35/35/15"
+    },
+    "Forretress": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "75/90/140/60/60/40"
+    },
+    "Dunsparce": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "100/70/70/65/65/45"
+    },
+    "Gligar": {
+        "types": [
+            "Ground",
+            "Flying"
+        ],
+        "stats": "65/75/105/35/65/85"
+    },
+    "Steelix": {
+        "types": [
+            "Steel",
+            "Ground"
+        ],
+        "stats": "75/85/200/55/65/30"
+    },
+    "Steelix-Mega": {
+        "types": [
+            "Steel",
+            "Ground"
+        ],
+        "stats": "75/125/230/55/95/30"
+    },
+    "Snubbull": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "60/80/50/40/40/30"
+    },
+    "Granbull": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "90/120/75/60/60/45"
+    },
+    "Qwilfish": {
+        "types": [
+            "Water",
+            "Poison"
+        ],
+        "stats": "65/95/85/55/55/85"
+    },
+    "Qwilfish-Hisui": {
+        "types": [
+            "Dark",
+            "Poison"
+        ],
+        "stats": "65/95/85/55/55/85"
+    },
+    "Scizor": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "70/130/100/55/80/65"
+    },
+    "Scizor-Mega": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "70/150/140/65/100/75"
+    },
+    "Shuckle": {
+        "types": [
+            "Bug",
+            "Rock"
+        ],
+        "stats": "20/10/230/10/230/5"
+    },
+    "Heracross": {
+        "types": [
+            "Bug",
+            "Fighting"
+        ],
+        "stats": "80/125/75/40/95/85"
+    },
+    "Heracross-Mega": {
+        "types": [
+            "Bug",
+            "Fighting"
+        ],
+        "stats": "80/185/115/40/105/75"
+    },
+    "Sneasel": {
+        "types": [
+            "Dark",
+            "Ice"
+        ],
+        "stats": "55/95/55/35/75/115"
+    },
+    "Sneasel-Hisui": {
+        "types": [
+            "Fighting",
+            "Poison"
+        ],
+        "stats": "55/95/55/35/75/115"
+    },
+    "Teddiursa": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "60/80/50/50/50/40"
+    },
+    "Ursaring": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "90/130/75/75/75/55"
+    },
+    "Slugma": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "40/40/40/70/40/20"
+    },
+    "Magcargo": {
+        "types": [
+            "Fire",
+            "Rock"
+        ],
+        "stats": "60/50/120/90/80/30"
+    },
+    "Swinub": {
+        "types": [
+            "Ice",
+            "Ground"
+        ],
+        "stats": "50/50/40/30/30/50"
+    },
+    "Piloswine": {
+        "types": [
+            "Ice",
+            "Ground"
+        ],
+        "stats": "100/100/80/60/60/50"
+    },
+    "Corsola": {
+        "types": [
+            "Water",
+            "Rock"
+        ],
+        "stats": "65/55/95/65/95/35"
+    },
+    "Corsola-Galar": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "60/55/100/65/100/30"
+    },
+    "Remoraid": {
+        "types": [
+            "Water"
+        ],
+        "stats": "35/65/35/65/35/65"
+    },
+    "Octillery": {
+        "types": [
+            "Water"
+        ],
+        "stats": "75/105/75/105/75/45"
+    },
+    "Delibird": {
+        "types": [
+            "Ice",
+            "Flying"
+        ],
+        "stats": "45/55/45/65/45/75"
+    },
+    "Mantine": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "85/40/70/80/140/70"
+    },
+    "Skarmory": {
+        "types": [
+            "Steel",
+            "Flying"
+        ],
+        "stats": "65/80/140/40/70/70"
+    },
+    "Skarmory-Mega": {
+        "types": [
+            "Steel",
+            "Flying"
+        ],
+        "stats": "65/140/110/40/100/110"
+    },
+    "Houndour": {
+        "types": [
+            "Dark",
+            "Fire"
+        ],
+        "stats": "45/60/30/80/50/65"
+    },
+    "Houndoom": {
+        "types": [
+            "Dark",
+            "Fire"
+        ],
+        "stats": "75/90/50/110/80/95"
+    },
+    "Houndoom-Mega": {
+        "types": [
+            "Dark",
+            "Fire"
+        ],
+        "stats": "75/90/90/140/90/115"
+    },
+    "Kingdra": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "75/95/95/95/95/85"
+    },
+    "Phanpy": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "90/60/60/40/40/40"
+    },
+    "Donphan": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "90/120/120/60/60/50"
+    },
+    "Porygon2": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "85/80/90/105/95/60"
+    },
+    "Stantler": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "73/95/62/85/65/85"
+    },
+    "Smeargle": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/20/35/20/45/75"
+    },
+    "Tyrogue": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "35/35/35/35/35/35"
+    },
+    "Hitmontop": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "50/95/95/35/110/70"
+    },
+    "Smoochum": {
+        "types": [
+            "Ice",
+            "Psychic"
+        ],
+        "stats": "45/30/15/85/65/65"
+    },
+    "Elekid": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "45/63/37/65/55/95"
+    },
+    "Magby": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "45/75/37/70/55/83"
+    },
+    "Miltank": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "95/80/105/40/70/100"
+    },
+    "Blissey": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "255/10/10/75/135/55"
+    },
+    "Raikou": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "90/85/75/115/100/115"
+    },
+    "Entei": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "115/115/85/90/75/100"
+    },
+    "Suicune": {
+        "types": [
+            "Water"
+        ],
+        "stats": "100/75/115/90/115/85"
+    },
+    "Larvitar": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "stats": "50/64/50/45/50/41"
+    },
+    "Pupitar": {
+        "types": [
+            "Rock",
+            "Ground"
+        ],
+        "stats": "70/84/70/65/70/51"
+    },
+    "Tyranitar": {
+        "types": [
+            "Rock",
+            "Dark"
+        ],
+        "stats": "100/134/110/95/100/61"
+    },
+    "Tyranitar-Mega": {
+        "types": [
+            "Rock",
+            "Dark"
+        ],
+        "stats": "100/164/150/95/120/71"
+    },
+    "Lugia": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "106/90/130/90/154/110"
+    },
+    "Ho-Oh": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "106/130/90/110/154/90"
+    },
+    "Celebi": {
+        "types": [
+            "Psychic",
+            "Grass"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Treecko": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "40/45/35/65/55/70"
+    },
+    "Grovyle": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "50/65/45/85/65/95"
+    },
+    "Sceptile": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/85/65/105/85/120"
+    },
+    "Sceptile-Mega": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "70/110/75/145/85/145"
+    },
+    "Torchic": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "45/60/40/70/50/45"
+    },
+    "Combusken": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "60/85/60/85/60/55"
+    },
+    "Blaziken": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "80/120/70/110/70/80"
+    },
+    "Blaziken-Mega": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "80/160/80/130/80/100"
+    },
+    "Mudkip": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/70/50/50/50/40"
+    },
+    "Marshtomp": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "70/85/70/60/70/50"
+    },
+    "Swampert": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "100/110/90/85/90/60"
+    },
+    "Swampert-Mega": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "100/150/110/95/110/70"
+    },
+    "Poochyena": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "35/55/35/30/30/35"
+    },
+    "Mightyena": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "70/90/70/60/60/70"
+    },
+    "Zigzagoon": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "38/30/41/30/41/60"
+    },
+    "Zigzagoon-Galar": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "38/30/41/30/41/60"
+    },
+    "Linoone": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "78/70/61/50/61/100"
+    },
+    "Linoone-Galar": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "78/70/61/50/61/100"
+    },
+    "Wurmple": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "45/45/35/20/30/20"
+    },
+    "Silcoon": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "50/35/55/25/25/15"
+    },
+    "Beautifly": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "60/70/50/100/50/65"
+    },
+    "Cascoon": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "50/35/55/25/25/15"
+    },
+    "Dustox": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "60/50/70/50/90/65"
+    },
+    "Lotad": {
+        "types": [
+            "Water",
+            "Grass"
+        ],
+        "stats": "40/30/30/40/50/30"
+    },
+    "Lombre": {
+        "types": [
+            "Water",
+            "Grass"
+        ],
+        "stats": "60/50/50/60/70/50"
+    },
+    "Ludicolo": {
+        "types": [
+            "Water",
+            "Grass"
+        ],
+        "stats": "80/70/70/90/100/70"
+    },
+    "Seedot": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "40/40/50/30/30/30"
+    },
+    "Nuzleaf": {
+        "types": [
+            "Grass",
+            "Dark"
+        ],
+        "stats": "70/70/40/60/40/60"
+    },
+    "Shiftry": {
+        "types": [
+            "Grass",
+            "Dark"
+        ],
+        "stats": "90/100/60/90/60/80"
+    },
+    "Taillow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "40/55/30/30/30/85"
+    },
+    "Swellow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "60/85/60/75/50/125"
+    },
+    "Wingull": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "40/30/30/55/30/85"
+    },
+    "Pelipper": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "60/50/100/95/70/65"
+    },
+    "Ralts": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "28/25/25/45/35/40"
+    },
+    "Kirlia": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "38/35/35/65/55/50"
+    },
+    "Gardevoir": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "68/65/65/125/115/80"
+    },
+    "Gardevoir-Mega": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "68/85/65/165/135/100"
+    },
+    "Surskit": {
+        "types": [
+            "Bug",
+            "Water"
+        ],
+        "stats": "40/30/32/50/52/65"
+    },
+    "Masquerain": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "70/60/62/100/82/80"
+    },
+    "Shroomish": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "60/40/60/40/60/35"
+    },
+    "Breloom": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "60/130/80/60/60/70"
+    },
+    "Slakoth": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "60/60/60/35/35/30"
+    },
+    "Vigoroth": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "80/80/80/55/55/90"
+    },
+    "Slaking": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "150/160/100/95/65/100"
+    },
+    "Nincada": {
+        "types": [
+            "Bug",
+            "Ground"
+        ],
+        "stats": "31/45/90/30/30/40"
+    },
+    "Ninjask": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "61/90/45/50/50/160"
+    },
+    "Shedinja": {
+        "types": [
+            "Bug",
+            "Ghost"
+        ],
+        "stats": "1/90/45/30/30/40"
+    },
+    "Whismur": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "64/51/23/51/23/28"
+    },
+    "Loudred": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "84/71/43/71/43/48"
+    },
+    "Exploud": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "104/91/63/91/73/68"
+    },
+    "Makuhita": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "72/60/30/20/30/25"
+    },
+    "Hariyama": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "144/120/60/40/60/50"
+    },
+    "Azurill": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "stats": "50/20/40/20/40/20"
+    },
+    "Nosepass": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "30/45/135/45/90/30"
+    },
+    "Skitty": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "50/45/45/35/35/50"
+    },
+    "Delcatty": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "70/65/65/55/55/90"
+    },
+    "Sableye": {
+        "types": [
+            "Dark",
+            "Ghost"
+        ],
+        "stats": "50/75/75/65/65/50"
+    },
+    "Sableye-Mega": {
+        "types": [
+            "Dark",
+            "Ghost"
+        ],
+        "stats": "50/85/125/85/115/20"
+    },
+    "Mawile": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "50/85/85/55/55/50"
+    },
+    "Mawile-Mega": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "50/105/125/55/95/50"
+    },
+    "Aron": {
+        "types": [
+            "Steel",
+            "Rock"
+        ],
+        "stats": "50/70/100/40/40/30"
+    },
+    "Lairon": {
+        "types": [
+            "Steel",
+            "Rock"
+        ],
+        "stats": "60/90/140/50/50/40"
+    },
+    "Aggron": {
+        "types": [
+            "Steel",
+            "Rock"
+        ],
+        "stats": "70/110/180/60/60/50"
+    },
+    "Aggron-Mega": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "70/140/230/60/80/50"
+    },
+    "Meditite": {
+        "types": [
+            "Fighting",
+            "Psychic"
+        ],
+        "stats": "30/40/55/40/55/60"
+    },
+    "Medicham": {
+        "types": [
+            "Fighting",
+            "Psychic"
+        ],
+        "stats": "60/60/75/60/75/80"
+    },
+    "Medicham-Mega": {
+        "types": [
+            "Fighting",
+            "Psychic"
+        ],
+        "stats": "60/100/85/80/85/100"
+    },
+    "Electrike": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "40/45/40/65/40/65"
+    },
+    "Manectric": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "70/75/60/105/60/105"
+    },
+    "Manectric-Mega": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "70/75/80/135/80/135"
+    },
+    "Plusle": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/50/40/85/75/95"
+    },
+    "Minun": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/40/50/75/85/95"
+    },
+    "Volbeat": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "65/73/75/47/85/85"
+    },
+    "Illumise": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "65/47/75/73/85/85"
+    },
+    "Roselia": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "50/60/45/100/80/65"
+    },
+    "Gulpin": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "70/43/53/43/53/40"
+    },
+    "Swalot": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "100/73/83/73/83/55"
+    },
+    "Carvanha": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "45/90/20/65/20/65"
+    },
+    "Sharpedo": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "70/120/40/95/40/95"
+    },
+    "Sharpedo-Mega": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "70/140/70/110/65/105"
+    },
+    "Wailmer": {
+        "types": [
+            "Water"
+        ],
+        "stats": "130/70/35/70/35/60"
+    },
+    "Wailord": {
+        "types": [
+            "Water"
+        ],
+        "stats": "170/90/45/90/45/60"
+    },
+    "Numel": {
+        "types": [
+            "Fire",
+            "Ground"
+        ],
+        "stats": "60/60/40/65/45/35"
+    },
+    "Camerupt": {
+        "types": [
+            "Fire",
+            "Ground"
+        ],
+        "stats": "70/100/70/105/75/40"
+    },
+    "Camerupt-Mega": {
+        "types": [
+            "Fire",
+            "Ground"
+        ],
+        "stats": "70/120/100/145/105/20"
+    },
+    "Torkoal": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "70/85/140/85/70/20"
+    },
+    "Spoink": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "60/25/35/70/80/60"
+    },
+    "Grumpig": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "80/45/65/90/110/80"
+    },
+    "Spinda": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "60/60/60/60/60/60"
+    },
+    "Trapinch": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "45/100/45/45/45/10"
+    },
+    "Vibrava": {
+        "types": [
+            "Ground",
+            "Dragon"
+        ],
+        "stats": "50/70/50/50/50/70"
+    },
+    "Flygon": {
+        "types": [
+            "Ground",
+            "Dragon"
+        ],
+        "stats": "80/100/80/80/80/100"
+    },
+    "Cacnea": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "50/85/40/85/40/35"
+    },
+    "Cacturne": {
+        "types": [
+            "Grass",
+            "Dark"
+        ],
+        "stats": "70/115/60/115/60/55"
+    },
+    "Swablu": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "45/40/60/40/75/50"
+    },
+    "Altaria": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "75/70/90/70/105/80"
+    },
+    "Altaria-Mega": {
+        "types": [
+            "Dragon",
+            "Fairy"
+        ],
+        "stats": "75/110/110/110/105/80"
+    },
+    "Zangoose": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "73/115/60/60/60/90"
+    },
+    "Seviper": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "73/100/60/100/60/65"
+    },
+    "Lunatone": {
+        "types": [
+            "Rock",
+            "Psychic"
+        ],
+        "stats": "90/55/65/95/85/70"
+    },
+    "Solrock": {
+        "types": [
+            "Rock",
+            "Psychic"
+        ],
+        "stats": "90/95/85/55/65/70"
+    },
+    "Barboach": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "50/48/43/46/41/60"
+    },
+    "Whiscash": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "110/78/73/76/71/60"
+    },
+    "Corphish": {
+        "types": [
+            "Water"
+        ],
+        "stats": "43/80/65/50/35/35"
+    },
+    "Crawdaunt": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "63/120/85/90/55/55"
+    },
+    "Baltoy": {
+        "types": [
+            "Ground",
+            "Psychic"
+        ],
+        "stats": "40/40/55/40/70/55"
+    },
+    "Claydol": {
+        "types": [
+            "Ground",
+            "Psychic"
+        ],
+        "stats": "60/70/105/70/120/75"
+    },
+    "Lileep": {
+        "types": [
+            "Rock",
+            "Grass"
+        ],
+        "stats": "66/41/77/61/87/23"
+    },
+    "Cradily": {
+        "types": [
+            "Rock",
+            "Grass"
+        ],
+        "stats": "86/81/97/81/107/43"
+    },
+    "Anorith": {
+        "types": [
+            "Rock",
+            "Bug"
+        ],
+        "stats": "45/95/50/40/50/75"
+    },
+    "Armaldo": {
+        "types": [
+            "Rock",
+            "Bug"
+        ],
+        "stats": "75/125/100/70/80/45"
+    },
+    "Feebas": {
+        "types": [
+            "Water"
+        ],
+        "stats": "20/15/20/10/55/80"
+    },
+    "Milotic": {
+        "types": [
+            "Water"
+        ],
+        "stats": "95/60/79/100/125/81"
+    },
+    "Castform": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "70/70/70/70/70/70"
+    },
+    "Castform-Sunny": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "70/70/70/70/70/70"
+    },
+    "Castform-Rainy": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/70/70/70/70/70"
+    },
+    "Castform-Snowy": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "70/70/70/70/70/70"
+    },
+    "Kecleon": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "60/90/70/60/120/40"
+    },
+    "Shuppet": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "44/75/35/63/33/45"
+    },
+    "Banette": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "64/115/65/83/63/65"
+    },
+    "Banette-Mega": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "64/165/75/93/83/75"
+    },
+    "Duskull": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "20/40/90/30/90/25"
+    },
+    "Dusclops": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "40/70/130/60/130/25"
+    },
+    "Tropius": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "99/68/83/72/87/51"
+    },
+    "Chimecho": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "75/50/80/95/90/65"
+    },
+    "Chimecho-Mega": {
+        "types": [
+            "Psychic",
+            "Steel"
+        ],
+        "stats": "75/50/110/135/120/65"
+    },
+    "Absol": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "65/130/60/75/60/75"
+    },
+    "Absol-Mega": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "65/150/60/115/60/115"
+    },
+    "Absol-Mega-Z": {
+        "types": [
+            "Dark",
+            "Ghost"
+        ],
+        "stats": "65/154/60/75/60/151"
+    },
+    "Wynaut": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "95/23/48/23/48/23"
+    },
+    "Snorunt": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "50/50/50/50/50/50"
+    },
+    "Glalie": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "80/80/80/80/80/80"
+    },
+    "Glalie-Mega": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "80/120/80/120/80/100"
+    },
+    "Spheal": {
+        "types": [
+            "Ice",
+            "Water"
+        ],
+        "stats": "70/40/50/55/50/25"
+    },
+    "Sealeo": {
+        "types": [
+            "Ice",
+            "Water"
+        ],
+        "stats": "90/60/70/75/70/45"
+    },
+    "Walrein": {
+        "types": [
+            "Ice",
+            "Water"
+        ],
+        "stats": "110/80/90/95/90/65"
+    },
+    "Clamperl": {
+        "types": [
+            "Water"
+        ],
+        "stats": "35/64/85/74/55/32"
+    },
+    "Huntail": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/104/105/94/75/52"
+    },
+    "Gorebyss": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/84/105/114/75/52"
+    },
+    "Relicanth": {
+        "types": [
+            "Water",
+            "Rock"
+        ],
+        "stats": "100/90/130/45/65/55"
+    },
+    "Luvdisc": {
+        "types": [
+            "Water"
+        ],
+        "stats": "43/30/55/40/65/97"
+    },
+    "Bagon": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "45/75/60/40/30/50"
+    },
+    "Shelgon": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "65/95/100/60/50/50"
+    },
+    "Salamence": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "95/135/80/110/80/100"
+    },
+    "Salamence-Mega": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "95/145/130/120/90/120"
+    },
+    "Beldum": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "40/55/80/35/60/30"
+    },
+    "Metang": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "60/75/100/55/80/50"
+    },
+    "Metagross": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "80/135/130/95/90/70"
+    },
+    "Metagross-Mega": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "80/145/150/105/110/110"
+    },
+    "Regirock": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "80/100/200/50/100/50"
+    },
+    "Regice": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "80/50/100/100/200/50"
+    },
+    "Registeel": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "80/75/150/75/150/50"
+    },
+    "Latias": {
+        "types": [
+            "Dragon",
+            "Psychic"
+        ],
+        "stats": "80/80/90/110/130/110"
+    },
+    "Latias-Mega": {
+        "types": [
+            "Dragon",
+            "Psychic"
+        ],
+        "stats": "80/100/120/140/150/110"
+    },
+    "Latios": {
+        "types": [
+            "Dragon",
+            "Psychic"
+        ],
+        "stats": "80/90/80/130/110/110"
+    },
+    "Latios-Mega": {
+        "types": [
+            "Dragon",
+            "Psychic"
+        ],
+        "stats": "80/130/100/160/120/110"
+    },
+    "Kyogre": {
+        "types": [
+            "Water"
+        ],
+        "stats": "100/100/90/150/140/90"
+    },
+    "Kyogre-Primal": {
+        "types": [
+            "Water"
+        ],
+        "stats": "100/150/90/180/160/90"
+    },
+    "Groudon": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "100/150/140/100/90/90"
+    },
+    "Groudon-Primal": {
+        "types": [
+            "Ground",
+            "Fire"
+        ],
+        "stats": "100/180/160/150/90/90"
+    },
+    "Rayquaza": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "105/150/90/150/90/95"
+    },
+    "Rayquaza-Mega": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "105/180/100/180/100/115"
+    },
+    "Jirachi": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Deoxys": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "50/150/50/150/50/150"
+    },
+    "Deoxys-Attack": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "50/180/20/180/20/150"
+    },
+    "Deoxys-Defense": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "50/70/160/70/160/90"
+    },
+    "Deoxys-Speed": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "50/95/90/95/90/180"
+    },
+    "Turtwig": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "55/68/64/45/55/31"
+    },
+    "Grotle": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "75/89/85/55/65/36"
+    },
+    "Torterra": {
+        "types": [
+            "Grass",
+            "Ground"
+        ],
+        "stats": "95/109/105/75/85/56"
+    },
+    "Chimchar": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "44/58/44/58/44/61"
+    },
+    "Monferno": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "64/78/52/78/52/81"
+    },
+    "Infernape": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "76/104/71/104/71/108"
+    },
+    "Piplup": {
+        "types": [
+            "Water"
+        ],
+        "stats": "53/51/53/61/56/40"
+    },
+    "Prinplup": {
+        "types": [
+            "Water"
+        ],
+        "stats": "64/66/68/81/76/50"
+    },
+    "Empoleon": {
+        "types": [
+            "Water",
+            "Steel"
+        ],
+        "stats": "84/86/88/111/101/60"
+    },
+    "Starly": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "40/55/30/30/30/60"
+    },
+    "Staravia": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "55/75/50/40/40/80"
+    },
+    "Staraptor": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "85/120/70/50/60/100"
+    },
+    "Staraptor-Mega": {
+        "types": [
+            "Fighting",
+            "Flying"
+        ],
+        "stats": "85/140/100/60/90/110"
+    },
+    "Bidoof": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "59/45/40/35/40/31"
+    },
+    "Bibarel": {
+        "types": [
+            "Normal",
+            "Water"
+        ],
+        "stats": "79/85/60/55/60/71"
+    },
+    "Kricketot": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "37/25/41/25/41/25"
+    },
+    "Kricketune": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "77/85/51/55/51/65"
+    },
+    "Shinx": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "45/65/34/40/34/45"
+    },
+    "Luxio": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/85/49/60/49/60"
+    },
+    "Luxray": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "80/120/79/95/79/70"
+    },
+    "Budew": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "40/30/35/50/70/55"
+    },
+    "Roserade": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "60/70/65/125/105/90"
+    },
+    "Cranidos": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "67/125/40/30/30/58"
+    },
+    "Rampardos": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "97/165/60/65/50/58"
+    },
+    "Shieldon": {
+        "types": [
+            "Rock",
+            "Steel"
+        ],
+        "stats": "30/42/118/42/88/30"
+    },
+    "Bastiodon": {
+        "types": [
+            "Rock",
+            "Steel"
+        ],
+        "stats": "60/52/168/47/138/30"
+    },
+    "Burmy": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "40/29/45/29/45/36"
+    },
+    "Wormadam": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "stats": "60/59/85/79/105/36"
+    },
+    "Wormadam-Sandy": {
+        "types": [
+            "Bug",
+            "Ground"
+        ],
+        "stats": "60/79/105/59/85/36"
+    },
+    "Wormadam-Trash": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "60/69/95/69/95/36"
+    },
+    "Mothim": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "70/94/50/94/50/66"
+    },
+    "Combee": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "30/30/42/30/42/70"
+    },
+    "Vespiquen": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "70/80/102/80/102/40"
+    },
+    "Pachirisu": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/45/70/45/90/95"
+    },
+    "Buizel": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/65/35/60/30/85"
+    },
+    "Floatzel": {
+        "types": [
+            "Water"
+        ],
+        "stats": "85/105/55/85/50/115"
+    },
+    "Cherubi": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "45/35/45/62/53/35"
+    },
+    "Cherrim": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/60/70/87/78/85"
+    },
+    "Cherrim-Sunshine": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/60/70/87/78/85"
+    },
+    "Shellos": {
+        "types": [
+            "Water"
+        ],
+        "stats": "76/48/48/57/62/34"
+    },
+    "Gastrodon": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "111/83/68/92/82/39"
+    },
+    "Ambipom": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "75/100/66/60/66/115"
+    },
+    "Drifloon": {
+        "types": [
+            "Ghost",
+            "Flying"
+        ],
+        "stats": "90/50/34/60/44/70"
+    },
+    "Drifblim": {
+        "types": [
+            "Ghost",
+            "Flying"
+        ],
+        "stats": "150/80/44/90/54/80"
+    },
+    "Buneary": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/66/44/44/56/85"
+    },
+    "Lopunny": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "65/76/84/54/96/105"
+    },
+    "Lopunny-Mega": {
+        "types": [
+            "Normal",
+            "Fighting"
+        ],
+        "stats": "65/136/94/54/96/135"
+    },
+    "Mismagius": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "60/60/60/105/105/105"
+    },
+    "Honchkrow": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "100/125/52/105/52/71"
+    },
+    "Glameow": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "49/55/42/42/37/85"
+    },
+    "Purugly": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "71/82/64/64/59/112"
+    },
+    "Chingling": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "45/30/50/65/50/45"
+    },
+    "Stunky": {
+        "types": [
+            "Poison",
+            "Dark"
+        ],
+        "stats": "63/63/47/41/41/74"
+    },
+    "Skuntank": {
+        "types": [
+            "Poison",
+            "Dark"
+        ],
+        "stats": "103/93/67/71/61/84"
+    },
+    "Bronzor": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "57/24/86/24/86/23"
+    },
+    "Bronzong": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "67/89/116/79/116/33"
+    },
+    "Bonsly": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "50/80/95/10/45/10"
+    },
+    "Mime Jr.": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "20/25/45/70/90/60"
+    },
+    "Happiny": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "100/5/5/15/65/30"
+    },
+    "Chatot": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "76/65/45/92/42/91"
+    },
+    "Spiritomb": {
+        "types": [
+            "Ghost",
+            "Dark"
+        ],
+        "stats": "50/92/108/92/108/35"
+    },
+    "Gible": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "58/70/45/40/45/42"
+    },
+    "Gabite": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "68/90/65/50/55/82"
+    },
+    "Garchomp": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "108/130/95/80/85/102"
+    },
+    "Garchomp-Mega": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "108/170/115/120/95/92"
+    },
+    "Garchomp-Mega-Z": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "108/130/85/141/85/151"
+    },
+    "Munchlax": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "135/85/40/40/85/5"
+    },
+    "Riolu": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "40/70/40/35/40/60"
+    },
+    "Lucario": {
+        "types": [
+            "Fighting",
+            "Steel"
+        ],
+        "stats": "70/110/70/115/70/90"
+    },
+    "Lucario-Mega": {
+        "types": [
+            "Fighting",
+            "Steel"
+        ],
+        "stats": "70/145/88/140/70/112"
+    },
+    "Lucario-Mega-Z": {
+        "types": [
+            "Fighting",
+            "Steel"
+        ],
+        "stats": "70/100/70/164/70/151"
+    },
+    "Hippopotas": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "68/72/78/38/42/32"
+    },
+    "Hippowdon": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "108/112/118/68/72/47"
+    },
+    "Skorupi": {
+        "types": [
+            "Poison",
+            "Bug"
+        ],
+        "stats": "40/50/90/30/55/65"
+    },
+    "Drapion": {
+        "types": [
+            "Poison",
+            "Dark"
+        ],
+        "stats": "70/90/110/60/75/95"
+    },
+    "Croagunk": {
+        "types": [
+            "Poison",
+            "Fighting"
+        ],
+        "stats": "48/61/40/61/40/50"
+    },
+    "Toxicroak": {
+        "types": [
+            "Poison",
+            "Fighting"
+        ],
+        "stats": "83/106/65/86/65/85"
+    },
+    "Carnivine": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "74/100/72/90/72/46"
+    },
+    "Finneon": {
+        "types": [
+            "Water"
+        ],
+        "stats": "49/49/56/49/61/66"
+    },
+    "Lumineon": {
+        "types": [
+            "Water"
+        ],
+        "stats": "69/69/76/69/86/91"
+    },
+    "Mantyke": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "45/20/50/60/120/50"
+    },
+    "Snover": {
+        "types": [
+            "Grass",
+            "Ice"
+        ],
+        "stats": "60/62/50/62/60/40"
+    },
+    "Abomasnow": {
+        "types": [
+            "Grass",
+            "Ice"
+        ],
+        "stats": "90/92/75/92/85/60"
+    },
+    "Abomasnow-Mega": {
+        "types": [
+            "Grass",
+            "Ice"
+        ],
+        "stats": "90/132/105/132/105/30"
+    },
+    "Weavile": {
+        "types": [
+            "Dark",
+            "Ice"
+        ],
+        "stats": "70/120/65/45/85/125"
+    },
+    "Magnezone": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "stats": "70/70/115/130/90/60"
+    },
+    "Lickilicky": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "110/85/95/80/95/50"
+    },
+    "Rhyperior": {
+        "types": [
+            "Ground",
+            "Rock"
+        ],
+        "stats": "115/140/130/55/55/40"
+    },
+    "Tangrowth": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "100/100/125/110/50/50"
+    },
+    "Electivire": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "75/123/67/95/85/95"
+    },
+    "Magmortar": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "75/95/67/125/95/83"
+    },
+    "Togekiss": {
+        "types": [
+            "Fairy",
+            "Flying"
+        ],
+        "stats": "85/50/95/120/115/80"
+    },
+    "Yanmega": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "86/76/86/116/56/95"
+    },
+    "Leafeon": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "65/110/130/60/65/95"
+    },
+    "Glaceon": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "65/60/110/130/95/65"
+    },
+    "Gliscor": {
+        "types": [
+            "Ground",
+            "Flying"
+        ],
+        "stats": "75/95/125/45/75/95"
+    },
+    "Mamoswine": {
+        "types": [
+            "Ice",
+            "Ground"
+        ],
+        "stats": "110/130/80/70/60/80"
+    },
+    "Porygon-Z": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "85/80/70/135/75/90"
+    },
+    "Gallade": {
+        "types": [
+            "Psychic",
+            "Fighting"
+        ],
+        "stats": "68/125/65/65/115/80"
+    },
+    "Gallade-Mega": {
+        "types": [
+            "Psychic",
+            "Fighting"
+        ],
+        "stats": "68/165/95/65/115/110"
+    },
+    "Probopass": {
+        "types": [
+            "Rock",
+            "Steel"
+        ],
+        "stats": "60/55/145/75/150/40"
+    },
+    "Dusknoir": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "45/100/135/65/135/45"
+    },
+    "Froslass": {
+        "types": [
+            "Ice",
+            "Ghost"
+        ],
+        "stats": "70/80/70/80/70/110"
+    },
+    "Froslass-Mega": {
+        "types": [
+            "Ice",
+            "Ghost"
+        ],
+        "stats": "70/80/70/140/100/120"
+    },
+    "Rotom": {
+        "types": [
+            "Electric",
+            "Ghost"
+        ],
+        "stats": "50/50/77/95/77/91"
+    },
+    "Rotom-Heat": {
+        "types": [
+            "Electric",
+            "Fire"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Rotom-Wash": {
+        "types": [
+            "Electric",
+            "Water"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Rotom-Frost": {
+        "types": [
+            "Electric",
+            "Ice"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Rotom-Fan": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Rotom-Mow": {
+        "types": [
+            "Electric",
+            "Grass"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Uxie": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "75/75/130/75/130/95"
+    },
+    "Mesprit": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "80/105/105/105/105/80"
+    },
+    "Azelf": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "75/125/70/125/70/115"
+    },
+    "Dialga": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "100/120/120/150/100/90"
+    },
+    "Dialga-Origin": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "100/100/120/150/120/90"
+    },
+    "Palkia": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "90/120/100/150/120/100"
+    },
+    "Palkia-Origin": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "90/100/100/150/120/120"
+    },
+    "Heatran": {
+        "types": [
+            "Fire",
+            "Steel"
+        ],
+        "stats": "91/90/106/130/106/77"
+    },
+    "Heatran-Mega": {
+        "types": [
+            "Fire",
+            "Steel"
+        ],
+        "stats": "91/120/106/175/141/67"
+    },
+    "Regigigas": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "110/160/110/80/110/100"
+    },
+    "Giratina": {
+        "types": [
+            "Ghost",
+            "Dragon"
+        ],
+        "stats": "150/100/120/100/120/90"
+    },
+    "Giratina-Origin": {
+        "types": [
+            "Ghost",
+            "Dragon"
+        ],
+        "stats": "150/120/100/120/100/90"
+    },
+    "Cresselia": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "120/70/110/75/120/85"
+    },
+    "Phione": {
+        "types": [
+            "Water"
+        ],
+        "stats": "80/80/80/80/80/80"
+    },
+    "Manaphy": {
+        "types": [
+            "Water"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Darkrai": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "70/90/90/135/90/125"
+    },
+    "Darkrai-Mega": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "70/120/130/165/130/85"
+    },
+    "Shaymin": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Shaymin-Sky": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "100/103/75/120/75/127"
+    },
+    "Arceus": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Bug": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Dark": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Dragon": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Electric": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Fairy": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Fighting": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Fire": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Flying": {
+        "types": [
+            "Flying"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Ghost": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Grass": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Ground": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Ice": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Poison": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Psychic": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Rock": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Steel": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Arceus-Water": {
+        "types": [
+            "Water"
+        ],
+        "stats": "120/120/120/120/120/120"
+    },
+    "Victini": {
+        "types": [
+            "Psychic",
+            "Fire"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Snivy": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "45/45/55/45/55/63"
+    },
+    "Servine": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "60/60/75/60/75/83"
+    },
+    "Serperior": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "75/75/95/75/95/113"
+    },
+    "Tepig": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "65/63/45/45/45/45"
+    },
+    "Pignite": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "90/93/55/70/55/55"
+    },
+    "Emboar": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "110/123/65/100/65/65"
+    },
+    "Emboar-Mega": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "110/148/75/110/110/75"
+    },
+    "Oshawott": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/55/45/63/45/45"
+    },
+    "Dewott": {
+        "types": [
+            "Water"
+        ],
+        "stats": "75/75/60/83/60/60"
+    },
+    "Samurott": {
+        "types": [
+            "Water"
+        ],
+        "stats": "95/100/85/108/70/70"
+    },
+    "Samurott-Hisui": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "90/108/80/100/65/85"
+    },
+    "Patrat": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "45/55/39/35/39/42"
+    },
+    "Watchog": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "60/85/69/60/69/77"
+    },
+    "Lillipup": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "45/60/45/25/45/55"
+    },
+    "Herdier": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "65/80/65/35/65/60"
+    },
+    "Stoutland": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "85/110/90/45/90/80"
+    },
+    "Purrloin": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "41/50/37/50/37/66"
+    },
+    "Liepard": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "64/88/50/88/50/106"
+    },
+    "Pansage": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "50/53/48/53/48/64"
+    },
+    "Simisage": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "75/98/63/98/63/101"
+    },
+    "Pansear": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "50/53/48/53/48/64"
+    },
+    "Simisear": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "75/98/63/98/63/101"
+    },
+    "Panpour": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/53/48/53/48/64"
+    },
+    "Simipour": {
+        "types": [
+            "Water"
+        ],
+        "stats": "75/98/63/98/63/101"
+    },
+    "Munna": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "76/25/45/67/55/24"
+    },
+    "Musharna": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "116/55/85/107/95/29"
+    },
+    "Pidove": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "50/55/50/36/30/43"
+    },
+    "Tranquill": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "62/77/62/50/42/65"
+    },
+    "Unfezant": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "80/115/80/65/55/93"
+    },
+    "Blitzle": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "45/60/32/50/32/76"
+    },
+    "Zebstrika": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "75/100/63/80/63/116"
+    },
+    "Roggenrola": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "55/75/85/25/25/15"
+    },
+    "Boldore": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "70/105/105/50/40/20"
+    },
+    "Gigalith": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "85/135/130/60/80/25"
+    },
+    "Woobat": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "65/45/43/55/43/72"
+    },
+    "Swoobat": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "67/57/55/77/55/114"
+    },
+    "Drilbur": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "60/85/40/30/45/68"
+    },
+    "Excadrill": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "110/135/60/50/65/88"
+    },
+    "Excadrill-Mega": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "110/165/100/65/65/103"
+    },
+    "Audino": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "103/60/86/60/86/50"
+    },
+    "Audino-Mega": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "stats": "103/60/126/80/126/50"
+    },
+    "Timburr": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "75/80/55/25/35/35"
+    },
+    "Gurdurr": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "85/105/85/40/50/40"
+    },
+    "Conkeldurr": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "105/140/95/55/65/45"
+    },
+    "Tympole": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/50/40/50/40/64"
+    },
+    "Palpitoad": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "75/65/55/65/55/69"
+    },
+    "Seismitoad": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "105/95/75/85/75/74"
+    },
+    "Throh": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "120/100/85/30/85/45"
+    },
+    "Sawk": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "75/125/75/30/75/85"
+    },
+    "Sewaddle": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "stats": "45/53/70/40/60/42"
+    },
+    "Swadloon": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "stats": "55/63/90/50/80/42"
+    },
+    "Leavanny": {
+        "types": [
+            "Bug",
+            "Grass"
+        ],
+        "stats": "75/103/80/70/80/92"
+    },
+    "Venipede": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "30/45/59/30/39/57"
+    },
+    "Whirlipede": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "40/55/99/40/79/47"
+    },
+    "Scolipede": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "60/100/89/55/69/112"
+    },
+    "Scolipede-Mega": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "60/140/149/75/99/62"
+    },
+    "Cottonee": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "40/27/60/37/50/66"
+    },
+    "Whimsicott": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "60/67/85/77/75/116"
+    },
+    "Petilil": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "45/35/50/70/50/30"
+    },
+    "Lilligant": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/60/75/110/75/90"
+    },
+    "Lilligant-Hisui": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "70/105/75/50/75/105"
+    },
+    "Basculin": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/92/65/80/55/98"
+    },
+    "Basculin-Blue-Striped": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/92/65/80/55/98"
+    },
+    "Basculin-White-Striped": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/92/65/80/55/98"
+    },
+    "Sandile": {
+        "types": [
+            "Ground",
+            "Dark"
+        ],
+        "stats": "50/72/35/35/35/65"
+    },
+    "Krokorok": {
+        "types": [
+            "Ground",
+            "Dark"
+        ],
+        "stats": "60/82/45/45/45/74"
+    },
+    "Krookodile": {
+        "types": [
+            "Ground",
+            "Dark"
+        ],
+        "stats": "95/117/80/65/70/92"
+    },
+    "Darumaka": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "70/90/45/15/45/50"
+    },
+    "Darumaka-Galar": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "70/90/45/15/45/50"
+    },
+    "Darmanitan": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "105/140/55/30/55/95"
+    },
+    "Darmanitan-Zen": {
+        "types": [
+            "Fire",
+            "Psychic"
+        ],
+        "stats": "105/30/105/140/105/55"
+    },
+    "Darmanitan-Galar": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "105/140/55/30/55/95"
+    },
+    "Darmanitan-Galar-Zen": {
+        "types": [
+            "Ice",
+            "Fire"
+        ],
+        "stats": "105/160/55/30/55/135"
+    },
+    "Maractus": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "75/86/67/106/67/60"
+    },
+    "Dwebble": {
+        "types": [
+            "Bug",
+            "Rock"
+        ],
+        "stats": "50/65/85/35/35/55"
+    },
+    "Crustle": {
+        "types": [
+            "Bug",
+            "Rock"
+        ],
+        "stats": "70/105/125/65/75/45"
+    },
+    "Scraggy": {
+        "types": [
+            "Dark",
+            "Fighting"
+        ],
+        "stats": "50/75/70/35/70/48"
+    },
+    "Scrafty": {
+        "types": [
+            "Dark",
+            "Fighting"
+        ],
+        "stats": "65/90/115/45/115/58"
+    },
+    "Scrafty-Mega": {
+        "types": [
+            "Dark",
+            "Fighting"
+        ],
+        "stats": "65/130/135/55/135/68"
+    },
+    "Sigilyph": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "72/58/80/103/80/97"
+    },
+    "Yamask": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "38/30/85/55/65/30"
+    },
+    "Yamask-Galar": {
+        "types": [
+            "Ground",
+            "Ghost"
+        ],
+        "stats": "38/55/85/30/65/30"
+    },
+    "Cofagrigus": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "58/50/145/95/105/30"
+    },
+    "Tirtouga": {
+        "types": [
+            "Water",
+            "Rock"
+        ],
+        "stats": "54/78/103/53/45/22"
+    },
+    "Carracosta": {
+        "types": [
+            "Water",
+            "Rock"
+        ],
+        "stats": "74/108/133/83/65/32"
+    },
+    "Archen": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "55/112/45/74/45/70"
+    },
+    "Archeops": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "75/140/65/112/65/110"
+    },
+    "Trubbish": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "50/50/62/40/62/65"
+    },
+    "Garbodor": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "80/95/82/60/82/75"
+    },
+    "Garbodor-Gmax": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "80/95/82/60/82/75"
+    },
+    "Zorua": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "40/65/40/80/40/65"
+    },
+    "Zorua-Hisui": {
+        "types": [
+            "Normal",
+            "Ghost"
+        ],
+        "stats": "35/60/40/85/40/70"
+    },
+    "Zoroark": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "60/105/60/120/60/105"
+    },
+    "Zoroark-Hisui": {
+        "types": [
+            "Normal",
+            "Ghost"
+        ],
+        "stats": "55/100/60/125/60/110"
+    },
+    "Minccino": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/50/40/40/40/75"
+    },
+    "Cinccino": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "75/95/60/65/60/115"
+    },
+    "Gothita": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "45/30/50/55/65/45"
+    },
+    "Gothorita": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "60/45/70/75/85/55"
+    },
+    "Gothitelle": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "70/55/95/95/110/65"
+    },
+    "Solosis": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "45/30/40/105/50/20"
+    },
+    "Duosion": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "65/40/50/125/60/30"
+    },
+    "Reuniclus": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "110/65/75/125/85/30"
+    },
+    "Ducklett": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "62/44/50/44/50/55"
+    },
+    "Swanna": {
+        "types": [
+            "Water",
+            "Flying"
+        ],
+        "stats": "75/87/63/87/63/98"
+    },
+    "Vanillite": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "36/50/50/65/60/44"
+    },
+    "Vanillish": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "51/65/65/80/75/59"
+    },
+    "Vanilluxe": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "71/95/85/110/95/79"
+    },
+    "Deerling": {
+        "types": [
+            "Normal",
+            "Grass"
+        ],
+        "stats": "60/60/50/40/50/75"
+    },
+    "Sawsbuck": {
+        "types": [
+            "Normal",
+            "Grass"
+        ],
+        "stats": "80/100/70/60/70/95"
+    },
+    "Emolga": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "55/75/60/75/60/103"
+    },
+    "Karrablast": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "50/75/45/40/45/60"
+    },
+    "Escavalier": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "70/135/105/60/105/20"
+    },
+    "Foongus": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "69/55/45/55/55/15"
+    },
+    "Amoonguss": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "114/85/70/85/80/30"
+    },
+    "Frillish": {
+        "types": [
+            "Water",
+            "Ghost"
+        ],
+        "stats": "55/40/50/65/85/40"
+    },
+    "Jellicent": {
+        "types": [
+            "Water",
+            "Ghost"
+        ],
+        "stats": "100/60/70/85/105/60"
+    },
+    "Alomomola": {
+        "types": [
+            "Water"
+        ],
+        "stats": "165/75/80/40/45/65"
+    },
+    "Joltik": {
+        "types": [
+            "Bug",
+            "Electric"
+        ],
+        "stats": "50/47/50/57/50/65"
+    },
+    "Galvantula": {
+        "types": [
+            "Bug",
+            "Electric"
+        ],
+        "stats": "70/77/60/97/60/108"
+    },
+    "Ferroseed": {
+        "types": [
+            "Grass",
+            "Steel"
+        ],
+        "stats": "44/50/91/24/86/10"
+    },
+    "Ferrothorn": {
+        "types": [
+            "Grass",
+            "Steel"
+        ],
+        "stats": "74/94/131/54/116/20"
+    },
+    "Klink": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "40/55/70/45/60/30"
+    },
+    "Klang": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "60/80/95/70/85/50"
+    },
+    "Klinklang": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "60/100/115/70/85/90"
+    },
+    "Tynamo": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "35/55/40/45/40/60"
+    },
+    "Eelektrik": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "65/85/70/75/70/40"
+    },
+    "Eelektross": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "85/115/80/105/80/50"
+    },
+    "Eelektross-Mega": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "85/145/80/135/90/80"
+    },
+    "Elgyem": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "55/55/55/85/55/30"
+    },
+    "Beheeyem": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "75/75/75/125/95/40"
+    },
+    "Litwick": {
+        "types": [
+            "Ghost",
+            "Fire"
+        ],
+        "stats": "50/30/55/65/55/20"
+    },
+    "Lampent": {
+        "types": [
+            "Ghost",
+            "Fire"
+        ],
+        "stats": "60/40/60/95/60/55"
+    },
+    "Chandelure": {
+        "types": [
+            "Ghost",
+            "Fire"
+        ],
+        "stats": "60/55/90/145/90/80"
+    },
+    "Chandelure-Mega": {
+        "types": [
+            "Ghost",
+            "Fire"
+        ],
+        "stats": "60/75/110/175/110/90"
+    },
+    "Axew": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "46/87/60/30/40/57"
+    },
+    "Fraxure": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "66/117/70/40/50/67"
+    },
+    "Haxorus": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "76/147/90/60/70/97"
+    },
+    "Cubchoo": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "55/70/40/60/40/40"
+    },
+    "Beartic": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "95/130/80/70/80/50"
+    },
+    "Cryogonal": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "80/50/50/95/135/105"
+    },
+    "Shelmet": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "50/40/85/40/65/25"
+    },
+    "Accelgor": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "80/70/40/100/60/145"
+    },
+    "Stunfisk": {
+        "types": [
+            "Ground",
+            "Electric"
+        ],
+        "stats": "109/66/84/81/99/32"
+    },
+    "Stunfisk-Galar": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "109/81/99/66/84/32"
+    },
+    "Mienfoo": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "45/85/50/55/50/65"
+    },
+    "Mienshao": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "65/125/60/95/60/105"
+    },
+    "Druddigon": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "77/120/90/60/90/48"
+    },
+    "Golett": {
+        "types": [
+            "Ground",
+            "Ghost"
+        ],
+        "stats": "59/74/50/35/50/35"
+    },
+    "Golurk": {
+        "types": [
+            "Ground",
+            "Ghost"
+        ],
+        "stats": "89/124/80/55/80/55"
+    },
+    "Golurk-Mega": {
+        "types": [
+            "Ground",
+            "Ghost"
+        ],
+        "stats": "89/159/105/70/105/55"
+    },
+    "Pawniard": {
+        "types": [
+            "Dark",
+            "Steel"
+        ],
+        "stats": "45/85/70/40/40/60"
+    },
+    "Bisharp": {
+        "types": [
+            "Dark",
+            "Steel"
+        ],
+        "stats": "65/125/100/60/70/70"
+    },
+    "Bouffalant": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "95/110/95/40/95/55"
+    },
+    "Rufflet": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "70/83/50/37/50/60"
+    },
+    "Braviary": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "100/123/75/57/75/80"
+    },
+    "Braviary-Hisui": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "110/83/70/112/70/65"
+    },
+    "Vullaby": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "70/55/75/45/65/60"
+    },
+    "Mandibuzz": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "110/65/105/55/95/80"
+    },
+    "Heatmor": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "85/97/66/105/66/65"
+    },
+    "Durant": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "58/109/112/48/48/109"
+    },
+    "Deino": {
+        "types": [
+            "Dark",
+            "Dragon"
+        ],
+        "stats": "52/65/50/45/50/38"
+    },
+    "Zweilous": {
+        "types": [
+            "Dark",
+            "Dragon"
+        ],
+        "stats": "72/85/70/65/70/58"
+    },
+    "Hydreigon": {
+        "types": [
+            "Dark",
+            "Dragon"
+        ],
+        "stats": "92/105/90/125/90/98"
+    },
+    "Larvesta": {
+        "types": [
+            "Bug",
+            "Fire"
+        ],
+        "stats": "55/85/55/50/55/60"
+    },
+    "Volcarona": {
+        "types": [
+            "Bug",
+            "Fire"
+        ],
+        "stats": "85/60/65/135/105/100"
+    },
+    "Cobalion": {
+        "types": [
+            "Steel",
+            "Fighting"
+        ],
+        "stats": "91/90/129/90/72/108"
+    },
+    "Terrakion": {
+        "types": [
+            "Rock",
+            "Fighting"
+        ],
+        "stats": "91/129/90/72/90/108"
+    },
+    "Virizion": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "91/90/72/90/129/108"
+    },
+    "Tornadus": {
+        "types": [
+            "Flying"
+        ],
+        "stats": "79/115/70/125/80/111"
+    },
+    "Tornadus-Therian": {
+        "types": [
+            "Flying"
+        ],
+        "stats": "79/100/80/110/90/121"
+    },
+    "Thundurus": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "79/115/70/125/80/111"
+    },
+    "Thundurus-Therian": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "79/105/70/145/80/101"
+    },
+    "Reshiram": {
+        "types": [
+            "Dragon",
+            "Fire"
+        ],
+        "stats": "100/120/100/150/120/90"
+    },
+    "Zekrom": {
+        "types": [
+            "Dragon",
+            "Electric"
+        ],
+        "stats": "100/150/120/120/100/90"
+    },
+    "Landorus": {
+        "types": [
+            "Ground",
+            "Flying"
+        ],
+        "stats": "89/125/90/115/80/101"
+    },
+    "Landorus-Therian": {
+        "types": [
+            "Ground",
+            "Flying"
+        ],
+        "stats": "89/145/90/105/80/91"
+    },
+    "Kyurem": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "125/130/90/130/90/95"
+    },
+    "Kyurem-Black": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "125/170/100/120/90/95"
+    },
+    "Kyurem-White": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "125/120/90/170/100/95"
+    },
+    "Keldeo": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "stats": "91/72/90/129/90/108"
+    },
+    "Keldeo-Resolute": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "stats": "91/72/90/129/90/108"
+    },
+    "Meloetta": {
+        "types": [
+            "Normal",
+            "Psychic"
+        ],
+        "stats": "100/77/77/128/128/90"
+    },
+    "Meloetta-Pirouette": {
+        "types": [
+            "Normal",
+            "Fighting"
+        ],
+        "stats": "100/128/90/77/77/128"
+    },
+    "Genesect": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "71/120/95/120/95/99"
+    },
+    "Genesect-Douse": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "71/120/95/120/95/99"
+    },
+    "Genesect-Shock": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "71/120/95/120/95/99"
+    },
+    "Genesect-Burn": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "71/120/95/120/95/99"
+    },
+    "Genesect-Chill": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "71/120/95/120/95/99"
+    },
+    "Chespin": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "56/61/65/48/45/38"
+    },
+    "Quilladin": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "61/78/95/56/58/57"
+    },
+    "Chesnaught": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "88/107/122/74/75/64"
+    },
+    "Chesnaught-Mega": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "88/137/172/74/115/44"
+    },
+    "Fennekin": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "40/45/40/62/60/60"
+    },
+    "Braixen": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "59/59/58/90/70/73"
+    },
+    "Delphox": {
+        "types": [
+            "Fire",
+            "Psychic"
+        ],
+        "stats": "75/69/72/114/100/104"
+    },
+    "Delphox-Mega": {
+        "types": [
+            "Fire",
+            "Psychic"
+        ],
+        "stats": "75/69/72/159/125/134"
+    },
+    "Froakie": {
+        "types": [
+            "Water"
+        ],
+        "stats": "41/56/40/62/44/71"
+    },
+    "Frogadier": {
+        "types": [
+            "Water"
+        ],
+        "stats": "54/63/52/83/56/97"
+    },
+    "Greninja": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "72/95/67/103/71/122"
+    },
+    "Greninja-Bond": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "72/95/67/103/71/122"
+    },
+    "Greninja-Ash": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "72/145/67/153/71/132"
+    },
+    "Greninja-Mega": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "72/125/77/133/81/142"
+    },
+    "Bunnelby": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "38/36/38/32/36/57"
+    },
+    "Diggersby": {
+        "types": [
+            "Normal",
+            "Ground"
+        ],
+        "stats": "85/56/77/50/77/78"
+    },
+    "Fletchling": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "45/50/43/40/38/62"
+    },
+    "Fletchinder": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "62/73/55/56/52/84"
+    },
+    "Talonflame": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "78/81/71/74/69/126"
+    },
+    "Scatterbug": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "38/35/40/27/25/35"
+    },
+    "Spewpa": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "45/22/60/27/30/29"
+    },
+    "Vivillon": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "80/52/50/90/50/89"
+    },
+    "Vivillon-Fancy": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "80/52/50/90/50/89"
+    },
+    "Vivillon-Pokeball": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "80/52/50/90/50/89"
+    },
+    "Litleo": {
+        "types": [
+            "Fire",
+            "Normal"
+        ],
+        "stats": "62/50/58/73/54/72"
+    },
+    "Pyroar": {
+        "types": [
+            "Fire",
+            "Normal"
+        ],
+        "stats": "86/68/72/109/66/106"
+    },
+    "Pyroar-Mega": {
+        "types": [
+            "Fire",
+            "Normal"
+        ],
+        "stats": "86/88/92/129/86/126"
+    },
+    "Flabébé": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "44/38/39/61/79/42"
+    },
+    "Floette": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "54/45/47/75/98/52"
+    },
+    "Floette-Eternal": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "74/65/67/125/128/92"
+    },
+    "Floette-Mega": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "74/85/87/155/148/102"
+    },
+    "Florges": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "78/65/68/112/154/75"
+    },
+    "Skiddo": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "66/65/48/62/57/52"
+    },
+    "Gogoat": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "123/100/62/97/81/68"
+    },
+    "Pancham": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "67/82/62/46/48/43"
+    },
+    "Pangoro": {
+        "types": [
+            "Fighting",
+            "Dark"
+        ],
+        "stats": "95/124/78/69/71/58"
+    },
+    "Furfrou": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "75/80/60/65/90/102"
+    },
+    "Espurr": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "62/48/54/63/60/68"
+    },
+    "Meowstic": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/83/81/104"
+    },
+    "Meowstic-F": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/83/81/104"
+    },
+    "Meowstic-M-Mega": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/143/101/124"
+    },
+    "Meowstic-F-Mega": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/143/101/124"
+    },
+    "Honedge": {
+        "types": [
+            "Steel",
+            "Ghost"
+        ],
+        "stats": "45/80/100/35/37/28"
+    },
+    "Doublade": {
+        "types": [
+            "Steel",
+            "Ghost"
+        ],
+        "stats": "59/110/150/45/49/35"
+    },
+    "Aegislash": {
+        "types": [
+            "Steel",
+            "Ghost"
+        ],
+        "stats": "60/50/140/50/140/60"
+    },
+    "Aegislash-Blade": {
+        "types": [
+            "Steel",
+            "Ghost"
+        ],
+        "stats": "60/140/50/140/50/60"
+    },
+    "Spritzee": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "78/52/60/63/65/23"
+    },
+    "Aromatisse": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "101/72/72/99/89/29"
+    },
+    "Swirlix": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "62/48/66/59/57/49"
+    },
+    "Slurpuff": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "82/80/86/85/75/72"
+    },
+    "Inkay": {
+        "types": [
+            "Dark",
+            "Psychic"
+        ],
+        "stats": "53/54/53/37/46/45"
+    },
+    "Malamar": {
+        "types": [
+            "Dark",
+            "Psychic"
+        ],
+        "stats": "86/92/88/68/75/73"
+    },
+    "Malamar-Mega": {
+        "types": [
+            "Dark",
+            "Psychic"
+        ],
+        "stats": "86/102/88/98/120/88"
+    },
+    "Binacle": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "stats": "42/52/67/39/56/50"
+    },
+    "Barbaracle": {
+        "types": [
+            "Rock",
+            "Water"
+        ],
+        "stats": "72/105/115/54/86/68"
+    },
+    "Barbaracle-Mega": {
+        "types": [
+            "Rock",
+            "Fighting"
+        ],
+        "stats": "72/140/130/64/106/88"
+    },
+    "Skrelp": {
+        "types": [
+            "Poison",
+            "Water"
+        ],
+        "stats": "50/60/60/60/60/30"
+    },
+    "Dragalge": {
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": "65/75/90/97/123/44"
+    },
+    "Dragalge-Mega": {
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": "65/85/105/132/163/44"
+    },
+    "Clauncher": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/53/62/58/63/44"
+    },
+    "Clawitzer": {
+        "types": [
+            "Water"
+        ],
+        "stats": "71/73/88/120/89/59"
+    },
+    "Helioptile": {
+        "types": [
+            "Electric",
+            "Normal"
+        ],
+        "stats": "44/38/33/61/43/70"
+    },
+    "Heliolisk": {
+        "types": [
+            "Electric",
+            "Normal"
+        ],
+        "stats": "62/55/52/109/94/109"
+    },
+    "Tyrunt": {
+        "types": [
+            "Rock",
+            "Dragon"
+        ],
+        "stats": "58/89/77/45/45/48"
+    },
+    "Tyrantrum": {
+        "types": [
+            "Rock",
+            "Dragon"
+        ],
+        "stats": "82/121/119/69/59/71"
+    },
+    "Amaura": {
+        "types": [
+            "Rock",
+            "Ice"
+        ],
+        "stats": "77/59/50/67/63/46"
+    },
+    "Aurorus": {
+        "types": [
+            "Rock",
+            "Ice"
+        ],
+        "stats": "123/77/72/99/92/58"
+    },
+    "Sylveon": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "95/65/65/110/130/60"
+    },
+    "Hawlucha": {
+        "types": [
+            "Fighting",
+            "Flying"
+        ],
+        "stats": "78/92/75/74/63/118"
+    },
+    "Hawlucha-Mega": {
+        "types": [
+            "Fighting",
+            "Flying"
+        ],
+        "stats": "78/137/100/74/93/118"
+    },
+    "Dedenne": {
+        "types": [
+            "Electric",
+            "Fairy"
+        ],
+        "stats": "67/58/57/81/67/101"
+    },
+    "Carbink": {
+        "types": [
+            "Rock",
+            "Fairy"
+        ],
+        "stats": "50/50/150/50/150/50"
+    },
+    "Goomy": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "45/50/35/55/75/40"
+    },
+    "Sliggoo": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "68/75/53/83/113/60"
+    },
+    "Sliggoo-Hisui": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "58/75/83/83/113/40"
+    },
+    "Goodra": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "90/100/70/110/150/80"
+    },
+    "Goodra-Hisui": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "80/100/100/110/150/60"
+    },
+    "Klefki": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "57/80/91/80/87/75"
+    },
+    "Phantump": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "43/70/48/50/60/38"
+    },
+    "Trevenant": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "85/110/76/65/82/56"
+    },
+    "Pumpkaboo": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "49/66/70/44/55/51"
+    },
+    "Pumpkaboo-Small": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "44/66/70/44/55/56"
+    },
+    "Pumpkaboo-Large": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "54/66/70/44/55/46"
+    },
+    "Pumpkaboo-Super": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "59/66/70/44/55/41"
+    },
+    "Gourgeist": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "65/90/122/58/75/84"
+    },
+    "Gourgeist-Small": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "55/85/122/58/75/99"
+    },
+    "Gourgeist-Large": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "75/95/122/58/75/69"
+    },
+    "Gourgeist-Super": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "85/100/122/58/75/54"
+    },
+    "Bergmite": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "55/69/85/32/35/28"
+    },
+    "Avalugg": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "95/117/184/44/46/28"
+    },
+    "Avalugg-Hisui": {
+        "types": [
+            "Ice",
+            "Rock"
+        ],
+        "stats": "95/127/184/34/36/38"
+    },
+    "Noibat": {
+        "types": [
+            "Flying",
+            "Dragon"
+        ],
+        "stats": "40/30/35/45/40/55"
+    },
+    "Noivern": {
+        "types": [
+            "Flying",
+            "Dragon"
+        ],
+        "stats": "85/70/80/97/80/123"
+    },
+    "Xerneas": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "126/131/95/131/98/99"
+    },
+    "Xerneas-Neutral": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "126/131/95/131/98/99"
+    },
+    "Yveltal": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "126/131/95/131/98/99"
+    },
+    "Zygarde": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "108/100/121/81/95/95"
+    },
+    "Zygarde-10%": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "54/100/71/61/85/115"
+    },
+    "Zygarde-Complete": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "216/100/121/91/95/85"
+    },
+    "Zygarde-Mega": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "216/70/91/216/85/100"
+    },
+    "Diancie": {
+        "types": [
+            "Rock",
+            "Fairy"
+        ],
+        "stats": "50/100/150/100/150/50"
+    },
+    "Diancie-Mega": {
+        "types": [
+            "Rock",
+            "Fairy"
+        ],
+        "stats": "50/160/110/160/110/110"
+    },
+    "Hoopa": {
+        "types": [
+            "Psychic",
+            "Ghost"
+        ],
+        "stats": "80/110/60/150/130/70"
+    },
+    "Hoopa-Unbound": {
+        "types": [
+            "Psychic",
+            "Dark"
+        ],
+        "stats": "80/160/60/170/130/80"
+    },
+    "Volcanion": {
+        "types": [
+            "Fire",
+            "Water"
+        ],
+        "stats": "80/110/120/130/90/70"
+    },
+    "Rowlet": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "68/55/55/50/50/42"
+    },
+    "Dartrix": {
+        "types": [
+            "Grass",
+            "Flying"
+        ],
+        "stats": "78/75/75/70/70/52"
+    },
+    "Decidueye": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "78/107/75/100/100/70"
+    },
+    "Decidueye-Hisui": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "88/112/80/95/95/60"
+    },
+    "Litten": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "45/65/40/60/40/70"
+    },
+    "Torracat": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "65/85/50/80/50/90"
+    },
+    "Incineroar": {
+        "types": [
+            "Fire",
+            "Dark"
+        ],
+        "stats": "95/115/90/80/90/60"
+    },
+    "Popplio": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/54/54/66/56/40"
+    },
+    "Brionne": {
+        "types": [
+            "Water"
+        ],
+        "stats": "60/69/69/91/81/50"
+    },
+    "Primarina": {
+        "types": [
+            "Water",
+            "Fairy"
+        ],
+        "stats": "80/74/74/126/116/60"
+    },
+    "Pikipek": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "35/75/30/30/30/65"
+    },
+    "Trumbeak": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "55/85/50/40/50/75"
+    },
+    "Toucannon": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "80/120/75/75/75/60"
+    },
+    "Yungoos": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "48/70/30/30/30/45"
+    },
+    "Gumshoos": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "88/110/60/55/60/45"
+    },
+    "Gumshoos-Totem": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "88/110/60/55/60/45"
+    },
+    "Grubbin": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "47/62/45/55/45/46"
+    },
+    "Charjabug": {
+        "types": [
+            "Bug",
+            "Electric"
+        ],
+        "stats": "57/82/95/55/75/36"
+    },
+    "Vikavolt": {
+        "types": [
+            "Bug",
+            "Electric"
+        ],
+        "stats": "77/70/90/145/75/43"
+    },
+    "Vikavolt-Totem": {
+        "types": [
+            "Bug",
+            "Electric"
+        ],
+        "stats": "77/70/90/145/75/43"
+    },
+    "Crabrawler": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "47/82/57/42/47/63"
+    },
+    "Crabominable": {
+        "types": [
+            "Fighting",
+            "Ice"
+        ],
+        "stats": "97/132/77/62/67/43"
+    },
+    "Crabominable-Mega": {
+        "types": [
+            "Fighting",
+            "Ice"
+        ],
+        "stats": "97/157/122/62/107/33"
+    },
+    "Oricorio": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "75/70/70/98/70/93"
+    },
+    "Oricorio-Pom-Pom": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "75/70/70/98/70/93"
+    },
+    "Oricorio-Pa'u": {
+        "types": [
+            "Psychic",
+            "Flying"
+        ],
+        "stats": "75/70/70/98/70/93"
+    },
+    "Oricorio-Sensu": {
+        "types": [
+            "Ghost",
+            "Flying"
+        ],
+        "stats": "75/70/70/98/70/93"
+    },
+    "Cutiefly": {
+        "types": [
+            "Bug",
+            "Fairy"
+        ],
+        "stats": "40/45/40/55/40/84"
+    },
+    "Ribombee": {
+        "types": [
+            "Bug",
+            "Fairy"
+        ],
+        "stats": "60/55/60/95/70/124"
+    },
+    "Ribombee-Totem": {
+        "types": [
+            "Bug",
+            "Fairy"
+        ],
+        "stats": "60/55/60/95/70/124"
+    },
+    "Rockruff": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "45/65/40/30/40/60"
+    },
+    "Rockruff-Dusk": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "45/65/40/30/40/60"
+    },
+    "Lycanroc": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "75/115/65/55/65/112"
+    },
+    "Lycanroc-Midnight": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "85/115/75/55/75/82"
+    },
+    "Lycanroc-Dusk": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "75/117/65/55/65/110"
+    },
+    "Wishiwashi": {
+        "types": [
+            "Water"
+        ],
+        "stats": "45/20/20/25/25/40"
+    },
+    "Wishiwashi-School": {
+        "types": [
+            "Water"
+        ],
+        "stats": "45/140/130/140/135/30"
+    },
+    "Mareanie": {
+        "types": [
+            "Poison",
+            "Water"
+        ],
+        "stats": "50/53/62/43/52/45"
+    },
+    "Toxapex": {
+        "types": [
+            "Poison",
+            "Water"
+        ],
+        "stats": "50/63/152/53/142/35"
+    },
+    "Mudbray": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "70/100/70/45/55/45"
+    },
+    "Mudsdale": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "100/125/100/55/85/35"
+    },
+    "Dewpider": {
+        "types": [
+            "Water",
+            "Bug"
+        ],
+        "stats": "38/40/52/40/72/27"
+    },
+    "Araquanid": {
+        "types": [
+            "Water",
+            "Bug"
+        ],
+        "stats": "68/70/92/50/132/42"
+    },
+    "Araquanid-Totem": {
+        "types": [
+            "Water",
+            "Bug"
+        ],
+        "stats": "68/70/92/50/132/42"
+    },
+    "Fomantis": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "40/55/35/50/35/35"
+    },
+    "Lurantis": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/105/90/80/90/45"
+    },
+    "Lurantis-Totem": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/105/90/80/90/45"
+    },
+    "Morelull": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "40/35/55/65/75/15"
+    },
+    "Shiinotic": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "60/45/80/90/100/30"
+    },
+    "Salandit": {
+        "types": [
+            "Poison",
+            "Fire"
+        ],
+        "stats": "48/44/40/71/40/77"
+    },
+    "Salazzle": {
+        "types": [
+            "Poison",
+            "Fire"
+        ],
+        "stats": "68/64/60/111/60/117"
+    },
+    "Salazzle-Totem": {
+        "types": [
+            "Poison",
+            "Fire"
+        ],
+        "stats": "68/64/60/111/60/117"
+    },
+    "Stufful": {
+        "types": [
+            "Normal",
+            "Fighting"
+        ],
+        "stats": "70/75/50/45/50/50"
+    },
+    "Bewear": {
+        "types": [
+            "Normal",
+            "Fighting"
+        ],
+        "stats": "120/125/80/55/60/60"
+    },
+    "Bounsweet": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "42/30/38/30/38/32"
+    },
+    "Steenee": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "52/40/48/40/48/62"
+    },
+    "Tsareena": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "72/120/98/50/98/72"
+    },
+    "Comfey": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "51/52/90/82/110/100"
+    },
+    "Oranguru": {
+        "types": [
+            "Normal",
+            "Psychic"
+        ],
+        "stats": "90/60/80/90/110/60"
+    },
+    "Passimian": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "100/120/90/40/60/80"
+    },
+    "Wimpod": {
+        "types": [
+            "Bug",
+            "Water"
+        ],
+        "stats": "25/35/40/20/30/80"
+    },
+    "Golisopod": {
+        "types": [
+            "Bug",
+            "Water"
+        ],
+        "stats": "75/125/140/60/90/40"
+    },
+    "Golisopod-Mega": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "75/150/175/70/120/40"
+    },
+    "Sandygast": {
+        "types": [
+            "Ghost",
+            "Ground"
+        ],
+        "stats": "55/55/80/70/45/15"
+    },
+    "Palossand": {
+        "types": [
+            "Ghost",
+            "Ground"
+        ],
+        "stats": "85/75/110/100/75/35"
+    },
+    "Pyukumuku": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/60/130/30/130/5"
+    },
+    "Type: Null": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "95/95/95/95/95/59"
+    },
+    "Silvally": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Bug": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Dark": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Dragon": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Electric": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Fairy": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Fighting": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Fire": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Flying": {
+        "types": [
+            "Flying"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Ghost": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Grass": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Ground": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Ice": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Poison": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Psychic": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Rock": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Steel": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Silvally-Water": {
+        "types": [
+            "Water"
+        ],
+        "stats": "95/95/95/95/95/95"
+    },
+    "Minior": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "60/100/60/100/60/120"
+    },
+    "Minior-Meteor": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "60/60/100/60/100/60"
+    },
+    "Komala": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "65/115/65/75/95/65"
+    },
+    "Turtonator": {
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "stats": "60/78/135/91/85/36"
+    },
+    "Togedemaru": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "stats": "65/98/63/40/73/96"
+    },
+    "Togedemaru-Totem": {
+        "types": [
+            "Electric",
+            "Steel"
+        ],
+        "stats": "65/98/63/40/73/96"
+    },
+    "Mimikyu": {
+        "types": [
+            "Ghost",
+            "Fairy"
+        ],
+        "stats": "55/90/80/50/105/96"
+    },
+    "Mimikyu-Busted": {
+        "types": [
+            "Ghost",
+            "Fairy"
+        ],
+        "stats": "55/90/80/50/105/96"
+    },
+    "Mimikyu-Totem": {
+        "types": [
+            "Ghost",
+            "Fairy"
+        ],
+        "stats": "55/90/80/50/105/96"
+    },
+    "Mimikyu-Busted-Totem": {
+        "types": [
+            "Ghost",
+            "Fairy"
+        ],
+        "stats": "55/90/80/50/105/96"
+    },
+    "Bruxish": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "68/105/70/70/70/92"
+    },
+    "Drampa": {
+        "types": [
+            "Normal",
+            "Dragon"
+        ],
+        "stats": "78/60/85/135/91/36"
+    },
+    "Drampa-Mega": {
+        "types": [
+            "Normal",
+            "Dragon"
+        ],
+        "stats": "78/85/110/160/116/36"
+    },
+    "Dhelmise": {
+        "types": [
+            "Ghost",
+            "Grass"
+        ],
+        "stats": "70/131/100/86/90/40"
+    },
+    "Jangmo-o": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "45/55/65/45/45/45"
+    },
+    "Hakamo-o": {
+        "types": [
+            "Dragon",
+            "Fighting"
+        ],
+        "stats": "55/75/90/65/70/65"
+    },
+    "Kommo-o": {
+        "types": [
+            "Dragon",
+            "Fighting"
+        ],
+        "stats": "75/110/125/100/105/85"
+    },
+    "Kommo-o-Totem": {
+        "types": [
+            "Dragon",
+            "Fighting"
+        ],
+        "stats": "75/110/125/100/105/85"
+    },
+    "Tapu Koko": {
+        "types": [
+            "Electric",
+            "Fairy"
+        ],
+        "stats": "70/115/85/95/75/130"
+    },
+    "Tapu Lele": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "70/85/75/130/115/95"
+    },
+    "Tapu Bulu": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "70/130/115/85/95/75"
+    },
+    "Tapu Fini": {
+        "types": [
+            "Water",
+            "Fairy"
+        ],
+        "stats": "70/75/115/95/130/85"
+    },
+    "Cosmog": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "43/29/31/29/31/37"
+    },
+    "Cosmoem": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "43/29/131/29/131/37"
+    },
+    "Solgaleo": {
+        "types": [
+            "Psychic",
+            "Steel"
+        ],
+        "stats": "137/137/107/113/89/97"
+    },
+    "Lunala": {
+        "types": [
+            "Psychic",
+            "Ghost"
+        ],
+        "stats": "137/113/89/137/107/97"
+    },
+    "Nihilego": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "109/53/47/127/131/103"
+    },
+    "Buzzwole": {
+        "types": [
+            "Bug",
+            "Fighting"
+        ],
+        "stats": "107/139/139/53/53/79"
+    },
+    "Pheromosa": {
+        "types": [
+            "Bug",
+            "Fighting"
+        ],
+        "stats": "71/137/37/137/37/151"
+    },
+    "Xurkitree": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "83/89/71/173/71/83"
+    },
+    "Celesteela": {
+        "types": [
+            "Steel",
+            "Flying"
+        ],
+        "stats": "97/101/103/107/101/61"
+    },
+    "Kartana": {
+        "types": [
+            "Grass",
+            "Steel"
+        ],
+        "stats": "59/181/131/59/31/109"
+    },
+    "Guzzlord": {
+        "types": [
+            "Dark",
+            "Dragon"
+        ],
+        "stats": "223/101/53/97/53/43"
+    },
+    "Necrozma": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "97/107/101/127/89/79"
+    },
+    "Necrozma-Dusk-Mane": {
+        "types": [
+            "Psychic",
+            "Steel"
+        ],
+        "stats": "97/157/127/113/109/77"
+    },
+    "Necrozma-Dawn-Wings": {
+        "types": [
+            "Psychic",
+            "Ghost"
+        ],
+        "stats": "97/113/109/157/127/77"
+    },
+    "Necrozma-Ultra": {
+        "types": [
+            "Psychic",
+            "Dragon"
+        ],
+        "stats": "97/167/97/167/97/129"
+    },
+    "Magearna": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "80/95/115/130/115/65"
+    },
+    "Magearna-Original": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "80/95/115/130/115/65"
+    },
+    "Magearna-Mega": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "80/125/115/170/115/95"
+    },
+    "Magearna-Original-Mega": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "80/125/115/170/115/95"
+    },
+    "Marshadow": {
+        "types": [
+            "Fighting",
+            "Ghost"
+        ],
+        "stats": "90/125/80/90/90/125"
+    },
+    "Poipole": {
+        "types": [
+            "Poison"
+        ],
+        "stats": "67/73/67/73/67/73"
+    },
+    "Naganadel": {
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": "73/73/73/127/73/121"
+    },
+    "Stakataka": {
+        "types": [
+            "Rock",
+            "Steel"
+        ],
+        "stats": "61/131/211/53/101/13"
+    },
+    "Blacephalon": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "53/127/53/151/79/107"
+    },
+    "Zeraora": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "88/112/75/102/80/143"
+    },
+    "Zeraora-Mega": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "88/157/75/147/80/153"
+    },
+    "Meltan": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "46/65/65/55/35/34"
+    },
+    "Melmetal": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "135/143/143/80/65/34"
+    },
+    "Melmetal-Gmax": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "135/143/143/80/65/34"
+    },
+    "Grookey": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "50/65/50/40/40/65"
+    },
+    "Thwackey": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "70/85/70/55/60/80"
+    },
+    "Rillaboom": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "100/125/90/60/70/85"
+    },
+    "Rillaboom-Gmax": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "100/125/90/60/70/85"
+    },
+    "Scorbunny": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "50/71/40/40/40/69"
+    },
+    "Raboot": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "65/86/60/55/60/94"
+    },
+    "Cinderace": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "80/116/75/65/75/119"
+    },
+    "Cinderace-Gmax": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "80/116/75/65/75/119"
+    },
+    "Sobble": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/40/40/70/40/70"
+    },
+    "Drizzile": {
+        "types": [
+            "Water"
+        ],
+        "stats": "65/60/55/95/55/90"
+    },
+    "Inteleon": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/85/65/125/65/120"
+    },
+    "Inteleon-Gmax": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/85/65/125/65/120"
+    },
+    "Skwovet": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "70/55/55/35/35/25"
+    },
+    "Greedent": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "120/95/95/55/75/20"
+    },
+    "Rookidee": {
+        "types": [
+            "Flying"
+        ],
+        "stats": "38/47/35/33/35/57"
+    },
+    "Corvisquire": {
+        "types": [
+            "Flying"
+        ],
+        "stats": "68/67/55/43/55/77"
+    },
+    "Corviknight": {
+        "types": [
+            "Flying",
+            "Steel"
+        ],
+        "stats": "98/87/105/53/85/67"
+    },
+    "Corviknight-Gmax": {
+        "types": [
+            "Flying",
+            "Steel"
+        ],
+        "stats": "98/87/105/53/85/67"
+    },
+    "Blipbug": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "25/20/20/25/45/45"
+    },
+    "Dottler": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "50/35/80/50/90/30"
+    },
+    "Orbeetle": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "60/45/110/80/120/90"
+    },
+    "Orbeetle-Gmax": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "60/45/110/80/120/90"
+    },
+    "Nickit": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "40/28/28/47/52/50"
+    },
+    "Thievul": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "70/58/58/87/92/90"
+    },
+    "Gossifleur": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "40/40/60/40/60/10"
+    },
+    "Eldegoss": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "60/50/90/80/120/60"
+    },
+    "Wooloo": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "42/40/55/40/45/48"
+    },
+    "Dubwool": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "72/80/100/60/90/88"
+    },
+    "Chewtle": {
+        "types": [
+            "Water"
+        ],
+        "stats": "50/64/50/38/38/44"
+    },
+    "Drednaw": {
+        "types": [
+            "Water",
+            "Rock"
+        ],
+        "stats": "90/115/90/48/68/74"
+    },
+    "Drednaw-Gmax": {
+        "types": [
+            "Water",
+            "Rock"
+        ],
+        "stats": "90/115/90/48/68/74"
+    },
+    "Yamper": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "59/45/50/40/50/26"
+    },
+    "Boltund": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "69/90/60/90/60/121"
+    },
+    "Rolycoly": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "30/40/50/40/50/30"
+    },
+    "Carkol": {
+        "types": [
+            "Rock",
+            "Fire"
+        ],
+        "stats": "80/60/90/60/70/50"
+    },
+    "Coalossal": {
+        "types": [
+            "Rock",
+            "Fire"
+        ],
+        "stats": "110/80/120/80/90/30"
+    },
+    "Coalossal-Gmax": {
+        "types": [
+            "Rock",
+            "Fire"
+        ],
+        "stats": "110/80/120/80/90/30"
+    },
+    "Applin": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "40/40/80/40/40/20"
+    },
+    "Flapple": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "70/110/80/95/60/70"
+    },
+    "Flapple-Gmax": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "70/110/80/95/60/70"
+    },
+    "Appletun": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "110/85/80/100/80/30"
+    },
+    "Appletun-Gmax": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "110/85/80/100/80/30"
+    },
+    "Silicobra": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "52/57/75/35/50/46"
+    },
+    "Sandaconda": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "72/107/125/65/70/71"
+    },
+    "Sandaconda-Gmax": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "72/107/125/65/70/71"
+    },
+    "Cramorant": {
+        "types": [
+            "Flying",
+            "Water"
+        ],
+        "stats": "70/85/55/85/95/85"
+    },
+    "Cramorant-Gulping": {
+        "types": [
+            "Flying",
+            "Water"
+        ],
+        "stats": "70/85/55/85/95/85"
+    },
+    "Cramorant-Gorging": {
+        "types": [
+            "Flying",
+            "Water"
+        ],
+        "stats": "70/85/55/85/95/85"
+    },
+    "Arrokuda": {
+        "types": [
+            "Water"
+        ],
+        "stats": "41/63/40/40/30/66"
+    },
+    "Barraskewda": {
+        "types": [
+            "Water"
+        ],
+        "stats": "61/123/60/60/50/136"
+    },
+    "Toxel": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "40/38/35/54/35/40"
+    },
+    "Toxtricity": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "75/98/70/114/70/75"
+    },
+    "Toxtricity-Low-Key": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "75/98/70/114/70/75"
+    },
+    "Toxtricity-Gmax": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "75/98/70/114/70/75"
+    },
+    "Toxtricity-Low-Key-Gmax": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "75/98/70/114/70/75"
+    },
+    "Sizzlipede": {
+        "types": [
+            "Fire",
+            "Bug"
+        ],
+        "stats": "50/65/45/50/50/45"
+    },
+    "Centiskorch": {
+        "types": [
+            "Fire",
+            "Bug"
+        ],
+        "stats": "100/115/65/90/90/65"
+    },
+    "Centiskorch-Gmax": {
+        "types": [
+            "Fire",
+            "Bug"
+        ],
+        "stats": "100/115/65/90/90/65"
+    },
+    "Clobbopus": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "50/68/60/50/50/32"
+    },
+    "Grapploct": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "80/118/90/70/80/42"
+    },
+    "Sinistea": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "40/45/45/74/54/50"
+    },
+    "Sinistea-Antique": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "40/45/45/74/54/50"
+    },
+    "Polteageist": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "60/65/65/134/114/70"
+    },
+    "Polteageist-Antique": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "60/65/65/134/114/70"
+    },
+    "Hatenna": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "42/30/45/56/53/39"
+    },
+    "Hattrem": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "57/40/65/86/73/49"
+    },
+    "Hatterene": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "57/90/95/136/103/29"
+    },
+    "Hatterene-Gmax": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "57/90/95/136/103/29"
+    },
+    "Impidimp": {
+        "types": [
+            "Dark",
+            "Fairy"
+        ],
+        "stats": "45/45/30/55/40/50"
+    },
+    "Morgrem": {
+        "types": [
+            "Dark",
+            "Fairy"
+        ],
+        "stats": "65/60/45/75/55/70"
+    },
+    "Grimmsnarl": {
+        "types": [
+            "Dark",
+            "Fairy"
+        ],
+        "stats": "95/120/65/95/75/60"
+    },
+    "Grimmsnarl-Gmax": {
+        "types": [
+            "Dark",
+            "Fairy"
+        ],
+        "stats": "95/120/65/95/75/60"
+    },
+    "Obstagoon": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "93/90/101/60/81/95"
+    },
+    "Perrserker": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "70/110/100/50/60/50"
+    },
+    "Cursola": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "60/95/50/145/130/30"
+    },
+    "Sirfetch’d": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "62/135/95/68/82/65"
+    },
+    "Mr. Rime": {
+        "types": [
+            "Ice",
+            "Psychic"
+        ],
+        "stats": "80/85/75/110/100/70"
+    },
+    "Runerigus": {
+        "types": [
+            "Ground",
+            "Ghost"
+        ],
+        "stats": "58/95/145/50/105/30"
+    },
+    "Milcery": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "45/40/40/50/61/34"
+    },
+    "Alcremie": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "65/60/75/110/121/64"
+    },
+    "Alcremie-Gmax": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "65/60/75/110/121/64"
+    },
+    "Falinks": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "65/100/100/70/60/75"
+    },
+    "Falinks-Mega": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "65/135/135/70/65/100"
+    },
+    "Pincurchin": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "48/101/95/91/85/15"
+    },
+    "Snom": {
+        "types": [
+            "Ice",
+            "Bug"
+        ],
+        "stats": "30/25/35/45/30/20"
+    },
+    "Frosmoth": {
+        "types": [
+            "Ice",
+            "Bug"
+        ],
+        "stats": "70/65/60/125/90/65"
+    },
+    "Stonjourner": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "100/125/135/20/20/70"
+    },
+    "Eiscue": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "75/80/110/65/90/50"
+    },
+    "Eiscue-Noice": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "75/80/70/65/50/130"
+    },
+    "Indeedee": {
+        "types": [
+            "Psychic",
+            "Normal"
+        ],
+        "stats": "60/65/55/105/95/95"
+    },
+    "Indeedee-F": {
+        "types": [
+            "Psychic",
+            "Normal"
+        ],
+        "stats": "70/55/65/95/105/85"
+    },
+    "Morpeko": {
+        "types": [
+            "Electric",
+            "Dark"
+        ],
+        "stats": "58/95/58/70/58/97"
+    },
+    "Morpeko-Hangry": {
+        "types": [
+            "Electric",
+            "Dark"
+        ],
+        "stats": "58/95/58/70/58/97"
+    },
+    "Cufant": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "72/80/49/40/49/40"
+    },
+    "Copperajah": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "122/130/69/80/69/30"
+    },
+    "Copperajah-Gmax": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "122/130/69/80/69/30"
+    },
+    "Dracozolt": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "90/100/90/80/70/75"
+    },
+    "Arctozolt": {
+        "types": [
+            "Electric",
+            "Ice"
+        ],
+        "stats": "90/100/90/90/80/55"
+    },
+    "Dracovish": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "90/90/100/70/80/75"
+    },
+    "Arctovish": {
+        "types": [
+            "Water",
+            "Ice"
+        ],
+        "stats": "90/90/100/80/90/55"
+    },
+    "Duraludon": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "70/95/115/120/50/85"
+    },
+    "Duraludon-Gmax": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "70/95/115/120/50/85"
+    },
+    "Dreepy": {
+        "types": [
+            "Dragon",
+            "Ghost"
+        ],
+        "stats": "28/60/30/40/30/82"
+    },
+    "Drakloak": {
+        "types": [
+            "Dragon",
+            "Ghost"
+        ],
+        "stats": "68/80/50/60/50/102"
+    },
+    "Dragapult": {
+        "types": [
+            "Dragon",
+            "Ghost"
+        ],
+        "stats": "88/120/75/100/75/142"
+    },
+    "Zacian": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "92/120/115/80/115/138"
+    },
+    "Zacian-Crowned": {
+        "types": [
+            "Fairy",
+            "Steel"
+        ],
+        "stats": "92/150/115/80/115/148"
+    },
+    "Zamazenta": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "92/120/115/80/115/138"
+    },
+    "Zamazenta-Crowned": {
+        "types": [
+            "Fighting",
+            "Steel"
+        ],
+        "stats": "92/120/140/80/140/128"
+    },
+    "Eternatus": {
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": "140/85/95/145/95/130"
+    },
+    "Eternatus-Eternamax": {
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": "255/115/250/125/250/130"
+    },
+    "Kubfu": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "60/90/60/53/50/72"
+    },
+    "Urshifu": {
+        "types": [
+            "Fighting",
+            "Dark"
+        ],
+        "stats": "100/130/100/63/60/97"
+    },
+    "Urshifu-Rapid-Strike": {
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "stats": "100/130/100/63/60/97"
+    },
+    "Urshifu-Gmax": {
+        "types": [
+            "Fighting",
+            "Dark"
+        ],
+        "stats": "100/130/100/63/60/97"
+    },
+    "Urshifu-Rapid-Strike-Gmax": {
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "stats": "100/130/100/63/60/97"
+    },
+    "Zarude": {
+        "types": [
+            "Dark",
+            "Grass"
+        ],
+        "stats": "105/120/105/70/95/105"
+    },
+    "Zarude-Dada": {
+        "types": [
+            "Dark",
+            "Grass"
+        ],
+        "stats": "105/120/105/70/95/105"
+    },
+    "Regieleki": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "80/100/50/100/50/200"
+    },
+    "Regidrago": {
+        "types": [
+            "Dragon"
+        ],
+        "stats": "200/100/50/100/50/80"
+    },
+    "Glastrier": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "100/145/130/65/110/30"
+    },
+    "Spectrier": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "100/65/60/145/80/130"
+    },
+    "Calyrex": {
+        "types": [
+            "Psychic",
+            "Grass"
+        ],
+        "stats": "100/80/80/80/80/80"
+    },
+    "Calyrex-Ice": {
+        "types": [
+            "Psychic",
+            "Ice"
+        ],
+        "stats": "100/165/150/85/130/50"
+    },
+    "Calyrex-Shadow": {
+        "types": [
+            "Psychic",
+            "Ghost"
+        ],
+        "stats": "100/85/80/165/100/150"
+    },
+    "Wyrdeer": {
+        "types": [
+            "Normal",
+            "Psychic"
+        ],
+        "stats": "103/105/72/105/75/65"
+    },
+    "Kleavor": {
+        "types": [
+            "Bug",
+            "Rock"
+        ],
+        "stats": "70/135/95/45/70/85"
+    },
+    "Ursaluna": {
+        "types": [
+            "Ground",
+            "Normal"
+        ],
+        "stats": "130/140/105/45/80/50"
+    },
+    "Ursaluna-Bloodmoon": {
+        "types": [
+            "Ground",
+            "Normal"
+        ],
+        "stats": "113/70/120/135/65/52"
+    },
+    "Basculegion": {
+        "types": [
+            "Water",
+            "Ghost"
+        ],
+        "stats": "120/112/65/80/75/78"
+    },
+    "Basculegion-F": {
+        "types": [
+            "Water",
+            "Ghost"
+        ],
+        "stats": "120/92/65/100/75/78"
+    },
+    "Sneasler": {
+        "types": [
+            "Fighting",
+            "Poison"
+        ],
+        "stats": "80/130/60/40/80/120"
+    },
+    "Overqwil": {
+        "types": [
+            "Dark",
+            "Poison"
+        ],
+        "stats": "85/115/95/65/65/85"
+    },
+    "Enamorus": {
+        "types": [
+            "Fairy",
+            "Flying"
+        ],
+        "stats": "74/115/70/135/80/106"
+    },
+    "Enamorus-Therian": {
+        "types": [
+            "Fairy",
+            "Flying"
+        ],
+        "stats": "74/115/110/135/100/46"
+    },
+    "Sprigatito": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "40/61/54/45/45/65"
+    },
+    "Floragato": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "61/80/63/60/63/83"
+    },
+    "Meowscarada": {
+        "types": [
+            "Grass",
+            "Dark"
+        ],
+        "stats": "76/110/70/81/70/123"
+    },
+    "Fuecoco": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "67/45/59/63/40/36"
+    },
+    "Crocalor": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "81/55/78/90/58/49"
+    },
+    "Skeledirge": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "104/75/100/110/75/66"
+    },
+    "Quaxly": {
+        "types": [
+            "Water"
+        ],
+        "stats": "55/65/45/50/45/50"
+    },
+    "Quaxwell": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/85/65/65/60/65"
+    },
+    "Quaquaval": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "stats": "85/120/80/85/75/85"
+    },
+    "Lechonk": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "54/45/40/35/45/35"
+    },
+    "Oinkologne": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "110/100/75/59/80/65"
+    },
+    "Oinkologne-F": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "115/90/70/59/90/65"
+    },
+    "Tarountula": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "35/41/45/29/40/20"
+    },
+    "Spidops": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "60/79/92/52/86/35"
+    },
+    "Nymble": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "33/46/40/21/25/45"
+    },
+    "Lokix": {
+        "types": [
+            "Bug",
+            "Dark"
+        ],
+        "stats": "71/102/78/52/55/92"
+    },
+    "Pawmi": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "45/50/20/40/25/60"
+    },
+    "Pawmo": {
+        "types": [
+            "Electric",
+            "Fighting"
+        ],
+        "stats": "60/75/40/50/40/85"
+    },
+    "Pawmot": {
+        "types": [
+            "Electric",
+            "Fighting"
+        ],
+        "stats": "70/115/70/70/60/105"
+    },
+    "Tandemaus": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "50/50/45/40/45/75"
+    },
+    "Maushold": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "74/75/70/65/75/111"
+    },
+    "Maushold-Four": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "74/75/70/65/75/111"
+    },
+    "Fidough": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "37/55/70/30/55/65"
+    },
+    "Dachsbun": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "57/80/115/50/80/95"
+    },
+    "Smoliv": {
+        "types": [
+            "Grass",
+            "Normal"
+        ],
+        "stats": "41/35/45/58/51/30"
+    },
+    "Dolliv": {
+        "types": [
+            "Grass",
+            "Normal"
+        ],
+        "stats": "52/53/60/78/78/33"
+    },
+    "Arboliva": {
+        "types": [
+            "Grass",
+            "Normal"
+        ],
+        "stats": "78/69/90/125/109/39"
+    },
+    "Squawkabilly": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "82/96/51/45/51/92"
+    },
+    "Squawkabilly-Blue": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "82/96/51/45/51/92"
+    },
+    "Squawkabilly-Yellow": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "82/96/51/45/51/92"
+    },
+    "Squawkabilly-White": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "82/96/51/45/51/92"
+    },
+    "Nacli": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "55/55/75/35/35/25"
+    },
+    "Naclstack": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "60/60/100/35/65/35"
+    },
+    "Garganacl": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "100/100/130/45/90/35"
+    },
+    "Charcadet": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "40/50/40/50/40/35"
+    },
+    "Armarouge": {
+        "types": [
+            "Fire",
+            "Psychic"
+        ],
+        "stats": "85/60/100/125/80/75"
+    },
+    "Ceruledge": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "75/125/80/60/100/85"
+    },
+    "Tadbulb": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "61/31/41/59/35/45"
+    },
+    "Bellibolt": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "109/64/91/103/83/45"
+    },
+    "Wattrel": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "40/40/35/55/40/70"
+    },
+    "Kilowattrel": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "70/70/60/105/60/125"
+    },
+    "Maschiff": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "60/78/60/40/51/51"
+    },
+    "Mabosstiff": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "80/120/90/60/70/85"
+    },
+    "Shroodle": {
+        "types": [
+            "Poison",
+            "Normal"
+        ],
+        "stats": "40/65/35/40/35/75"
+    },
+    "Grafaiai": {
+        "types": [
+            "Poison",
+            "Normal"
+        ],
+        "stats": "63/95/65/80/72/110"
+    },
+    "Bramblin": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "40/65/30/45/35/60"
+    },
+    "Brambleghast": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "55/115/70/80/70/90"
+    },
+    "Toedscool": {
+        "types": [
+            "Ground",
+            "Grass"
+        ],
+        "stats": "40/40/35/50/100/70"
+    },
+    "Toedscruel": {
+        "types": [
+            "Ground",
+            "Grass"
+        ],
+        "stats": "80/70/65/80/120/100"
+    },
+    "Klawf": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "70/100/115/35/55/75"
+    },
+    "Capsakid": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "50/62/40/62/40/50"
+    },
+    "Scovillain": {
+        "types": [
+            "Grass",
+            "Fire"
+        ],
+        "stats": "65/108/65/108/65/75"
+    },
+    "Scovillain-Mega": {
+        "types": [
+            "Grass",
+            "Fire"
+        ],
+        "stats": "65/138/85/138/85/75"
+    },
+    "Rellor": {
+        "types": [
+            "Bug"
+        ],
+        "stats": "41/50/60/31/58/30"
+    },
+    "Rabsca": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "75/50/85/115/100/45"
+    },
+    "Flittle": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "30/35/30/55/30/75"
+    },
+    "Espathra": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "95/60/60/101/60/105"
+    },
+    "Tinkatink": {
+        "types": [
+            "Fairy",
+            "Steel"
+        ],
+        "stats": "50/45/45/35/64/58"
+    },
+    "Tinkatuff": {
+        "types": [
+            "Fairy",
+            "Steel"
+        ],
+        "stats": "65/55/55/45/82/78"
+    },
+    "Tinkaton": {
+        "types": [
+            "Fairy",
+            "Steel"
+        ],
+        "stats": "85/75/77/70/105/94"
+    },
+    "Wiglett": {
+        "types": [
+            "Water"
+        ],
+        "stats": "10/55/25/35/25/95"
+    },
+    "Wugtrio": {
+        "types": [
+            "Water"
+        ],
+        "stats": "35/100/50/50/70/120"
+    },
+    "Bombirdier": {
+        "types": [
+            "Flying",
+            "Dark"
+        ],
+        "stats": "70/103/85/60/85/82"
+    },
+    "Finizen": {
+        "types": [
+            "Water"
+        ],
+        "stats": "70/45/40/45/40/75"
+    },
+    "Palafin": {
+        "types": [
+            "Water"
+        ],
+        "stats": "100/70/72/53/62/100"
+    },
+    "Palafin-Hero": {
+        "types": [
+            "Water"
+        ],
+        "stats": "100/160/97/106/87/100"
+    },
+    "Varoom": {
+        "types": [
+            "Steel",
+            "Poison"
+        ],
+        "stats": "45/70/63/30/45/47"
+    },
+    "Revavroom": {
+        "types": [
+            "Steel",
+            "Poison"
+        ],
+        "stats": "80/119/90/54/67/90"
+    },
+    "Cyclizar": {
+        "types": [
+            "Dragon",
+            "Normal"
+        ],
+        "stats": "70/95/65/85/65/121"
+    },
+    "Orthworm": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "70/85/145/60/55/65"
+    },
+    "Glimmet": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "48/35/42/105/60/60"
+    },
+    "Glimmora": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "83/55/90/130/81/86"
+    },
+    "Glimmora-Mega": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "83/90/105/150/96/101"
+    },
+    "Greavard": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "50/61/60/30/55/34"
+    },
+    "Houndstone": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "72/101/100/50/97/68"
+    },
+    "Flamigo": {
+        "types": [
+            "Flying",
+            "Fighting"
+        ],
+        "stats": "82/115/74/75/64/90"
+    },
+    "Cetoddle": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "108/68/45/30/40/43"
+    },
+    "Cetitan": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "170/113/65/45/55/73"
+    },
+    "Veluza": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "90/102/73/78/65/70"
+    },
+    "Dondozo": {
+        "types": [
+            "Water"
+        ],
+        "stats": "150/100/115/65/65/35"
+    },
+    "Tatsugiri": {
+        "types": [
+            "Dragon",
+            "Water"
+        ],
+        "stats": "68/50/60/120/95/82"
+    },
+    "Tatsugiri-Droopy": {
+        "types": [
+            "Dragon",
+            "Water"
+        ],
+        "stats": "68/50/60/120/95/82"
+    },
+    "Tatsugiri-Stretchy": {
+        "types": [
+            "Dragon",
+            "Water"
+        ],
+        "stats": "68/50/60/120/95/82"
+    },
+    "Tatsugiri-Curly-Mega": {
+        "types": [
+            "Dragon",
+            "Water"
+        ],
+        "stats": "68/65/90/135/125/92"
+    },
+    "Tatsugiri-Droopy-Mega": {
+        "types": [
+            "Dragon",
+            "Water"
+        ],
+        "stats": "68/65/90/135/125/92"
+    },
+    "Tatsugiri-Stretchy-Mega": {
+        "types": [
+            "Dragon",
+            "Water"
+        ],
+        "stats": "68/65/90/135/125/92"
+    },
+    "Annihilape": {
+        "types": [
+            "Fighting",
+            "Ghost"
+        ],
+        "stats": "110/115/80/50/90/90"
+    },
+    "Clodsire": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "stats": "130/75/60/45/100/20"
+    },
+    "Farigiraf": {
+        "types": [
+            "Normal",
+            "Psychic"
+        ],
+        "stats": "120/90/70/110/70/60"
+    },
+    "Dudunsparce": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "125/100/80/85/75/55"
+    },
+    "Dudunsparce-Three-Segment": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "125/100/80/85/75/55"
+    },
+    "Kingambit": {
+        "types": [
+            "Dark",
+            "Steel"
+        ],
+        "stats": "100/135/120/60/85/50"
+    },
+    "Great Tusk": {
+        "types": [
+            "Ground",
+            "Fighting"
+        ],
+        "stats": "115/131/131/53/53/87"
+    },
+    "Scream Tail": {
+        "types": [
+            "Fairy",
+            "Psychic"
+        ],
+        "stats": "115/65/99/65/115/111"
+    },
+    "Brute Bonnet": {
+        "types": [
+            "Grass",
+            "Dark"
+        ],
+        "stats": "111/127/99/79/99/55"
+    },
+    "Flutter Mane": {
+        "types": [
+            "Ghost",
+            "Fairy"
+        ],
+        "stats": "55/55/55/135/135/135"
+    },
+    "Slither Wing": {
+        "types": [
+            "Bug",
+            "Fighting"
+        ],
+        "stats": "85/135/79/85/105/81"
+    },
+    "Sandy Shocks": {
+        "types": [
+            "Electric",
+            "Ground"
+        ],
+        "stats": "85/81/97/121/85/101"
+    },
+    "Iron Treads": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "90/112/120/72/70/106"
+    },
+    "Iron Bundle": {
+        "types": [
+            "Ice",
+            "Water"
+        ],
+        "stats": "56/80/114/124/60/136"
+    },
+    "Iron Hands": {
+        "types": [
+            "Fighting",
+            "Electric"
+        ],
+        "stats": "154/140/108/50/68/50"
+    },
+    "Iron Jugulis": {
+        "types": [
+            "Dark",
+            "Flying"
+        ],
+        "stats": "94/80/86/122/80/108"
+    },
+    "Iron Moth": {
+        "types": [
+            "Fire",
+            "Poison"
+        ],
+        "stats": "80/70/60/140/110/110"
+    },
+    "Iron Thorns": {
+        "types": [
+            "Rock",
+            "Electric"
+        ],
+        "stats": "100/134/110/70/84/72"
+    },
+    "Frigibax": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "65/75/45/35/45/55"
+    },
+    "Arctibax": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "90/95/66/45/65/62"
+    },
+    "Baxcalibur": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "115/145/92/75/86/87"
+    },
+    "Baxcalibur-Mega": {
+        "types": [
+            "Dragon",
+            "Ice"
+        ],
+        "stats": "115/175/117/105/101/87"
+    },
+    "Gimmighoul": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "45/30/70/75/70/10"
+    },
+    "Gimmighoul-Roaming": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "45/30/25/75/45/80"
+    },
+    "Gholdengo": {
+        "types": [
+            "Steel",
+            "Ghost"
+        ],
+        "stats": "87/60/95/133/91/84"
+    },
+    "Wo-Chien": {
+        "types": [
+            "Dark",
+            "Grass"
+        ],
+        "stats": "85/85/100/95/135/70"
+    },
+    "Chien-Pao": {
+        "types": [
+            "Dark",
+            "Ice"
+        ],
+        "stats": "80/120/80/90/65/135"
+    },
+    "Ting-Lu": {
+        "types": [
+            "Dark",
+            "Ground"
+        ],
+        "stats": "155/110/125/55/80/45"
+    },
+    "Chi-Yu": {
+        "types": [
+            "Dark",
+            "Fire"
+        ],
+        "stats": "55/80/80/135/120/100"
+    },
+    "Roaring Moon": {
+        "types": [
+            "Dragon",
+            "Dark"
+        ],
+        "stats": "105/139/71/55/101/119"
+    },
+    "Iron Valiant": {
+        "types": [
+            "Fairy",
+            "Fighting"
+        ],
+        "stats": "74/130/90/120/60/116"
+    },
+    "Koraidon": {
+        "types": [
+            "Fighting",
+            "Dragon"
+        ],
+        "stats": "100/135/115/85/100/135"
+    },
+    "Miraidon": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "100/85/100/135/115/135"
+    },
+    "Walking Wake": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "99/83/91/125/83/109"
+    },
+    "Iron Leaves": {
+        "types": [
+            "Grass",
+            "Psychic"
+        ],
+        "stats": "90/130/88/70/108/104"
+    },
+    "Dipplin": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "80/80/110/95/80/40"
+    },
+    "Poltchageist": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "40/45/45/74/54/50"
+    },
+    "Poltchageist-Artisan": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "40/45/45/74/54/50"
+    },
+    "Sinistcha": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "71/60/106/121/80/70"
+    },
+    "Sinistcha-Masterpiece": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "71/60/106/121/80/70"
+    },
+    "Okidogi": {
+        "types": [
+            "Poison",
+            "Fighting"
+        ],
+        "stats": "88/128/115/58/86/80"
+    },
+    "Munkidori": {
+        "types": [
+            "Poison",
+            "Psychic"
+        ],
+        "stats": "88/75/66/130/90/106"
+    },
+    "Fezandipiti": {
+        "types": [
+            "Poison",
+            "Fairy"
+        ],
+        "stats": "88/91/82/70/125/99"
+    },
+    "Ogerpon": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Wellspring": {
+        "types": [
+            "Grass",
+            "Water"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Hearthflame": {
+        "types": [
+            "Grass",
+            "Fire"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Cornerstone": {
+        "types": [
+            "Grass",
+            "Rock"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Teal-Tera": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Wellspring-Tera": {
+        "types": [
+            "Grass",
+            "Water"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Hearthflame-Tera": {
+        "types": [
+            "Grass",
+            "Fire"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Ogerpon-Cornerstone-Tera": {
+        "types": [
+            "Grass",
+            "Rock"
+        ],
+        "stats": "80/120/84/60/96/110"
+    },
+    "Archaludon": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "90/105/130/125/65/85"
+    },
+    "Hydrapple": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "106/80/110/120/80/44"
+    },
+    "Gouging Fire": {
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "stats": "105/115/121/65/93/91"
+    },
+    "Raging Bolt": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "125/73/91/137/89/75"
+    },
+    "Iron Boulder": {
+        "types": [
+            "Rock",
+            "Psychic"
+        ],
+        "stats": "90/120/80/68/108/124"
+    },
+    "Iron Crown": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "90/72/100/122/108/98"
+    },
+    "Terapagos": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "90/65/85/65/85/60"
+    },
+    "Terapagos-Terastal": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "95/95/110/105/110/85"
+    },
+    "Terapagos-Stellar": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "160/105/110/130/110/85"
+    },
+    "Pecharunt": {
+        "types": [
+            "Poison",
+            "Ghost"
+        ],
+        "stats": "88/88/160/88/88/88"
+    },
+    "MissingNo.": {
+        "types": [
+            "Bird",
+            "Normal"
+        ],
+        "stats": "33/136/0/6/6/29"
+    },
+    "Syclar": {
+        "types": [
+            "Ice",
+            "Bug"
+        ],
+        "stats": "40/76/45/74/39/91"
+    },
+    "Syclant": {
+        "types": [
+            "Ice",
+            "Bug"
+        ],
+        "stats": "70/116/70/114/64/121"
+    },
+    "Revenankh": {
+        "types": [
+            "Ghost",
+            "Fighting"
+        ],
+        "stats": "90/105/90/65/110/65"
+    },
+    "Embirch": {
+        "types": [
+            "Fire",
+            "Grass"
+        ],
+        "stats": "60/40/55/65/40/60"
+    },
+    "Flarelm": {
+        "types": [
+            "Fire",
+            "Grass"
+        ],
+        "stats": "90/50/95/75/70/40"
+    },
+    "Pyroak": {
+        "types": [
+            "Fire",
+            "Grass"
+        ],
+        "stats": "120/70/105/70/65/60"
+    },
+    "Breezi": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "stats": "50/46/69/60/50/75"
+    },
+    "Fidgit": {
+        "types": [
+            "Poison",
+            "Ground"
+        ],
+        "stats": "95/76/109/90/80/105"
+    },
+    "Rebble": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "45/25/65/75/55/80"
+    },
+    "Tactite": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "70/40/65/100/65/95"
+    },
+    "Stratagem": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "90/60/65/120/70/130"
+    },
+    "Privatyke": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "stats": "65/75/65/40/60/45"
+    },
+    "Arghonaut": {
+        "types": [
+            "Water",
+            "Fighting"
+        ],
+        "stats": "105/110/95/70/100/75"
+    },
+    "Kitsunoh": {
+        "types": [
+            "Ghost",
+            "Steel"
+        ],
+        "stats": "80/103/85/55/80/120"
+    },
+    "Cyclohm": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "108/60/118/112/70/80"
+    },
+    "Colossoil": {
+        "types": [
+            "Ground",
+            "Dark"
+        ],
+        "stats": "133/122/72/71/72/95"
+    },
+    "Krilowatt": {
+        "types": [
+            "Electric",
+            "Water"
+        ],
+        "stats": "151/84/73/83/74/105"
+    },
+    "Voodoll": {
+        "types": [
+            "Normal",
+            "Dark"
+        ],
+        "stats": "55/40/55/75/50/70"
+    },
+    "Voodoom": {
+        "types": [
+            "Fighting",
+            "Dark"
+        ],
+        "stats": "90/85/80/130/80/110"
+    },
+    "Scratchet": {
+        "types": [
+            "Normal",
+            "Fighting"
+        ],
+        "stats": "55/85/80/20/70/40"
+    },
+    "Tomohawk": {
+        "types": [
+            "Flying",
+            "Fighting"
+        ],
+        "stats": "105/60/90/115/80/85"
+    },
+    "Necturine": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "49/55/60/50/75/51"
+    },
+    "Necturna": {
+        "types": [
+            "Grass",
+            "Ghost"
+        ],
+        "stats": "64/120/100/85/120/58"
+    },
+    "Mollux": {
+        "types": [
+            "Fire",
+            "Poison"
+        ],
+        "stats": "95/45/83/131/105/76"
+    },
+    "Cupra": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "50/60/49/67/30/44"
+    },
+    "Argalis": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "60/90/89/87/40/54"
+    },
+    "Aurumoth": {
+        "types": [
+            "Bug",
+            "Psychic"
+        ],
+        "stats": "110/120/99/117/60/94"
+    },
+    "Brattler": {
+        "types": [
+            "Dark",
+            "Grass"
+        ],
+        "stats": "80/70/40/20/90/30"
+    },
+    "Malaconda": {
+        "types": [
+            "Dark",
+            "Grass"
+        ],
+        "stats": "115/100/60/40/130/55"
+    },
+    "Cawdet": {
+        "types": [
+            "Steel",
+            "Flying"
+        ],
+        "stats": "35/72/85/40/55/88"
+    },
+    "Cawmodore": {
+        "types": [
+            "Steel",
+            "Flying"
+        ],
+        "stats": "50/92/130/65/75/118"
+    },
+    "Volkritter": {
+        "types": [
+            "Water",
+            "Fire"
+        ],
+        "stats": "60/30/50/80/60/70"
+    },
+    "Volkraken": {
+        "types": [
+            "Water",
+            "Fire"
+        ],
+        "stats": "100/45/80/135/100/95"
+    },
+    "Snugglow": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "40/37/79/91/68/70"
+    },
+    "Plasmanta": {
+        "types": [
+            "Electric",
+            "Poison"
+        ],
+        "stats": "60/57/119/131/98/100"
+    },
+    "Floatoy": {
+        "types": [
+            "Water"
+        ],
+        "stats": "48/70/40/70/30/77"
+    },
+    "Caimanoe": {
+        "types": [
+            "Water",
+            "Steel"
+        ],
+        "stats": "73/85/65/80/40/87"
+    },
+    "Naviathan": {
+        "types": [
+            "Water",
+            "Steel"
+        ],
+        "stats": "103/110/90/95/65/97"
+    },
+    "Crucibelle": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "106/105/65/75/85/104"
+    },
+    "Crucibelle-Mega": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "106/135/75/91/125/108"
+    },
+    "Pluffle": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "74/38/51/65/78/49"
+    },
+    "Kerfluffle": {
+        "types": [
+            "Fairy",
+            "Fighting"
+        ],
+        "stats": "84/78/86/115/88/119"
+    },
+    "Pajantom": {
+        "types": [
+            "Dragon",
+            "Ghost"
+        ],
+        "stats": "84/133/71/51/111/101"
+    },
+    "Mumbao": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "55/30/64/87/73/66"
+    },
+    "Jumbao": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "92/63/97/124/104/96"
+    },
+    "Fawnifer": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "49/61/42/52/40/76"
+    },
+    "Electrelk": {
+        "types": [
+            "Grass",
+            "Electric"
+        ],
+        "stats": "59/81/67/57/55/101"
+    },
+    "Caribolt": {
+        "types": [
+            "Grass",
+            "Electric"
+        ],
+        "stats": "84/106/82/77/80/106"
+    },
+    "Smogecko": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "48/66/43/58/48/56"
+    },
+    "Smoguana": {
+        "types": [
+            "Fire",
+            "Ground"
+        ],
+        "stats": "68/86/53/68/68/76"
+    },
+    "Smokomodo": {
+        "types": [
+            "Fire",
+            "Ground"
+        ],
+        "stats": "88/116/67/88/78/97"
+    },
+    "Swirlpool": {
+        "types": [
+            "Water"
+        ],
+        "stats": "61/49/70/50/62/28"
+    },
+    "Coribalis": {
+        "types": [
+            "Water",
+            "Bug"
+        ],
+        "stats": "76/69/90/65/77/43"
+    },
+    "Snaelstrom": {
+        "types": [
+            "Water",
+            "Bug"
+        ],
+        "stats": "91/94/110/80/97/63"
+    },
+    "Justyke": {
+        "types": [
+            "Steel",
+            "Ground"
+        ],
+        "stats": "72/70/56/83/68/30"
+    },
+    "Equilibra": {
+        "types": [
+            "Steel",
+            "Ground"
+        ],
+        "stats": "102/50/96/133/118/60"
+    },
+    "Solotl": {
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "stats": "68/48/34/72/24/84"
+    },
+    "Astrolotl": {
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "stats": "108/108/74/92/64/114"
+    },
+    "Miasmite": {
+        "types": [
+            "Bug",
+            "Dragon"
+        ],
+        "stats": "40/85/60/52/52/44"
+    },
+    "Miasmaw": {
+        "types": [
+            "Bug",
+            "Dragon"
+        ],
+        "stats": "85/135/60/88/105/99"
+    },
+    "Chromera": {
+        "types": [
+            "Dark",
+            "Normal"
+        ],
+        "stats": "85/85/115/115/100/100"
+    },
+    "Nohface": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "50/73/50/30/50/80"
+    },
+    "Monohm": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "53/40/58/67/55/55"
+    },
+    "Duohm": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "88/40/103/77/60/60"
+    },
+    "Dorsoil": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "103/72/52/61/52/65"
+    },
+    "Protowatt": {
+        "types": [
+            "Electric",
+            "Water"
+        ],
+        "stats": "51/44/33/43/34/65"
+    },
+    "Venomicon": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "stats": "85/50/113/118/90/64"
+    },
+    "Venomicon-Epilogue": {
+        "types": [
+            "Poison",
+            "Flying"
+        ],
+        "stats": "85/102/85/62/85/101"
+    },
+    "Saharascal": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "50/80/65/45/90/70"
+    },
+    "Saharaja": {
+        "types": [
+            "Ground"
+        ],
+        "stats": "70/112/105/65/123/78"
+    },
+    "Ababo": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "42/35/27/35/35/38"
+    },
+    "Scattervein": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "75/74/87/62/89/63"
+    },
+    "Hemogoblin": {
+        "types": [
+            "Fairy",
+            "Fire"
+        ],
+        "stats": "90/96/87/96/89/55"
+    },
+    "Cresceidon": {
+        "types": [
+            "Water",
+            "Fairy"
+        ],
+        "stats": "80/32/111/88/99/124"
+    },
+    "Chuggon": {
+        "types": [
+            "Dragon",
+            "Poison"
+        ],
+        "stats": "30/23/77/55/65/30"
+    },
+    "Draggalong": {
+        "types": [
+            "Dragon",
+            "Poison"
+        ],
+        "stats": "40/33/92/95/80/85"
+    },
+    "Chuggalong": {
+        "types": [
+            "Dragon",
+            "Poison"
+        ],
+        "stats": "45/43/117/120/110/108"
+    },
+    "Flox": {
+        "types": [
+            "Normal",
+            "Electric"
+        ],
+        "stats": "96/25/67/73/68/61"
+    },
+    "Shox": {
+        "types": [
+            "Normal",
+            "Electric"
+        ],
+        "stats": "136/55/87/108/108/56"
+    },
+    "Ramnarok": {
+        "types": [
+            "Fire",
+            "Steel"
+        ],
+        "stats": "110/56/104/111/134/85"
+    },
+    "Ramnarok-Radiant": {
+        "types": [
+            "Fire",
+            "Ice"
+        ],
+        "stats": "110/56/85/141/54/154"
+    },
+    "Pokestar Smeargle": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "55/20/35/20/45/75"
+    },
+    "Pokestar UFO": {
+        "types": [
+            "Flying",
+            "Electric"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar UFO-2": {
+        "types": [
+            "Psychic",
+            "Electric"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Brycen-Man": {
+        "types": [
+            "Dark",
+            "Psychic"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar MT": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar MT2": {
+        "types": [
+            "Steel",
+            "Electric"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Transport": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Giant": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Humanoid": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Monster": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar F-00": {
+        "types": [
+            "Steel",
+            "Normal"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar F-002": {
+        "types": [
+            "Steel",
+            "Normal"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Spirit": {
+        "types": [
+            "Dark",
+            "Ghost"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Black Door": {
+        "types": [
+            "Grass"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar White Door": {
+        "types": [
+            "Fire"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar Black Belt": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "100/100/100/100/100/100"
+    },
+    "Pokestar UFO-PropU2": {
+        "types": [
+            "Psychic",
+            "Electric"
+        ],
+        "stats": "100/100/100/100/100/100"
+    }
+}

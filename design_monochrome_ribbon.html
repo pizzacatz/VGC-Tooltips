@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC Monochrome Ribbon Series</title>
+    <style>
+        :root {
+            /* Type Colors - ONLY used for Move Borders */
+            --type-fire: #ff4422;
+            --type-water: #3399ff;
+            --type-grass: #77cc55;
+            --type-electric: #ffcc33;
+            --type-dragon: #7766ee;
+            --type-ghost: #6666bb;
+            --type-fairy: #ee99ee;
+
+            /* Pure Monochrome Palette */
+            --bg-page: #000000;
+            --bg-card: #000000;
+            --text-main: #ffffff;
+            --text-dim: #cccccc;
+            --ribbon-bg: #ffffff;
+            --ribbon-text: #000000;
+            --pill-border: #444444;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            padding: 60px 40px;
+        }
+
+        h1 { text-align: center; color: #fff; margin-bottom: 80px; text-transform: uppercase; letter-spacing: 6px; font-weight: 900; }
+        h2 { border-bottom: 1px solid #222; padding-bottom: 10px; margin-top: 80px; font-weight: 300; text-transform: uppercase; letter-spacing: 2px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .showcase-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            font-size: 10px;
+            color: #444;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ==========================================
+           MONOCHROME RIBBON CARD
+           ========================================== */
+        .ribbon-card {
+            width: 260px;
+            background-color: var(--bg-card);
+            padding: 20px;
+            border-radius: 4px;
+            position: relative;
+            border-style: solid;
+            border-width: 3px;
+            /* Using box-shadow as a secondary outline to ensure black borders are visible on black backgrounds */
+            box-shadow: 0 0 0 1px #333;
+        }
+
+        /* DATA INDICATOR RIBBON */
+        .ribbon {
+            position: absolute;
+            top: -14px;
+            left: 15px;
+            background-color: var(--ribbon-bg);
+            color: var(--ribbon-text);
+            padding: 2px 10px;
+            font-size: 11px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid #000;
+            z-index: 10;
+        }
+
+        .card-header {
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .card-content {
+            border-top: 1px solid #222;
+            padding-top: 15px;
+        }
+
+        /* MONO STAT PILLS */
+        .stat-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .pill {
+            background: transparent;
+            border: 1px solid var(--pill-border);
+            border-radius: 2px;
+            padding: 3px 7px;
+            font-size: 11px;
+            font-family: 'Consolas', monospace;
+            color: #fff;
+        }
+
+        /* BORDER HIERARCHY */
+        .pokemon-border { border-color: #000000; box-shadow: 0 0 0 1px #444; }
+        .item-border { border-color: #666666; }
+        .ability-border { border-color: #ffffff; }
+        .move-border { border-color: var(--move-type-color); }
+
+        .desc-text {
+            font-size: 13px;
+            line-height: 1.6;
+            color: var(--text-dim);
+        }
+
+        .mono-tag {
+            font-size: 10px;
+            font-weight: bold;
+            color: #fff;
+            border: 1px solid #444;
+            padding: 1px 6px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Monochrome Ribbon Series</h1>
+
+    <!-- POKEMON SECTION -->
+    <h2>1. Pokémon (Black Border + Invisible Shadow)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">M-RIB: Great Tusk</div>
+            <div class="ribbon-card pokemon-border">
+                <div class="ribbon">Pokemon</div>
+                <div class="card-header">Great Tusk</div>
+                <div class="mono-tag">Ground</div>
+                <div class="mono-tag">Fighting</div>
+                <div class="card-content">
+                    <div class="stat-pills">
+                        <span class="pill">HP 115</span> <span class="pill">ATK 131</span> <span class="pill">DEF 131</span>
+                        <span class="pill">SPA 53</span> <span class="pill">SPD 53</span> <span class="pill">SPE 87</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ITEM SECTION -->
+    <h2>2. Items (Gray Border)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">M-RIB: Life Orb</div>
+            <div class="ribbon-card item-border">
+                <div class="ribbon">Item</div>
+                <div class="card-header">Life Orb</div>
+                <div class="card-content">
+                    <div class="desc-text">Boosts the power of moves by 30%, but the user loses 10% of its max HP with each attack.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABILITY SECTION -->
+    <h2>3. Abilities (White Border)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">M-RIB: Intimidate</div>
+            <div class="ribbon-card ability-border">
+                <div class="ribbon">Ability</div>
+                <div class="card-header">Intimidate</div>
+                <div class="card-content">
+                    <div class="desc-text">Lowers the Attack stat of all opposing Pokémon by one stage when this Pokémon enters battle.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOVE SECTION -->
+    <h2>4. Moves (Type Border)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">M-RIB: Fire Move</div>
+            <div class="ribbon-card move-border" style="--move-type-color: var(--type-fire);">
+                <div class="ribbon">Move</div>
+                <div class="card-header">Flare Blitz</div>
+                <div class="mono-tag">Fire</div>
+                <div class="card-content">
+                    <div class="stat-pills">
+                        <span class="pill">BP 120</span> <span class="pill">ACC 100%</span> <span class="pill">PP 15</span>
+                    </div>
+                    <div class="desc-text" style="margin-top: 10px;">The user cloaks itself in fire and charges the target. Recoil damage is taken.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">M-RIB: Ghost Move</div>
+            <div class="ribbon-card move-border" style="--move-type-color: var(--type-ghost);">
+                <div class="ribbon">Move</div>
+                <div class="card-header">Shadow Ball</div>
+                <div class="mono-tag">Ghost</div>
+                <div class="card-content">
+                    <div class="stat-pills">
+                        <span class="pill">BP 80</span> <span class="pill">ACC 100%</span> <span class="pill">PP 15</span>
+                    </div>
+                    <div class="desc-text" style="margin-top: 10px;">A dark blob of energy is hurled at the target. May lower Sp. Def.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

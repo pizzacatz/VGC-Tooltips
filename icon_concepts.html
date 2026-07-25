@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC Tooltip Icon Concepts</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 { color: #ff6d00; margin-bottom: 10px; }
+        p { color: #888; margin-bottom: 40px; text-align: center; max-width: 600px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 40px;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .icon-card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #333;
+        }
+
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .label {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #aaa;
+            text-align: center;
+        }
+
+        /* ICON DEFINITIONS */
+
+        /* 1. Geometric VGC (The 'V' inside a diamond) */
+        .ic-1 { width: 60px; height: 60px; background: #ff4422; clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 30px; color: #fff; }
+
+        /* 2. Tech Scanner (Rotom Eye style) */
+        .ic-2 { width: 60px; height: 60px; border: 4px solid #00acc1; border-radius: 50%; position: relative; }
+        .ic-2::before { content: ''; width: 20px; height: 20px; background: #00acc1; border-radius: 50%; position: absolute; top: 15px; left: 15px; box-shadow: 0 0 10px #00acc1; }
+
+        /* 3. Bar Graph Minimalist */
+        .ic-3 { width: 50px; height: 50px; display: flex; align-items: flex-end; gap: 4px; }
+        .ic-3 div { background: #fff; width: 10px; }
+        .ic-3 .b1 { height: 40%; } .ic-3 .b2 { height: 80%; background: #ff6d00; } .ic-3 .b3 { height: 60%; }
+
+        /* 4. Tera Crystal (Sharp Hexagon) */
+        .ic-4 { width: 60px; height: 60px; background: #e0f7fa; clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); border: 2px solid #fff; }
+
+        /* 5. Info Bubble (Classic Tooltip) */
+        .ic-5 { width: 60px; height: 50px; background: #fff; border-radius: 10px; position: relative; display: flex; align-items: center; justify-content: center; color: #000; font-weight: 900; font-size: 30px; }
+        .ic-5::after { content: ''; position: absolute; bottom: -10px; left: 15px; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #fff; }
+
+        /* 6. Pokeball Abstract (Monochrome) */
+        .ic-6 { width: 60px; height: 60px; border: 5px solid #fff; border-radius: 50%; position: relative; background: linear-gradient(#fff 45%, transparent 45%, transparent 55%, #fff 55%); }
+        .ic-6::after { content: ''; width: 15px; height: 15px; background: #000; border: 4px solid #fff; border-radius: 50%; position: absolute; top: 18px; left: 18px; }
+
+        /* 7. Double Pill (Types) */
+        .ic-7 { display: flex; flex-direction: column; gap: 5px; }
+        .ic-7 div { width: 50px; height: 15px; border-radius: 10px; border: 2px solid #fff; }
+        .ic-7 .t1 { background: #3399ff; } .ic-7 .t2 { background: #aa5599; }
+
+        /* 8. The "É" (Accent Focus) */
+        .ic-8 { font-size: 50px; font-weight: 900; color: #fff; text-shadow: 3px 3px 0 #ff4422; }
+
+        /* 9. Dark Grid (The Perfect Grid) */
+        .ic-9 { width: 50px; height: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 4px; }
+        .ic-9 div { background: #333; border: 1px solid #555; }
+        .ic-9 .active { background: #fff; }
+
+        /* 10. Scarlet Ribbon */
+        .ic-10 { width: 60px; height: 30px; background: #fff; color: #000; font-weight: 900; font-size: 14px; display: flex; align-items: center; justify-content: center; border: 2px solid #ff4422; box-shadow: 4px 4px 0 #ff4422; }
+
+        /* 11. Lightning Priority */
+        .ic-11 { font-size: 50px; color: #ffcc33; filter: drop-shadow(0 0 5px #000); }
+
+        /* 12. Monochromatic Minimalist */
+        .ic-12 { width: 60px; height: 60px; border: 3px solid #fff; display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: 100; }
+
+        /* 13. THE HYBRID (Actual Tooltip Style) */
+        .ic-13 { 
+            width: 70px; 
+            height: 55px; 
+            background: #000; 
+            border: 3px solid #666; 
+            position: relative; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            padding-top: 5px;
+        }
+        .ic-13 .mini-ribbon {
+            position: absolute;
+            top: -10px;
+            left: 5px;
+            background: #fff;
+            color: #000;
+            font-size: 8px;
+            font-weight: 900;
+            padding: 1px 4px;
+            border: 1px solid #000;
+        }
+        .ic-13 .pills { display: flex; gap: 3px; }
+        .ic-13 .p1 { width: 22px; height: 8px; background: #ff4422; border-radius: 4px; border: 1px solid #fff; }
+        .ic-13 .p2 { width: 22px; height: 8px; background: #3399ff; border-radius: 4px; border: 1px solid #fff; }
+        .ic-13 .tail {
+            position: absolute;
+            bottom: -10px;
+            left: 10px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid #666;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>VGC Tooltip Icon Concepts</h1>
+    <p>12 visual directions for your Chrome extension. These represent the "soul" of the UI we built.</p>
+
+    <div class="grid">
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-1">V</div></div>
+            <div class="label">Geometric V</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-2"></div></div>
+            <div class="label">Rotom Eye</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-3"><div class="b1"></div><div class="b2"></div><div class="b3"></div></div></div>
+            <div class="label">Stat Bars</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-4"></div></div>
+            <div class="label">Tera Shard</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-5">i</div></div>
+            <div class="label">Smart Bubble</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-6"></div></div>
+            <div class="label">Abstract Ball</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-7"><div class="t1"></div><div class="t2"></div></div></div>
+            <div class="label">Type Pills</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-8">É</div></div>
+            <div class="label">The Accent</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-9"><div></div><div class="active"></div><div class="active"></div><div></div></div></div>
+            <div class="label">Perfect Grid</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-10">VGC</div></div>
+            <div class="label">Ribbon Tag</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-11">⚡</div></div>
+            <div class="label">Priority Bolt</div>
+        </div>
+        <div class="icon-card">
+            <div class="icon-container"><div class="ic-12">+</div></div>
+            <div class="label">Mono Minimal</div>
+        </div>
+        <!-- THE NEW HYBRID -->
+        <div class="icon-card" style="grid-column: span 2; background: #2a2a2a; border-color: #ff6d00;">
+            <div class="icon-container">
+                <div class="ic-13">
+                    <div class="mini-ribbon">VGC</div>
+                    <div class="pills">
+                        <div class="p1"></div>
+                        <div class="p2"></div>
+                    </div>
+                    <div class="tail"></div>
+                </div>
+            </div>
+            <div class="label" style="color: #ff6d00; font-weight: bold;">Tooltip Hybrid (Original)</div>
+        </div>
+    </div>
+
+    <h2>16 Hybrid Variations (Text-Free & Optimized)</h2>
+    <div class="grid" id="hybrid-variations">
+        <style>
+            .hv-base { width: 60px; height: 50px; background: #000; position: relative; display: flex; align-items: center; justify-content: center; border-style: solid; border-width: 3px; }
+            .hv-ribbon { position: absolute; top: -10px; left: 6px; width: 25px; height: 10px; background: #fff; border: 1px solid #000; }
+            .hv-pills { display: flex; gap: 3px; }
+            .hv-pill { width: 20px; height: 7px; border-radius: 4px; border: 1px solid #fff; }
+            .hv-tail { position: absolute; bottom: -10px; left: 10px; border-left: 7px solid transparent; border-right: 7px solid transparent; border-top: 7px solid currentColor; }
+            
+            /* Specific Variation Classes */
+            .hv-v1 { border-color: #666; } /* Item Gray */
+            .hv-v2 { border-color: #fff; } /* Ability White */
+            .hv-v3 { border-color: #ff4422; } /* Fire Border */
+            .hv-v4 { border-color: #3399ff; } /* Water Border */
+            .hv-v5 .hv-pills { flex-direction: column; } /* Vertical Pills */
+            .hv-v6 { border-radius: 8px; } /* Rounded Chassis */
+            .hv-v7 { border-width: 5px; } /* Thick Border */
+            .hv-v8 { background: #111; } /* Slightly lighter bg */
+            .hv-v9 .hv-ribbon { left: auto; right: 6px; } /* Right Ribbon */
+            .hv-v10 .hv-pill { width: 10px; height: 10px; border-radius: 50%; } /* Circle Pills */
+            .hv-v11 .hv-pills { gap: 1px; } /* Tight Pills */
+            .hv-v12 { clip-path: polygon(0 0, 100% 0, 100% 85%, 30% 85%, 15% 100%, 15% 85%, 0 85%); border: none; background: #333; } /* Custom Shape */
+            .hv-v13 { border-color: #7766ee; } /* Dragon Border */
+            .hv-v14 .hv-ribbon { width: 40px; } /* Long Ribbon */
+            .hv-v15 { box-shadow: 4px 4px 0 #444; } /* Retro Shadow */
+            .hv-v16 { border-color: #000; outline: 1px solid #444; } /* Pure Black */
+        </style>
+
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v1"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#ff4422"></div><div class="hv-pill" style="background:#3399ff"></div></div></div></div><div class="label">V1: Item Gray</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v2"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#77cc55"></div><div class="hv-pill" style="background:#ffcc33"></div></div></div></div><div class="label">V2: Ability White</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v3"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#fff"></div></div><div style="color:#ff4422" class="hv-tail"></div></div></div><div class="label">V3: Fire Border</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v4"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#fff"></div></div><div style="color:#3399ff" class="hv-tail"></div></div></div><div class="label">V4: Water Border</div></div>
+        
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v5 hv-v1"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#ff4422"></div><div class="hv-pill" style="background:#3399ff"></div></div></div></div><div class="label">V5: Vertical Pills</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v6 hv-v2"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#6666bb"></div></div></div></div><div class="label">V6: Rounded</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v7 hv-v1"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#ff4422"></div></div></div></div><div class="label">V7: Thick</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v8 hv-v2"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#ffcc33"></div></div></div></div><div class="label">V8: Soft Black</div></div>
+
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v9 hv-v1"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#fff"></div></div></div></div><div class="label">V9: Right Ribbon</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v10 hv-v2"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#ff4422"></div><div class="hv-pill" style="background:#3399ff"></div></div></div></div><div class="label">V10: Dots</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v11 hv-v3"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#fff"></div><div class="hv-pill" style="background:#fff"></div></div></div></div><div class="label">V11: Split Mono</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-v12"></div></div><div class="label">V12: Modern Tail</div></div>
+
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v13"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#7766ee"></div></div></div></div><div class="label">V13: Dragon</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v14 hv-v1"><div class="hv-ribbon"></div></div></div><div class="label">V14: Wide Ribbon</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v15 hv-v2"><div class="hv-ribbon"></div></div></div><div class="label">V15: Retro</div></div>
+        <div class="icon-card"><div class="icon-container"><div class="hv-base hv-v16"><div class="hv-ribbon"></div><div class="hv-pills"><div class="hv-pill" style="background:#fff"></div></div></div></div><div class="label">V16: Invisible</div></div>
+    </div>
+
+    <h2>Final Selected Concept</h2>
+    <div class="grid">
+        <style>
+            .final-hybrid {
+                width: 100px;
+                height: 85px;
+                background: #000;
+                border: 4px solid #FFB366; /* The Peach Color from Pecha Berry */
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            }
+            .final-ribbon {
+                position: absolute;
+                top: -15px;
+                left: 10px;
+                width: 35px;
+                height: 15px;
+                background: #fff;
+                border: 2px solid #000;
+                z-index: 2;
+            }
+            .final-tail {
+                position: absolute;
+                bottom: -15px;
+                left: 15px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-top: 15px solid #FFB366;
+            }
+            .final-image {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+            }
+        </style>
+
+        <div class="icon-card" style="grid-column: 1 / -1; background: #2a2a2a; border-color: #FFB366;">
+            <div class="icon-container" style="width: 120px; height: 120px;">
+                <div class="final-hybrid">
+                    <div class="final-ribbon"></div>
+                    <img src="FavIconSQUARE.png" class="final-image" alt="Pecha Berry">
+                    <div class="final-tail"></div>
+                </div>
+            </div>
+            <div class="label" style="color: #FFB366; font-weight: bold; font-size: 14px;">The Pecha-Tech Hybrid</div>
+            <p style="margin-top: 10px; font-size: 12px;">Combines the high-contrast tech chassis with your Pecha Berry branding. The border and tail use the berry's signature peach tone.</p>
+        </div>
+    </div>
+
+</body>
+</html>

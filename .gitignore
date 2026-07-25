@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Chrome extension signing keys — NEVER commit these
+*.pem
+
+# Packed extension builds
+*.crx
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

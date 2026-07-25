@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC P3 Variations - Rotom-Tech UI</title>
+    <style>
+        :root {
+            /* SV Type Colors */
+            --type-fire: #ff4422;
+            --type-water: #3399ff;
+            --type-electric: #ffcc33;
+            --type-dragon: #7766ee;
+            --type-ghost: #6666bb;
+            --type-steel: #aaaabb;
+            
+            /* Theme Accents */
+            --tech-teal: #00acc1;
+            --tech-red: #e53935;
+            --tech-purple: #8e24aa;
+            --tech-green: #43a047;
+            --tech-orange: #fb8c00;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            padding: 40px;
+        }
+
+        h1 { text-align: center; color: var(--tech-teal); margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #888; margin-bottom: 50px; }
+        h2 { border-left: 5px solid var(--tech-teal); padding-left: 15px; margin-top: 60px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .showcase-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            font-size: 11px;
+            font-weight: bold;
+            color: #666;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ==========================================
+           CORE P3 TECH BASE
+           ========================================== */
+        .p3-tech {
+            width: 250px;
+            border-radius: 20px;
+            border: 4px solid var(--border-color, var(--tech-teal));
+            padding: 15px;
+            background-color: var(--bg-color, #e0f7fa);
+            color: #333;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            transition: transform 0.2s;
+        }
+
+        .p3-header {
+            font-size: 16px;
+            font-weight: 900;
+            color: var(--header-color, #00838f);
+            border-bottom: 2px solid var(--border-color, var(--tech-teal));
+            margin-bottom: 12px;
+            padding-bottom: 4px;
+            text-transform: uppercase;
+        }
+
+        .p3-inner {
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 12px;
+            padding: 10px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* P2 LIGHT GREY PILLS */
+        .stat-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 5px;
+        }
+
+        .pill {
+            background: #eee;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 11px;
+            font-family: 'Consolas', monospace;
+            font-weight: bold;
+            color: #444;
+        }
+
+        /* ==========================================
+           COLOR THEMES
+           ========================================== */
+        .theme-teal { --border-color: #00acc1; --bg-color: #e0f7fa; --header-color: #006064; }
+        .theme-scarlet { --border-color: #e53935; --bg-color: #ffebee; --header-color: #b71c1c; }
+        .theme-violet { --border-color: #7b1fa2; --bg-color: #f3e5f5; --header-color: #4a148c; }
+        .theme-hacker { --border-color: #2e7d32; --bg-color: #e8f5e9; --header-color: #1b5e20; }
+        .theme-amber { --border-color: #ff8f00; --bg-color: #fff8e1; --header-color: #e65100; }
+
+        .desc-text {
+            font-size: 13px;
+            line-height: 1.4;
+            color: #444;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Rotom-Tech P3 Series</h1>
+    <p class="subtitle">16 Variations with SV geometric aesthetics and P2 Stat Logic</p>
+
+    <!-- POKEMON SECTION -->
+    <h2>1. Pokémon Variations (Stats-First)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">P3-V1: Rotom Standard</div>
+            <div class="p3-tech theme-teal">
+                <div class="p3-header">Gholdengo</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">HP 87</span> <span class="pill">ATK 60</span> <span class="pill">DEF 95</span>
+                        <span class="pill">SPA 133</span> <span class="pill">SPD 91</span> <span class="pill">SPE 84</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">P3-V2: Scarlet Blaze</div>
+            <div class="p3-tech theme-scarlet">
+                <div class="p3-header">Koraidon</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">HP 100</span> <span class="pill">ATK 135</span> <span class="pill">DEF 115</span>
+                        <span class="pill">SPA 85</span> <span class="pill">SPD 100</span> <span class="pill">SPE 135</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">P3-V3: Violet Future</div>
+            <div class="p3-tech theme-violet">
+                <div class="p3-header">Miraidon</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">HP 100</span> <span class="pill">ATK 85</span> <span class="pill">DEF 100</span>
+                        <span class="pill">SPA 135</span> <span class="pill">SPD 115</span> <span class="pill">SPE 135</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">P3-V4: Forest Hacker</div>
+            <div class="p3-tech theme-hacker">
+                <div class="p3-header">Meowscarada</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">HP 76</span> <span class="pill">ATK 110</span> <span class="pill">DEF 70</span>
+                        <span class="pill">SPA 81</span> <span class="pill">SPD 70</span> <span class="pill">SPE 123</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABILITY SECTION -->
+    <h2>2. Ability Variations</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">A3-V1: Core Alert</div>
+            <div class="p3-tech theme-teal">
+                <div class="p3-header">Intimidate</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Lowers the opposing Pokémon's Attack stat by one stage.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">A3-V2: High Risk</div>
+            <div class="p3-tech theme-scarlet">
+                <div class="p3-header">Orichalcum Pulse</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Turns the sunlight harsh and boosts Attack in sun.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">A3-V3: Tech Sync</div>
+            <div class="p3-tech theme-violet">
+                <div class="p3-header">Hadron Engine</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Creates Electric Terrain and boosts Sp. Atk in terrain.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">A3-V4: Hidden Data</div>
+            <div class="p3-tech theme-hacker">
+                <div class="p3-header">Protean</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Changes the Pokémon's type to the move it is about to use.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ITEM SECTION -->
+    <h2>3. Item Variations</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">I3-V1: Shop Standard</div>
+            <div class="p3-tech theme-teal">
+                <div class="p3-header">Focus Sash</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Allows the holder to survive a 1-hit KO if at full HP.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">I3-V2: Danger Zone</div>
+            <div class="p3-tech theme-scarlet">
+                <div class="p3-header">Life Orb</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Boosts move power by 30% at the cost of 10% max HP.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">I3-V3: Ultra Processor</div>
+            <div class="p3-tech theme-violet">
+                <div class="p3-header">Booster Energy</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Activates Quark Drive or Protosynthesis on entry.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">I3-V4: Amber Extract</div>
+            <div class="p3-tech theme-amber">
+                <div class="p3-header">Sitrus Berry</div>
+                <div class="p3-inner">
+                    <div class="desc-text">Restores 25% of the holder's max HP when below half.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOVE SECTION -->
+    <h2>4. Move Variations (Type Pill)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">M3-V1: Water Output</div>
+            <div class="p3-tech theme-teal">
+                <div class="p3-header" style="color: var(--type-water);">Hydro Pump</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 110</span> <span class="pill">ACC 80%</span> <span class="pill">PP 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">M3-V2: Heat Vent</div>
+            <div class="p3-tech theme-scarlet">
+                <div class="p3-header" style="color: var(--type-fire);">Flare Blitz</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 120</span> <span class="pill">ACC 100%</span> <span class="pill">PP 15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">M3-V3: Volt Shift</div>
+            <div class="p3-tech theme-violet">
+                <div class="p3-header" style="color: var(--type-electric);">Electro Drift</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 100</span> <span class="pill">ACC 100%</span> <span class="pill">PP 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">M3-V4: Dragon Breath</div>
+            <div class="p3-tech theme-amber">
+                <div class="p3-header" style="color: var(--type-dragon);">Glaive Rush</div>
+                <div class="p3-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 120</span> <span class="pill">ACC 100%</span> <span class="pill">PP 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

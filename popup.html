@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC Tooltips</title>
+    <style>
+        body {
+            width: 250px;
+            font-family: Verdana, Geneva, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            border: 2px solid #FFB366;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .header img {
+            width: 32px;
+            height: 32px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #FFB366;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            padding: 20px 15px;
+        }
+
+        .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .setting-label {
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Toggle Switch CSS */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 20px;
+        }
+        
+        .switch input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: #333;
+            transition: .3s;
+            border-radius: 20px;
+            border: 1px solid #555;
+        }
+        
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 2px;
+            bottom: 2px;
+            background-color: #fff;
+            transition: .3s;
+            border-radius: 50%;
+        }
+        
+        input:checked + .slider {
+            background-color: #FFB366;
+            border-color: #FFB366;
+        }
+        
+        input:checked + .slider:before {
+            transform: translateX(20px);
+            background-color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 9px;
+            color: #777;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icon48.png" alt="Logo">
+        <h1>VGC Tooltips</h1>
+    </div>
+
+    <div class="content">
+        <div class="setting-row">
+            <span class="setting-label">Enable Tooltips</span>
+            <label class="switch">
+                <input type="checkbox" id="toggle-tooltips" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <p style="font-size: 10px; color: #aaa; line-height: 1.4; margin-top: 0;">
+            Hover over Pokemon, Moves, Items, or Abilities in Showdown to view stats and data.
+        </p>
+    </div>
+
+    <div class="footer">
+        Reload Showdown pages to apply changes.
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC Highlight Concept Showcase</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            background-color: #1a1a1a;
+            color: #eee;
+            padding: 50px;
+            line-height: 1.6;
+        }
+
+        h1 { color: #3b82f6; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 40px; }
+        h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-top: 50px; }
+
+        .demo-box {
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .sample-text { font-size: 16px; margin-bottom: 10px; }
+        
+        /* COMMON HOVER BASE */
+        .h { font-weight: bold; cursor: help; }
+
+        /* --- 1. ORIGINAL BLUE (Solid) --- */
+        .v1-p, .v1-m, .v1-i, .v1-a { color: #3b82f6; border-bottom: 1px dashed #3b82f6; }
+
+        /* --- 2. FULL COLOR TEXT --- */
+        .v2-p { color: #ffffff; border-bottom: 1px dashed #ffffff; }
+        .v2-m { color: #ff6d00; border-bottom: 1px dashed #ff6d00; }
+        .v2-i { color: #bbbbbb; border-bottom: 1px dashed #bbbbbb; }
+        .v2-a { color: #ffffff; border-bottom: 1px solid #ffffff; }
+
+        /* --- 3. BLUE TEXT + COLORED UNDERLINE (Solid 2px) --- */
+        .v3-base { color: #3b82f6; }
+        .v3-p { border-bottom: 2px solid #ff4422; }
+        .v3-m { border-bottom: 2px solid #ff6d00; }
+        .v3-i { border-bottom: 2px solid #9c27b0; }
+        .v3-a { border-bottom: 2px solid #4caf50; }
+
+        /* --- 4. BLUE TEXT + COLORED UNDERLINE (Solid 1px) --- */
+        .v4-base { color: #3b82f6; }
+        .v4-p { border-bottom: 1px solid #3b82f6; }
+        .v4-m { border-bottom: 1px solid #ffeb3b; }
+        .v4-i { border-bottom: 1px solid #e91e63; }
+        .v4-a { border-bottom: 1px solid #00e676; }
+
+        /* --- 5. THE CURRENT CHOICE (Dotted 1px) --- */
+        .v5-base { color: #3b82f6; }
+        .v5-p { border-bottom: 1px dotted #3b82f6; }
+        .v5-m { border-bottom: 1px dotted #ffeb3b; }
+        .v5-i { border-bottom: 1px dotted #e91e63; }
+        .v5-a { border-bottom: 1px dotted #00e676; }
+
+        /* --- 6. COLORED DASHED (The Request) --- */
+        .v6-base { color: #3b82f6; }
+        .v6-p { border-bottom: 1px dashed #3b82f6; }
+        .v6-m { border-bottom: 1px dashed #ffeb3b; }
+        .v6-i { border-bottom: 1px dashed #e91e63; }
+        .v6-a { border-bottom: 1px dashed #00e676; }
+
+        /* --- 7. MONO CHASSIS (Black/White) --- */
+        .v7-base { color: #fff; border-bottom: 1px solid #444; }
+
+        /* --- 8. GLOWING UNDERLINE --- */
+        .v8-base { color: #3b82f6; }
+        .v8-p { border-bottom: 1px solid #3b82f6; box-shadow: 0 1px 4px #3b82f6; }
+        .v8-m { border-bottom: 1px solid #ffeb3b; box-shadow: 0 1px 4px #ffeb3b; }
+
+        /* --- 9. THICK BLOCK UNDERLINE --- */
+        .v9-p { color: #fff; background: rgba(59, 130, 246, 0.2); border-bottom: 3px solid #3b82f6; }
+        .v9-m { color: #fff; background: rgba(255, 235, 59, 0.1); border-bottom: 3px solid #ffeb3b; }
+
+        /* --- 10. NEON DASHED --- */
+        .v10-p { color: #00f2ff; border-bottom: 1px dashed #00f2ff; text-shadow: 0 0 5px rgba(0,242,255,0.5); }
+
+        .legend { display: flex; gap: 20px; font-size: 11px; margin-top: 10px; color: #666; }
+        .l-p::before { content: '■ '; color: #3b82f6; }
+        .l-m::before { content: '■ '; color: #ffeb3b; }
+        .l-i::before { content: '■ '; color: #e91e63; }
+        .l-a::before { content: '■ '; color: #00e676; }
+
+    </style>
+</head>
+<body>
+
+    <h1>Highlight Evolution Showcase</h1>
+    <p>Visualizing the different ways we've distinguished Pokemon, Moves, Items, and Abilities.</p>
+
+    <h2>1. The Original (All Blue Dash)</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v1-p">Incineroar</span>! Use <span class="h v1-m">Fake Out</span> while holding <span class="h v1-i">Focus Sash</span> and having <span class="h v1-a">Intimidate</span>.
+        </div>
+    </div>
+
+    <h2>2. Full Category Colors (Text & Underline)</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v2-p">Incineroar</span>! Use <span class="h v2-m">Fake Out</span> while holding <span class="h v2-i">Focus Sash</span> and having <span class="h v2-a">Intimidate</span>.
+        </div>
+    </div>
+
+    <h2>3. Blue Text + Thick 2px Underlines</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v3-base v3-p">Incineroar</span>! Use <span class="h v3-base v3-m">Fake Out</span> while holding <span class="h v3-base v3-i">Focus Sash</span> and having <span class="h v3-base v3-a">Intimidate</span>.
+        </div>
+    </div>
+
+    <h2>4. Blue Text + Clean 1px Underlines</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v4-base v4-p">Incineroar</span>! Use <span class="h v4-base v4-m">Fake Out</span> while holding <span class="h v4-base v4-i">Focus Sash</span> and having <span class="h v4-base v4-a">Intimidate</span>.
+        </div>
+    </div>
+
+    <h2>5. The Current Choice (Blue Text + Dotted Colors)</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v5-base v5-p">Incineroar</span>! Use <span class="h v5-base v5-m">Fake Out</span> while holding <span class="h v5-base v5-i">Focus Sash</span> and having <span class="h v5-base v5-a">Intimidate</span>.
+        </div>
+    </div>
+
+    <h2>6. Blue Text + DASHED Colors (Clean & Informative)</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v6-base v6-p">Incineroar</span>! Use <span class="h v6-base v6-m">Fake Out</span> while holding <span class="h v6-base v6-i">Focus Sash</span> and having <span class="h v6-base v6-a">Intimidate</span>.
+        </div>
+        <div class="legend">
+            <span class="l-p">Pokemon</span> <span class="l-m">Move</span> <span class="l-i">Item</span> <span class="l-a">Ability</span>
+        </div>
+    </div>
+
+    <h2>7. Monochrome Minimalist (Pure B&W)</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            Go <span class="h v7-base">Incineroar</span>! Use <span class="h v7-base">Fake Out</span>.
+        </div>
+    </div>
+
+    <h2>8. Visual Extras: Glow & Block Underlines</h2>
+    <div class="demo-box">
+        <div class="sample-text" style="margin-bottom: 20px;">
+            Glow: <span class="h v8-base v8-p">Incineroar</span> and <span class="h v8-base v8-m">Fake Out</span>
+        </div>
+        <div class="sample-text">
+            Block: <span class="h v9-p">Incineroar</span> and <span class="h v9-m">Fake Out</span>
+        </div>
+    </div>
+
+    <h2>9. High-Tech / Neon Style</h2>
+    <div class="demo-box">
+        <div class="sample-text">
+            <span class="h v10-p">Incineroar</span> detected in battle.
+        </div>
+    </div>
+
+</body>
+</html>

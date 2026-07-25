@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC Tooltip Design Showcase - SV Aesthetic</title>
+    <style>
+        :root {
+            /* SV Type Colors (Geometric Accents) */
+            --type-fire: #ff4422;
+            --type-water: #3399ff;
+            --type-grass: #77cc55;
+            --type-electric: #ffcc33;
+            --type-ice: #66ccff;
+            --type-fighting: #bb5544;
+            --type-poison: #aa5599;
+            --type-ground: #ddbb55;
+            --type-flying: #8899ff;
+            --type-psychic: #ff5599;
+            --type-bug: #aabb22;
+            --type-rock: #bbaa66;
+            --type-ghost: #6666bb;
+            --type-dragon: #7766ee;
+            --type-dark: #775544;
+            --type-steel: #aaaabb;
+            --type-fairy: #ee99ee;
+            --type-normal: #aaaa99;
+
+            /* UI Colors */
+            --sv-bg-bright: #f0f0f0;
+            --sv-accent-orange: #ff6d00;
+            --sv-accent-purple: #8e24aa;
+            --sv-border: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+        }
+
+        h1 { text-align: center; margin-bottom: 40px; color: var(--sv-accent-orange); }
+        h2 { border-bottom: 2px solid #444; padding-bottom: 10px; margin-top: 60px; }
+
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .design-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #444;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .design-label {
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* TOOLTIP BASE STYLES */
+        .vgc-tooltip {
+            width: 250px;
+            color: #333;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        /* ==========================================
+           1. POKEMON DESIGNS (Stats-First)
+           ========================================== */
+
+        /* P1: Paldean Summary (Clean, Bold Header) */
+        .tp-p1 { background: var(--sv-bg-bright); border-radius: 8px; border: 3px solid #333; }
+        .tp-p1 .header { background: #333; color: #fff; padding: 8px; font-weight: bold; text-align: center; }
+        .tp-p1 .stats-grid { display: grid; grid-template-columns: 1fr 1fr; padding: 10px; background: #fff; gap: 5px; }
+        .tp-p1 .stat-row { font-size: 13px; display: flex; justify-content: space-between; border-bottom: 1px solid #eee; }
+
+        /* P2: Tera Shard (Angled Corners, Gradient) */
+        .tp-p2 { background: #fff; clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%); border-left: 8px solid var(--type-dragon); }
+        .tp-p2 .name { padding: 10px; font-size: 18px; font-weight: 900; color: var(--type-dragon); }
+        .tp-p2 .stats-row { display: flex; flex-wrap: wrap; padding: 0 10px 10px; gap: 8px; font-family: monospace; }
+        .tp-p2 .stat { background: #eee; padding: 2px 5px; border-radius: 4px; font-size: 12px; }
+
+        /* P3: Rotom-Phone Style (Tech/Geometric) */
+        .tp-p3 { background: #e0f7fa; border-radius: 20px; border: 4px solid #00acc1; padding: 15px; }
+        .tp-p3 .title { color: #00838f; font-weight: bold; border-bottom: 2px solid #00acc1; margin-bottom: 10px; }
+        .tp-p3 .stats-block { background: rgba(255,255,255,0.7); border-radius: 10px; padding: 8px; font-size: 12px; }
+
+        /* P4: Academy Ledger (Grid-focused) */
+        .tp-p4 { background: #fff; border: 1px solid #ccc; display: grid; grid-template-columns: 1fr; }
+        .tp-p4 .header { background: var(--sv-accent-purple); color: #fff; padding: 5px; text-align: center; font-size: 14px; }
+        .tp-p4 .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; background: #ccc; }
+        .tp-p4 .item { background: #fff; padding: 5px; text-align: center; font-size: 11px; }
+
+        /* ==========================================
+           2. ABILITY DESIGNS
+           ========================================== */
+
+        /* A1: Minimalist Block */
+        .tp-a1 { background: #fff; border-top: 5px solid var(--sv-accent-orange); padding: 12px; }
+        .tp-a1 .title { font-weight: bold; font-size: 16px; margin-bottom: 5px; }
+        .tp-a1 .desc { font-size: 13px; color: #555; line-height: 1.4; }
+
+        /* A2: Floating Geometric */
+        .tp-a2 { background: #333; color: #fff; border-radius: 0 15px 0 15px; border: 2px solid #fff; padding: 10px; }
+        .tp-a2 .title { color: var(--sv-accent-orange); font-style: italic; border-bottom: 1px solid #555; margin-bottom: 5px; }
+
+        /* A3: Shaded Ribbon */
+        .tp-a3 { background: #f5f5f5; border-radius: 4px; box-shadow: 4px 4px 0px #333; border: 1px solid #333; }
+        .tp-a3 .ribbon { background: #333; color: #fff; padding: 4px 10px; font-size: 12px; width: fit-content; margin-top: -10px; margin-left: 10px; }
+        .tp-a3 .content { padding: 10px; font-size: 13px; }
+
+        /* A4: Transparent Prism */
+        .tp-a4 { background: rgba(255,255,255,0.9); backdrop-filter: blur(5px); border: 2px solid rgba(0,0,0,0.1); border-radius: 12px; padding: 15px; }
+        .tp-a4 .title { font-weight: 800; text-transform: uppercase; color: #444; border-left: 4px solid var(--sv-accent-orange); padding-left: 8px; margin-bottom: 8px; }
+
+        /* ==========================================
+           3. ITEM DESIGNS
+           ========================================== */
+
+        /* I1: Shop Badge */
+        .tp-i1 { background: #fff; border: 2px solid #333; border-radius: 50px 10px 10px 50px; padding: 10px 10px 10px 20px; }
+        .tp-i1 .circle { width: 10px; height: 10px; background: var(--sv-accent-orange); border-radius: 50%; display: inline-block; margin-right: 5px; }
+
+        /* I2: Hexagon Accent */
+        .tp-i2 { background: #fff; position: relative; padding: 15px; border: 1px solid #ddd; }
+        .tp-i2::before { content: ''; position: absolute; top: 0; left: 0; width: 30px; height: 30px; background: #333; clip-path: polygon(0 0, 100% 0, 0 100%); }
+
+        /* I3: Modern Card */
+        .tp-i3 { background: linear-gradient(135deg, #fff 80%, #eee 100%); border-radius: 15px; padding: 15px; border: 1px solid #ccc; }
+        .tp-i3 .cat { font-size: 10px; background: #333; color: #fff; padding: 2px 6px; border-radius: 10px; width: fit-content; margin-bottom: 8px; }
+
+        /* I4: Industrial Label */
+        .tp-i4 { background: #ffeb3b; border: 2px dashed #333; padding: 10px; font-family: 'Courier New', Courier, monospace; }
+
+        /* ==========================================
+           4. MOVE DESIGNS (Color-Type Pill)
+           ========================================== */
+
+        /* M1: Standard Pill (Clean) */
+        .tp-m1 { background: #fff; border-radius: 8px; border: 1px solid #ccc; padding: 10px; }
+        .tp-m1 .pill { background: var(--type-fire); color: #fff; padding: 4px 12px; border-radius: 20px; font-weight: bold; width: fit-content; margin-bottom: 8px; }
+        .tp-m1 .stats { display: flex; justify-content: space-between; font-size: 12px; font-weight: bold; color: #666; }
+
+        /* M2: Battle Tray (Geometric Slant) */
+        .tp-m2 { background: #333; color: #fff; clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%); padding: 12px; text-align: center; }
+        .tp-m2 .pill { background: var(--type-electric); color: #000; padding: 2px 15px; transform: skew(-15deg); display: inline-block; margin-bottom: 10px; font-weight: 900; }
+
+        /* M3: Neon Grid */
+        .tp-m3 { background: #111; border: 2px solid var(--type-ghost); border-radius: 4px; padding: 10px; color: #fff; }
+        .tp-m3 .pill { border: 1px solid var(--type-ghost); color: var(--type-ghost); padding: 3px 8px; font-size: 14px; margin-bottom: 8px; display: inline-block; }
+
+        /* M4: Split Panel */
+        .tp-m4 { background: #fff; border: 2px solid #333; display: flex; flex-direction: column; }
+        .tp-m4 .top { background: var(--type-water); color: #fff; padding: 8px; font-weight: bold; text-align: center; }
+        .tp-m4 .bottom { padding: 10px; font-size: 12px; display: grid; grid-template-columns: 1fr 1fr; }
+
+    </style>
+</head>
+<body>
+
+    <h1>VGC Tooltip UI Concepts</h1>
+
+    <!-- POKEMON SECTION -->
+    <h2>1. Pokémon Tooltips (Stats-First)</h2>
+    <div class="showcase-grid">
+        <div class="design-card">
+            <div class="design-label">P1: Paldean Summary (Classic)</div>
+            <div class="vgc-tooltip tp-p1">
+                <div class="header">Koraidon</div>
+                <div class="stats-grid">
+                    <div class="stat-row"><span>HP</span> <span>100</span></div>
+                    <div class="stat-row"><span>Atk</span> <span>135</span></div>
+                    <div class="stat-row"><span>Def</span> <span>115</span></div>
+                    <div class="stat-row"><span>SpA</span> <span>85</span></div>
+                    <div class="stat-row"><span>SpD</span> <span>100</span></div>
+                    <div class="stat-row"><span>Spe</span> <span>135</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">P2: Tera Shard (Dynamic Slant)</div>
+            <div class="vgc-tooltip tp-p2">
+                <div class="name">Miraidon</div>
+                <div class="stats-row">
+                    <span class="stat">HP: 100</span>
+                    <span class="stat">ATK: 85</span>
+                    <span class="stat">DEF: 100</span>
+                    <span class="stat">SPA: 135</span>
+                    <span class="stat">SPD: 115</span>
+                    <span class="stat">SPE: 135</span>
+                </div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">P3: Rotom-Phone (Tech)</div>
+            <div class="vgc-tooltip tp-p3">
+                <div class="title">Gholdengo #1000</div>
+                <div class="stats-block">
+                    HP 87 / ATK 60 / DEF 95<br>
+                    SPA 133 / SPD 91 / SPE 84
+                </div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">P4: Academy Ledger (Grid)</div>
+            <div class="vgc-tooltip tp-p4">
+                <div class="header">Flutter Mane</div>
+                <div class="grid">
+                    <div class="item">HP<br><strong>55</strong></div>
+                    <div class="item">ATK<br><strong>55</strong></div>
+                    <div class="item">DEF<br><strong>55</strong></div>
+                    <div class="item">SPA<br><strong>135</strong></div>
+                    <div class="item">SPD<br><strong>135</strong></div>
+                    <div class="item">SPE<br><strong>135</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABILITY SECTION -->
+    <h2>2. Ability Tooltips</h2>
+    <div class="showcase-grid">
+        <div class="design-card">
+            <div class="design-label">A1: Minimalist Block</div>
+            <div class="vgc-tooltip tp-a1">
+                <div class="title">Intimidate</div>
+                <div class="desc">Lowers the opposing Pokémon's Attack stat by one stage when entering battle.</div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">A2: Floating Geometric</div>
+            <div class="vgc-tooltip tp-a2">
+                <div class="title">Sword of Ruin</div>
+                <div class="desc">The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself.</div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">A3: Shaded Ribbon</div>
+            <div class="vgc-tooltip tp-a3">
+                <div class="ribbon">Ability</div>
+                <div class="content"><strong>Prankster:</strong> Gives priority to a status move.</div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">A4: Transparent Prism</div>
+            <div class="vgc-tooltip tp-a4">
+                <div class="title">Unaware</div>
+                <div class="desc">When attacking, the Pokémon ignores the target's stat changes.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ITEM SECTION -->
+    <h2>3. Item Tooltips</h2>
+    <div class="showcase-grid">
+        <div class="design-card">
+            <div class="design-label">I1: Shop Badge</div>
+            <div class="vgc-tooltip tp-i1">
+                <div class="circle"></div> <strong>Focus Sash</strong>
+                <p style="font-size: 12px; margin: 5px 0 0;">Prevents 1-hit KO if at full HP.</p>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">I2: Hexagon Accent</div>
+            <div class="vgc-tooltip tp-i2">
+                <strong>Choice Spec</strong>
+                <p style="font-size: 12px; margin-top: 5px; color: #666;">Boosts Sp. Atk by 50% but locks move selection.</p>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">I3: Modern Card</div>
+            <div class="vgc-tooltip tp-i3">
+                <div class="cat">Hold Item</div>
+                <strong>Assault Vest</strong>
+                <p style="font-size: 12px; color: #444;">Boosts Sp. Def by 50% but prevents status moves.</p>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">I4: Industrial Label</div>
+            <div class="vgc-tooltip tp-i4">
+                ITEM_ID: CLEAR_AMULET<br>
+                DESC: PROTECTS STATS FROM DROPS.
+            </div>
+        </div>
+    </div>
+
+    <!-- MOVE SECTION -->
+    <h2>4. Move Tooltips (Type Pill)</h2>
+    <div class="showcase-grid">
+        <div class="design-card">
+            <div class="design-label">M1: Standard Pill</div>
+            <div class="vgc-tooltip tp-m1">
+                <div class="pill">Flare Blitz</div>
+                <div class="stats">
+                    <span>BP: 120</span>
+                    <span>ACC: 100%</span>
+                    <span>PP: 15</span>
+                </div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">M2: Battle Tray (SV Battle UI)</div>
+            <div class="vgc-tooltip tp-m2">
+                <div class="pill" style="background: var(--type-electric);">Electro Drift</div>
+                <div style="font-size: 11px; margin-bottom: 5px;">Double damage if Super Effective.</div>
+                <div style="font-size: 14px; font-weight: bold;">BP: 100 | ACC: 100</div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">M3: Neon Grid</div>
+            <div class="vgc-tooltip tp-m3">
+                <div class="pill">Shadow Ball</div>
+                <div style="font-size: 12px;">BP: 80 / ACC: 100 / PP: 15</div>
+                <div style="font-size: 11px; margin-top: 8px; color: #aaa;">May lower Sp. Def.</div>
+            </div>
+        </div>
+        <div class="design-card">
+            <div class="design-label">M4: Split Panel</div>
+            <div class="vgc-tooltip tp-m4">
+                <div class="top">Hydro Pump</div>
+                <div class="bottom">
+                    <span>BP: 110</span>
+                    <span>ACC: 80%</span>
+                    <span style="grid-column: span 2; margin-top: 5px; color: #888;">High-pressure water blast.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

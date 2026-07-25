@@ -1,0 +1,236 @@
+/* ==========================================
+   1. The Core Tooltip Chassis
+   ========================================== */
+#vgc-tooltip {
+    position: absolute;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 10px 10px;
+    border-radius: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    z-index: 999999;
+    display: none;
+    width: 220px; /* FIXED WIDTH to ensure bar graph consistency */
+    line-height: 1.2;
+    pointer-events: none;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: 0 0 0 1px #222, 0 10px 30px rgba(0,0,0,0.6);
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.vgc-hover {
+    color: #3b82f6; /* Consistent blue text */
+    font-weight: bold;
+    cursor: help;
+}
+
+/* Category-specific colorful 1px dashed underlines */
+.vgc-type-pokemon { 
+    border-bottom: 1px dashed #3b82f6; /* Matching Blue */
+}
+.vgc-type-move { 
+    border-bottom: 1px dashed #ffeb3b; /* Vibrant Yellow */
+}
+.vgc-type-item { 
+    border-bottom: 1px dashed #e91e63; /* Pink/Magenta */
+}
+.vgc-type-ability { 
+    border-bottom: 1px dashed #00e676; /* Bright Spring Green */
+}
+
+/* ==========================================
+   2. Data Indicator Ribbons
+   ========================================== */
+.vgc-ribbon {
+    position: absolute;
+    top: -12px;
+    left: 8px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1px 6px;
+    font-size: 9px; /* Slightly smaller for tighter fit */
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    z-index: 10;
+}
+
+/* ==========================================
+   3. Content Structure
+   ========================================== */
+.vgc-header {
+    font-size: 12px; /* Aligned to Showdown default */
+    font-weight: 800;
+    margin-bottom: 4px; /* Reduced from 8px */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vgc-content {
+    padding-top: 4px; /* Reduced from 8px */
+}
+
+/* ==========================================
+   4. The Perfect Stat Grid & Bars
+   ========================================== */
+.vgc-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default grid if needed */
+    gap: 2px;
+    width: 100%;
+}
+
+/* Specific override for Moves to fit 4 stats */
+.vgc-stat-grid.vgc-move-stats {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Horizontal Stat Bars for Pokemon */
+.vgc-stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.vgc-stat-label {
+    width: 28px; /* Fixed width for labels */
+    font-size: 8px;
+    color: #bbb;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.vgc-stat-value {
+    width: 25px; /* Fixed width for numbers */
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: right;
+    margin-right: 8px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.vgc-bar-bg {
+    flex-grow: 1;
+    height: 6px;
+    background: #111;
+    border: 1px solid #333;
+    position: relative;
+}
+
+.vgc-bar-fill {
+    height: 100%;
+    background: #fff; /* Solid white bar for monochrome look */
+}
+
+/* Keep Stat Boxes for Moves */
+.vgc-stat-box {
+    border: 1px solid #333;
+    background: #111;
+    padding: 2px 1px;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vgc-stat-box .vgc-stat-label {
+    width: 100%;
+    margin-bottom: 0px;
+    font-size: 7px;
+    color: #bbb;
+    text-transform: uppercase;
+}
+
+.vgc-stat-box .vgc-stat-value {
+    width: 100%;
+    margin-right: 0px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+/* ==========================================
+   5. Type Tag Engine (Restored Pills)
+   ========================================== */
+:root {
+    --type-normal: #A8A878;
+    --type-fire: #F08030;
+    --type-water: #6890F0;
+    --type-electric: #F8D030;
+    --type-grass: #78C850;
+    --type-ice: #98D8D8;
+    --type-fighting: #C03028;
+    --type-poison: #A040A0;
+    --type-ground: #E0C068;
+    --type-flying: #A890F0;
+    --type-psychic: #F85888;
+    --type-bug: #A8B820;
+    --type-rock: #B8A038;
+    --type-ghost: #705898;
+    --type-dragon: #7038F8;
+    --type-dark: #705848;
+    --type-steel: #B8B8D0;
+    --type-fairy: #EE99AC;
+    
+    --cat-physical: #C92112;
+    --cat-special: #4F58C4;
+    --cat-status: #8C888C;
+}
+
+.vgc-tag {
+    font-size: 8px; /* Reduced from 9px */
+    font-weight: 900;
+    color: #fff;
+    padding: 1px 6px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 4px; /* Reduced from 8px */
+    /* CLEAN READABILITY: Opaque 1px Drop Shadow */
+    text-shadow: 1px 1px 0px #000;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.bg-normal { background-color: var(--type-normal); }
+.bg-fire { background-color: var(--type-fire); }
+.bg-water { background-color: var(--type-water); }
+.bg-electric { background-color: var(--type-electric); }
+.bg-grass { background-color: var(--type-grass); }
+.bg-ice { background-color: var(--type-ice); }
+.bg-fighting { background-color: var(--type-fighting); }
+.bg-poison { background-color: var(--type-poison); }
+.bg-ground { background-color: var(--type-ground); }
+.bg-flying { background-color: var(--type-flying); }
+.bg-psychic { background-color: var(--type-psychic); }
+.bg-bug { background-color: var(--type-bug); }
+.bg-rock { background-color: var(--type-rock); }
+.bg-ghost { background-color: var(--type-ghost); }
+.bg-dragon { background-color: var(--type-dragon); }
+.bg-dark { background-color: var(--type-dark); }
+.bg-steel { background-color: var(--type-steel); }
+.bg-fairy { background-color: var(--type-fairy); }
+
+.bg-physical { background-color: var(--cat-physical); }
+.bg-special { background-color: var(--cat-special); }
+.bg-status { background-color: var(--cat-status); }
+
+/* Border Hierarchy */
+#vgc-tooltip.pokemon-border { border-color: #000000; box-shadow: 0 0 0 1px #444, 0 10px 30px rgba(0,0,0,0.6); }
+#vgc-tooltip.item-border { border-color: #555555; }
+#vgc-tooltip.ability-border { border-color: #ffffff; }
+#vgc-tooltip.move-border { border-color: var(--move-border-color); }
+
+.desc-text {
+    font-size: 12px; /* Aligned to Showdown default */
+    line-height: 1.4; /* Balanced line height */
+    color: #ffffff; /* Forced pure white */
+}

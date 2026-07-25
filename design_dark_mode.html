@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGC Dark Mode Series - Monochromatic Tech</title>
+    <style>
+        :root {
+            /* Type Colors for Accents ONLY */
+            --type-fire: #ff4422;
+            --type-water: #3399ff;
+            --type-grass: #77cc55;
+            --type-electric: #ffcc33;
+            --type-dragon: #7766ee;
+            --type-ghost: #6666bb;
+            --type-fairy: #ee99ee;
+
+            /* Dark Mode Palette */
+            --bg-page: #0a0a0a;
+            --bg-card: #161616;
+            --bg-inner: rgba(255, 255, 255, 0.03);
+            --text-main: #e0e0e0;
+            --text-dim: #999;
+            --pill-bg: #2a2a2a;
+            --pill-text: #ddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            padding: 40px;
+        }
+
+        h1 { text-align: center; color: #fff; margin-bottom: 50px; text-transform: uppercase; letter-spacing: 4px; }
+        h2 { border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 60px; font-weight: 300; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 20px;
+        }
+
+        .showcase-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .label {
+            font-size: 10px;
+            color: #555;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ==========================================
+           DARK TECH BASE
+           ========================================== */
+        .tech-card {
+            width: 260px;
+            background-color: var(--bg-card);
+            padding: 18px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            border-style: solid;
+            border-width: 3px;
+        }
+
+        .tech-header {
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tech-inner {
+            background: var(--bg-inner);
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        /* STAT PILLS (P2 STYLE - DARK) */
+        .stat-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .pill {
+            background: var(--pill-bg);
+            border: 1px solid #333;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-size: 11px;
+            font-family: 'Consolas', monospace;
+            color: var(--pill-text);
+        }
+
+        /* TYPE TAGS (The only source of color) */
+        .type-tag {
+            font-size: 9px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            color: #fff;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        /* ==========================================
+           SPECIFIC BORDER RULES
+           ========================================== */
+        .pokemon-border { border-color: #000; outline: 1px solid #333; } /* Outline added so black border is visible on dark bg */
+        .item-border { border-color: #666; }
+        .ability-border { border-color: #fff; }
+        .move-border { border-color: var(--move-type-color); }
+
+        .desc-text {
+            font-size: 12px;
+            line-height: 1.5;
+            color: var(--text-dim);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Dark Tech Series</h1>
+
+    <!-- POKEMON SECTION (Black Border) -->
+    <h2>1. Pokémon (Black Borders)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">P-DARK: Flutter Mane</div>
+            <div class="tech-card pokemon-border">
+                <div class="tech-header">Flutter Mane</div>
+                <div class="type-tag" style="background: var(--type-ghost);">Ghost</div>
+                <div class="type-tag" style="background: var(--type-fairy);">Fairy</div>
+                <div class="tech-inner">
+                    <div class="stat-pills">
+                        <span class="pill">HP 55</span> <span class="pill">ATK 55</span> <span class="pill">DEF 55</span>
+                        <span class="pill">SPA 135</span> <span class="pill">SPD 135</span> <span class="pill">SPE 135</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">P-DARK: Iron Bundle</div>
+            <div class="tech-card pokemon-border">
+                <div class="tech-header">Iron Bundle</div>
+                <div class="type-tag" style="background: var(--type-water);">Water</div>
+                <div class="tech-inner">
+                    <div class="stat-pills">
+                        <span class="pill">HP 56</span> <span class="pill">ATK 80</span> <span class="pill">DEF 114</span>
+                        <span class="pill">SPA 124</span> <span class="pill">SPD 60</span> <span class="pill">SPE 136</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ITEM SECTION (Gray Border) -->
+    <h2>2. Items (Gray Borders)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">I-DARK: Focus Sash</div>
+            <div class="tech-card item-border">
+                <div class="tech-header">Focus Sash</div>
+                <div class="tech-inner">
+                    <div class="desc-text">Prevents a 1-hit KO if the holder is at full HP. Single use.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">I-DARK: Choice Specs</div>
+            <div class="tech-card item-border">
+                <div class="tech-header">Choice Specs</div>
+                <div class="tech-inner">
+                    <div class="desc-text">Boosts Sp. Atk by 50% but locks the user into one move.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABILITY SECTION (White Border) -->
+    <h2>3. Abilities (White Borders)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">A-DARK: Intimidate</div>
+            <div class="tech-card ability-border">
+                <div class="tech-header">Intimidate</div>
+                <div class="tech-inner">
+                    <div class="desc-text">Lowers the Attack of all opposing Pokémon by one stage.</div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">A-DARK: Protosynthesis</div>
+            <div class="tech-card ability-border">
+                <div class="tech-header">Protosynthesis</div>
+                <div class="tech-inner">
+                    <div class="desc-text">Boosts highest stat in Sun or with Booster Energy.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOVE SECTION (Type-Colored Border) -->
+    <h2>4. Moves (Type-Colored Borders)</h2>
+    <div class="grid">
+        <div class="showcase-item">
+            <div class="label">M-DARK: Fire Type</div>
+            <div class="tech-card move-border" style="--move-type-color: var(--type-fire);">
+                <div class="tech-header">Flare Blitz</div>
+                <div class="type-tag" style="background: var(--type-fire);">Fire</div>
+                <div class="tech-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 120</span> <span class="pill">ACC 100%</span> <span class="pill">PP 15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">M-DARK: Electric Type</div>
+            <div class="tech-card move-border" style="--move-type-color: var(--type-electric);">
+                <div class="tech-header">Thunderbolt</div>
+                <div class="type-tag" style="background: var(--type-electric);">Electric</div>
+                <div class="tech-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 90</span> <span class="pill">ACC 100%</span> <span class="pill">PP 15</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="showcase-item">
+            <div class="label">M-DARK: Dragon Type</div>
+            <div class="tech-card move-border" style="--move-type-color: var(--type-dragon);">
+                <div class="tech-header">Draco Meteor</div>
+                <div class="type-tag" style="background: var(--type-dragon);">Dragon</div>
+                <div class="tech-inner">
+                    <div class="stat-pills">
+                        <span class="pill">BP 130</span> <span class="pill">ACC 90%</span> <span class="pill">PP 5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
