@@ -57,7 +57,7 @@ const IGNORED_FLAGS = [
 // the two copies cannot drift.
 const DIST_FILES = [
     'manifest.json', 'content.js', 'styles.css', 'popup.html', 'popup.js',
-    'pokemon.json', 'moves.json', 'items.json', 'abilities.json',
+    'pokemon.json', 'moves.json', 'items.json', 'abilities.json', 'natures.json',
     'icon16.png', 'icon48.png', 'icon128.png'
 ];
 
@@ -113,6 +113,28 @@ const BUILDERS = {
         writeLibrary('moves.json', outputJSON);
     },
 
+    natures() {
+        console.log('⏳ Processing Natures...');
+        const natureData = loadSource('natures.ts');
+        const STAT_LABELS = { hp: 'HP', atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
+        const outputJSON = {};
+
+        for (const key in natureData) {
+            const nature = natureData[key];
+            if (!nature.name) continue;
+
+            // Keyed on the full phrase the sites actually print. A bare nature name
+            // is an ordinary English word — Bold, Calm, Serious, Rash, Naive — and
+            // matching those alone would highlight half of Showdown's chat.
+            const plus = STAT_LABELS[nature.plus];
+            const minus = STAT_LABELS[nature.minus];
+            outputJSON[`${nature.name} Nature`] = plus && minus
+                ? { plus, minus, description: `Raises ${plus} by 10% and lowers ${minus} by 10%.` }
+                : { description: 'Neutral nature. No stat changes.' };
+        }
+        writeLibrary('natures.json', outputJSON);
+    },
+
     items() {
         console.log('⏳ Processing Items...');
         buildDescriptionLibrary('items.ts', 'items.json');
@@ -144,7 +166,7 @@ function buildDescriptionLibrary(sourceFile, outputFile) {
 function checkCollisions() {
     const LIBRARIES = {
         pokemon: 'pokemon.json', move: 'moves.json',
-        item: 'items.json', ability: 'abilities.json'
+        item: 'items.json', ability: 'abilities.json', nature: 'natures.json'
     };
 
     const owners = {};
@@ -166,8 +188,8 @@ function checkCollisions() {
     for (const [name, categories] of collisions) {
         console.warn(`   - ${name}: ${categories.join(' + ')}`);
     }
-    console.warn('   content.js resolves these from the surrounding log text. If a new one');
-    console.warn('   needs different wording cues, add them to CATEGORY_CUES in content.js.');
+    console.warn('   content.js resolves these from the page. If a new one needs a rule,');
+    console.warn('   add a scope or cue to the relevant SITE_PROFILES entry in content.js.');
 }
 
 // The content script fetches the JSON libraries through runtime.getURL, so every site
@@ -188,6 +210,17 @@ function checkManifest() {
         console.error('\n❌ manifest.json: these content_scripts matches are missing from');
         console.error('   web_accessible_resources — the data libraries will not load there:');
         missing.forEach(m => console.error(`   - ${m}`));
+        ok = false;
+    }
+
+    // Same failure mode for the libraries themselves: content.js fetches each one, and
+    // a library the manifest does not expose is simply unreachable at runtime.
+    const exposed = manifest.web_accessible_resources[0].resources;
+    const unexposed = DIST_FILES.filter(f => f.endsWith('.json') && f !== 'manifest.json' && !exposed.includes(f));
+    if (unexposed.length > 0) {
+        console.error('\n❌ manifest.json: these data libraries are not in');
+        console.error('   web_accessible_resources.resources — content.js cannot fetch them:');
+        unexposed.forEach(f => console.error(`   - ${f}`));
         ok = false;
     }
 
@@ -223,10 +256,11 @@ const DATA_TYPES = [
     { title: 'Moves (moves-data.ts + moves-text.ts)', value: 'moves' },
     { title: 'Items (items.ts)', value: 'items' },
     { title: 'Abilities (abilities.ts)', value: 'abilities' },
+    { title: 'Natures (natures.ts)', value: 'natures' },
     { title: 'Sync dist/ only (no data rebuild)', value: 'sync' }
 ];
 
-const ALL_TYPES = ['pokemon', 'moves', 'items', 'abilities'];
+const ALL_TYPES = ['pokemon', 'moves', 'items', 'abilities', 'natures'];
 
 // Targets may be passed as arguments for scripted/CI runs
 // (`node build.js all`, `node build.js moves items`); otherwise we prompt.

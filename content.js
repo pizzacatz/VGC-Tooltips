@@ -102,6 +102,21 @@ document.addEventListener('mouseover', (e) => {
                 descText = data.description || data.shortDesc || '';
                 contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text"></div></div>`;
             }
+            else if (data.vgc_category === 'nature') {
+                // Also called Stat Alignment. The five neutral natures have no plus or
+                // minus and get the description alone.
+                ribbonText = 'NATURE';
+                borderClass = 'nature-border';
+                descText = data.description || '';
+                let statsHtml = '';
+                if (data.plus && data.minus) {
+                    statsHtml = `<div class="vgc-stat-grid vgc-nature-stats" style="margin-bottom: 4px;">`
+                        + `<div class="vgc-stat-box"><span class="vgc-stat-label">Raises</span><span class="vgc-stat-value vgc-stat-plus">${data.plus}</span></div>`
+                        + `<div class="vgc-stat-box"><span class="vgc-stat-label">Lowers</span><span class="vgc-stat-value vgc-stat-minus">${data.minus}</span></div>`
+                        + `</div>`;
+                }
+                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;">${statsHtml}<div class="desc-text"></div></div>`;
+            }
 
             tooltip.classList.add(borderClass);
             tooltip.innerHTML = `<div class="vgc-ribbon">${ribbonText}</div><div class="vgc-header"></div>${contentHtml}`;
@@ -152,7 +167,7 @@ let vgcIndex = {};
 // When no cue matches, prefer the category a battle log is most likely to be
 // naming. Candidate lists are kept sorted by this order, so candidates[0] is the
 // default. Moves lead because logs announce them explicitly on every use.
-const CATEGORY_PRIORITY = ['move', 'pokemon', 'ability', 'item'];
+const CATEGORY_PRIORITY = ['move', 'pokemon', 'ability', 'item', 'nature'];
 
 // SITE PROFILES
 // -------------
@@ -338,9 +353,10 @@ Promise.all([
     fetch(vgcApi.runtime.getURL("pokemon.json")).then(res => res.json()),
     fetch(vgcApi.runtime.getURL("moves.json")).then(res => res.json()),
     fetch(vgcApi.runtime.getURL("items.json")).then(res => res.json()),
-    fetch(vgcApi.runtime.getURL("abilities.json")).then(res => res.json())
+    fetch(vgcApi.runtime.getURL("abilities.json")).then(res => res.json()),
+    fetch(vgcApi.runtime.getURL("natures.json")).then(res => res.json())
 ])
-.then(([pokemonData, movesData, itemsData, abilitiesData]) => {
+.then(([pokemonData, movesData, itemsData, abilitiesData, naturesData]) => {
     // Collect every library into name -> [candidates] instead of merging them, which
     // previously let the last spread win and made colliding names unreachable.
     const addLibrary = (library, category) => {
@@ -354,6 +370,7 @@ Promise.all([
     addLibrary(movesData, 'move');
     addLibrary(itemsData, 'item');
     addLibrary(abilitiesData, 'ability');
+    addLibrary(naturesData, 'nature');
 
     for (const name in vgcIndex) {
         if (vgcIndex[name].length > 1) {

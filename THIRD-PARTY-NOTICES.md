@@ -15,11 +15,12 @@ The following files are taken verbatim from the Pokémon Showdown repository
 - `data files/moves-text.ts`
 - `data files/items.ts`
 - `data files/abilities.ts`
+- `data files/natures.ts`
 
-The four data libraries the extension ships — `pokemon.json`, `moves.json`,
-`items.json`, and `abilities.json` (and their copies in `dist/`) — are
-generated from those files by `build.js` and are therefore derivative works of
-them.
+The five data libraries the extension ships — `pokemon.json`, `moves.json`,
+`items.json`, `abilities.json`, and `natures.json` (and their copies in
+`dist/`) — are generated from those files by `build.js` and are therefore
+derivative works of them.
 
 Pokémon Showdown is distributed under the MIT License:
 

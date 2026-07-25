@@ -44,8 +44,11 @@ html[data-vgc-site^="limitless"] .vgc-hover {
 .vgc-type-item { 
     border-bottom: 1px dashed #e91e63; /* Pink/Magenta */
 }
-.vgc-type-ability { 
+.vgc-type-ability {
     border-bottom: 1px dashed #00e676; /* Bright Spring Green */
+}
+.vgc-type-nature {
+    border-bottom: 1px dashed #b388ff; /* Violet — distinct from the four above */
 }
 
 /* ==========================================
@@ -95,6 +98,11 @@ html[data-vgc-site^="limitless"] .vgc-hover {
 /* Specific override for Moves to fit 4 stats */
 .vgc-stat-grid.vgc-move-stats {
     grid-template-columns: repeat(4, 1fr);
+}
+
+/* Natures raise one stat and lower another, so two boxes */
+.vgc-stat-grid.vgc-nature-stats {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* Horizontal Stat Bars for Pokemon */
@@ -236,6 +244,11 @@ html[data-vgc-site^="limitless"] .vgc-hover {
 #vgc-tooltip.item-border { border-color: #555555; }
 #vgc-tooltip.ability-border { border-color: #ffffff; }
 #vgc-tooltip.move-border { border-color: var(--move-border-color); }
+#vgc-tooltip.nature-border { border-color: #b388ff; }
+
+/* The raised and lowered stat on a nature tooltip */
+.vgc-stat-box .vgc-stat-value.vgc-stat-plus { color: #00e676; }
+.vgc-stat-box .vgc-stat-value.vgc-stat-minus { color: #ff5252; }
 
 .desc-text {
     font-size: 12px; /* Aligned to Showdown default */

@@ -1,4 +1,4 @@
-# VGC Frictionless Tooltips (v1.2)
+# VGC Frictionless Tooltips (v1.3)
 
 A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the sites you already read teams and battles on. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
 
@@ -26,6 +26,7 @@ A name can belong to more than one library — **Metronome** is both a move and 
 - **MOVES:** Yellow dashed underline. Tooltips show a 4-column grid (Power, Accuracy, PP, Priority) and filtered gameplay attributes.
 - **ABILITIES:** Green dashed underline. Provides concise descriptive text in a white-bordered frame.
 - **ITEMS:** Pink dashed underline. Provides item effects in a sleek gray-bordered frame.
+- **NATURES:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red), or notes a neutral nature. Also known as *Stat Alignment*. Matched as the full phrase — `Adamant Nature`, not `Adamant` — because bare nature names are ordinary words that would otherwise light up chat.
 
 ---
 
@@ -44,6 +45,7 @@ Generated from source code to ensure the extension remains lightweight and fast.
 - **`moves.json`**: Name, Type, Category, Stats, Priority, and Attributes.
 - **`items.json`**: Name and descriptive effect.
 - **`abilities.json`**: Name and short description.
+- **`natures.json`**: Keyed on the full phrase (`Adamant Nature`), with the raised and lowered stat.
 
 ### Development & Build Tools
 - **`build.js`**: A custom Node.js script. Converts raw TypeScript source files (`.ts`) from Pokémon Showdown into the optimized `.json` libraries used by the extension, then mirrors every shipping file into `/dist`.
@@ -62,10 +64,12 @@ These files record the evolution of the UI and can be used for future reference:
 
 0. **Install tooling:** `npm install` (once).
 1. **Update Data:** Drop new `.ts` files from the Showdown repository into `/data files` (the repo root also works) and run:
-   - `npm run build` — rebuilds all four libraries, or
-   - `node build.js moves items` — rebuilds only the named targets (`pokemon`, `moves`, `items`, `abilities`, `all`). With no arguments it prompts interactively.
+   - `npm run build` — rebuilds all five libraries, or
+   - `node build.js moves items` — rebuilds only the named targets (`pokemon`, `moves`, `items`, `abilities`, `natures`, `all`). With no arguments it prompts interactively.
 2. **Test:** Load the root folder as an "Unpacked Extension" in Chrome Developer Mode.
-3. **Deploy:** The build copies all 12 shipping files into `/dist` automatically — use that folder for distribution. Pass `--no-dist` to skip the copy.
+3. **Deploy:** The build copies all 13 shipping files into `/dist` automatically — use that folder for distribution. Pass `--no-dist` to skip the copy, or `node build.js sync` to refresh `/dist` after a code-only change.
+
+The build also reports three things that are otherwise silent: a name appearing in more than one data library, a site listed under `content_scripts` but missing from `web_accessible_resources`, and `manifest.json` disagreeing with `package.json` on the version.
 
 ---
 

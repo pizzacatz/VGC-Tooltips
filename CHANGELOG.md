@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3
+
+**Nature tooltips** (also called *Stat Alignment*). Hovering a nature shows the stat it raises and the stat it lowers side by side, in green and red, with a violet dashed underline; the five neutral natures say so instead. Natures are matched as the full phrase — `Adamant Nature`, never a bare `Adamant` — because nature names on their own are ordinary English words (Bold, Calm, Serious, Rash, Naive) and matching those would highlight much of Showdown's chat. Every supported site prints the full phrase, so nothing is lost: PokePaste as a set line, Limitless in `.nature`.
+
+Adds `natures.json`, generated from Showdown's `natures.ts` by a new `natures` build target.
+
+`build.js` now also fails if a data library is missing from `web_accessible_resources.resources` — the same silent failure as a missing site, found while adding `natures.json`.
+
 ## v1.2
 
 **Supported sites** — the extension previously ran only on Pokémon Showdown. It now also runs on:

@@ -1,0 +1,117 @@
+{
+    "Adamant Nature": {
+        "plus": "Atk",
+        "minus": "SpA",
+        "description": "Raises Atk by 10% and lowers SpA by 10%."
+    },
+    "Bashful Nature": {
+        "description": "Neutral nature. No stat changes."
+    },
+    "Bold Nature": {
+        "plus": "Def",
+        "minus": "Atk",
+        "description": "Raises Def by 10% and lowers Atk by 10%."
+    },
+    "Brave Nature": {
+        "plus": "Atk",
+        "minus": "Spe",
+        "description": "Raises Atk by 10% and lowers Spe by 10%."
+    },
+    "Calm Nature": {
+        "plus": "SpD",
+        "minus": "Atk",
+        "description": "Raises SpD by 10% and lowers Atk by 10%."
+    },
+    "Careful Nature": {
+        "plus": "SpD",
+        "minus": "SpA",
+        "description": "Raises SpD by 10% and lowers SpA by 10%."
+    },
+    "Docile Nature": {
+        "description": "Neutral nature. No stat changes."
+    },
+    "Gentle Nature": {
+        "plus": "SpD",
+        "minus": "Def",
+        "description": "Raises SpD by 10% and lowers Def by 10%."
+    },
+    "Hardy Nature": {
+        "description": "Neutral nature. No stat changes."
+    },
+    "Hasty Nature": {
+        "plus": "Spe",
+        "minus": "Def",
+        "description": "Raises Spe by 10% and lowers Def by 10%."
+    },
+    "Impish Nature": {
+        "plus": "Def",
+        "minus": "SpA",
+        "description": "Raises Def by 10% and lowers SpA by 10%."
+    },
+    "Jolly Nature": {
+        "plus": "Spe",
+        "minus": "SpA",
+        "description": "Raises Spe by 10% and lowers SpA by 10%."
+    },
+    "Lax Nature": {
+        "plus": "Def",
+        "minus": "SpD",
+        "description": "Raises Def by 10% and lowers SpD by 10%."
+    },
+    "Lonely Nature": {
+        "plus": "Atk",
+        "minus": "Def",
+        "description": "Raises Atk by 10% and lowers Def by 10%."
+    },
+    "Mild Nature": {
+        "plus": "SpA",
+        "minus": "Def",
+        "description": "Raises SpA by 10% and lowers Def by 10%."
+    },
+    "Modest Nature": {
+        "plus": "SpA",
+        "minus": "Atk",
+        "description": "Raises SpA by 10% and lowers Atk by 10%."
+    },
+    "Naive Nature": {
+        "plus": "Spe",
+        "minus": "SpD",
+        "description": "Raises Spe by 10% and lowers SpD by 10%."
+    },
+    "Naughty Nature": {
+        "plus": "Atk",
+        "minus": "SpD",
+        "description": "Raises Atk by 10% and lowers SpD by 10%."
+    },
+    "Quiet Nature": {
+        "plus": "SpA",
+        "minus": "Spe",
+        "description": "Raises SpA by 10% and lowers Spe by 10%."
+    },
+    "Quirky Nature": {
+        "description": "Neutral nature. No stat changes."
+    },
+    "Rash Nature": {
+        "plus": "SpA",
+        "minus": "SpD",
+        "description": "Raises SpA by 10% and lowers SpD by 10%."
+    },
+    "Relaxed Nature": {
+        "plus": "Def",
+        "minus": "Spe",
+        "description": "Raises Def by 10% and lowers Spe by 10%."
+    },
+    "Sassy Nature": {
+        "plus": "SpD",
+        "minus": "Spe",
+        "description": "Raises SpD by 10% and lowers Spe by 10%."
+    },
+    "Serious Nature": {
+        "description": "Neutral nature. No stat changes."
+    },
+    "Timid Nature": {
+        "plus": "Spe",
+        "minus": "Atk",
+        "description": "Raises Spe by 10% and lowers Atk by 10%."
+    }
+}
