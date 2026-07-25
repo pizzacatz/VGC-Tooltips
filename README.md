@@ -1,4 +1,4 @@
-# VGC Frictionless Tooltips (v1.3.2)
+# VGC Frictionless Tooltips (v1.3.3)
 
 A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the sites you already read teams and battles on. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
 
@@ -26,7 +26,7 @@ A name can belong to more than one library — **Metronome** is both a move and 
 - **MOVES:** Yellow dashed underline. Tooltips show a 4-column grid (Power, Accuracy, PP, Priority) and filtered gameplay attributes.
 - **ABILITIES:** Green dashed underline. Provides concise descriptive text in a white-bordered frame.
 - **ITEMS:** Pink dashed underline. Provides item effects in a sleek gray-bordered frame.
-- **NATURES / STAT ALIGNMENT:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red) with no explanatory sentence, since the boxes already say it; the five neutral natures have no boxes and say so in words instead. The ribbon uses whichever term the page does. Mainline sheets write `Adamant Nature` and are matched on that full phrase, because bare nature names are ordinary words (Bold, Calm, Serious, Naive) that would otherwise light up chat. Pokémon Champions sheets write `Stat Alignment: Adamant`, so the bare name is matched *only* inside that field on Limitless — never in loose text.
+- **STAT ALIGNMENT:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red) with no explanatory sentence, since the boxes already say it; the five neutral alignments have no boxes and say so in words instead. *Stat Alignment* is the official term and the tooltip always uses it, with the bare name as the heading — so a mainline sheet's `Adamant Nature` and a Pokémon Champions sheet's `Stat Alignment: Adamant` produce an identical tooltip. Both spellings are matched: the full phrase anywhere, and the bare name *only* inside the alignment field on Limitless, because bare names are ordinary words (Bold, Calm, Serious, Naive) that would otherwise light up chat.
 
 ---
 
@@ -45,7 +45,7 @@ Generated from source code to ensure the extension remains lightweight and fast.
 - **`moves.json`**: Name, Type, Category, Stats, Priority, and Attributes.
 - **`items.json`**: Name and descriptive effect.
 - **`abilities.json`**: Name and short description.
-- **`natures.json`**: Keyed on the full phrase (`Adamant Nature`), with the bare name and the raised and lowered stat.
+- **`natures.json`**: Stat Alignments. Keyed on the full phrase (`Adamant Nature`), with the bare name and the raised and lowered stat. The files and code keep the name *nature* because that is what the upstream Showdown source calls them.
 
 ### Development & Build Tools
 - **`build.js`**: A custom Node.js script. Converts raw TypeScript source files (`.ts`) from Pokémon Showdown into the optimized `.json` libraries used by the extension, then mirrors every shipping file into `/dist`.

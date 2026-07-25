@@ -47,6 +47,9 @@ document.addEventListener('mouseover', (e) => {
             let ribbonText = '';
             let borderClass = '';
             let contentHtml = '';
+            // Defaults to the text that was hovered; a category may override it to
+            // present a canonical name instead.
+            let headerText = id;
             // Text pulled from the data libraries is injected as textContent after the
             // markup is built, never interpolated into an HTML string.
             let descText = '';
@@ -103,12 +106,13 @@ document.addEventListener('mouseover', (e) => {
                 contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text"></div></div>`;
             }
             else if (data.vgc_category === 'nature') {
-                // Mainline sheets write "Adamant Nature"; Pokemon Champions sheets write
-                // "Stat Alignment: Adamant". The matched text tells us which page this
-                // is, so the ribbon uses the same term the reader is looking at.
-                // The five neutral natures have no plus or minus and get the
-                // description alone.
-                ribbonText = / Nature$/.test(id) ? 'NATURE' : 'STAT ALIGNMENT';
+                // "Stat Alignment" is the official term; "Nature" is the community one.
+                // Pages use either — mainline sheets write "Adamant Nature", Pokemon
+                // Champions sheets write "Stat Alignment: Adamant" — but the tooltip
+                // always presents the official term, and the header is always the bare
+                // name, so both spellings produce exactly the same tooltip.
+                ribbonText = 'STAT ALIGNMENT';
+                headerText = data.name || id;
                 borderClass = 'nature-border';
                 descText = data.description || '';
                 let statsHtml = '';
@@ -127,7 +131,7 @@ document.addEventListener('mouseover', (e) => {
 
             tooltip.classList.add(borderClass);
             tooltip.innerHTML = `<div class="vgc-ribbon">${ribbonText}</div><div class="vgc-header"></div>${contentHtml}`;
-            tooltip.querySelector('.vgc-header').textContent = id;
+            tooltip.querySelector('.vgc-header').textContent = headerText;
             const descEl = tooltip.querySelector('.desc-text');
             if (descEl) descEl.textContent = descText;
             tooltip.style.display = 'block';

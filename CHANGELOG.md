@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3.3
+
+Uses the official term throughout the tooltip. *Stat Alignment* is the official name for what the community calls a nature, so the ribbon now reads **STAT ALIGNMENT** on every page rather than following the page's own wording, and the heading is always the bare name (`Adamant`) rather than echoing the text that was hovered.
+
+The effect is that a mainline sheet's `Adamant Nature` and a Pokémon Champions sheet's `Stat Alignment: Adamant` now render an identical tooltip — a test compares the two directly. Both spellings are still matched exactly as before; only the presentation changed.
+
+The data file and the code still use *nature* internally, since that is what the upstream Pokémon Showdown source calls them.
+
 ## v1.3.2
 
 Drops the "Raises X by 10% and lowers Y by 10%." line from nature tooltips. The tooltip already shows the raised and lowered stat as labelled boxes, so the sentence only repeated them. The five neutral natures keep their text, because they have no boxes and would otherwise show an empty tooltip.
