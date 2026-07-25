@@ -113,12 +113,16 @@ document.addEventListener('mouseover', (e) => {
                 descText = data.description || '';
                 let statsHtml = '';
                 if (data.plus && data.minus) {
-                    statsHtml = `<div class="vgc-stat-grid vgc-nature-stats" style="margin-bottom: 4px;">`
+                    // No trailing margin: the boxes are the last thing in the tooltip.
+                    statsHtml = `<div class="vgc-stat-grid vgc-nature-stats">`
                         + `<div class="vgc-stat-box"><span class="vgc-stat-label">Raises</span><span class="vgc-stat-value vgc-stat-plus">${data.plus}</span></div>`
                         + `<div class="vgc-stat-box"><span class="vgc-stat-label">Lowers</span><span class="vgc-stat-value vgc-stat-minus">${data.minus}</span></div>`
                         + `</div>`;
                 }
-                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;">${statsHtml}<div class="desc-text"></div></div>`;
+                // Only the neutral natures carry text, so the element is omitted rather
+                // than left empty for the rest.
+                const descHtml = descText ? `<div class="desc-text"></div>` : '';
+                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;">${statsHtml}${descHtml}</div>`;
             }
 
             tooltip.classList.add(borderClass);

@@ -1,4 +1,4 @@
-# VGC Frictionless Tooltips (v1.3.1)
+# VGC Frictionless Tooltips (v1.3.2)
 
 A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the sites you already read teams and battles on. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
 
@@ -26,7 +26,7 @@ A name can belong to more than one library — **Metronome** is both a move and 
 - **MOVES:** Yellow dashed underline. Tooltips show a 4-column grid (Power, Accuracy, PP, Priority) and filtered gameplay attributes.
 - **ABILITIES:** Green dashed underline. Provides concise descriptive text in a white-bordered frame.
 - **ITEMS:** Pink dashed underline. Provides item effects in a sleek gray-bordered frame.
-- **NATURES / STAT ALIGNMENT:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red), or notes a neutral nature. The ribbon uses whichever term the page does. Mainline sheets write `Adamant Nature` and are matched on that full phrase, because bare nature names are ordinary words (Bold, Calm, Serious, Naive) that would otherwise light up chat. Pokémon Champions sheets write `Stat Alignment: Adamant`, so the bare name is matched *only* inside that field on Limitless — never in loose text.
+- **NATURES / STAT ALIGNMENT:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red) with no explanatory sentence, since the boxes already say it; the five neutral natures have no boxes and say so in words instead. The ribbon uses whichever term the page does. Mainline sheets write `Adamant Nature` and are matched on that full phrase, because bare nature names are ordinary words (Bold, Calm, Serious, Naive) that would otherwise light up chat. Pokémon Champions sheets write `Stat Alignment: Adamant`, so the bare name is matched *only* inside that field on Limitless — never in loose text.
 
 ---
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.3.2
+
+Drops the "Raises X by 10% and lowers Y by 10%." line from nature tooltips. The tooltip already shows the raised and lowered stat as labelled boxes, so the sentence only repeated them. The five neutral natures keep their text, because they have no boxes and would otherwise show an empty tooltip.
+
 ## v1.3.1
 
 **Natures now work on Pokémon Champions team sheets.** v1.3 matched only the mainline phrasing, `Adamant Nature`. Champions sheets on `standings.limitlessvgc.com` instead write `Stat Alignment: Adamant`, with the name on its own, so nothing was highlighted there at all.

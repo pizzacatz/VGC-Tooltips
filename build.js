@@ -131,8 +131,12 @@ const BUILDERS = {
             // `name` is the bare form. Pokemon Champions team sheets print
             // "Stat Alignment: Adamant" rather than "Adamant Nature", so content.js
             // needs the name on its own — but only inside that field, never loose.
+            //
+            // No description for a stat-changing nature: the tooltip shows the raised
+            // and lowered stat as labelled boxes, and a sentence repeating them adds
+            // nothing. The neutral natures have no boxes, so they keep their text.
             outputJSON[`${nature.name} Nature`] = plus && minus
-                ? { name: nature.name, plus, minus, description: `Raises ${plus} by 10% and lowers ${minus} by 10%.` }
+                ? { name: nature.name, plus, minus }
                 : { name: nature.name, description: 'Neutral nature. No stat changes.' };
         }
         writeLibrary('natures.json', outputJSON);

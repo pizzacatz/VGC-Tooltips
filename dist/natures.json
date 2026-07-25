@@ -2,8 +2,7 @@
     "Adamant Nature": {
         "name": "Adamant",
         "plus": "Atk",
-        "minus": "SpA",
-        "description": "Raises Atk by 10% and lowers SpA by 10%."
+        "minus": "SpA"
     },
     "Bashful Nature": {
         "name": "Bashful",
@@ -12,26 +11,22 @@
     "Bold Nature": {
         "name": "Bold",
         "plus": "Def",
-        "minus": "Atk",
-        "description": "Raises Def by 10% and lowers Atk by 10%."
+        "minus": "Atk"
     },
     "Brave Nature": {
         "name": "Brave",
         "plus": "Atk",
-        "minus": "Spe",
-        "description": "Raises Atk by 10% and lowers Spe by 10%."
+        "minus": "Spe"
     },
     "Calm Nature": {
         "name": "Calm",
         "plus": "SpD",
-        "minus": "Atk",
-        "description": "Raises SpD by 10% and lowers Atk by 10%."
+        "minus": "Atk"
     },
     "Careful Nature": {
         "name": "Careful",
         "plus": "SpD",
-        "minus": "SpA",
-        "description": "Raises SpD by 10% and lowers SpA by 10%."
+        "minus": "SpA"
     },
     "Docile Nature": {
         "name": "Docile",
@@ -40,8 +35,7 @@
     "Gentle Nature": {
         "name": "Gentle",
         "plus": "SpD",
-        "minus": "Def",
-        "description": "Raises SpD by 10% and lowers Def by 10%."
+        "minus": "Def"
     },
     "Hardy Nature": {
         "name": "Hardy",
@@ -50,62 +44,52 @@
     "Hasty Nature": {
         "name": "Hasty",
         "plus": "Spe",
-        "minus": "Def",
-        "description": "Raises Spe by 10% and lowers Def by 10%."
+        "minus": "Def"
     },
     "Impish Nature": {
         "name": "Impish",
         "plus": "Def",
-        "minus": "SpA",
-        "description": "Raises Def by 10% and lowers SpA by 10%."
+        "minus": "SpA"
     },
     "Jolly Nature": {
         "name": "Jolly",
         "plus": "Spe",
-        "minus": "SpA",
-        "description": "Raises Spe by 10% and lowers SpA by 10%."
+        "minus": "SpA"
     },
     "Lax Nature": {
         "name": "Lax",
         "plus": "Def",
-        "minus": "SpD",
-        "description": "Raises Def by 10% and lowers SpD by 10%."
+        "minus": "SpD"
     },
     "Lonely Nature": {
         "name": "Lonely",
         "plus": "Atk",
-        "minus": "Def",
-        "description": "Raises Atk by 10% and lowers Def by 10%."
+        "minus": "Def"
     },
     "Mild Nature": {
         "name": "Mild",
         "plus": "SpA",
-        "minus": "Def",
-        "description": "Raises SpA by 10% and lowers Def by 10%."
+        "minus": "Def"
     },
     "Modest Nature": {
         "name": "Modest",
         "plus": "SpA",
-        "minus": "Atk",
-        "description": "Raises SpA by 10% and lowers Atk by 10%."
+        "minus": "Atk"
     },
     "Naive Nature": {
         "name": "Naive",
         "plus": "Spe",
-        "minus": "SpD",
-        "description": "Raises Spe by 10% and lowers SpD by 10%."
+        "minus": "SpD"
     },
     "Naughty Nature": {
         "name": "Naughty",
         "plus": "Atk",
-        "minus": "SpD",
-        "description": "Raises Atk by 10% and lowers SpD by 10%."
+        "minus": "SpD"
     },
     "Quiet Nature": {
         "name": "Quiet",
         "plus": "SpA",
-        "minus": "Spe",
-        "description": "Raises SpA by 10% and lowers Spe by 10%."
+        "minus": "Spe"
     },
     "Quirky Nature": {
         "name": "Quirky",
@@ -114,20 +98,17 @@
     "Rash Nature": {
         "name": "Rash",
         "plus": "SpA",
-        "minus": "SpD",
-        "description": "Raises SpA by 10% and lowers SpD by 10%."
+        "minus": "SpD"
     },
     "Relaxed Nature": {
         "name": "Relaxed",
         "plus": "Def",
-        "minus": "Spe",
-        "description": "Raises Def by 10% and lowers Spe by 10%."
+        "minus": "Spe"
     },
     "Sassy Nature": {
         "name": "Sassy",
         "plus": "SpD",
-        "minus": "Spe",
-        "description": "Raises SpD by 10% and lowers Spe by 10%."
+        "minus": "Spe"
     },
     "Serious Nature": {
         "name": "Serious",
@@ -136,7 +117,6 @@
     "Timid Nature": {
         "name": "Timid",
         "plus": "Spe",
-        "minus": "Atk",
-        "description": "Raises Spe by 10% and lowers Atk by 10%."
+        "minus": "Atk"
     }
 }
