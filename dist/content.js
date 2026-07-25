@@ -36,8 +36,10 @@ document.addEventListener('mouseover', (e) => {
 
     if (e.target && e.target.classList.contains('vgc-hover')) {
         const id = e.target.getAttribute('data-id');
-        const data = vgcData[id];
-        
+        // A name can belong to more than one library (see NAME COLLISIONS below), so the
+        // scanner records which one it resolved to and the tooltip honours that choice.
+        const data = lookupTerm(id, e.target.getAttribute('data-cat'));
+
         if (data) {
             tooltip.className = '';
             tooltip.style.setProperty('--move-border-color', 'transparent');
@@ -136,7 +138,63 @@ document.addEventListener('mouseout', (e) => {
 // ==========================================
 // Phase 2: The Data Pipeline & Scanner Engine
 // ==========================================
-let vgcData = {}; 
+
+// NAME COLLISIONS
+// ---------------
+// A single name can exist in more than one library — "Metronome" is both a move
+// ("Picks a random move.") and an item ("Damage of moves used on consecutive turns
+// is increased."). vgcIndex therefore maps each name to a LIST of candidates rather
+// than to one entry, so a collision cannot silently overwrite anything. Which
+// candidate a given occurrence means is decided from the surrounding log text by
+// resolveCategory(); `node build.js` warns whenever a new collision appears.
+let vgcIndex = {};
+
+// When no cue matches, prefer the category a battle log is most likely to be
+// naming. Candidate lists are kept sorted by this order, so candidates[0] is the
+// default. Moves lead because logs announce them explicitly on every use.
+const CATEGORY_PRIORITY = ['move', 'pokemon', 'ability', 'item'];
+
+// Cues are tested against the text immediately around a match, and only for
+// categories the name actually belongs to — so a possessive can mean "item" for
+// Metronome without that rule interfering with any other term.
+const CATEGORY_CUES = [
+    // "Pikachu used Metronome!" — anchored, so only an immediately preceding "used".
+    { category: 'move', before: /\bused\s+$/i },
+    { category: 'move', before: /\b(called|copied)\s+$/i },
+    // "... knocked off Incineroar's Metronome!"
+    { category: 'item', before: /['’]s\s+$/ },
+    // "Incineroar obtained one Metronome." — allowed to skip a few words, but never
+    // across a sentence boundary.
+    { category: 'item', before: /\b(obtained|knocked off|found|ate|holding|using its|swapped)\b[^.!?]{0,24}$/i },
+    { category: 'item', after: /^\s*(was (knocked off|stolen|consumed)|activated)\b/i },
+    { category: 'ability', before: /['’]s\s+$/ },
+];
+
+function lookupTerm(name, category) {
+    const candidates = vgcIndex[name];
+    if (!candidates || candidates.length === 0) return null;
+    if (category) {
+        const match = candidates.find(c => c.vgc_category === category);
+        if (match) return match;
+    }
+    return candidates[0];
+}
+
+// Returns the category a specific occurrence of `name` refers to. `text` is the full
+// text node value and start/end bracket the match inside it.
+function resolveCategory(candidates, text, start, end) {
+    if (candidates.length === 1) return candidates[0].vgc_category;
+
+    const before = text.slice(Math.max(0, start - 40), start);
+    const after = text.slice(end, end + 40);
+
+    for (const cue of CATEGORY_CUES) {
+        if (!candidates.some(c => c.vgc_category === cue.category)) continue;
+        if (cue.before && cue.before.test(before)) return cue.category;
+        if (cue.after && cue.after.test(after)) return cue.category;
+    }
+    return candidates[0].vgc_category;
+}
 
 Promise.all([
     fetch(vgcApi.runtime.getURL("pokemon.json")).then(res => res.json()),
@@ -145,13 +203,28 @@ Promise.all([
     fetch(vgcApi.runtime.getURL("abilities.json")).then(res => res.json())
 ])
 .then(([pokemonData, movesData, itemsData, abilitiesData]) => {
-    Object.values(pokemonData).forEach(d => d.vgc_category = 'pokemon');
-    Object.values(movesData).forEach(d => d.vgc_category = 'move');
-    Object.values(itemsData).forEach(d => d.vgc_category = 'item');
-    Object.values(abilitiesData).forEach(d => d.vgc_category = 'ability');
+    // Collect every library into name -> [candidates] instead of merging them, which
+    // previously let the last spread win and made colliding names unreachable.
+    const addLibrary = (library, category) => {
+        for (const name in library) {
+            const entry = library[name];
+            entry.vgc_category = category;
+            (vgcIndex[name] = vgcIndex[name] || []).push(entry);
+        }
+    };
+    addLibrary(pokemonData, 'pokemon');
+    addLibrary(movesData, 'move');
+    addLibrary(itemsData, 'item');
+    addLibrary(abilitiesData, 'ability');
 
-    vgcData = { ...pokemonData, ...movesData, ...itemsData, ...abilitiesData };
-    const sortedKeys = Object.keys(vgcData).sort((a, b) => b.length - a.length);
+    for (const name in vgcIndex) {
+        if (vgcIndex[name].length > 1) {
+            vgcIndex[name].sort((a, b) =>
+                CATEGORY_PRIORITY.indexOf(a.vgc_category) - CATEGORY_PRIORITY.indexOf(b.vgc_category));
+        }
+    }
+
+    const sortedKeys = Object.keys(vgcIndex).sort((a, b) => b.length - a.length);
     if (sortedKeys.length === 0) return;
 
     const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -180,12 +253,17 @@ Promise.all([
                 fragment.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
             }
 
-            const data = vgcData[term];
+            // Resolve which library this occurrence means before building the span, so
+            // the underline colour matches the tooltip the hover will show.
+            const candidates = vgcIndex[term] || [];
+            const category = candidates.length
+                ? resolveCategory(candidates, text, match.index, match.index + term.length)
+                : '';
+
             const span = document.createElement('span');
-            span.className = data && data.vgc_category
-                ? `vgc-hover vgc-type-${data.vgc_category}`
-                : 'vgc-hover';
+            span.className = category ? `vgc-hover vgc-type-${category}` : 'vgc-hover';
             span.setAttribute('data-id', term);
+            if (category) span.setAttribute('data-cat', category);
             span.textContent = term;
             fragment.appendChild(span);
 

@@ -138,6 +138,38 @@ function buildDescriptionLibrary(sourceFile, outputFile) {
     writeLibrary(outputFile, outputJSON);
 }
 
+// A name that exists in two libraries (currently only "Metronome": move + item) has
+// to be disambiguated at runtime by content.js. Report them so a new collision
+// introduced by an upstream data update is visible instead of silent.
+function checkCollisions() {
+    const LIBRARIES = {
+        pokemon: 'pokemon.json', move: 'moves.json',
+        item: 'items.json', ability: 'abilities.json'
+    };
+
+    const owners = {};
+    for (const [category, file] of Object.entries(LIBRARIES)) {
+        const filePath = path.join(ROOT, file);
+        if (!fs.existsSync(filePath)) continue;
+        for (const name of Object.keys(JSON.parse(fs.readFileSync(filePath, 'utf8')))) {
+            (owners[name] = owners[name] || []).push(category);
+        }
+    }
+
+    const collisions = Object.entries(owners).filter(([, categories]) => categories.length > 1);
+    if (collisions.length === 0) {
+        console.log('🔎 No cross-library name collisions.');
+        return;
+    }
+
+    console.warn(`\n⚠️  ${collisions.length} name(s) appear in more than one library:`);
+    for (const [name, categories] of collisions) {
+        console.warn(`   - ${name}: ${categories.join(' + ')}`);
+    }
+    console.warn('   content.js resolves these from the surrounding log text. If a new one');
+    console.warn('   needs different wording cues, add them to CATEGORY_CUES in content.js.');
+}
+
 function syncDist() {
     fs.mkdirSync(DIST_DIR, { recursive: true });
     let copied = 0;
@@ -226,6 +258,7 @@ async function main() {
         return;
     }
 
+    checkCollisions();
     if (!process.argv.includes('--no-dist')) syncDist();
     console.log('\n✨ Build Complete.');
 }
