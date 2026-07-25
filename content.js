@@ -197,20 +197,32 @@ const SITE_PROFILES = [
         ],
     },
     {
-        // Limitless team lists are structured markup — .item, .ability and .attacks are
-        // separate elements — so the enclosing element is a definitive answer and no
-        // text heuristic is needed. The cue is a fallback in case that markup changes:
-        // the item is the line directly above the one reading "Ability:".
+        // Both Limitless sites mark their team lists up structurally — .item, .ability
+        // and the move list are separate elements — so the enclosing element is a
+        // definitive answer and no text heuristic is needed. They share a template but
+        // differ in places: play.limitlesstcg.com names the move list .attacks,
+        // limitlessvgc.com names it .moves, and only limitlessvgc.com has the usage
+        // tables on /pokemon/<name>. Listing both sets of selectors covers each site;
+        // a selector that does not exist on a page simply never matches.
         id: 'limitless',
-        hosts: ['play.limitlesstcg.com'],
-        containers: '.teamlist',
+        hosts: ['play.limitlesstcg.com', 'limitlessvgc.com', 'www.limitlessvgc.com'],
+        containers: '.teamlist, .stats-tables',
         scopes: [
             { selector: '.item', category: 'item' },
             { selector: '.ability', category: 'ability' },
-            { selector: '.attacks', category: 'move' },
+            { selector: '.attacks, .moves', category: 'move' },
             { selector: '.name', category: 'pokemon' },
+            // Usage tables on limitlessvgc.com/pokemon/<name>. Each table is titled by
+            // its leading <th> ("Items", "Moves", "Abilities", "Team Partners"), which
+            // states the category of every name in that table.
+            { selector: 'table', header: /^\s*Items\s*$/i, category: 'item' },
+            { selector: 'table', header: /^\s*Moves\s*$/i, category: 'move' },
+            { selector: 'table', header: /^\s*Abilities\s*$/i, category: 'ability' },
+            { selector: 'table', header: /^\s*Team Partners\s*$/i, category: 'pokemon' },
         ],
         cues: [
+            // Fallback if the team-list markup ever changes: the item is the line
+            // directly above the one reading "Ability:".
             { category: 'item', after: /^\s*Ability:/i },
         ],
     },
@@ -268,7 +280,16 @@ function resolveCategory(candidates, textNode, container, text, start, end) {
     const element = textNode.parentElement;
     if (element) {
         for (const scope of SITE.scopes || []) {
-            if (has(scope.category) && element.closest(scope.selector)) return scope.category;
+            if (!has(scope.category)) continue;
+            const host = element.closest(scope.selector);
+            if (!host) continue;
+            // A scope may additionally require the enclosing element to be titled —
+            // used for tables whose heading names the category of their contents.
+            if (scope.header) {
+                const heading = host.querySelector('th');
+                if (!heading || !scope.header.test(heading.textContent)) continue;
+            }
+            return scope.category;
         }
     }
 

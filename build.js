@@ -170,6 +170,27 @@ function checkCollisions() {
     console.warn('   needs different wording cues, add them to CATEGORY_CUES in content.js.');
 }
 
+// The content script fetches the JSON libraries through runtime.getURL, so every site
+// it runs on must also be listed under web_accessible_resources. If the two lists
+// drift the extension loads on the missing site and then silently fetches nothing,
+// which looks exactly like "the site isn't supported".
+function checkManifest() {
+    const manifest = JSON.parse(fs.readFileSync(path.join(ROOT, 'manifest.json'), 'utf8'));
+    const scriptMatches = manifest.content_scripts[0].matches;
+    const resourceMatches = manifest.web_accessible_resources[0].matches;
+    const missing = scriptMatches.filter(m => !resourceMatches.includes(m));
+
+    if (missing.length === 0) {
+        console.log(`🔎 manifest match lists agree (${scriptMatches.length} sites).`);
+        return true;
+    }
+
+    console.error('\n❌ manifest.json: these content_scripts matches are missing from');
+    console.error('   web_accessible_resources — the data libraries will not load there:');
+    missing.forEach(m => console.error(`   - ${m}`));
+    return false;
+}
+
 function syncDist() {
     fs.mkdirSync(DIST_DIR, { recursive: true });
     let copied = 0;
@@ -235,6 +256,7 @@ async function main() {
     // `sync` refreshes dist/ from the current source files without touching the
     // data libraries — used after a code-only change to content.js, the CSS, etc.
     if (targets.length === 1 && targets[0] === 'sync') {
+        if (!checkManifest()) process.exitCode = 1;
         syncDist();
         console.log('\n✨ Sync Complete.');
         return;
@@ -259,6 +281,7 @@ async function main() {
     }
 
     checkCollisions();
+    if (!checkManifest()) process.exitCode = 1;
     if (!process.argv.includes('--no-dist')) syncDist();
     console.log('\n✨ Build Complete.');
 }

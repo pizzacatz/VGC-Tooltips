@@ -24,25 +24,33 @@
       "matches": [
         "*://replay.pokemonshowdown.com/*",
         "*://play.pokemonshowdown.com/*",
-        "*://*.pokepast.es/*",
+        "*://pokepast.es/*",
+        "*://www.pokepast.es/*",
         "*://play.limitlesstcg.com/*",
+        "*://limitlessvgc.com/*",
+        "*://www.limitlessvgc.com/*",
         "file:///*"
       ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }
   ],
-"web_accessible_resources": [
+  "web_accessible_resources": [
     {
       "resources": [
-        "pokemon.json", 
-        "moves.json", 
-        "items.json", 
+        "pokemon.json",
+        "moves.json",
+        "items.json",
         "abilities.json"
       ],
       "matches": [
         "*://replay.pokemonshowdown.com/*",
         "*://play.pokemonshowdown.com/*",
+        "*://pokepast.es/*",
+        "*://www.pokepast.es/*",
+        "*://play.limitlesstcg.com/*",
+        "*://limitlessvgc.com/*",
+        "*://www.limitlessvgc.com/*",
         "file:///*"
       ]
     }
