@@ -154,21 +154,76 @@ let vgcIndex = {};
 // default. Moves lead because logs announce them explicitly on every use.
 const CATEGORY_PRIORITY = ['move', 'pokemon', 'ability', 'item'];
 
-// Cues are tested against the text immediately around a match, and only for
-// categories the name actually belongs to — so a possessive can mean "item" for
-// Metronome without that rule interfering with any other term.
-const CATEGORY_CUES = [
-    // "Pikachu used Metronome!" — anchored, so only an immediately preceding "used".
-    { category: 'move', before: /\bused\s+$/i },
-    { category: 'move', before: /\b(called|copied)\s+$/i },
-    // "... knocked off Incineroar's Metronome!"
-    { category: 'item', before: /['’]s\s+$/ },
-    // "Incineroar obtained one Metronome." — allowed to skip a few words, but never
-    // across a sentence boundary.
-    { category: 'item', before: /\b(obtained|knocked off|found|ate|holding|using its|swapped)\b[^.!?]{0,24}$/i },
-    { category: 'item', after: /^\s*(was (knocked off|stolen|consumed)|activated)\b/i },
-    { category: 'ability', before: /['’]s\s+$/ },
+// SITE PROFILES
+// -------------
+// Each supported site says where its text lives and how to tell a colliding name
+// apart there. `containers` is where scanning is allowed at all, which keeps the
+// scanner out of navigation and chrome. `scopes` map an enclosing element straight
+// to a category and are preferred when a site marks up its data structurally.
+// `cues` are wording tests applied to the text around a match, used where the page
+// is only formatted text.
+const SITE_PROFILES = [
+    {
+        id: 'showdown',
+        hosts: ['play.pokemonshowdown.com', 'replay.pokemonshowdown.com'],
+        containers: '.battle-history',
+        cues: [
+            // "Pikachu used Metronome!" — anchored, so only an immediately preceding "used".
+            { category: 'move', before: /\bused\s+$/i },
+            { category: 'move', before: /\b(called|copied)\s+$/i },
+            // "... knocked off Incineroar's Metronome!"
+            { category: 'item', before: /['’]s\s+$/ },
+            // "Incineroar obtained one Metronome." — allowed to skip a few words, but
+            // never across a sentence boundary.
+            { category: 'item', before: /\b(obtained|knocked off|found|ate|holding|using its|swapped)\b[^.!?]{0,24}$/i },
+            { category: 'item', after: /^\s*(was (knocked off|stolen|consumed)|activated)\b/i },
+            { category: 'ability', before: /['’]s\s+$/ },
+        ],
+    },
+    {
+        // PokePaste renders each set into <article><pre>, colouring names with <span>
+        // by type. The type classes say nothing about which library a name came from,
+        // so the set format itself is the signal: the item always follows " @ ".
+        id: 'pokepaste',
+        hosts: ['pokepast.es', 'www.pokepast.es'],
+        containers: 'article pre',
+        cues: [
+            { category: 'item', before: /@\s*$/ },
+            { category: 'ability', before: /\bAbility:\s*$/i },
+            // A move line starts with "- ". The dash is inside its own <span>, so this
+            // is only reachable because context is gathered across element boundaries.
+            { category: 'move', before: /(^|\n)\s*-\s+$/ },
+            { category: 'pokemon', after: /^[^\n]*\s@\s/ },
+        ],
+    },
+    {
+        // Limitless team lists are structured markup — .item, .ability and .attacks are
+        // separate elements — so the enclosing element is a definitive answer and no
+        // text heuristic is needed. The cue is a fallback in case that markup changes:
+        // the item is the line directly above the one reading "Ability:".
+        id: 'limitless',
+        hosts: ['play.limitlesstcg.com'],
+        containers: '.teamlist',
+        scopes: [
+            { selector: '.item', category: 'item' },
+            { selector: '.ability', category: 'ability' },
+            { selector: '.attacks', category: 'move' },
+            { selector: '.name', category: 'pokemon' },
+        ],
+        cues: [
+            { category: 'item', after: /^\s*Ability:/i },
+        ],
+    },
 ];
+
+// Saved replay files opened from disk have no hostname, and they are Showdown pages,
+// so the Showdown profile is also the fallback.
+const SITE = SITE_PROFILES.find(p => p.hosts.includes(location.hostname)) || SITE_PROFILES[0];
+const CONTAINER_SELECTOR = SITE.containers;
+
+// Lets styles.css defer to a host site's own colouring — PokePaste and Limitless
+// already colour names, and overriding that would throw away information.
+document.documentElement.setAttribute('data-vgc-site', SITE.id);
 
 function lookupTerm(name, category) {
     const candidates = vgcIndex[name];
@@ -180,19 +235,62 @@ function lookupTerm(name, category) {
     return candidates[0];
 }
 
-// Returns the category a specific occurrence of `name` refers to. `text` is the full
-// text node value and start/end bracket the match inside it.
-function resolveCategory(candidates, text, start, end) {
+const CONTEXT_CHARS = 40;
+
+// Walks the DOM in document order collecting up to `budget` characters of text on
+// one side of `node`, without leaving `container`. A text node rarely holds all the
+// context needed: PokePaste puts " @ " in a text node of its own between the species
+// <span> and the item <span>, so reading only the matched node would never see it.
+function textAround(node, container, budget, forwards) {
+    let out = '';
+    let current = node;
+
+    while (out.length < budget && current && current !== container) {
+        const sibling = forwards ? current.nextSibling : current.previousSibling;
+        if (!sibling) {
+            current = current.parentNode;
+            continue;
+        }
+        current = sibling;
+        const text = sibling.textContent || '';
+        out = forwards ? out + text : text + out;
+    }
+    return forwards ? out.slice(0, budget) : out.slice(-budget);
+}
+
+// Returns the category a specific occurrence refers to. `text` is the matched node's
+// value; start/end bracket the match inside it.
+function resolveCategory(candidates, textNode, container, text, start, end) {
     if (candidates.length === 1) return candidates[0].vgc_category;
+    const has = (category) => candidates.some(c => c.vgc_category === category);
 
-    const before = text.slice(Math.max(0, start - 40), start);
-    const after = text.slice(end, end + 40);
+    // 1. Structural scopes: an enclosing element that states the category outright.
+    const element = textNode.parentElement;
+    if (element) {
+        for (const scope of SITE.scopes || []) {
+            if (has(scope.category) && element.closest(scope.selector)) return scope.category;
+        }
+    }
 
-    for (const cue of CATEGORY_CUES) {
-        if (!candidates.some(c => c.vgc_category === cue.category)) continue;
+    // 2. Wording cues, extended across element boundaries only when needed.
+    let before = text.slice(Math.max(0, start - CONTEXT_CHARS), start);
+    let after = text.slice(end, end + CONTEXT_CHARS);
+    if (container) {
+        if (before.length < CONTEXT_CHARS) {
+            before = textAround(textNode, container, CONTEXT_CHARS - before.length, false) + before;
+        }
+        if (after.length < CONTEXT_CHARS) {
+            after += textAround(textNode, container, CONTEXT_CHARS - after.length, true);
+        }
+    }
+
+    for (const cue of SITE.cues || []) {
+        if (!has(cue.category)) continue;
         if (cue.before && cue.before.test(before)) return cue.category;
         if (cue.after && cue.after.test(after)) return cue.category;
     }
+
+    // 3. Nothing decisive — fall back to the most likely category.
     return candidates[0].vgc_category;
 }
 
@@ -238,7 +336,7 @@ Promise.all([
     // would re-parse markup that Showdown had already escaped, so chat text such as
     // "Pikachu <img src=x onerror=...>" would execute. Everything that is not a match
     // stays a text node and can never become an element.
-    function wrapTextNode(textNode) {
+    function wrapTextNode(textNode, container) {
         const text = textNode.nodeValue;
         regex.lastIndex = 0;
         let match;
@@ -257,7 +355,7 @@ Promise.all([
             // the underline colour matches the tooltip the hover will show.
             const candidates = vgcIndex[term] || [];
             const category = candidates.length
-                ? resolveCategory(candidates, text, match.index, match.index + term.length)
+                ? resolveCategory(candidates, textNode, container, text, match.index, match.index + term.length)
                 : '';
 
             const span = document.createElement('span');
@@ -290,28 +388,30 @@ Promise.all([
         return textNodes;
     }
 
-    // Handles a node from anywhere in the page. Showdown appends each new log line
-    // as a child of an existing .battle-history, so the added node is usually
-    // inside a log rather than being the log itself — both cases are covered here.
+    function scanContainer(container) {
+        collectTextNodes(container).forEach(node => wrapTextNode(node, container));
+    }
+
+    // Handles a node from anywhere in the page. Showdown appends each new log line as
+    // a child of an existing .battle-history, so an added node is usually inside a
+    // container rather than being one — both cases are covered here.
     function scanAndWrap(node) {
         if (node.nodeType === Node.TEXT_NODE) {
-            if (node.parentElement && node.parentElement.closest('.battle-history')) {
-                wrapTextNode(node);
-            }
+            const container = node.parentElement && node.parentElement.closest(CONTAINER_SELECTOR);
+            if (container) wrapTextNode(node, container);
             return;
         }
         if (node.nodeType !== Node.ELEMENT_NODE) return;
 
-        if (node.closest('.battle-history')) {
-            collectTextNodes(node).forEach(wrapTextNode);
+        const container = node.closest(CONTAINER_SELECTOR);
+        if (container) {
+            collectTextNodes(node).forEach(textNode => wrapTextNode(textNode, container));
             return;
         }
-        node.querySelectorAll('.battle-history').forEach(history => {
-            collectTextNodes(history).forEach(wrapTextNode);
-        });
+        node.querySelectorAll(CONTAINER_SELECTOR).forEach(scanContainer);
     }
 
-    document.querySelectorAll('.battle-history').forEach(scanAndWrap);
+    document.querySelectorAll(CONTAINER_SELECTOR).forEach(scanContainer);
 
     // A single document-level observer replaces the previous 2s polling loop, so new
     // log lines highlight as they arrive instead of up to two seconds later, and no

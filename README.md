@@ -1,6 +1,18 @@
 # VGC Frictionless Tooltips (v1.1)
 
-A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the Pokémon Showdown interface. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
+A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the sites you already read teams and battles on. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
+
+## 🌐 Supported Sites
+
+| Site | Where it runs | How terms are told apart |
+| --- | --- | --- |
+| **Pokémon Showdown** (`play.` / `replay.`) | The battle log and chat (`.battle-history`) | Wording — "Pikachu **used** Metronome!" is a move, "Incineroar**'s** Metronome" is an item |
+| **PokePaste** (`pokepast.es`) | Each set (`article pre`) | Set format — the item is whatever follows **`@`**, an ability follows `Ability:`, a move follows `-` |
+| **Limitless** (`play.limitlesstcg.com`) | Team lists (`.teamlist`) | Markup — the item, ability, and move lists are separate elements (`.item`, `.ability`, `.attacks`) |
+
+Scanning is confined to the containers above, so navigation, chat headers, and page furniture are left alone. On PokePaste and Limitless the site's own text colouring is preserved and only the dashed underline is added; on Showdown, terms are recoloured as before.
+
+Adding another site means adding one entry to `SITE_PROFILES` in `content.js` and one match pattern to `manifest.json`.
 
 ## 🌟 Core Functionality
 
@@ -19,7 +31,7 @@ The extension scans the Pokémon Showdown battle logs and chat in real-time usin
 ### Extension Core (The "Dist" Files)
 These files are the engine that runs in your browser. They are also duplicated in the `/dist` folder for clean production use.
 - **`manifest.json`**: The extension's "instruction manual." Defines permissions, content scripts, and cross-browser compatibility settings.
-- **`content.js`**: The primary logic. Contains the Scanner Engine, the mouseover event delegation, and the tooltip generation logic.
+- **`content.js`**: The primary logic. Contains the site profiles, the Scanner Engine, the mouseover event delegation, and the tooltip generation logic.
 - **`styles.css`**: The visual heart of the project. Defines the "Perfect Grid" geometry, the Pecha Berry-inspired colors, and the typography (Verdana/Monaco).
 - **`popup.html` / `popup.js`**: The user interface for the browser toolbar. Allows users to toggle tooltips on/off without refreshing the page.
 
@@ -57,7 +69,7 @@ These files record the evolution of the UI and can be used for future reference:
 ## 🔐 Permissions
 
 - **`storage`** — remembers the single on/off toggle from the popup. Nothing else is stored, and nothing is ever sent anywhere; the extension makes no network requests.
-- **Site access to `play.pokemonshowdown.com` and `replay.pokemonshowdown.com`** — where the scanner runs.
+- **Site access to `play.pokemonshowdown.com`, `replay.pokemonshowdown.com`, `pokepast.es`, and `play.limitlesstcg.com`** — where the scanner runs.
 - **Site access to `file:///*`** — so the extension also works on replay `.html` files you have saved locally. Chrome keeps this switched **off** by default; it only applies if you turn on *Allow access to file URLs* for this extension in `chrome://extensions`. If you never open saved replays, leave it off, or delete the two `file:///*` entries from `manifest.json`.
 
 ---

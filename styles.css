@@ -26,6 +26,14 @@
     cursor: help;
 }
 
+/* PokePaste and Limitless already colour names themselves — PokePaste by type —
+   so recolouring every match would discard information the page is conveying.
+   On those sites the dashed underline alone marks a term as hoverable. */
+html[data-vgc-site="pokepaste"] .vgc-hover,
+html[data-vgc-site="limitless"] .vgc-hover {
+    color: inherit;
+}
+
 /* Category-specific colorful 1px dashed underlines */
 .vgc-type-pokemon { 
     border-bottom: 1px dashed #3b82f6; /* Matching Blue */

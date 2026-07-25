@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Showdown Tooltips",
   "version": "1.1",
-  "description": "Hover over Pokemon, moves, items, and abilities in Pokemon Showdown battle logs to see their VGC stats.",
+  "description": "Hover over Pokemon, moves, items, and abilities on Pokemon Showdown, PokePaste, and Limitless to see their VGC stats.",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
@@ -24,6 +24,8 @@
       "matches": [
         "*://replay.pokemonshowdown.com/*",
         "*://play.pokemonshowdown.com/*",
+        "*://*.pokepast.es/*",
+        "*://play.limitlesstcg.com/*",
         "file:///*"
       ],
       "js": ["content.js"],
