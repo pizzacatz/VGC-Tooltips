@@ -1,4 +1,4 @@
-# VGC Frictionless Tooltips (v1.1)
+# VGC Frictionless Tooltips (v1.2)
 
 A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the sites you already read teams and battles on. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
 
@@ -17,7 +17,9 @@ Adding another site means adding one entry to `SITE_PROFILES` in `content.js` an
 
 ## 🌟 Core Functionality
 
-The extension scans the Pokémon Showdown battle logs and chat in real-time using a optimized TreeWalker "Scanner Engine." When it detects a relevant term, it highlights the word with a category-specific dashed underline. Hovering over these words reveals a custom-built, high-contrast tooltip.
+The extension scans the supported pages above in real-time using an optimized TreeWalker "Scanner Engine." When it detects a relevant term, it highlights the word with a category-specific dashed underline. Hovering over these words reveals a custom-built, high-contrast tooltip. On Showdown the scanner also watches for new battle-log lines and highlights them as they arrive.
+
+A name can belong to more than one library — **Metronome** is both a move and an item — so each match is resolved to the category the page actually means, using either the surrounding wording or the enclosing markup (see the table above). The underline colour and the tooltip always agree. `node build.js` warns if a future data update introduces another such name.
 
 ### Data Categories & Visual Language:
 - **POKÉMON:** Blue dashed underline. Tooltips feature a horizontal bar graph of base stats (scaled to 255) for instant visual comparison.
@@ -72,6 +74,12 @@ These files record the evolution of the UI and can be used for future reference:
 - **`storage`** — remembers the single on/off toggle from the popup. Nothing else is stored, and nothing is ever sent anywhere; the extension makes no network requests.
 - **Site access to `play.pokemonshowdown.com`, `replay.pokemonshowdown.com`, `pokepast.es`, `play.limitlesstcg.com`, `limitlessvgc.com`, and `standings.limitlessvgc.com`** — where the scanner runs. Each host is listed exactly (plus `www.`), so no other subdomain is granted access.
 - **Site access to `file:///*`** — so the extension also works on replay `.html` files you have saved locally. Chrome keeps this switched **off** by default; it only applies if you turn on *Allow access to file URLs* for this extension in `chrome://extensions`. If you never open saved replays, leave it off, or delete the two `file:///*` entries from `manifest.json`.
+
+---
+
+## 📝 Changelog
+
+Version history is in [CHANGELOG.md](CHANGELOG.md).
 
 ---
 

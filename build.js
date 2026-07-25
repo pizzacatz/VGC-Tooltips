@@ -180,15 +180,26 @@ function checkManifest() {
     const resourceMatches = manifest.web_accessible_resources[0].matches;
     const missing = scriptMatches.filter(m => !resourceMatches.includes(m));
 
+    let ok = true;
+
     if (missing.length === 0) {
         console.log(`🔎 manifest match lists agree (${scriptMatches.length} sites).`);
-        return true;
+    } else {
+        console.error('\n❌ manifest.json: these content_scripts matches are missing from');
+        console.error('   web_accessible_resources — the data libraries will not load there:');
+        missing.forEach(m => console.error(`   - ${m}`));
+        ok = false;
     }
 
-    console.error('\n❌ manifest.json: these content_scripts matches are missing from');
-    console.error('   web_accessible_resources — the data libraries will not load there:');
-    missing.forEach(m => console.error(`   - ${m}`));
-    return false;
+    // manifest.json is the version browsers use to decide an update has happened;
+    // package.json is what a developer reads first. They should not disagree.
+    const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, 'package.json'), 'utf8'));
+    if (pkg.version.replace(/\.0$/, '') !== manifest.version) {
+        console.error(`\n❌ version mismatch: manifest.json ${manifest.version}, package.json ${pkg.version}`);
+        ok = false;
+    }
+
+    return ok;
 }
 
 function syncDist() {
