@@ -103,9 +103,12 @@ document.addEventListener('mouseover', (e) => {
                 contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text"></div></div>`;
             }
             else if (data.vgc_category === 'nature') {
-                // Also called Stat Alignment. The five neutral natures have no plus or
-                // minus and get the description alone.
-                ribbonText = 'NATURE';
+                // Mainline sheets write "Adamant Nature"; Pokemon Champions sheets write
+                // "Stat Alignment: Adamant". The matched text tells us which page this
+                // is, so the ribbon uses the same term the reader is looking at.
+                // The five neutral natures have no plus or minus and get the
+                // description alone.
+                ribbonText = / Nature$/.test(id) ? 'NATURE' : 'STAT ALIGNMENT';
                 borderClass = 'nature-border';
                 descText = data.description || '';
                 let statsHtml = '';
@@ -240,6 +243,8 @@ const SITE_PROFILES = [
             // directly above the one reading "Ability:".
             { category: 'item', after: /^\s*Ability:/i },
         ],
+        // Champions events reuse the .tera slot for "Stat Alignment: Adamant".
+        bareNatures: '.nature, .tera',
     },
     {
         // The standings app keeps .item and .ability but is otherwise a separate
@@ -259,6 +264,7 @@ const SITE_PROFILES = [
         cues: [
             { category: 'item', after: /^\s*Ability:/i },
         ],
+        bareNatures: '.nature, .tera',
     },
 ];
 
@@ -372,6 +378,18 @@ Promise.all([
     addLibrary(abilitiesData, 'ability');
     addLibrary(naturesData, 'nature');
 
+    // Pokemon Champions team sheets label the field "Stat Alignment: Adamant", so the
+    // nature name appears on its own. Register the bare form as well, and remember
+    // which keys those are — they are kept out of the default term list below, because
+    // loose nature names are ordinary words (Bold, Calm, Serious, Brave, Naive).
+    const bareNatureNames = new Set();
+    for (const phrase in naturesData) {
+        const entry = naturesData[phrase];
+        if (!entry.name || vgcIndex[entry.name]) continue;
+        vgcIndex[entry.name] = [entry];
+        bareNatureNames.add(entry.name);
+    }
+
     for (const name in vgcIndex) {
         if (vgcIndex[name].length > 1) {
             vgcIndex[name].sort((a, b) =>
@@ -383,8 +401,22 @@ Promise.all([
     if (sortedKeys.length === 0) return;
 
     const escapeRegExp = (string) => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const terms = sortedKeys.map(key => escapeRegExp(key)).join('|');
-    const regex = new RegExp(`(?<![a-zA-Z0-9_])(${terms})(?![a-zA-Z0-9_])`, 'g');
+    // Longest first, so "Adamant Orb" wins over "Adamant" and "Adamant Nature" over
+    // the bare "Adamant".
+    const buildRegex = (keys) =>
+        new RegExp(`(?<![a-zA-Z0-9_])(${keys.map(escapeRegExp).join('|')})(?![a-zA-Z0-9_])`, 'g');
+
+    const baseRegex = buildRegex(sortedKeys.filter(key => !bareNatureNames.has(key)));
+    // Built only for sites that have a field where a bare nature name can appear.
+    const bareNatureRegex = SITE.bareNatures ? buildRegex(sortedKeys) : null;
+
+    function regexFor(textNode) {
+        if (bareNatureRegex && textNode.parentElement &&
+            textNode.parentElement.closest(SITE.bareNatures)) {
+            return bareNatureRegex;
+        }
+        return baseRegex;
+    }
 
     console.log("VGC Master Library Loaded.");
 
@@ -395,6 +427,7 @@ Promise.all([
     // stays a text node and can never become an element.
     function wrapTextNode(textNode, container) {
         const text = textNode.nodeValue;
+        const regex = regexFor(textNode);
         regex.lastIndex = 0;
         let match;
         let lastIndex = 0;

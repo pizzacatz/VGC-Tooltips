@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.3.1
+
+**Natures now work on Pokémon Champions team sheets.** v1.3 matched only the mainline phrasing, `Adamant Nature`. Champions sheets on `standings.limitlessvgc.com` instead write `Stat Alignment: Adamant`, with the name on its own, so nothing was highlighted there at all.
+
+The bare nature name is now matched too, but only inside the field that carries it (`.nature`/`.tera` on the Limitless sites). Everywhere else — Showdown chat, PokePaste, ordinary prose on the same page — a loose `Adamant`, `Bold` or `Serious` is still ignored, which was the reason for the phrase-only match in the first place. Longest-match ordering keeps `Adamant Orb`, `Calm Mind` and `Brave Bird` resolving to the item and moves.
+
+The tooltip ribbon follows the page: **STAT ALIGNMENT** on a Champions sheet, **NATURE** on a mainline one. The stat data behind both is identical.
+
 ## v1.3
 
 **Nature tooltips** (also called *Stat Alignment*). Hovering a nature shows the stat it raises and the stat it lowers side by side, in green and red, with a violet dashed underline; the five neutral natures say so instead. Natures are matched as the full phrase — `Adamant Nature`, never a bare `Adamant` — because nature names on their own are ordinary English words (Bold, Calm, Serious, Rash, Naive) and matching those would highlight much of Showdown's chat. Every supported site prints the full phrase, so nothing is lost: PokePaste as a set line, Limitless in `.nature`.

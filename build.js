@@ -128,9 +128,12 @@ const BUILDERS = {
             // matching those alone would highlight half of Showdown's chat.
             const plus = STAT_LABELS[nature.plus];
             const minus = STAT_LABELS[nature.minus];
+            // `name` is the bare form. Pokemon Champions team sheets print
+            // "Stat Alignment: Adamant" rather than "Adamant Nature", so content.js
+            // needs the name on its own — but only inside that field, never loose.
             outputJSON[`${nature.name} Nature`] = plus && minus
-                ? { plus, minus, description: `Raises ${plus} by 10% and lowers ${minus} by 10%.` }
-                : { description: 'Neutral nature. No stat changes.' };
+                ? { name: nature.name, plus, minus, description: `Raises ${plus} by 10% and lowers ${minus} by 10%.` }
+                : { name: nature.name, description: 'Neutral nature. No stat changes.' };
         }
         writeLibrary('natures.json', outputJSON);
     },
@@ -173,8 +176,14 @@ function checkCollisions() {
     for (const [category, file] of Object.entries(LIBRARIES)) {
         const filePath = path.join(ROOT, file);
         if (!fs.existsSync(filePath)) continue;
-        for (const name of Object.keys(JSON.parse(fs.readFileSync(filePath, 'utf8')))) {
+        const library = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        for (const [name, entry] of Object.entries(library)) {
             (owners[name] = owners[name] || []).push(category);
+            // content.js also registers the bare nature name for Champions sheets,
+            // so a clash on that form matters just as much as one on the phrase.
+            if (category === 'nature' && entry.name) {
+                (owners[entry.name] = owners[entry.name] || []).push('nature (bare)');
+            }
         }
     }
 
