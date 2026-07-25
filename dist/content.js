@@ -45,6 +45,9 @@ document.addEventListener('mouseover', (e) => {
             let ribbonText = '';
             let borderClass = '';
             let contentHtml = '';
+            // Text pulled from the data libraries is injected as textContent after the
+            // markup is built, never interpolated into an HTML string.
+            let descText = '';
 
             if (data.vgc_category === 'pokemon') {
                 ribbonText = 'POKÉMON';
@@ -73,33 +76,36 @@ document.addEventListener('mouseover', (e) => {
                 let prio = data.priority || 0;
                 let prioDisplay = prio > 0 ? `+${prio}` : prio;
                 let statsHtml = `<div class="vgc-stat-grid vgc-move-stats" style="margin-bottom: 4px;"><div class="vgc-stat-box"><span class="vgc-stat-label">Power</span><span class="vgc-stat-value">${bp}</span></div><div class="vgc-stat-box"><span class="vgc-stat-label">Accuracy</span><span class="vgc-stat-value">${acc}</span></div><div class="vgc-stat-box"><span class="vgc-stat-label">PP</span><span class="vgc-stat-value">${pp}</span></div><div class="vgc-stat-box"><span class="vgc-stat-label">Priority</span><span class="vgc-stat-value">${prioDisplay}</span></div></div>`;
-                let desc = data.description || data.shortDesc || '';
+                descText = data.description || data.shortDesc || '';
                 let attributesHtml = '';
                 if (data.flags) {
-                    const ignoredFlags = ['bypasssub', 'noassist', 'failycopycat'];
+                    const ignoredFlags = ['bypasssub', 'noassist', 'failcopycat'];
                     const activeFlags = Object.keys(data.flags).filter(flag => !ignoredFlags.includes(flag));
                     if (activeFlags.length > 0) {
                         let pills = activeFlags.map(flag => `<span style="background: #333; color: #fff; padding: 1px 6px; border-radius: 4px; font-size: 9px; text-transform: uppercase; margin-right: 4px; display: inline-block; margin-top: 4px; border: 1px solid #444;">${flag}</span>`).join('');
                         attributesHtml = `<div style="margin-top: 4px;">${pills}</div>`;
                     }
                 }
-                contentHtml = `<div style="margin-bottom: 4px;">${typeTag} ${catTag}</div><div class="vgc-content" style="padding-top: 0;">${statsHtml}<div class="desc-text" style="color: #fff; margin-top: 4px;">${desc}</div>${attributesHtml}</div>`;
+                contentHtml = `<div style="margin-bottom: 4px;">${typeTag} ${catTag}</div><div class="vgc-content" style="padding-top: 0;">${statsHtml}<div class="desc-text" style="color: #fff; margin-top: 4px;"></div>${attributesHtml}</div>`;
             }
             else if (data.vgc_category === 'ability') {
                 ribbonText = 'ABILITY';
                 borderClass = 'ability-border';
-                let desc = data.description || data.shortDesc;
-                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text">${desc}</div></div>`;
+                descText = data.description || data.shortDesc || '';
+                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text"></div></div>`;
             }
             else if (data.vgc_category === 'item') {
                 ribbonText = 'ITEM';
                 borderClass = 'item-border';
-                let desc = data.description || data.shortDesc;
-                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text">${desc}</div></div>`;
+                descText = data.description || data.shortDesc || '';
+                contentHtml = `<div class="vgc-content" style="border-top: none; padding-top: 0;"><div class="desc-text"></div></div>`;
             }
 
             tooltip.classList.add(borderClass);
-            tooltip.innerHTML = `<div class="vgc-ribbon">${ribbonText}</div><div class="vgc-header">${id}</div>${contentHtml}`;
+            tooltip.innerHTML = `<div class="vgc-ribbon">${ribbonText}</div><div class="vgc-header"></div>${contentHtml}`;
+            tooltip.querySelector('.vgc-header').textContent = id;
+            const descEl = tooltip.querySelector('.desc-text');
+            if (descEl) descEl.textContent = descText;
             tooltip.style.display = 'block';
         }
     }
@@ -154,6 +160,45 @@ Promise.all([
 
     console.log("VGC Master Library Loaded.");
 
+    // Replaces the matched terms inside a single text node with hover spans, building
+    // the result out of DOM nodes. Assigning the node's text back through innerHTML
+    // would re-parse markup that Showdown had already escaped, so chat text such as
+    // "Pikachu <img src=x onerror=...>" would execute. Everything that is not a match
+    // stays a text node and can never become an element.
+    function wrapTextNode(textNode) {
+        const text = textNode.nodeValue;
+        regex.lastIndex = 0;
+        let match;
+        let lastIndex = 0;
+        let fragment = null;
+
+        while ((match = regex.exec(text)) !== null) {
+            if (!fragment) fragment = document.createDocumentFragment();
+            const term = match[1];
+
+            if (match.index > lastIndex) {
+                fragment.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+            }
+
+            const data = vgcData[term];
+            const span = document.createElement('span');
+            span.className = data && data.vgc_category
+                ? `vgc-hover vgc-type-${data.vgc_category}`
+                : 'vgc-hover';
+            span.setAttribute('data-id', term);
+            span.textContent = term;
+            fragment.appendChild(span);
+
+            lastIndex = match.index + term.length;
+        }
+
+        if (!fragment) return;
+        if (lastIndex < text.length) {
+            fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+        }
+        textNode.replaceWith(fragment);
+    }
+
     function scanAndWrap(rootNode) {
         if (rootNode.nodeType === 1 && rootNode.classList && rootNode.classList.contains('battle-history')) {
             const walker = document.createTreeWalker(rootNode, NodeFilter.SHOW_TEXT, null, false);
@@ -164,20 +209,7 @@ Promise.all([
                     textNodes.push(node);
                 }
             }
-            textNodes.forEach(textNode => {
-                let originalText = textNode.nodeValue;
-                let newText = originalText.replace(regex, (match) => {
-                    const data = vgcData[match];
-                    let typeClass = '';
-                    if (data && data.vgc_category) typeClass = `vgc-type-${data.vgc_category}`;
-                    return `<span class="vgc-hover ${typeClass}" data-id="${match}">${match}</span>`;
-                });
-                if (originalText !== newText) {
-                    let tempSpan = document.createElement('span');
-                    tempSpan.innerHTML = newText;
-                    textNode.replaceWith(...tempSpan.childNodes);
-                }
-            });
+            textNodes.forEach(wrapTextNode);
         }
     }
     

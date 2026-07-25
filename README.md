@@ -46,9 +46,12 @@ These files record the evolution of the UI and can be used for future reference:
 
 ## 🛠 Developer Workflow
 
-1. **Update Data:** Place new `.ts` files from the Showdown repository into the root or `/data files` and run `node build.js`.
+0. **Install tooling:** `npm install` (once).
+1. **Update Data:** Drop new `.ts` files from the Showdown repository into `/data files` (the repo root also works) and run:
+   - `npm run build` — rebuilds all four libraries, or
+   - `node build.js moves items` — rebuilds only the named targets (`pokemon`, `moves`, `items`, `abilities`, `all`). With no arguments it prompts interactively.
 2. **Test:** Load the root folder as an "Unpacked Extension" in Chrome Developer Mode.
-3. **Deploy:** Copy the 12 essential files (Manifest, Logic, CSS, JSONs, Icons, Popup) into the `/dist` folder and use that for distribution.
+3. **Deploy:** The build copies all 12 shipping files into `/dist` automatically — use that folder for distribution. Pass `--no-dist` to skip the copy.
 
 ---
 
