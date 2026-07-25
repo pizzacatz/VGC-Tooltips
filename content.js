@@ -139,10 +139,10 @@ document.addEventListener('mouseout', (e) => {
 let vgcData = {}; 
 
 Promise.all([
-    fetch(chrome.runtime.getURL("pokemon.json")).then(res => res.json()),
-    fetch(chrome.runtime.getURL("moves.json")).then(res => res.json()),
-    fetch(chrome.runtime.getURL("items.json")).then(res => res.json()),
-    fetch(chrome.runtime.getURL("abilities.json")).then(res => res.json())
+    fetch(vgcApi.runtime.getURL("pokemon.json")).then(res => res.json()),
+    fetch(vgcApi.runtime.getURL("moves.json")).then(res => res.json()),
+    fetch(vgcApi.runtime.getURL("items.json")).then(res => res.json()),
+    fetch(vgcApi.runtime.getURL("abilities.json")).then(res => res.json())
 ])
 .then(([pokemonData, movesData, itemsData, abilitiesData]) => {
     Object.values(pokemonData).forEach(d => d.vgc_category = 'pokemon');
@@ -199,36 +199,53 @@ Promise.all([
         textNode.replaceWith(fragment);
     }
 
-    function scanAndWrap(rootNode) {
-        if (rootNode.nodeType === 1 && rootNode.classList && rootNode.classList.contains('battle-history')) {
-            const walker = document.createTreeWalker(rootNode, NodeFilter.SHOW_TEXT, null, false);
-            const textNodes = [];
-            let node;
-            while (node = walker.nextNode()) {
-                if (node.parentElement && !node.parentElement.classList.contains('vgc-hover')) {
-                    textNodes.push(node);
-                }
+    // Collects every text node under `root` that has not already been wrapped.
+    function collectTextNodes(root) {
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        const textNodes = [];
+        let node;
+        while (node = walker.nextNode()) {
+            if (node.parentElement && !node.parentElement.classList.contains('vgc-hover')) {
+                textNodes.push(node);
             }
-            textNodes.forEach(wrapTextNode);
         }
+        return textNodes;
     }
-    
-    const staticLogs = document.querySelectorAll('.battle-log-inline .battle-history');
-    staticLogs.forEach(node => scanAndWrap(node));
 
+    // Handles a node from anywhere in the page. Showdown appends each new log line
+    // as a child of an existing .battle-history, so the added node is usually
+    // inside a log rather than being the log itself — both cases are covered here.
+    function scanAndWrap(node) {
+        if (node.nodeType === Node.TEXT_NODE) {
+            if (node.parentElement && node.parentElement.closest('.battle-history')) {
+                wrapTextNode(node);
+            }
+            return;
+        }
+        if (node.nodeType !== Node.ELEMENT_NODE) return;
+
+        if (node.closest('.battle-history')) {
+            collectTextNodes(node).forEach(wrapTextNode);
+            return;
+        }
+        node.querySelectorAll('.battle-history').forEach(history => {
+            collectTextNodes(history).forEach(wrapTextNode);
+        });
+    }
+
+    document.querySelectorAll('.battle-history').forEach(scanAndWrap);
+
+    // A single document-level observer replaces the previous 2s polling loop, so new
+    // log lines highlight as they arrive instead of up to two seconds later, and no
+    // work happens while the page is idle.
     const observer = new MutationObserver((mutations) => {
         mutations.forEach((mutation) => {
-            mutation.addedNodes.forEach((node) => scanAndWrap(node));
+            mutation.addedNodes.forEach(scanAndWrap);
         });
+        // Discard the records our own wrapping just generated; re-scanning them would
+        // find nothing, and dropping them keeps the observer from looping over itself.
+        observer.takeRecords();
     });
-
-    setInterval(() => {
-        const unobservedLogs = document.querySelectorAll('.battle-log:not(.vgc-observed)');
-        unobservedLogs.forEach(log => {
-            log.classList.add('vgc-observed'); 
-            observer.observe(log, { childList: true, subtree: true });
-            log.querySelectorAll('.battle-history').forEach(node => scanAndWrap(node));
-        });
-    }, 2000);
+    observer.observe(document.documentElement, { childList: true, subtree: true });
 })
 .catch(error => console.error("Error loading VGC Libraries:", error));

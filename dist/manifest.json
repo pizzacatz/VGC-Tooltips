@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Showdown Tooltips",
   "version": "1.1",
-  "description": "Injects VGC stats and tooltips into Showdown. (v1.1: Fixed Firefox storage sync delay)",
+  "description": "Hover over Pokemon, moves, items, and abilities in Pokemon Showdown battle logs to see their VGC stats.",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",

@@ -158,7 +158,8 @@ const DATA_TYPES = [
     { title: 'Pokemon (pokedex.ts)', value: 'pokemon' },
     { title: 'Moves (moves-data.ts + moves-text.ts)', value: 'moves' },
     { title: 'Items (items.ts)', value: 'items' },
-    { title: 'Abilities (abilities.ts)', value: 'abilities' }
+    { title: 'Abilities (abilities.ts)', value: 'abilities' },
+    { title: 'Sync dist/ only (no data rebuild)', value: 'sync' }
 ];
 
 const ALL_TYPES = ['pokemon', 'moves', 'items', 'abilities'];
@@ -168,13 +169,13 @@ const ALL_TYPES = ['pokemon', 'moves', 'items', 'abilities'];
 async function resolveTargets() {
     const args = process.argv.slice(2).filter(a => a !== '--no-dist');
     if (args.length > 0) {
-        const unknown = args.filter(a => a !== 'all' && !ALL_TYPES.includes(a));
+        const unknown = args.filter(a => a !== 'all' && a !== 'sync' && !ALL_TYPES.includes(a));
         if (unknown.length > 0) {
             console.error(`Unknown target(s): ${unknown.join(', ')}`);
-            console.error(`Valid targets: all, ${ALL_TYPES.join(', ')}`);
+            console.error(`Valid targets: all, sync, ${ALL_TYPES.join(', ')}`);
             process.exit(1);
         }
-        return args.includes('all') ? ALL_TYPES : args;
+        return args.includes('all') ? [...ALL_TYPES, ...(args.includes('sync') ? ['sync'] : [])] : args;
     }
 
     const response = await prompts({
@@ -187,13 +188,23 @@ async function resolveTargets() {
 
     const selected = response.selectedTypes;
     if (!selected || selected.length === 0) return [];
-    return selected.includes('all') ? ALL_TYPES : selected;
+    return selected.includes('all')
+        ? [...ALL_TYPES, ...(selected.includes('sync') ? ['sync'] : [])]
+        : selected;
 }
 
 async function main() {
     const targets = await resolveTargets();
     if (targets.length === 0) {
         console.log("No data selected. Exiting.");
+        return;
+    }
+
+    // `sync` refreshes dist/ from the current source files without touching the
+    // data libraries — used after a code-only change to content.js, the CSS, etc.
+    if (targets.length === 1 && targets[0] === 'sync') {
+        syncDist();
+        console.log('\n✨ Sync Complete.');
         return;
     }
 
