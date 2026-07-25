@@ -11,9 +11,11 @@ A professional-grade Google Chrome and Firefox extension designed to inject comp
 | **Limitless** (`play.limitlesstcg.com`, `limitlessvgc.com`) | Team lists (`.teamlist`) and the usage tables on `/pokemon/<name>` (`.stats-tables`) | Markup — the item, ability, and move lists are separate elements (`.item`, `.ability`, `.attacks`/`.moves`), and each usage table is titled by its heading |
 | **Limitless Standings** (`standings.limitlessvgc.com`) | Page content (`.container.content`) | Markup — `.item` and `.ability` as above; the species is a `/pokemon/` link and moves are the `<ul>` beside them |
 
+Both Limitless sites cover **Pokémon Champions** events as well as Scarlet/Violet ones. Champions team sheets write `Stat Alignment: <name>` in the field that SV events use for `Tera Type:`, so the bare alignment name is matched inside that field (`.nature`, `.tera`) and nowhere else.
+
 Scanning is confined to the containers above, so navigation, chat headers, and page furniture are left alone. On PokePaste and Limitless the site's own text colouring is preserved and only the dashed underline is added; on Showdown, terms are recoloured as before.
 
-Adding another site means adding one entry to `SITE_PROFILES` in `content.js` and one match pattern to `manifest.json`.
+Adding another site means one entry in `SITE_PROFILES` in `content.js`, plus the match pattern in **both** of `manifest.json`'s lists — `content_scripts.matches` and `web_accessible_resources.matches`. Miss the second and the script loads but cannot fetch its data; `node build.js` fails if the two lists disagree.
 
 ## 🌟 Core Functionality
 
@@ -69,7 +71,14 @@ These files record the evolution of the UI and can be used for future reference:
 2. **Test:** Load the root folder as an "Unpacked Extension" in Chrome Developer Mode.
 3. **Deploy:** The build copies all 13 shipping files into `/dist` automatically — use that folder for distribution. Pass `--no-dist` to skip the copy, or `node build.js sync` to refresh `/dist` after a code-only change.
 
-The build also reports three things that are otherwise silent: a name appearing in more than one data library, a site listed under `content_scripts` but missing from `web_accessible_resources`, and `manifest.json` disagreeing with `package.json` on the version.
+The build also reports four things that are otherwise silent, because each one fails at runtime in a way that looks like something else:
+
+| Check | What it would look like if missed |
+| --- | --- |
+| A name appearing in more than one data library | One category silently shadows the other |
+| A site under `content_scripts` but missing from `web_accessible_resources.matches` | The script loads, then fetches nothing — indistinguishable from "site not supported" |
+| A data library missing from `web_accessible_resources.resources` | That category never appears anywhere |
+| `manifest.json` disagreeing with `package.json` on the version | Browsers see no update |
 
 ---
 
