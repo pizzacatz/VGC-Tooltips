@@ -1,8 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Showdown Tooltips",
-  "version": "1.3.3",
-  "description": "Hover over Pokemon, moves, items, abilities, and natures on Pokemon Showdown, PokePaste, and Limitless to see their VGC stats.",
+  "name": "VGC Tooltips",
+  "version": "1.4.0",
+  "description": "Hover over Pokemon, moves, items, abilities, and Stat Alignments on Pokemon Showdown, PokePaste, and Limitless to see their VGC data.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "vgc-tooltips@pizzacatz.github.io",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",

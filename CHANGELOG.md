@@ -1,5 +1,39 @@
 # Changelog
 
+## v1.4.0
+
+**Renamed to VGC Tooltips**, which is what the popup, the repository and `package.json` already called it — `manifest.json` was the only place still reading *Showdown Tooltips*, and the name had stopped being accurate once PokePaste and Limitless were supported.
+
+**Move properties now use Pokémon Champions' own vocabulary.** Champions calls them **Classifications** and labels exactly twelve; Showdown calls the same idea a *move flag* and tracks 39. The tooltip previously rendered raw flag keys through a denylist, which let every unrecognised flag through — so a move showed `ALLYANIM` (a Showdown animation hint) and `NOSKETCH` (inert in this format, Sketch is not legal) beside genuine properties, while `heal` sat in the ignore list even though **Healing** is one of the official twelve. Drain Punch showed `PUNCH` and `CONTACT` and omitted that it heals.
+
+That denylist is now an allowlist of the twelve, each carrying its official label, rendered in the order the game's own move-filter list uses:
+
+`sound` → **Sound-Based** and `bullet` → **Ball & Bomb** are the two renames. **Explosive** and **Mental** are new, and **Healing** is no longer dropped. `punch`, `slicing`, `wind`, `powder`, `pulse`, `bite` and `dance` keep their labels but are now displayed because they are official, not because they survived a filter.
+
+**Contact** is kept, as a thirteenth pill after the twelve. Champions does not name it, so it is not a Classification — but it is on 166 moves and is the most consequential property in battle, since Rough Skin, Static, Flame Body, Rocky Helmet and Iron Barbs all read it, and dropping it would hide a real rule.
+
+Four Classifications cannot be derived from the Showdown source and are hand-listed in `CHAMPIONS_OVERLAY`. **Explosive** and **Mental** are Champions-native: the flags do not exist upstream at all, so a Showdown-derived tooltip gets silence rather than a wrong answer. **Slicing** and **Sound-Based** do exist upstream, but Champions puts them on five moves Scarlet/Violet does not — Crush Claw, Dire Claw, Dragon Claw and Shadow Claw are Slicing, and Dragon Cheer is Sound-Based — which is live in play, since Sharpness boosts Slicing and Soundproof blocks Sound-Based.
+
+All twelve were verified against the `champions-logic` MCP server: every one of the 145 Classification assignments across the 139 M-B-legal moves that carry any, checked in both directions, plus the per-Classification totals from its `move-classifications` document.
+
+`moves.json` drops its `flags` object for a `classifications` array of finished labels plus a `contact` boolean, both omitted when they do not apply, so `content.js` has no vocabulary of its own to keep in sync. The pill styling moves out of inline attributes into `.vgc-pill` in `styles.css`, and a second dead denylist in `content.js` — three flags `build.js` had already stripped — is gone.
+
+`build.js` gains two checks on the hand-written overlay: it fails if a listed move name is not in `moves-data.ts` (an upstream rename would otherwise drop that Classification silently) and warns if the source has caught up and a row is now redundant.
+
+**Fixes a latent bug in the version check.** It stripped a trailing `.0` from `package.json`'s version to let `1.2.0` match a manifest reading `1.2`, which also turned `1.4.0` into `1.4` and reported a mismatch against an identical `1.4.0`. Every `x.y.0` release would have tripped it; this one did. Both sides are now padded to `major.minor.patch` before comparing.
+
+## v1.3.4
+
+**Makes the extension actually work in Firefox, ahead of listing it on addons.mozilla.org.** The README has claimed Firefox support since v1.1, but two things were wrong.
+
+The popup toggle did nothing. `content.js` and `popup.js` read the saved state with a callback, which is Chrome's calling convention; Firefox's `browser.*` APIs are promise-only, so the callback never ran and `tooltipsEnabled` stayed at its default of `true` no matter what the popup said. Both files now read the promise that Chrome and Firefox each return when no callback is passed, so one form covers both.
+
+The toggle would also have failed even once the read was fixed, because Firefox keys `storage.sync` on the add-on ID and the manifest had none. `browser_specific_settings.gecko.id` is now set, along with `strict_min_version: "109.0"` — the first Firefox with Manifest V3 — and `data_collection_permissions: { required: ["none"] }`, which AMO has required of new submissions since November 2025 and which is accurate here: the extension makes no network requests and stores one boolean.
+
+`build.js` fails the build if the Firefox ID goes missing, for the same reason it checks the other four things — Chrome ignores the key entirely, so losing it breaks only Firefox and looks like nothing at all.
+
+Adds `web-ext` as a dev dependency with three scripts: `npm run lint:firefox` runs the same validator AMO runs on upload, `npm run package:firefox` writes the submission zip to `web-ext-artifacts/`, and `npm run run:firefox` opens a temporary profile with the extension loaded.
+
 ## v1.3.3
 
 Uses the official term throughout the tooltip. *Stat Alignment* is the official name for what the community calls a nature, so the ribbon now reads **STAT ALIGNMENT** on every page rather than following the page's own wording, and the heading is always the bare name (`Adamant`) rather than echoing the text that was hovered.

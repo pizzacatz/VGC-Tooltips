@@ -174,6 +174,28 @@ html[data-vgc-site^="limitless"] .vgc-hover {
 }
 
 /* ==========================================
+   4b. Move Classification Pills
+   ========================================== */
+
+.vgc-pill-row {
+    margin-top: 4px;
+}
+
+/* A move property: one of the twelve official Champions Classifications, or Contact. */
+.vgc-pill {
+    background: #333;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 9px;
+    text-transform: uppercase;
+    margin-right: 4px;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+/* ==========================================
    5. Type Tag Engine (Restored Pills)
    ========================================== */
 :root {

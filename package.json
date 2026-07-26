@@ -1,16 +1,22 @@
 {
   "name": "vgc-tooltips",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "Chrome/Firefox extension injecting VGC Pokemon data as tooltips into Pokemon Showdown, PokePaste, and Limitless",
   "private": true,
   "scripts": {
     "build": "node build.js all",
-    "icons": "node generate_icons.js"
+    "icons": "node generate_icons.js",
+    "lint:firefox": "web-ext lint --source-dir dist",
+    "package:firefox": "web-ext build --source-dir dist --artifacts-dir web-ext-artifacts --overwrite-dest",
+    "run:firefox": "web-ext run --source-dir dist"
   },
   "dependencies": {
     "canvas": "^3.2.3",
     "prompts": "^2.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "web-ext": "^8.5.0"
   }
 }

@@ -4,8 +4,14 @@
 const vgcApi = typeof browser !== 'undefined' ? browser : chrome;
 let tooltipsEnabled = true;
 
-// Pre-load and sync storage state
-vgcApi.storage.sync.get(['tooltipsEnabled'], (result) => {
+// Pre-load and sync storage state.
+//
+// Read via the returned promise rather than a callback. Firefox's `browser.*`
+// APIs are promise-only, so a callback passed here would never run and the
+// toggle would silently stay on for every Firefox user. Chrome's `chrome.*`
+// storage API also returns a promise when no callback is given, so one form
+// covers both browsers.
+vgcApi.storage.sync.get(['tooltipsEnabled']).then((result) => {
     if (result.tooltipsEnabled !== undefined) {
         tooltipsEnabled = result.tooltipsEnabled;
     }
@@ -82,14 +88,21 @@ document.addEventListener('mouseover', (e) => {
                 let prioDisplay = prio > 0 ? `+${prio}` : prio;
                 let statsHtml = `<div class="vgc-stat-grid vgc-move-stats" style="margin-bottom: 4px;"><div class="vgc-stat-box"><span class="vgc-stat-label">Power</span><span class="vgc-stat-value">${bp}</span></div><div class="vgc-stat-box"><span class="vgc-stat-label">Accuracy</span><span class="vgc-stat-value">${acc}</span></div><div class="vgc-stat-box"><span class="vgc-stat-label">PP</span><span class="vgc-stat-value">${pp}</span></div><div class="vgc-stat-box"><span class="vgc-stat-label">Priority</span><span class="vgc-stat-value">${prioDisplay}</span></div></div>`;
                 descText = data.description || data.shortDesc || '';
+                // Classifications arrive from moves.json already carrying their official
+                // Champions labels, in the order the game's own filter list uses, so there
+                // is nothing to translate or sort here. Contact goes last, since it is not
+                // one of the twelve — Champions does not label it — but it is otherwise
+                // presented the same way.
                 let attributesHtml = '';
-                if (data.flags) {
-                    const ignoredFlags = ['bypasssub', 'noassist', 'failcopycat'];
-                    const activeFlags = Object.keys(data.flags).filter(flag => !ignoredFlags.includes(flag));
-                    if (activeFlags.length > 0) {
-                        let pills = activeFlags.map(flag => `<span style="background: #333; color: #fff; padding: 1px 6px; border-radius: 4px; font-size: 9px; text-transform: uppercase; margin-right: 4px; display: inline-block; margin-top: 4px; border: 1px solid #444;">${flag}</span>`).join('');
-                        attributesHtml = `<div style="margin-top: 4px;">${pills}</div>`;
-                    }
+                const classifications = data.classifications || [];
+                const pills = classifications
+                    .map(label => `<span class="vgc-pill">${label}</span>`)
+                    .join('');
+                const contactPill = data.contact
+                    ? `<span class="vgc-pill">Contact</span>`
+                    : '';
+                if (pills || contactPill) {
+                    attributesHtml = `<div class="vgc-pill-row">${pills}${contactPill}</div>`;
                 }
                 contentHtml = `<div style="margin-bottom: 4px;">${typeTag} ${catTag}</div><div class="vgc-content" style="padding-top: 0;">${statsHtml}<div class="desc-text" style="color: #fff; margin-top: 4px;"></div>${attributesHtml}</div>`;
             }

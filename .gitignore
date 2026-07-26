@@ -6,6 +6,7 @@ node_modules/
 
 # Packed extension builds
 *.crx
+web-ext-artifacts/
 
 # OS / editor cruft
 .DS_Store
