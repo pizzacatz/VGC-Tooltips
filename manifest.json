@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "VGC Tooltips",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Hover over Pokemon, moves, items, abilities, and Stat Alignments on Pokemon Showdown, PokePaste, and Limitless to see their VGC data.",
   "browser_specific_settings": {
     "gecko": {

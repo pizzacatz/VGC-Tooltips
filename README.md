@@ -1,4 +1,4 @@
-# VGC Tooltips (v1.4.0)
+# VGC Tooltips (v1.5.0)
 
 A professional-grade Google Chrome and Firefox extension designed to inject competitive Pokémon VGC (Video Game Championships) data directly into the sites you already read teams and battles on. This project focuses on high-speed information delivery with a "Perfect Grid" geometric aesthetic inspired by *Pokémon Scarlet & Violet*.
 
@@ -30,7 +30,7 @@ A name can belong to more than one library — **Metronome** is both a move and 
 - **MOVES:** Yellow dashed underline. Tooltips show a 4-column grid (Power, Accuracy, PP, Priority) and the move's **Classifications** — see below.
 - **ABILITIES:** Green dashed underline. Provides concise descriptive text in a white-bordered frame.
 - **ITEMS:** Pink dashed underline. Provides item effects in a sleek gray-bordered frame.
-- **STAT ALIGNMENT:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red) with no explanatory sentence, since the boxes already say it; the five neutral alignments have no boxes and say so in words instead. *Stat Alignment* is the official term and the tooltip always uses it, with the bare name as the heading — so a mainline sheet's `Adamant Nature` and a Pokémon Champions sheet's `Stat Alignment: Adamant` produce an identical tooltip. Both spellings are matched: the full phrase anywhere, and the bare name *only* inside the alignment field on Limitless, because bare names are ordinary words (Bold, Calm, Serious, Naive) that would otherwise light up chat.
+- **STAT ALIGNMENT:** Violet dashed underline. Shows the raised and lowered stat side by side (green/red) with no explanatory sentence, since the boxes already say it; Serious, the only neutral alignment, has no boxes and says so in words instead. *Stat Alignment* is the official term and the tooltip always uses it, with the bare name as the heading — so a mainline sheet's `Adamant Nature` and a Pokémon Champions sheet's `Stat Alignment: Adamant` produce an identical tooltip. Both spellings are matched: the full phrase anywhere, and the bare name *only* inside the alignment field on Limitless, because bare names are ordinary words (Bold, Calm, Serious, Naive) that would otherwise light up chat.
 
 ### Move Classifications
 
@@ -49,14 +49,65 @@ Pills render in the order the game's own move-filter list uses, so they read the
 
 **Contact** is shown too, as a thirteenth pill after the others. Champions does not label it, so it is not a Classification — but it is on 166 moves and is the most consequential property in battle, since Rough Skin, Static, Flame Body, Rocky Helmet and Iron Barbs all read it. Omitting it would hide a real rule. It is styled the same as the rest and distinguished only by coming last.
 
-Four of the twelve need data the Showdown source cannot supply on its own, for two different reasons, so their membership is hand-listed in `CHAMPIONS_OVERLAY` in `build.js`:
-
-- **Explosive** and **Mental** are Champions-native — the flags do not exist upstream at all, so a Showdown-derived tooltip gets silence rather than a wrong answer. Explosive is Explosion, Self-Destruct and Misty Explosion; Mental is Taunt, Attract, Encore, Disable and Torment. Both lists are closed.
-- **Slicing** and **Sound-Based** exist upstream but Champions puts them on five moves Scarlet/Violet does not: Crush Claw, Dire Claw, Dragon Claw and Shadow Claw are Slicing, and Dragon Cheer is Sound-Based. This is live in play — Sharpness boosts Slicing, Soundproof blocks Sound-Based.
-
-Everything above was verified against the `champions-logic` MCP server, which is authoritative for Regulation M-B: all 145 Classification assignments across the 139 M-B-legal moves that have any, plus the per-Classification totals in its `move-classifications` document. Note that its `divergence-from-showdown` document claims flag *membership* agrees with Showdown apart from the two native Classifications — its own data disagrees for those five moves, and the data is what was checked.
+For the 500 moves legal in Champions the Classifications come straight from the Champions export, already resolved to official labels. For everything else — most of the dex, and what a Scarlet/Violet page needs — they are derived from Showdown's flags through the table above.
 
 > **Mental is not the Mental Herb cure list**, despite being the same five moves. The item keys on the volatile condition the holder ends up with, not on this property. The overlap is a coincidence of naming, so don't describe either in terms of the other.
+
+## 🏆 Champions-first data
+
+The extension is **Champions-first**: where Pokémon Champions and Pokémon Showdown disagree about something legal in Champions, Champions wins. Showdown still supplies everything Champions does not cover, which is most of the dex, so Scarlet/Violet pages keep working.
+
+This matters more than it sounds, because the two disagree constantly and never loudly — you get a plausible wrong number, not an error:
+
+| Field | Divergence | Example |
+| --- | --- | --- |
+| **Move PP** | **404 of the 500** legal moves | Shadow Ball is 16, not 15; Protect is 8, not 10 |
+| **Move power** | 12 moves | Beak Blast 120, not 100; Trop Kick 85, not 70 |
+| **Move accuracy** | 4 moves | Crabhammer 95, not 90; Clangorous Soul never misses |
+| **Move type** | 2 moves | Growth is **Grass**; Snap Trap is **Steel** |
+| **Move description** | 10 moves, several of them real rebalances | Iron Head flinches **20%**, not 30%; Moonblast drops Sp. Atk **10%**, not 30%; Salt Cure ticks **1/16**, not 1/8 |
+| **Ability description** | 2 abilities | Healer is **50%**, not 30%; Unseen Fist also deals 1/4 damage through protection |
+| **Stat Alignments** | **21**, not mainline's 25 | Bashful, Docile, Hardy and Quirky do not exist; Serious is the only neutral one |
+| **Champions-only entries** | 2 abilities, 9 items | Eelevate, Fire Mane; the Champions-original Mega Stones (Staraptite, Raichunite X/Y, …) |
+
+Species base stats and typing were checked across all 235 legal species **and all 76 Mega forms**, and agree exactly, so `pokemon.json` stays Showdown-sourced and keeps its full-dex coverage.
+
+**The trade-off**, chosen deliberately: a Scarlet/Violet page now shows Champions numbers for anything Champions also has. A saved Showdown replay hovering Shadow Ball reads 16 PP, which is right for Champions and wrong for SV. The four mainline-only alignments get no tooltip at all. Reverting this means preferring the Showdown row in `build.js` — the merge is one branch per library.
+
+### Species naming — why Limitless needs an alias table
+
+The data libraries are keyed on **Pokémon Showdown's** species names, which is what Showdown and PokePaste print:
+
+| Our key | Showdown / PokePaste | Limitless |
+| --- | --- | --- |
+| `Rotom-Wash` | `Rotom-Wash` | Wash Rotom |
+| `Raichu-Alola` | `Raichu-Alola` | Alolan Raichu |
+| `Lycanroc-Dusk` | `Lycanroc-Dusk` | Lycanroc Dusk |
+| `Meowstic-F` | `Meowstic-F` | Female Meowstic |
+| `Floette-Eternal` | `Floette-Eternal` | Eternal Flower Floette |
+| `Charizard-Mega-Y` | `Charizard-Mega-Y` | Mega Charizard Y |
+
+The scanner matches literal text, so the Limitless spellings matched nothing at all — 28 form species and 76 Megas with no tooltip, on the site the extension is most used with. Base species matched fine, which is exactly why it went unnoticed.
+
+There is no rule to derive one column from the other, so `data files/limitless-aliases.json` is **read off the site**, not invented. Each alias is an extra key onto the same record, so both spellings resolve to one tooltip and every site keeps working.
+
+Regenerate it when Limitless renames something:
+
+```sh
+node fetch_limitless_aliases.js --dry-run   # show what would change
+node fetch_limitless_aliases.js             # rewrite the table
+npm run build                               # fold it into pokemon.json
+```
+
+It fetches one page per Champions-legal form and Mega (~105 requests, rate-limited) and reads the `<h1>`. Entries it cannot reach are recorded rather than guessed: `_omitted` currently holds Gourgeist's three size forms, which have no Limitless page and no sibling to infer from. The Champions-original Megas are `derived` — limitlessvgc.com covers Scarlet/Violet and has no page for them, but all 41 Mega pages that do resolve are `Mega <base>` without exception.
+
+**This is a build-time tool.** The extension itself never makes a network request; the table ships inside it.
+
+### Where the data comes from
+
+`data files/champions-logic-mb.json` is the consolidated Regulation M-B export from the [`champions-logic`](https://github.com/pizzacatz/champions_logic) project, which is the authoritative source for the format. It is committed like the Showdown `.ts` sources so builds are reproducible, and it carries its own `data_version` and `data_revision`, both printed by `node build.js`. To update the data, copy a newer export over it and rebuild.
+
+`data files/natures.ts` is no longer read — Stat Alignments now come from the export's 21 rows rather than Showdown's 25 natures.
 
 ---
 
@@ -71,14 +122,15 @@ These files are the engine that runs in your browser. They are also duplicated i
 
 ### Data Libraries (JSON)
 Generated from source code to ensure the extension remains lightweight and fast.
-- **`pokemon.json`**: Name, Types, and HP/Atk/Def/SpA/SpD/Spe stats.
+- **`pokemon.json`**: Name, Types, and HP/Atk/Def/SpA/SpD/Spe stats, plus the Limitless display-name aliases (see above) as extra keys onto the same records.
 - **`moves.json`**: Name, Type, Category, Stats, Priority, `classifications` (official Champions labels, omitted when a move has none), and `contact`.
 - **`items.json`**: Name and descriptive effect.
 - **`abilities.json`**: Name and short description.
-- **`natures.json`**: Stat Alignments. Keyed on the full phrase (`Adamant Nature`), with the bare name and the raised and lowered stat. The files and code keep the name *nature* because that is what the upstream Showdown source calls them.
+- **`natures.json`**: Stat Alignments — Champions' 21, not mainline's 25. Keyed on the full phrase (`Adamant Nature`), with the bare name and the raised and lowered stat. The file and the code keep the name *nature* because that is the key the pages themselves print.
 
 ### Development & Build Tools
 - **`build.js`**: A custom Node.js script. Converts raw TypeScript source files (`.ts`) from Pokémon Showdown into the optimized `.json` libraries used by the extension, then mirrors every shipping file into `/dist`.
+- **`fetch_limitless_aliases.js`**: Rebuilds `data files/limitless-aliases.json` by reading each species' display name off limitlessvgc.com. Build-time only — the extension never makes a network request.
 - **`generate_icons.js`**: A Node.js canvas script used to programmatically generate the 16x16, 48x48, and 128x128 icons from the source Pecha Berry artwork.
 
 ### Design Archive (Concepts)
@@ -93,7 +145,7 @@ These files record the evolution of the UI and can be used for future reference:
 ## 🛠 Developer Workflow
 
 0. **Install tooling:** `npm install` (once).
-1. **Update Data:** Drop new `.ts` files from the Showdown repository into `/data files` (the repo root also works) and run:
+1. **Update Data:** Drop new `.ts` files from the Showdown repository, and/or a newer `champions-logic-mb.json` export, into `/data files` (the repo root also works) and run:
    - `npm run build` — rebuilds all five libraries, or
    - `node build.js moves items` — rebuilds only the named targets (`pokemon`, `moves`, `items`, `abilities`, `natures`, `all`). With no arguments it prompts interactively.
 2. **Test:** Load the root folder as an "Unpacked Extension" in Chrome Developer Mode, or run `npm run run:firefox` to open a temporary Firefox profile with `/dist` loaded.
@@ -108,8 +160,8 @@ The build also reports seven things that are otherwise silent, because each one 
 | A data library missing from `web_accessible_resources.resources` | That category never appears anywhere |
 | `manifest.json` disagreeing with `package.json` on the version | Browsers see no update |
 | `browser_specific_settings.gecko.id` missing | Firefox keys `storage.sync` on the add-on ID, so the popup toggle does nothing — and Chrome ignores the key, so the bug is Firefox-only |
-| A `CHAMPIONS_OVERLAY` move name not found in `moves-data.ts` (fatal) | An upstream rename would drop that Classification from the tooltip silently, rather than fail |
-| A `CHAMPIONS_OVERLAY` row the source now carries itself (warning) | The hand-written row is dead weight, and nobody can tell which rows are still load-bearing |
+| A Champions-legal move missing from `moves-data.ts` (fatal) | The build walks the Showdown dex, so a Champions-only move would never be written at all — no tooltip, no error |
+| An alias pointing at a species that no longer exists, or shadowing a real one (fatal) | The alias resolves to nothing, or hides the species it collides with |
 
 ### Publishing to addons.mozilla.org
 

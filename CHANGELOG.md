@@ -1,5 +1,37 @@
 # Changelog
 
+## v1.5.0
+
+**Form Pokémon and Mega Evolutions now work on Limitless, where none of them did.** The data libraries are keyed on Pokémon Showdown's species names — `Rotom-Wash`, `Raichu-Alola`, `Charizard-Mega-Y` — which is exactly what Showdown and PokePaste print. Limitless prints natural English form names instead: *Wash Rotom*, *Alolan Raichu*, *Mega Charizard Y*. The scanner matches literal text with no normalisation, so on Limitless every one of them was silently missing: no underline, no tooltip, and nothing on the page to suggest anything was wrong. Base species like Incineroar matched fine, which is what kept it hidden.
+
+That is **28 form species and 76 Mega forms**, on the site the extension is most used with.
+
+The naming is not derivable by rule — Limitless writes "Wash Rotom" but "Lycanroc Dusk", "Female Meowstic" but "Eternal Flower Floette", "Paldean Tauros Blaze Breed" but plain "Paldean Tauros" — so the table is read off the site rather than invented. `fetch_limitless_aliases.js` fetches one page per Champions-legal form and Mega and records the `<h1>`, writing `data files/limitless-aliases.json`: **65 names verified** against the live site, **36 derived**, **3 omitted**. Each alias is registered as an extra key onto the same record, never a replacement, so `Rotom-Wash` and `Wash Rotom` both resolve to one tooltip and Showdown, PokePaste and Limitless all keep working.
+
+The 36 derived entries are the Champions-original Megas, which limitlessvgc.com has no page for because it covers Scarlet/Violet. All 41 Mega pages that did resolve are `Mega <base>` without exception, so the rest follow that rule, anchored on the Champions export's `base_slug` rather than string-stripping — which is why `Meowstic-F-Mega` correctly becomes *Mega Female Meowstic* and `Floette-Mega` becomes *Mega Eternal Flower Floette*. The three omitted are Gourgeist's size forms: Limitless has no page and no sibling to infer from, and a wrong alias is worse than a missing one.
+
+Longest-match ordering was verified to hold for every alias, so `Wash Rotom` matches whole rather than resolving to the base `Rotom` it contains, and `Mega Eternal Flower Floette` does not collapse into `Eternal Flower Floette`. Bare `Rotom` still resolves to base Rotom. No alias collides with an existing species name; the build refuses to overwrite one, and fails outright if an alias points at a species that no longer exists.
+
+**The data is now Champions-first.** Where Pokémon Champions and Pokémon Showdown disagree about something legal in Champions, Champions wins; Showdown still supplies everything Champions does not cover, which is most of the dex, so Scarlet/Violet pages keep working.
+
+v1.4.0 fixed the *vocabulary* — the tooltip used Champions' names for a move's properties. This fixes the *numbers*, which turned out to be wrong far more often:
+
+- **PP was wrong on 404 of the 500 legal moves.** Champions uses its own PP scheme entirely: it only ever assigns 1, 8, 12, 16 or 20, where Showdown uses 5 through 40 in steps of five. Shadow Ball is 16, not 15. Protect is 8, not 10. Drain Punch is 12, not 10.
+- **Twelve moves had the wrong power** (Beak Blast 120 not 100, Trop Kick 85 not 70), **four the wrong accuracy** (Crabhammer 95 not 90; Clangorous Soul never misses), and **two the wrong type** — Growth is Grass in Champions and Snap Trap is Steel.
+- **Ten move descriptions were wrong**, several of them real rebalances rather than wording: Iron Head flinches 20% of the time rather than 30%, Moonblast drops Sp. Atk 10% rather than 30%, Salt Cure ticks 1/16 rather than 1/8, Make It Rain and Toxic Thread lower two stages rather than one, and Freeze-Dry has no freeze chance at all.
+- **Two ability descriptions were wrong**: Healer cures 50% of the time, not 30%, and Unseen Fist also deals 1/4 damage through protection.
+- **Eleven entries were missing entirely** and showed no tooltip at all: the Mega-only abilities **Eelevate** (Eelektross-Mega) and **Fire Mane** (Pyroar-Mega), plus nine Champions-original Mega Stones — Staraptite, Raichunite X and Y, Chimechite, Crabominite, Glimmoranite, Golurkite, Meowsticite and Scovillainite. None of these exist in Showdown, so nothing upstream could have supplied them.
+
+**Stat Alignments are now Champions' 21, not mainline's 25.** Bashful, Docile, Hardy and Quirky do not exist in Champions, and Serious is the only neutral alignment rather than one of five. The four are gone, and the neutral text now says *Stat Alignment* rather than *nature*.
+
+The deliberate cost: a Scarlet/Violet page now shows Champions numbers for anything Champions also has, and the four mainline-only alignments get no tooltip. Hovering Shadow Ball on a saved Showdown replay reads 16 PP — right for Champions, wrong for SV. Reverting is one branch per library in `build.js`.
+
+Species base stats and typing were compared across all 235 legal species and agree exactly, so `pokemon.json` stays Showdown-sourced and keeps full-dex coverage.
+
+**Adds `data files/champions-logic-mb.json`** — the consolidated Regulation M-B export from the `champions-logic` project, committed alongside the Showdown `.ts` sources so builds are reproducible. It carries its own `data_version` and `data_revision`, both printed by the build. This retires the hand-written `CHAMPIONS_OVERLAY` from v1.4.0: the export states each move's Classifications outright, so the four that could not be derived from Showdown are no longer maintained by hand. The flag-to-label table stays, for the moves Champions does not cover. `data files/natures.ts` is no longer read.
+
+Verified against the export in full: all 500 moves on every displayed field, all 201 abilities, all 148 items and all 21 alignments.
+
 ## v1.4.0
 
 **Renamed to VGC Tooltips**, which is what the popup, the repository and `package.json` already called it — `manifest.json` was the only place still reading *Showdown Tooltips*, and the name had stopped being accurate once PokePaste and Limitless were supported.

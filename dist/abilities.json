@@ -297,7 +297,7 @@
         "description": "If last item used is a Berry, 50% chance to restore it each end of turn. 100% in Sun."
     },
     "Healer": {
-        "description": "30% chance this Pokemon's ally has its status cured at the end of each turn."
+        "description": "50% chance this Pokemon's ally has its status cured at the end of each turn."
     },
     "Heatproof": {
         "description": "Fire damage against this Pokemon is dealt with 1/2 offensive stat; 1/2 burn damage."
@@ -888,7 +888,7 @@
         "description": "While this Pokemon is active, it prevents opposing Pokemon from using their Berries."
     },
     "Unseen Fist": {
-        "description": "This Pokemon's contact moves ignore the target's protection, except Max Guard."
+        "description": "This Pokemon's contact moves ignore a target's protection and deal 1/4 the usual damage."
     },
     "Vessel of Ruin": {
         "description": "Active Pokemon without this Ability have their Special Attack multiplied by 0.75."
@@ -955,5 +955,11 @@
     },
     "Persistent": {
         "description": "When used, Gravity/Heal Block/Safeguard/Tailwind/Room effects last 2 more turns."
+    },
+    "Eelevate": {
+        "description": "This Pokemon is immune to Ground; +1 to highest stat if it KOes another Pokemon."
+    },
+    "Fire Mane": {
+        "description": "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack."
     }
 }

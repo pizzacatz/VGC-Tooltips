@@ -44,6 +44,61 @@ function writeLibrary(name, data) {
     console.log(`✅ ${name} created (${Object.keys(data).length} entries)`);
 }
 
+// The Champions export lower-cases move type and category ("ghost", "special"); the Showdown
+// source title-cases them ("Ghost", "Special"). styles.css keys type colours off the
+// lower-cased name and the tooltip prints the value as-is, so normalise to Showdown's form
+// rather than special-casing the display.
+function titleCase(value) {
+    if (!value) return value;
+    return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+}
+
+// The consolidated Pokemon Champions Regulation M-B export, from the champions-logic
+// project (`dist/champions-logic-mb.json`). This is the AUTHORITATIVE source for anything
+// legal in Champions, and it wins over the Showdown .ts files wherever the two disagree.
+//
+// They disagree more than you would guess, and never loudly. Champions rebalances moves
+// (Iron Head flinches 20% of the time, not 30%; Moonblast drops Sp. Atk 10%, not 30%; Salt
+// Cure ticks 1/16, not 1/8), retypes a couple (Growth is Grass, Snap Trap is Steel), and
+// uses an entirely different PP scheme — 404 of the 500 legal moves have a PP the Showdown
+// data gets wrong. None of that fails; it just renders a plausible wrong number.
+//
+// Showdown remains the source for everything Champions does not cover, which is most of the
+// dex: the extension also runs on Scarlet/Violet content, where a move Champions never heard
+// of still needs a tooltip.
+const CHAMPIONS_EXPORT = 'champions-logic-mb.json';
+
+let championsCache = null;
+function loadChampions() {
+    if (championsCache) return championsCache;
+
+    const filePath = findSource(CHAMPIONS_EXPORT);
+    if (!filePath) {
+        throw new Error(
+            `${CHAMPIONS_EXPORT} not found. Copy it from the champions-logic project's dist/ ` +
+            `directory into "data files/". Without it every Champions value would silently ` +
+            `fall back to Showdown's, which is wrong for most of them.`
+        );
+    }
+
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const byName = (rows) => Object.fromEntries((rows || []).map(row => [row.name, row]));
+
+    championsCache = {
+        version: data.data_version,
+        revision: data.data_revision,
+        moves: byName(data.moves),
+        abilities: byName(data.abilities),
+        items: byName(data.items),
+        alignments: data.stat_alignments || []
+    };
+
+    console.log(`🏆 Champions ${championsCache.version} (${championsCache.revision}): ` +
+        `${data.moves.length} moves, ${data.abilities.length} abilities, ` +
+        `${data.items.length} items, ${championsCache.alignments.length} alignments`);
+    return championsCache;
+}
+
 // The twelve official Pokemon Champions **Classifications** — the game's own word for
 // a move's properties, and the labels its move-filter list shows — keyed by the Showdown
 // flag that carries each one. Champions and Showdown name the same idea differently
@@ -73,31 +128,13 @@ const CLASSIFICATIONS = {
     mental: 'Mental'
 };
 
-// Classification membership that the Showdown source does not carry, listed by hand because
-// there is nothing upstream to derive it from. Two distinct reasons, both real:
+// Note on Mental: it is NOT the Mental Herb cure list, despite being the same five moves.
+// The item keys on the volatile condition its holder ends up with, not on this property; the
+// overlap is a coincidence of naming. Do not describe one in terms of the other.
 //
-//   1. `explosive` and `mental` are Champions-native — the flags do not exist in Showdown at
-//      all. A Showdown-sourced tooltip does not get a wrong answer here, it gets silence.
-//      Both sets are closed: every move carrying each label is named, so absence means the
-//      move does not have it.
-//
-//   2. `slicing` and `sound` DO exist upstream, but Champions puts them on moves Scarlet &
-//      Violet does not. The four claw moves are not Slicing in SV and Dragon Cheer is not
-//      Sound-Based, yet all five are in Champions — verified against champions-logic, whose
-//      own move flags carry them. This matters in play: Sharpness boosts Slicing, and
-//      Soundproof blocks Sound-Based. Note that champions-logic's `divergence-from-showdown`
-//      document states flag membership agrees with Showdown apart from the native two; its
-//      data says otherwise for these five, and the data is what was checked.
-//
-// Mental is NOT the Mental Herb cure list, despite being the same five moves. The item keys
-// on the volatile condition its holder ends up with, not on this property; the overlap is a
-// coincidence of naming. Do not describe one in terms of the other.
-const CHAMPIONS_OVERLAY = {
-    explosive: ['Explosion', 'Self-Destruct', 'Misty Explosion'],
-    mental: ['Taunt', 'Attract', 'Encore', 'Disable', 'Torment'],
-    slicing: ['Crush Claw', 'Dire Claw', 'Dragon Claw', 'Shadow Claw'],
-    sound: ['Dragon Cheer']
-};
+// The flag -> label map above is only needed for moves Champions does NOT cover, where the
+// labels have to be derived from Showdown's flags. For the 500 legal moves the export states
+// `classifications` outright, already resolved to official labels, and that is used verbatim.
 
 // `contact` is the one flag worth keeping that Champions does not label. It is the most
 // mechanically consequential property in the game — Rough Skin, Static, Flame Body, Rocky
@@ -128,6 +165,8 @@ const BUILDERS = {
                 stats: `${s.hp}/${s.atk}/${s.def}/${s.spa}/${s.spd}/${s.spe}`
             };
         }
+
+        addLimitlessAliases(outputJSON);
         writeLibrary('pokemon.json', outputJSON);
     },
 
@@ -137,117 +176,186 @@ const BUILDERS = {
         const movesText = loadSource('moves-text.ts');
         const outputJSON = {};
 
-        // Invert CHAMPIONS_OVERLAY into move name -> the flags it adds, so the main loop can
-        // treat a hand-listed Classification exactly like one read from the Showdown flags.
-        const overlayByMove = {};
-        for (const [flag, moveNames] of Object.entries(CHAMPIONS_OVERLAY)) {
-            for (const name of moveNames) {
-                (overlayByMove[name] = overlayByMove[name] || []).push(flag);
-            }
-        }
-        const overlayMatched = new Set();
-        const overlayRedundant = [];
+        const champions = loadChampions();
+        let fromChampions = 0;
 
         for (const key in movesData) {
             const move = movesData[key];
             const textInfo = movesText[key] || {};
             if (!move.name) continue;
 
-            const overlay = overlayByMove[move.name] || [];
-            if (overlay.length > 0) overlayMatched.add(move.name);
-            // An overlay row for a flag the source now carries by itself means upstream has
-            // caught up and the row can be deleted. Harmless, but say so rather than let the
-            // table accumulate entries nobody can tell are still needed.
-            for (const flag of overlay) {
-                if (move.flags && move.flags[flag]) overlayRedundant.push(`${move.name} (${flag})`);
-            }
+            const cm = champions.moves[move.name];
+            if (cm) fromChampions++;
 
-            // Emitted as finished labels in the game's filter order, not as flag keys, so
-            // the tooltip has no vocabulary of its own to keep in sync with this table.
-            const classifications = Object.entries(CLASSIFICATIONS)
-                .filter(([flag]) => (move.flags && move.flags[flag]) || overlay.includes(flag))
-                .map(([, label]) => label);
+            // Champions states `classifications` outright, already carrying the official
+            // labels. For a move it does not cover, derive them from Showdown's flags — the
+            // labels are still the right vocabulary, since a Champions player reading an SV
+            // page is the same person.
+            const classifications = cm
+                ? (cm.classifications || [])
+                : Object.entries(CLASSIFICATIONS)
+                    .filter(([flag]) => move.flags && move.flags[flag])
+                    .map(([, label]) => label);
 
-            const entry = {
-                type: move.type,
-                category: move.category,
-                basePower: move.basePower,
-                accuracy: move.accuracy,
-                pp: move.pp,
-                priority: move.priority || 0,
-                description: textInfo.shortDesc || textInfo.desc || "No description available."
-            };
+            // Every displayed field prefers Champions, because every one of them diverges
+            // somewhere: PP on 404 of 500 moves, power on 12, accuracy on 4, type on 2
+            // (Growth is Grass, Snap Trap is Steel), and the description on 10 — several of
+            // which are real balance changes rather than wording, e.g. Iron Head flinching
+            // 20% rather than 30%.
+            const entry = cm
+                ? {
+                    // The export lower-cases type and category; the tooltip title-cases for
+                    // display and looks up `--type-<lowercase>`, so match Showdown's casing.
+                    type: titleCase(cm.type),
+                    category: titleCase(cm.category),
+                    basePower: cm.power || 0,
+                    // Showdown writes `true` for "never misses"; the export writes null.
+                    accuracy: cm.accuracy === null || cm.accuracy === undefined ? true : cm.accuracy,
+                    pp: cm.pp,
+                    priority: cm.priority || 0,
+                    description: cm.short_desc || cm.long_desc || "No description available."
+                }
+                : {
+                    type: move.type,
+                    category: move.category,
+                    basePower: move.basePower,
+                    accuracy: move.accuracy,
+                    pp: move.pp,
+                    priority: move.priority || 0,
+                    description: textInfo.shortDesc || textInfo.desc || "No description available."
+                };
+
             // Both omitted when they do not apply — most moves have no Classification at
             // all, and writing empty values for them would pad moves.json for nothing.
             if (classifications.length > 0) entry.classifications = classifications;
-            if (move.flags && move.flags.contact) entry.contact = true;
+            const contact = cm ? (cm.flags || []).includes('contact') : !!(move.flags && move.flags.contact);
+            if (contact) entry.contact = true;
 
             outputJSON[move.name] = entry;
         }
 
-        // The overlay is matched on the move's display name, which is the one part of this
-        // that upstream can change under us. If a rename ever lands, the Classification would
-        // silently vanish from the tooltip rather than fail, so make it fail.
-        const unmatched = Object.keys(overlayByMove).filter(name => !overlayMatched.has(name));
-        if (unmatched.length > 0) {
-            console.error('\n❌ CHAMPIONS_OVERLAY names not found in moves-data.ts:');
-            unmatched.forEach(name => console.error(`   - ${name}`));
-            console.error('   Renamed upstream? Fix the name, or that Classification is now missing.');
-            throw new Error(`${unmatched.length} overlay move name(s) unmatched`);
-        }
-        if (overlayRedundant.length > 0) {
-            console.warn(`\n⚠️  ${overlayRedundant.length} CHAMPIONS_OVERLAY row(s) now redundant —`);
-            console.warn('   the Showdown source carries these itself and the row can be removed:');
-            overlayRedundant.forEach(entry => console.warn(`   - ${entry}`));
+        // A legal move the Showdown source has never heard of would never be written at all,
+        // since this loop walks the Showdown dex. Nothing in M-B is Champions-only today, but
+        // a future regulation could add one, and it would vanish rather than fail.
+        const missing = Object.keys(champions.moves).filter(name => !outputJSON[name]);
+        if (missing.length > 0) {
+            console.error('\n❌ Champions moves absent from moves-data.ts, so not written:');
+            missing.forEach(name => console.error(`   - ${name}`));
+            throw new Error(`${missing.length} Champions move(s) missing from the Showdown source`);
         }
 
+        console.log(`   ${fromChampions} move(s) taken from Champions, ` +
+            `${Object.keys(outputJSON).length - fromChampions} from Showdown.`);
         writeLibrary('moves.json', outputJSON);
     },
 
     natures() {
-        console.log('⏳ Processing Natures...');
-        const natureData = loadSource('natures.ts');
+        console.log('⏳ Processing Stat Alignments...');
+        const champions = loadChampions();
         const STAT_LABELS = { hp: 'HP', atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
         const outputJSON = {};
 
-        for (const key in natureData) {
-            const nature = natureData[key];
-            if (!nature.name) continue;
+        // Built from Champions alone, not from Showdown's natures.ts. Champions ships 21 Stat
+        // Alignments where mainline has 25: Bashful, Docile, Hardy and Quirky do not exist
+        // here, and Serious is the only neutral one rather than one of five. Shipping the
+        // extra four would put a tooltip on an alignment no Champions player can select.
+        //
+        // The cost of this is deliberate and worth naming: a Scarlet/Violet paste that says
+        // "Hardy Nature" now gets no tooltip. That is the Champions-first trade — the
+        // alternative is showing four alignments that do not exist in the game this extension
+        // is primarily for.
+        for (const alignment of champions.alignments) {
+            const name = alignment.alignment;
+            const plus = STAT_LABELS[alignment.raises];
+            const minus = STAT_LABELS[alignment.lowers];
 
-            // Keyed on the full phrase the sites actually print. A bare nature name
-            // is an ordinary English word — Bold, Calm, Serious, Rash, Naive — and
-            // matching those alone would highlight half of Showdown's chat.
-            const plus = STAT_LABELS[nature.plus];
-            const minus = STAT_LABELS[nature.minus];
-            // `name` is the bare form. Pokemon Champions team sheets print
-            // "Stat Alignment: Adamant" rather than "Adamant Nature", so content.js
-            // needs the name on its own — but only inside that field, never loose.
+            // Keyed on the full phrase the sites actually print. A bare alignment name is an
+            // ordinary English word — Bold, Calm, Serious, Rash, Naive — and matching those
+            // alone would highlight half of Showdown's chat. `name` is the bare form, which
+            // content.js uses only inside the alignment field on Champions team sheets.
             //
-            // No description for a stat-changing nature: the tooltip shows the raised
-            // and lowered stat as labelled boxes, and a sentence repeating them adds
-            // nothing. The neutral natures have no boxes, so they keep their text.
-            outputJSON[`${nature.name} Nature`] = plus && minus
-                ? { name: nature.name, plus, minus }
-                : { name: nature.name, description: 'Neutral nature. No stat changes.' };
+            // No description for a stat-changing alignment: the tooltip shows the raised and
+            // lowered stat as labelled boxes, and a sentence repeating them adds nothing.
+            // Serious has no boxes, so it keeps its text.
+            outputJSON[`${name} Nature`] = plus && minus
+                ? { name, plus, minus }
+                : { name, description: 'Neutral Stat Alignment. No stat changes.' };
         }
         writeLibrary('natures.json', outputJSON);
     },
 
     items() {
         console.log('⏳ Processing Items...');
-        buildDescriptionLibrary('items.ts', 'items.json');
+        buildDescriptionLibrary('items.ts', 'items.json', 'items');
     },
 
     abilities() {
         console.log('⏳ Processing Abilities...');
-        buildDescriptionLibrary('abilities.ts', 'abilities.json');
+        buildDescriptionLibrary('abilities.ts', 'abilities.json', 'abilities');
     }
 };
 
-// Items and abilities share the same shape: name -> description.
-function buildDescriptionLibrary(sourceFile, outputFile) {
+// The data libraries are keyed on Pokemon Showdown's species names — `Rotom-Wash`,
+// `Raichu-Alola`, `Charizard-Mega-Y`. Showdown and PokePaste print exactly those, so they
+// match. **Limitless does not.** It renders natural English form names — "Wash Rotom",
+// "Alolan Raichu", "Mega Charizard Y" — and the scanner matches literal text with no
+// normalisation, so before this every form species and every Mega was silently missing there:
+// no underline, no tooltip, and no way to tell from the page that anything was wrong.
+//
+// The naming is not derivable by rule. Limitless writes "Wash Rotom" but "Lycanroc Dusk",
+// "Female Meowstic" but "Eternal Flower Floette", "Paldean Tauros Blaze Breed" but plain
+// "Paldean Tauros". So the table is scraped from the site itself rather than invented — see
+// the `_source` field in the file, and the README for how to regenerate it.
+//
+// Each alias is registered as an additional key onto the same record, never a replacement:
+// both spellings resolve to one tooltip, so Showdown and Limitless keep working at once.
+function addLimitlessAliases(outputJSON) {
+    const filePath = findSource('limitless-aliases.json');
+    if (!filePath) {
+        console.warn('⚠️  limitless-aliases.json not found — Limitless will show no tooltip');
+        console.warn('   for any form species or Mega. See the README to regenerate it.');
+        return;
+    }
+
+    const table = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const entries = { ...(table.verified || {}), ...(table.derived || {}) };
+    let added = 0;
+    const orphans = [];
+
+    for (const [alias, canonical] of Object.entries(entries)) {
+        const record = outputJSON[canonical];
+        // A canonical name that no longer exists means Showdown renamed the species out from
+        // under the table, so the alias would point at nothing. Report rather than write it.
+        if (!record) { orphans.push(`${alias} -> ${canonical}`); continue; }
+        // An alias that collides with a real species would shadow it. Never overwrite.
+        if (outputJSON[alias]) { orphans.push(`${alias} (already a species)`); continue; }
+        outputJSON[alias] = record;
+        added++;
+    }
+
+    const derivedCount = Object.keys(table.derived || {}).length;
+    console.log(`   ${added} Limitless alias(es) added ` +
+        `(${Object.keys(table.verified || {}).length} scraped, ${derivedCount} derived).`);
+    if ((table._omitted || []).length > 0) {
+        console.log(`   no Limitless name for: ${table._omitted.join(', ')} — not aliased.`);
+    }
+    if (orphans.length > 0) {
+        console.error('\n❌ limitless-aliases.json entries that could not be applied:');
+        orphans.forEach(o => console.error(`   - ${o}`));
+        throw new Error(`${orphans.length} unusable alias entry/entries`);
+    }
+}
+
+// Items and abilities share the same shape: name -> description. Champions wins where it has
+// an opinion; Showdown supplies the rest, which is most of the dex and is what a Scarlet/
+// Violet page needs. Champions also has entries with no Showdown counterpart at all — the
+// Mega-only abilities Eelevate (Eelektross-Mega) and Fire Mane (Pyroar-Mega) — so its rows
+// are added, not merely preferred, or hovering those on a team sheet would show nothing.
+function buildDescriptionLibrary(sourceFile, outputFile, championsKey) {
     const data = loadSource(sourceFile);
+    const champions = loadChampions()[championsKey];
     const outputJSON = {};
+
     for (const key in data) {
         if (data[key].name) {
             outputJSON[data[key].name] = {
@@ -255,6 +363,17 @@ function buildDescriptionLibrary(sourceFile, outputFile) {
             };
         }
     }
+
+    let overridden = 0;
+    let added = 0;
+    for (const [name, row] of Object.entries(champions)) {
+        const description = row.short_desc || row.long_desc || "No description available.";
+        if (!outputJSON[name]) added++;
+        else if (outputJSON[name].description !== description) overridden++;
+        outputJSON[name] = { description };
+    }
+    console.log(`   ${overridden} description(s) replaced by Champions, ${added} added.`);
+
     writeLibrary(outputFile, outputJSON);
 }
 

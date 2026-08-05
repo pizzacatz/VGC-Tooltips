@@ -6,7 +6,7 @@
         "description": "If held by an Abomasnow, this item allows it to Mega Evolve in battle."
     },
     "Absolite": {
-        "description": "If held by an Absol, this item allows it to Mega Evolve in battle."
+        "description": "If held by an Absol, this item allows it to Mega Evolve into Mega Absol in battle."
     },
     "Absorb Bulb": {
         "description": "Raises holder's Sp. Atk by 1 stage if hit by a Water-type attack. Single use."
@@ -153,10 +153,10 @@
         "description": "Holder's Fire-type attacks have 1.2x power."
     },
     "Charizardite X": {
-        "description": "If held by a Charizard, this item allows it to Mega Evolve in battle."
+        "description": "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard X."
     },
     "Charizardite Y": {
-        "description": "If held by a Charizard, this item allows it to Mega Evolve in battle."
+        "description": "If held by a Charizard, this item allows it to Mega Evolve into Mega Charizard Y."
     },
     "Charti Berry": {
         "description": "Halves damage taken from a supereffective Rock-type attack. Single use."
@@ -474,7 +474,7 @@
         "description": "Raises holder's Defense by 1 stage when at 1/4 max HP or less. Single use."
     },
     "Garchompite": {
-        "description": "If held by a Garchomp, this item allows it to Mega Evolve in battle."
+        "description": "If held by a Garchomp, this item allows it to Mega Evolve into Mega Garchomp."
     },
     "Gardevoirite": {
         "description": "If held by a Gardevoir, this item allows it to Mega Evolve in battle."
@@ -690,7 +690,7 @@
         "description": "Evolves Milcery into Alcremie when held and spun around."
     },
     "Lucarionite": {
-        "description": "If held by a Lucario, this item allows it to Mega Evolve in battle."
+        "description": "If held by a Lucario, this item allows it to Mega Evolve into Mega Lucario in battle."
     },
     "Lucky Punch": {
         "description": "If held by a Chansey, its critical hit ratio is raised by 2 stages."
@@ -1146,7 +1146,7 @@
         "description": "Holder's Flying-type attacks have 1.2x power. Judgment is Flying type."
     },
     "Slowbronite": {
-        "description": "If held by a Slowbro, this item allows it to Mega Evolve in battle."
+        "description": "If held by a Slowbro (not Galarian Slowbro), this item allows it to Mega Evolve."
     },
     "Smooth Rock": {
         "description": "Holder's use of Sandstorm lasts 8 turns instead of 5."
@@ -1690,5 +1690,32 @@
     },
     "Vile Vial": {
         "description": "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power."
+    },
+    "Chimechite": {
+        "description": "If held by a Chimecho, this item allows it to Mega Evolve in battle."
+    },
+    "Crabominite": {
+        "description": "If held by a Crabominable, this item allows it to Mega Evolve in battle."
+    },
+    "Glimmoranite": {
+        "description": "If held by a Glimmora, this item allows it to Mega Evolve in battle."
+    },
+    "Golurkite": {
+        "description": "If held by a Golurk, this item allows it to Mega Evolve in battle."
+    },
+    "Meowsticite": {
+        "description": "If held by a Meowstic, this item allows it to Mega Evolve in battle."
+    },
+    "Raichunite X": {
+        "description": "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu X in battle."
+    },
+    "Raichunite Y": {
+        "description": "If held by a Raichu, this item allows it to Mega Evolve into Mega Raichu Y in battle."
+    },
+    "Scovillainite": {
+        "description": "If held by a Scovillain, this item allows it to Mega Evolve in battle."
+    },
+    "Staraptite": {
+        "description": "If held by a Staraptor, this item allows it to Mega Evolve in battle."
     }
 }

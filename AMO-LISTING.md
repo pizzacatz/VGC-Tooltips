@@ -52,6 +52,20 @@ AMO caps this at 250 characters. This is 184, joined onto one line.
     Scarlet/Violet ones, including the "Stat Alignment:" field that Champions team
     sheets use.
 
+    BUILT FOR CHAMPIONS
+
+    The data is Champions-first. Pokemon Champions rebalances a lot of what it
+    inherits, and quietly: it uses its own PP scheme on 404 of the 500 legal moves,
+    changes the power of twelve and the type of two, and adjusts effects like Iron
+    Head's flinch chance and Salt Cure's damage. It also ships 21 Stat Alignments
+    rather than mainline's 25. Everything the tooltip shows for a Champions-legal
+    move, ability, item or alignment comes from the game's own data, not from a
+    Scarlet/Violet dex — including entries no other source has, like the Mega-only
+    abilities Eelevate and Fire Mane.
+
+    The trade-off is worth knowing: on a Scarlet/Violet page, anything Champions
+    also has will show the Champions value.
+
     Scanning is confined to the team lists and battle logs themselves, so
     navigation, headers and page furniture are left alone. On PokePaste and
     Limitless the site's own colouring is preserved and only the underline is
@@ -73,8 +87,9 @@ AMO caps this at 250 characters. This is 184, joined onto one line.
     Not affiliated with, endorsed by, or sponsored by Nintendo, Creatures Inc.,
     GAME FREAK, The Pokemon Company, Pokemon Showdown, or Limitless. Pokemon and
     all related names are trademarks of their respective owners. Game data is
-    derived from the MIT-licensed Pokemon Showdown project; see
-    THIRD-PARTY-NOTICES.md in the repository.
+    derived from the MIT-licensed Pokemon Showdown project and from the
+    champions-logic Regulation M-B dataset; see THIRD-PARTY-NOTICES.md in the
+    repository.
 
 ## Categories
 
@@ -106,9 +121,11 @@ manual reviewer will otherwise stop on.
     styles.css ship exactly as written, unminified and untranspiled. The five
     .json data libraries are generated data, not code: build.js in the repository
     converts the MIT-licensed .ts data files from the Pokemon Showdown project
-    (pokedex.ts, moves-data.ts, moves-text.ts, items.ts, abilities.ts,
-    natures.ts) into name-keyed lookup tables. Licence details are in
-    THIRD-PARTY-NOTICES.md.
+    (pokedex.ts, moves-data.ts, moves-text.ts, items.ts, abilities.ts), plus the
+    consolidated Regulation M-B export from the champions-logic project, into
+    name-keyed lookup tables. Champions wins where the two disagree about a
+    Champions-legal move, ability, item or Stat Alignment. Provenance and licence
+    details for both are in THIRD-PARTY-NOTICES.md.
 
     On the one linter warning — UNSAFE_VAR_ASSIGNMENT for tooltip.innerHTML in
     content.js: every value interpolated into that string is either a hardcoded

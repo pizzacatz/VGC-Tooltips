@@ -4,10 +4,6 @@
         "plus": "Atk",
         "minus": "SpA"
     },
-    "Bashful Nature": {
-        "name": "Bashful",
-        "description": "Neutral nature. No stat changes."
-    },
     "Bold Nature": {
         "name": "Bold",
         "plus": "Def",
@@ -28,18 +24,10 @@
         "plus": "SpD",
         "minus": "SpA"
     },
-    "Docile Nature": {
-        "name": "Docile",
-        "description": "Neutral nature. No stat changes."
-    },
     "Gentle Nature": {
         "name": "Gentle",
         "plus": "SpD",
         "minus": "Def"
-    },
-    "Hardy Nature": {
-        "name": "Hardy",
-        "description": "Neutral nature. No stat changes."
     },
     "Hasty Nature": {
         "name": "Hasty",
@@ -91,10 +79,6 @@
         "plus": "SpA",
         "minus": "Spe"
     },
-    "Quirky Nature": {
-        "name": "Quirky",
-        "description": "Neutral nature. No stat changes."
-    },
     "Rash Nature": {
         "name": "Rash",
         "plus": "SpA",
@@ -112,7 +96,7 @@
     },
     "Serious Nature": {
         "name": "Serious",
-        "description": "Neutral nature. No stat changes."
+        "description": "Neutral Stat Alignment. No stat changes."
     },
     "Timid Nature": {
         "name": "Timid",

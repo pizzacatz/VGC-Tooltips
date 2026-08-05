@@ -74,7 +74,7 @@
         "category": "Physical",
         "basePower": 55,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Power doubles if the user has no held item.",
         "contact": true
@@ -84,7 +84,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Raises a random stat of the user or an ally by 2."
     },
@@ -118,7 +118,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "The target makes its move right after the user."
     },
@@ -127,7 +127,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Raises the user's Speed by 2."
     },
@@ -136,7 +136,7 @@
         "category": "Special",
         "basePower": 60,
         "accuracy": 95,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "High critical hit ratio. Hits adjacent foes.",
         "classifications": [
@@ -149,7 +149,7 @@
         "category": "Special",
         "basePower": 75,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% chance to make the target flinch.",
         "classifications": [
@@ -170,7 +170,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% confuse target that had a stat rise this turn.",
         "classifications": [
@@ -182,7 +182,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 2,
         "description": "User and ally swap positions; using again can fail."
     },
@@ -210,16 +210,16 @@
         "category": "Special",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "10% chance to raise all stats by 1 (not acc/eva)."
     },
     "Apple Acid": {
         "type": "Grass",
         "category": "Special",
-        "basePower": 80,
+        "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to lower the target's Sp. Def by 1."
     },
@@ -259,7 +259,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to raise the user's Speed by 1.",
         "classifications": [
@@ -272,7 +272,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect.",
         "contact": true
@@ -282,7 +282,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Defense and Sp. Def by 1."
     },
@@ -328,7 +328,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles if target was damaged this turn.",
         "contact": true
@@ -366,7 +366,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "A target of the opposite gender gets infatuated.",
         "classifications": [
@@ -391,7 +391,7 @@
         "category": "Physical",
         "basePower": 110,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Morpeko: Electric; Hangry: Dark; 100% +1 Spe."
     },
@@ -427,7 +427,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": -4,
         "description": "Power doubles if user is damaged by the target.",
         "contact": true
@@ -437,7 +437,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% confusion. User loses 50% max HP if miss.",
         "contact": true
@@ -447,7 +447,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Lowers the target's Attack by 1."
     },
@@ -465,7 +465,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 8,
         "priority": 4,
         "description": "Protects from moves. Contact: poison."
     },
@@ -474,7 +474,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "50% psn. 2x power if target already poisoned."
     },
@@ -504,16 +504,16 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "User switches, passing stat changes and more."
     },
     "Beak Blast": {
         "type": "Flying",
         "category": "Physical",
-        "basePower": 100,
+        "basePower": 120,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 8,
         "priority": -3,
         "description": "Burns on contact with the user before it moves.",
         "classifications": [
@@ -525,7 +525,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "All healthy allies aid in damaging the target."
     },
@@ -557,16 +557,16 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
-        "description": "Cannot be selected until the user eats a Berry."
+        "description": "Fails unless the user has eaten a Berry."
     },
     "Belly Drum": {
         "type": "Normal",
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User loses 50% max HP. Maximizes Attack."
     },
@@ -604,7 +604,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "30% chance to make the target flinch.",
         "classifications": [
@@ -617,12 +617,12 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User recovers 50% of the damage dealt.",
         "classifications": [
-            "Slicing",
-            "Healing"
+            "Healing",
+            "Slicing"
         ],
         "contact": true
     },
@@ -631,7 +631,7 @@
         "category": "Special",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to lower the target's Attack by 1."
     },
@@ -649,7 +649,7 @@
         "category": "Special",
         "basePower": 150,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User cannot move next turn."
     },
@@ -658,7 +658,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "High critical hit ratio. 10% chance to burn.",
         "contact": true
@@ -689,7 +689,7 @@
         "category": "Special",
         "basePower": 110,
         "accuracy": 70,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "10% chance to freeze foe(s). Can't miss in Snow.",
         "classifications": [
@@ -701,7 +701,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Prevents the target from switching out."
     },
@@ -737,7 +737,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Uses user's Def stat as Atk in damage calculation.",
         "contact": true
@@ -747,7 +747,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% chance to paralyze the target.",
         "contact": true
@@ -793,9 +793,9 @@
     "Bone Rush": {
         "type": "Ground",
         "category": "Physical",
-        "basePower": 25,
+        "basePower": 30,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 2-5 times in one turn."
     },
@@ -804,7 +804,7 @@
         "category": "Special",
         "basePower": 140,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect. Hits adjacent Pokemon.",
         "classifications": [
@@ -816,7 +816,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 85,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Bounces turn 1. Hits turn 2. 30% paralyze.",
         "contact": true
@@ -848,7 +848,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Has 33% recoil.",
         "contact": true
@@ -858,7 +858,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the foe(s) Attack by 1.",
         "contact": true
@@ -877,7 +877,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Destroys screens, unless the target is immune.",
         "contact": true
@@ -934,7 +934,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to lower the target's Sp. Def by 1.",
         "classifications": [
@@ -964,7 +964,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Usually goes first.",
         "classifications": [
@@ -977,7 +977,7 @@
         "category": "Physical",
         "basePower": 25,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Hits 2-5 times in one turn.",
         "classifications": [
@@ -998,7 +998,7 @@
         "category": "Special",
         "basePower": 70,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "100% burns a target that had a stat rise this turn."
     },
@@ -1007,7 +1007,7 @@
         "category": "Special",
         "basePower": 130,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User's Fire type becomes typeless; must be Fire."
     },
@@ -1062,7 +1062,7 @@
         "category": "Physical",
         "basePower": 65,
         "accuracy": 90,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Sets a layer of Spikes on the opposing side.",
         "classifications": [
@@ -1093,7 +1093,7 @@
         "category": "Special",
         "basePower": 50,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "70% chance to raise the user's Sp. Atk by 1."
     },
@@ -1132,7 +1132,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Starts Snow. User switches out."
     },
@@ -1160,7 +1160,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": -6,
         "description": "Forces the target to switch to a random ally.",
         "contact": true
@@ -1180,7 +1180,7 @@
         "category": "Special",
         "basePower": 110,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Defense by 1.",
         "classifications": [
@@ -1191,13 +1191,13 @@
         "type": "Dragon",
         "category": "Status",
         "basePower": 0,
-        "accuracy": 100,
-        "pp": 5,
+        "accuracy": true,
+        "pp": 8,
         "priority": 0,
         "description": "User loses 33% of its max HP. +1 to all stats.",
         "classifications": [
-            "Sound-Based",
-            "Dance"
+            "Dance",
+            "Sound-Based"
         ]
     },
     "Clangorous Soulblaze": {
@@ -1217,7 +1217,7 @@
         "category": "Special",
         "basePower": 50,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Resets all of the target's stat stages to 0."
     },
@@ -1226,7 +1226,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Defense and Sp. Def by 1.",
         "contact": true
@@ -1236,7 +1236,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Raises an ally's Attack and Defense by 1."
     },
@@ -1286,7 +1286,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "If hit by an attack, returns 1.5x damage.",
         "contact": true
@@ -1308,7 +1308,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Confuses the target."
     },
@@ -1390,7 +1390,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Removes adjacent Pokemon's held items."
     },
@@ -1408,7 +1408,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Raises the user's Defense by 3."
     },
@@ -1417,7 +1417,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Lowers the target's Speed by 2.",
         "classifications": [
@@ -1448,7 +1448,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "If the user has no item, it steals the target's.",
         "contact": true
@@ -1457,8 +1457,8 @@
         "type": "Water",
         "category": "Physical",
         "basePower": 100,
-        "accuracy": 90,
-        "pp": 10,
+        "accuracy": 95,
+        "pp": 12,
         "priority": 0,
         "description": "High critical hit ratio.",
         "contact": true
@@ -1477,7 +1477,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 80,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "High critical hit ratio.",
         "contact": true
@@ -1500,7 +1500,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "20% chance to lower the target's Defense by 1.",
         "classifications": [
@@ -1513,7 +1513,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 95,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "50% chance to lower the target's Defense by 1.",
         "classifications": [
@@ -1536,7 +1536,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Curses if Ghost, else -1 Spe, +1 Atk, +1 Def."
     },
@@ -1558,7 +1558,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Ignores the target's stat stage changes.",
         "contact": true
@@ -1568,7 +1568,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "20% chance to make the target flinch.",
         "classifications": [
@@ -1589,7 +1589,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect. Hits adjacent foes."
     },
@@ -1598,7 +1598,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Raises the target's Attack and Sp. Atk by 2."
     },
@@ -1625,7 +1625,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "-1 evasion; ends user and target hazards/terrain."
     },
@@ -1634,7 +1634,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "If an opponent knocks out the user, it also faints."
     },
@@ -1643,7 +1643,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 4,
         "description": "Prevents moves from affecting the user this turn."
     },
@@ -1670,7 +1670,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Digs underground turn 1, strikes turn 2.",
         "contact": true
@@ -1680,9 +1680,9 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
-        "description": "50% chance to sleep, poison, or paralyze target.",
+        "description": "30% chance to sleep, poison, or paralyze target.",
         "classifications": [
             "Slicing"
         ],
@@ -1717,7 +1717,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% chance to paralyze adjacent Pokemon."
     },
@@ -1726,7 +1726,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Dives underwater turn 1, strikes turn 2.",
         "contact": true
@@ -1767,7 +1767,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Has 33% recoil.",
         "contact": true
@@ -1777,7 +1777,7 @@
         "category": "Physical",
         "basePower": 35,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 2 times in one turn.",
         "contact": true
@@ -1830,7 +1830,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Raises the user's evasiveness by 1."
     },
@@ -1839,7 +1839,7 @@
         "category": "Special",
         "basePower": 130,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Sp. Atk by 2."
     },
@@ -1867,7 +1867,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Ally: Crit ratio +1, or +2 if ally is Dragon type.",
         "classifications": [
@@ -1879,7 +1879,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "No additional effect.",
         "classifications": [
@@ -1904,7 +1904,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits twice. Doubles: Tries to hit each foe once."
     },
@@ -1932,7 +1932,7 @@
         "category": "Special",
         "basePower": 85,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect.",
         "classifications": [
@@ -1953,7 +1953,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 75,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "20% chance to make the target flinch.",
         "contact": true
@@ -1963,7 +1963,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": -6,
         "description": "Forces the target to switch to a random ally.",
         "contact": true
@@ -1973,7 +1973,7 @@
         "category": "Special",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User recovers 75% of the damage dealt.",
         "classifications": [
@@ -1986,12 +1986,12 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User recovers 50% of the damage dealt.",
         "classifications": [
-            "Punching",
-            "Healing"
+            "Healing",
+            "Punching"
         ],
         "contact": true
     },
@@ -2022,7 +2022,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 95,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "High critical hit ratio.",
         "contact": true
@@ -2051,7 +2051,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 2 times in one turn.",
         "contact": true
@@ -2070,7 +2070,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 50,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "100% chance to confuse the target.",
         "classifications": [
@@ -2083,7 +2083,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to lower the target's Sp. Def by 1."
     },
@@ -2092,7 +2092,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits adjacent Pokemon. Double damage on Dig."
     },
@@ -2113,7 +2113,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Lowers the target's Sp. Atk by 2."
     },
@@ -2122,7 +2122,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Removes 3 PP from the target's last move.",
         "classifications": [
@@ -2146,7 +2146,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "5 turns. Grounded: +Electric power, can't sleep."
     },
@@ -2164,7 +2164,7 @@
         "category": "Special",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "More power the faster the user is than the target.",
         "classifications": [
@@ -2186,7 +2186,7 @@
         "category": "Special",
         "basePower": 130,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Raises Sp. Atk by 1, hits turn 2. Rain: no charge."
     },
@@ -2195,7 +2195,7 @@
         "category": "Special",
         "basePower": 55,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the foe(s) Speed by 1."
     },
@@ -2222,7 +2222,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Target repeats its last move for its next 3 turns.",
         "classifications": [
@@ -2234,7 +2234,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the target's HP to the user's HP.",
         "contact": true
@@ -2244,7 +2244,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 4,
         "description": "User survives attacks this turn with at least 1 HP."
     },
@@ -2253,7 +2253,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to lower the target's Sp. Def by 1.",
         "classifications": [
@@ -2265,7 +2265,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "The target's Ability changes to match the user's."
     },
@@ -2274,7 +2274,7 @@
         "category": "Special",
         "basePower": 150,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Less power as user's HP decreases. Hits foe(s)."
     },
@@ -2301,7 +2301,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User on Psychic Terrain: 1.5x power, hits foes."
     },
@@ -2310,7 +2310,7 @@
         "category": "Physical",
         "basePower": 250,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Hits adjacent Pokemon. The user faints.",
         "classifications": [
@@ -2340,7 +2340,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 2,
         "description": "Nearly always goes first.",
         "contact": true
@@ -2360,7 +2360,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Prevents all Pokemon from switching next turn."
     },
@@ -2381,7 +2381,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 3,
         "description": "Hits first. First turn out only. 100% flinch chance.",
         "contact": true
@@ -2420,7 +2420,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Lowers the target's Attack by 2.",
         "classifications": [
@@ -2432,7 +2432,7 @@
         "category": "Physical",
         "basePower": 30,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 2,
         "description": "Nullifies Detect, Protect, and Quick/Wide Guard."
     },
@@ -2451,7 +2451,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "Raises user's Attack by 3 if this KOes the target.",
         "contact": true
@@ -2461,7 +2461,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Has a 30% chance this move's power is doubled."
     },
@@ -2470,7 +2470,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "50% chance to raise the user's Sp. Atk by 1.",
         "classifications": [
@@ -2500,7 +2500,7 @@
         "category": "Special",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Does damage equal to the user's HP. User faints."
     },
@@ -2509,7 +2509,7 @@
         "category": "Special",
         "basePower": 110,
         "accuracy": 85,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "10% chance to burn the target."
     },
@@ -2518,7 +2518,7 @@
         "category": "Physical",
         "basePower": 65,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to burn. 10% chance to flinch.",
         "classifications": [
@@ -2529,9 +2529,9 @@
     "Fire Lash": {
         "type": "Fire",
         "category": "Physical",
-        "basePower": 80,
+        "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the target's Defense by 1.",
         "contact": true
@@ -2550,7 +2550,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to burn the target.",
         "classifications": [
@@ -2563,16 +2563,16 @@
         "category": "Special",
         "basePower": 35,
         "accuracy": 85,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Traps and damages the target for 4-5 turns."
     },
     "First Impression": {
         "type": "Bug",
         "category": "Physical",
-        "basePower": 90,
+        "basePower": 100,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 2,
         "description": "Nearly always goes first. First turn out only.",
         "contact": true
@@ -2595,7 +2595,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 30,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "OHKOs the target. Fails if user is a lower level."
     },
@@ -2604,7 +2604,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "More power the less HP the user has left.",
         "contact": true
@@ -2633,7 +2633,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to burn the target."
     },
@@ -2652,7 +2652,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Has 33% recoil. 10% chance to burn. Thaws user.",
         "contact": true
@@ -2671,7 +2671,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to lower the target's Sp. Def by 1."
     },
@@ -2680,7 +2680,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Raises the target's Sp. Atk by 1 and confuses it."
     },
@@ -2698,7 +2698,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Flings the user's item at the target. Power varies."
     },
@@ -2748,7 +2748,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Always results in a critical hit; no accuracy check."
     },
@@ -2757,7 +2757,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Flies up on first turn, then strikes the next turn.",
         "contact": true
@@ -2767,7 +2767,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 95,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Combines Flying in its type effectiveness.",
         "contact": true
@@ -2777,7 +2777,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 70,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "10% chance to lower the target's Sp. Def by 1.",
         "classifications": [
@@ -2789,7 +2789,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Raises the user's critical hit ratio by 2."
     },
@@ -2848,7 +2848,7 @@
         "category": "Physical",
         "basePower": 95,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Uses target's Attack stat in damage calculation.",
         "contact": true
@@ -2860,7 +2860,7 @@
         "accuracy": 100,
         "pp": 20,
         "priority": 0,
-        "description": "10% chance to freeze. Super effective on Water."
+        "description": "Super effective on Water."
     },
     "Freeze Shock": {
         "type": "Ice",
@@ -2894,7 +2894,7 @@
         "category": "Special",
         "basePower": 150,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User cannot move next turn."
     },
@@ -2903,7 +2903,7 @@
         "category": "Special",
         "basePower": 60,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Always results in a critical hit."
     },
@@ -2973,7 +2973,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits two turns after being used."
     },
@@ -2982,7 +2982,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Nullifies the target's Ability."
     },
@@ -3028,7 +3028,7 @@
         "category": "Special",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User recovers 50% of the damage dealt.",
         "classifications": [
@@ -3040,7 +3040,7 @@
         "category": "Physical",
         "basePower": 150,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User cannot move next turn.",
         "contact": true
@@ -3050,7 +3050,7 @@
         "category": "Physical",
         "basePower": 160,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Cannot be selected the turn after it's used."
     },
@@ -3096,7 +3096,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Paralyzes the target."
     },
@@ -3452,16 +3452,16 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "5 turns. Grounded: +Grass power, +1/16 max HP."
     },
     "Grav Apple": {
         "type": "Grass",
         "category": "Physical",
-        "basePower": 80,
+        "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Target: 100% -1 Def. During Gravity: 1.5x power."
     },
@@ -3470,7 +3470,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "5 turns: no Ground immunities, 1.67x accuracy."
     },
@@ -3487,7 +3487,7 @@
         ]
     },
     "Growth": {
-        "type": "Normal",
+        "type": "Grass",
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
@@ -3518,7 +3518,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Averages Defense and Sp. Def stats with target."
     },
@@ -3527,7 +3527,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Swaps Defense and Sp. Def changes with target."
     },
@@ -3536,7 +3536,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 30,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "OHKOs the target. Fails if user is a lower level.",
         "contact": true
@@ -3546,7 +3546,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 80,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "30% chance to poison the target."
     },
@@ -3567,7 +3567,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "More power the slower the user than the target.",
         "classifications": [
@@ -3589,7 +3589,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lowers the user's Speed by 1.",
         "classifications": [
@@ -3620,7 +3620,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "More power the more HP the target has left.",
         "contact": true
@@ -3630,7 +3630,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Eliminates all stat changes."
     },
@@ -3659,7 +3659,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Defense and Sp. Def by 1.",
         "classifications": [
@@ -3672,7 +3672,7 @@
         "category": "Physical",
         "basePower": 150,
         "accuracy": 80,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Has 1/2 recoil.",
         "contact": true
@@ -3682,7 +3682,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Cures the user's party of all status conditions.",
         "classifications": [
@@ -3703,7 +3703,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User faints. Next hurt Pokemon is fully healed.",
         "classifications": [
@@ -3727,12 +3727,12 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Heals the target by 50% of its max HP.",
         "classifications": [
-            "Pulse",
-            "Healing"
+            "Healing",
+            "Pulse"
         ]
     },
     "Heart Stamp": {
@@ -3759,7 +3759,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "More power the heavier the user than the target.",
         "contact": true
@@ -3769,7 +3769,7 @@
         "category": "Special",
         "basePower": 95,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to burn the foe(s).",
         "classifications": [
@@ -3781,7 +3781,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "More power the heavier the user than the target.",
         "contact": true
@@ -3800,7 +3800,7 @@
         "category": "Special",
         "basePower": 65,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles if the target has a status ailment."
     },
@@ -3962,7 +3962,7 @@
         "category": "Physical",
         "basePower": 95,
         "accuracy": 95,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect.",
         "contact": true
@@ -3972,7 +3972,7 @@
         "category": "Physical",
         "basePower": 130,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User is hurt by 50% of its max HP if it misses.",
         "contact": true
@@ -4020,7 +4020,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 30,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "OHKOs the target. Fails if user is a lower level.",
         "contact": true
@@ -4030,7 +4030,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User recovers 50% of the damage dealt.",
         "classifications": [
@@ -4043,7 +4043,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Raises the user's and ally's Attack by 1.",
         "classifications": [
@@ -4055,7 +4055,7 @@
         "category": "Special",
         "basePower": 110,
         "accuracy": 70,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to confuse target. Can't miss in rain.",
         "classifications": [
@@ -4067,7 +4067,7 @@
         "category": "Special",
         "basePower": 150,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User cannot move next turn."
     },
@@ -4076,7 +4076,7 @@
         "category": "Special",
         "basePower": 110,
         "accuracy": 80,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "No additional effect."
     },
@@ -4103,7 +4103,7 @@
         "category": "Special",
         "basePower": 150,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User cannot move next turn."
     },
@@ -4153,7 +4153,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect. Hits adjacent foes.",
         "classifications": [
@@ -4187,7 +4187,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to freeze the target."
     },
@@ -4205,7 +4205,7 @@
         "category": "Physical",
         "basePower": 65,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to freeze. 10% chance to flinch.",
         "classifications": [
@@ -4218,7 +4218,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lowers the user's Speed by 1.",
         "classifications": [
@@ -4231,7 +4231,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to freeze the target.",
         "classifications": [
@@ -4244,7 +4244,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Usually goes first."
     },
@@ -4253,7 +4253,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Ends the effects of terrain.",
         "contact": true
@@ -4263,7 +4263,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to make the target flinch."
     },
@@ -4272,7 +4272,7 @@
         "category": "Physical",
         "basePower": 25,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Hits 2-5 times in one turn."
     },
@@ -4281,7 +4281,7 @@
         "category": "Special",
         "basePower": 55,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the foe(s) Speed by 1.",
         "classifications": [
@@ -4293,7 +4293,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No foe can use any move known by the user."
     },
@@ -4309,9 +4309,9 @@
     "Infernal Parade": {
         "type": "Ghost",
         "category": "Special",
-        "basePower": 60,
+        "basePower": 65,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% burn. 2x power if target is already statused."
     },
@@ -4320,7 +4320,7 @@
         "category": "Special",
         "basePower": 100,
         "accuracy": 50,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "100% chance to burn the target."
     },
@@ -4357,7 +4357,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "The target immediately uses its last used move."
     },
@@ -4375,7 +4375,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Raises the user's Defense by 2."
     },
@@ -4384,9 +4384,9 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
-        "description": "30% chance to make the target flinch.",
+        "description": "20% chance to make the target flinch.",
         "contact": true
     },
     "Iron Tail": {
@@ -4394,7 +4394,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 75,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% chance to lower the target's Defense by 1.",
         "contact": true
@@ -4426,7 +4426,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 1,
         "description": "Usually goes first.",
         "classifications": [
@@ -4489,7 +4489,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 8,
         "priority": 4,
         "description": "Protects from damaging attacks. Contact: -1 Atk."
     },
@@ -4508,7 +4508,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "This move does not check accuracy.",
         "classifications": [
@@ -4539,7 +4539,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "2x power if the user had a stat lowered this turn.",
         "contact": true
@@ -4549,7 +4549,7 @@
         "category": "Physical",
         "basePower": 140,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Fails unless each known move has been used.",
         "contact": true
@@ -4559,7 +4559,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "+50 power for each time a party member fainted."
     },
@@ -4568,7 +4568,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% chance to burn adjacent Pokemon."
     },
@@ -4586,7 +4586,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "High critical hit ratio.",
         "classifications": [
@@ -4599,7 +4599,7 @@
         "category": "Special",
         "basePower": 130,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Sp. Atk by 2."
     },
@@ -4617,7 +4617,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User recovers 50% of the damage dealt.",
         "classifications": [
@@ -4630,7 +4630,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "1/8 of target's HP is restored to user every turn."
     },
@@ -4668,7 +4668,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Heals the user and its allies by 1/4 their max HP.",
         "classifications": [
@@ -4680,7 +4680,7 @@
         "category": "Special",
         "basePower": 140,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Has 1/2 recoil."
     },
@@ -4689,7 +4689,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "For 5 turns, special damage to allies is halved."
     },
@@ -4707,7 +4707,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "20% chance to lower the target's Defense by 1.",
         "contact": true
@@ -4717,7 +4717,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User's next move will not miss the target."
     },
@@ -4764,7 +4764,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to lower the target's Sp. Def by 2."
     },
@@ -4798,7 +4798,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the target's Attack by 1.",
         "contact": true
@@ -4817,7 +4817,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Usually goes first.",
         "classifications": [
@@ -4869,7 +4869,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "For 5 turns, all held items have no effect."
     },
@@ -4908,7 +4908,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "For 5 turns, the user has immunity to Ground."
     },
@@ -4925,10 +4925,10 @@
         "type": "Steel",
         "category": "Special",
         "basePower": 120,
-        "accuracy": 100,
-        "pp": 5,
+        "accuracy": 95,
+        "pp": 8,
         "priority": 0,
-        "description": "Lowers the user's Sp. Atk by 1. Hits foe(s)."
+        "description": "Lowers the user's Sp. Atk by 2. Hits foe(s)."
     },
     "Malicious Moonsault": {
         "type": "Dark",
@@ -4963,7 +4963,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 90,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "20% burn. Recovers 50% dmg dealt. Thaws foe(s).",
         "classifications": [
@@ -5146,7 +5146,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Prevents the target from switching out."
     },
@@ -5185,7 +5185,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 85,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect.",
         "contact": true
@@ -5195,7 +5195,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 75,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "No additional effect.",
         "contact": true
@@ -5218,7 +5218,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lowers target's Attack, Sp. Atk by 2. User faints."
     },
@@ -5236,7 +5236,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "If hit by an attack, returns 1.5x damage."
     },
@@ -5255,7 +5255,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 85,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Lowers the target's Sp. Def by 2.",
         "classifications": [
@@ -5276,7 +5276,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Raises user's Sp. Atk by 1 on turn 1. Hits turn 2."
     },
@@ -5285,7 +5285,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "20% chance to raise the user's Attack by 1.",
         "classifications": [
@@ -5359,7 +5359,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Raises the user's evasiveness by 2."
     },
@@ -5425,7 +5425,7 @@
         "category": "Special",
         "basePower": 100,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User faints. User on Misty Terrain: 1.5x power.",
         "classifications": [
@@ -5437,7 +5437,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "5 turns. Can't status,-Dragon power vs grounded."
     },
@@ -5446,9 +5446,9 @@
         "category": "Special",
         "basePower": 95,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
-        "description": "30% chance to lower the target's Sp. Atk by 1."
+        "description": "10% chance to lower the target's Sp. Atk by 1."
     },
     "Moongeist Beam": {
         "type": "Ghost",
@@ -5464,7 +5464,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals the user by a weather-dependent amount.",
         "classifications": [
@@ -5476,7 +5476,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals the user by a weather-dependent amount.",
         "classifications": [
@@ -5488,7 +5488,7 @@
         "category": "Physical",
         "basePower": 30,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Poisons foes, frees user from hazards/bind/leech.",
         "contact": true
@@ -5496,9 +5496,9 @@
     "Mountain Gale": {
         "type": "Ice",
         "category": "Physical",
-        "basePower": 100,
+        "basePower": 120,
         "accuracy": 85,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to make the target flinch."
     },
@@ -5519,7 +5519,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 85,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to lower the foe(s) accuracy by 1."
     },
@@ -5528,7 +5528,7 @@
         "category": "Special",
         "basePower": 55,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the target's Speed by 1."
     },
@@ -5537,7 +5537,7 @@
         "category": "Special",
         "basePower": 20,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to lower the target's accuracy by 1."
     },
@@ -5565,7 +5565,7 @@
         "category": "Special",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to lower the target's Sp. Atk by 1."
     },
@@ -5636,9 +5636,9 @@
     "Night Daze": {
         "type": "Dark",
         "category": "Special",
-        "basePower": 85,
+        "basePower": 90,
         "accuracy": 95,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "40% chance to lower the target's accuracy by 1."
     },
@@ -5656,7 +5656,7 @@
         "category": "Special",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Does damage equal to the user's level."
     },
@@ -5665,7 +5665,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 20,
         "priority": 0,
         "description": "High critical hit ratio.",
         "classifications": [
@@ -5687,7 +5687,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Lowers the target's Attack and Sp. Atk by 1.",
         "classifications": [
@@ -5699,7 +5699,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Raises all stats by 1 (not acc/eva). Traps user."
     },
@@ -5817,7 +5817,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lasts 2-3 turns. Confuses the user afterwards.",
         "contact": true
@@ -5839,7 +5839,7 @@
         "category": "Special",
         "basePower": 130,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Sp. Atk by 2."
     },
@@ -5881,7 +5881,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles if the user moves after the target.",
         "contact": true
@@ -5910,7 +5910,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "All active Pokemon will faint in 3 turns.",
         "classifications": [
@@ -5922,7 +5922,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "No additional effect. Hits adjacent Pokemon.",
         "classifications": [
@@ -5934,7 +5934,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lasts 2-3 turns. Confuses the user afterwards.",
         "classifications": [
@@ -5947,7 +5947,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Disappears turn 1. Hits turn 2. Breaks protection.",
         "contact": true
@@ -6006,7 +6006,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to lower the target's Attack by 1.",
         "contact": true
@@ -6026,7 +6026,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "50% chance to badly poison the target.",
         "classifications": [
@@ -6058,7 +6058,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 75,
-        "pp": 35,
+        "pp": 20,
         "priority": 0,
         "description": "Poisons the target.",
         "classifications": [
@@ -6089,7 +6089,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "If the target is an ally, heals 50% of its max HP.",
         "classifications": [
@@ -6101,7 +6101,7 @@
         "category": "Physical",
         "basePower": 110,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Fails if the target has no held item."
     },
@@ -6110,7 +6110,7 @@
         "category": "Physical",
         "basePower": 20,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 10 times. Each hit can miss.",
         "classifications": [
@@ -6133,7 +6133,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 35,
+        "pp": 20,
         "priority": 0,
         "description": "No additional effect.",
         "contact": true
@@ -6173,7 +6173,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Switches user's Attack and Defense stats."
     },
@@ -6182,7 +6182,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Averages Attack and Sp. Atk stats with target."
     },
@@ -6191,7 +6191,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Swaps Attack and Sp. Atk stat stages with target."
     },
@@ -6200,7 +6200,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Switches user's Attack and Defense stats."
     },
@@ -6209,7 +6209,7 @@
         "category": "Physical",
         "basePower": 20,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": " + 20 power for each of the user's stat boosts.",
         "contact": true
@@ -6232,7 +6232,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 85,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "No additional effect.",
         "contact": true
@@ -6269,7 +6269,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 8,
         "priority": 4,
         "description": "Prevents moves from affecting the user this turn."
     },
@@ -6300,7 +6300,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to lower the target's Sp. Def by 1."
     },
@@ -6309,7 +6309,7 @@
         "category": "Physical",
         "basePower": 85,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Destroys screens, unless the target is immune.",
         "classifications": [
@@ -6322,7 +6322,7 @@
         "category": "Special",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "For 2 turns, the target is prevented from healing.",
         "classifications": [
@@ -6334,7 +6334,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "5 turns. Grounded: +Psychic power, priority-safe."
     },
@@ -6373,16 +6373,16 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Copies the target's current stat stages."
     },
     "Psyshield Bash": {
         "type": "Psychic",
         "category": "Physical",
-        "basePower": 70,
+        "basePower": 90,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to raise the user's Defense by 1.",
         "contact": true
@@ -6392,7 +6392,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Damages target based on Defense, not Sp. Def."
     },
@@ -6473,7 +6473,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Forces the target to move last this turn."
     },
@@ -6482,7 +6482,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Usually goes first.",
         "contact": true
@@ -6492,7 +6492,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 3,
         "description": "Protects allies from priority attacks this turn."
     },
@@ -6523,9 +6523,9 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
-        "description": "+50 power for each time user was hit. Max 6 hits.",
+        "description": "+50 BP/hit on user. Max 6 hits. Resets on switch-out.",
         "classifications": [
             "Punching"
         ],
@@ -6548,7 +6548,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Destroys screens. Type depends on user's form.",
         "contact": true
@@ -6558,7 +6558,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lasts 2-3 turns. Confuses the user afterwards."
     },
@@ -6567,7 +6567,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "For 5 turns, heavy rain powers Water moves."
     },
@@ -6576,7 +6576,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Free user from hazards/bind/Leech Seed; +1 Spe.",
         "contact": true
@@ -6598,7 +6598,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 95,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "50% chance to lower the target's Defense by 1.",
         "classifications": [
@@ -6620,7 +6620,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals the user by 50% of its max HP.",
         "classifications": [
@@ -6632,7 +6632,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Restores the item the user last used."
     },
@@ -6650,7 +6650,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "User becomes the same type as the target."
     },
@@ -6680,7 +6680,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User sleeps 2 turns and restores HP and status.",
         "classifications": [
@@ -6734,7 +6734,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "More power the less HP the user has left.",
         "contact": true
@@ -6786,7 +6786,7 @@
         "category": "Physical",
         "basePower": 25,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 2-5 times in one turn.",
         "classifications": [
@@ -6817,7 +6817,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to make the foe(s) flinch."
     },
@@ -6845,7 +6845,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the target's Speed by 1."
     },
@@ -6854,7 +6854,7 @@
         "category": "Physical",
         "basePower": 150,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User cannot move next turn.",
         "classifications": [
@@ -6866,7 +6866,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User replaces its Ability with the target's."
     },
@@ -6895,7 +6895,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals 50% HP. Flying-type removed 'til turn ends.",
         "classifications": [
@@ -6916,7 +6916,7 @@
         "category": "Special",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Power doubles if others used Round this turn.",
         "classifications": [
@@ -6946,7 +6946,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Ignores the target's stat stage changes.",
         "classifications": [
@@ -6959,7 +6959,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "For 5 turns, protects user's party from status."
     },
@@ -6968,9 +6968,9 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
-        "description": "Deals 1/8 max HP each turn; 1/4 on Steel, Water."
+        "description": "Deals 1/16 max HP each turn; 1/8 on Steel, Water."
     },
     "Sand Attack": {
         "type": "Ground",
@@ -6998,7 +6998,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 8,
         "priority": 0,
         "description": "For 5 turns, a sandstorm rages. Rock: 1.5x SpD.",
         "classifications": [
@@ -7010,7 +7010,7 @@
         "category": "Physical",
         "basePower": 35,
         "accuracy": 85,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Traps and damages the target for 4-5 turns."
     },
@@ -7037,7 +7037,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "30% chance to burn the target. Thaws target."
     },
@@ -7055,7 +7055,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lowers the target's Speed by 2."
     },
@@ -7064,7 +7064,7 @@
         "category": "Special",
         "basePower": 70,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to burn the target. Thaws target."
     },
@@ -7083,7 +7083,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 85,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Lowers the target's Defense by 2.",
         "classifications": [
@@ -7138,7 +7138,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "No additional effect.",
         "classifications": [
@@ -7169,7 +7169,7 @@
         "category": "Physical",
         "basePower": 200,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Hits adjacent Pokemon. The user faints.",
         "classifications": [
@@ -7181,7 +7181,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "20% chance to lower the target's Sp. Def by 1.",
         "classifications": [
@@ -7202,7 +7202,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "High critical hit ratio.",
         "classifications": [
@@ -7238,7 +7238,7 @@
         "category": "Physical",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Usually goes first.",
         "contact": true
@@ -7266,7 +7266,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User takes 1/2 its max HP to pass a substitute."
     },
@@ -7275,7 +7275,7 @@
         "category": "Special",
         "basePower": 0,
         "accuracy": 30,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "OHKOs non-Ice targets. Fails if user's lower level."
     },
@@ -7284,7 +7284,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "20% psn. Physical+contact if it would be stronger."
     },
@@ -7293,7 +7293,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2."
     },
@@ -7311,7 +7311,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Raises the user's Defense by 2."
     },
@@ -7377,7 +7377,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "The target's Ability becomes Simple."
     },
@@ -7386,7 +7386,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 55,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Causes the target to fall asleep.",
         "classifications": [
@@ -7426,7 +7426,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "The user and the target trade Abilities."
     },
@@ -7435,7 +7435,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to lower target's Sp. Atk by 1.",
         "contact": true
@@ -7455,7 +7455,7 @@
         "category": "Physical",
         "basePower": 140,
         "accuracy": 90,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Charges, then hits turn 2. 30% flinch. High crit."
     },
@@ -7487,7 +7487,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals the user by 50% of its max HP.",
         "classifications": [
@@ -7522,7 +7522,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 75,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Causes the target to fall asleep.",
         "classifications": [
@@ -7534,7 +7534,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User must be asleep. Uses another known move."
     },
@@ -7552,7 +7552,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to poison the target.",
         "classifications": [
@@ -7564,7 +7564,7 @@
         "category": "Special",
         "basePower": 95,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "10% chance to poison adjacent Pokemon."
     },
@@ -7573,7 +7573,7 @@
         "category": "Physical",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Removes the target's Ground immunity."
     },
@@ -7582,7 +7582,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "This move does not check accuracy.",
         "contact": true
@@ -7616,11 +7616,11 @@
         "description": "Lowers the target's accuracy by 1."
     },
     "Snap Trap": {
-        "type": "Grass",
+        "type": "Steel",
         "category": "Physical",
         "basePower": 35,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Traps and damages the target for 4-5 turns.",
         "contact": true
@@ -7630,7 +7630,7 @@
         "category": "Special",
         "basePower": 55,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the foe(s) Sp. Atk by 1.",
         "classifications": [
@@ -7660,7 +7660,7 @@
         "category": "Special",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "User must be asleep. 30% chance to flinch target.",
         "classifications": [
@@ -7672,7 +7672,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 8,
         "priority": 0,
         "description": "For 5 turns, snow falls. Ice: 1.5x Def."
     },
@@ -7690,7 +7690,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals the user by 50% of its max HP.",
         "classifications": [
@@ -7702,7 +7702,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Charges turn 1. Hits turn 2. No charge in sunlight."
     },
@@ -7711,7 +7711,7 @@
         "category": "Physical",
         "basePower": 125,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Charges turn 1. Hits turn 2. No charge in sunlight.",
         "classifications": [
@@ -7762,7 +7762,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "The target is cured of its burn.",
         "classifications": [
@@ -7793,7 +7793,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Swaps Speed stat with target."
     },
@@ -7802,7 +7802,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Raises target's Atk by 2 and lowers its Def by 2."
     },
@@ -7838,7 +7838,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 8,
         "priority": 4,
         "description": "Protects from moves. Contact: loses 1/8 max HP."
     },
@@ -7857,7 +7857,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the target's Sp. Atk by 1.",
         "contact": true
@@ -7865,9 +7865,9 @@
     "Spirit Shackle": {
         "type": "Ghost",
         "category": "Physical",
-        "basePower": 80,
+        "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Prevents the target from switching out."
     },
@@ -7876,7 +7876,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lowers the PP of the target's last move by 4."
     },
@@ -7885,7 +7885,7 @@
         "category": "Special",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "More power with more uses of Stockpile."
     },
@@ -7921,7 +7921,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Causes the target to fall asleep.",
         "classifications": [
@@ -7982,7 +7982,7 @@
         "category": "Special",
         "basePower": 140,
         "accuracy": 95,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "User loses 50% max HP."
     },
@@ -7991,7 +7991,7 @@
         "category": "Physical",
         "basePower": 130,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Fails if there is no terrain active. Ends the terrain.",
         "contact": true
@@ -8001,7 +8001,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": 90,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "10% chance to raise the user's Defense by 1.",
         "contact": true
@@ -8048,7 +8048,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles if the user's last move failed.",
         "contact": true
@@ -8058,7 +8058,7 @@
         "category": "Physical",
         "basePower": 65,
         "accuracy": 90,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Sets Stealth Rock on the target's side.",
         "classifications": [
@@ -8071,7 +8071,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 80,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "High critical hit ratio."
     },
@@ -8080,7 +8080,7 @@
         "category": "Special",
         "basePower": 20,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": " + 20 power for each of the user's stat boosts."
     },
@@ -8089,7 +8089,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Always results in a critical hit.",
         "contact": true
@@ -8118,7 +8118,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User heals HP=target's Atk stat. Lowers Atk by 1.",
         "classifications": [
@@ -8130,7 +8130,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 95,
-        "pp": 40,
+        "pp": 20,
         "priority": 0,
         "description": "Lowers the foe(s) Speed by 2."
     },
@@ -8158,16 +8158,16 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
-        "description": "Must hold Berry to use. User eats Berry, Def +2."
+        "description": "Fails unless the user has a berry. User eats Berry, Def +2."
     },
     "Stun Spore": {
         "type": "Grass",
         "category": "Status",
         "basePower": 0,
         "accuracy": 75,
-        "pp": 30,
+        "pp": 20,
         "priority": 0,
         "description": "Paralyzes the target.",
         "classifications": [
@@ -8189,7 +8189,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User takes 1/4 its max HP to put in a substitute."
     },
@@ -8207,7 +8207,7 @@
         "category": "Physical",
         "basePower": 70,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 1,
         "description": "Usually goes first. Fails if target is not attacking.",
         "contact": true
@@ -8217,7 +8217,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "For 5 turns, intense sunlight powers Fire moves."
     },
@@ -8236,7 +8236,7 @@
         "category": "Physical",
         "basePower": 100,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "User is hurt by 50% of its max HP if it misses.",
         "contact": true
@@ -8246,7 +8246,7 @@
         "category": "Physical",
         "basePower": 0,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Does damage equal to 1/2 target's current HP.",
         "contact": true
@@ -8256,7 +8256,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Lowers the user's Attack and Defense by 1.",
         "contact": true
@@ -8287,7 +8287,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Hits adjacent Pokemon. Double damage on Dive."
     },
@@ -8309,7 +8309,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 85,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Raises the target's Attack by 2 and confuses it."
     },
@@ -8318,7 +8318,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Heals the user based on uses of Stockpile.",
         "classifications": [
@@ -8330,7 +8330,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 75,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Causes the target to become confused."
     },
@@ -8357,7 +8357,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User switches its held item with the target's."
     },
@@ -8387,7 +8387,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Heals the user by a weather-dependent amount.",
         "classifications": [
@@ -8398,8 +8398,8 @@
         "type": "Grass",
         "category": "Special",
         "basePower": 60,
-        "accuracy": 85,
-        "pp": 10,
+        "accuracy": 90,
+        "pp": 12,
         "priority": 0,
         "description": "Target's Speed is lowered by 1 stage for 3 turns.",
         "classifications": [
@@ -8442,7 +8442,7 @@
         "category": "Physical",
         "basePower": 25,
         "accuracy": 85,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 2-5 times in one turn.",
         "contact": true
@@ -8461,7 +8461,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "For 4 turns, allies' Speed is doubled.",
         "classifications": [
@@ -8522,7 +8522,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "All active Pokemon consume held Berries."
     },
@@ -8579,7 +8579,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles if the user's last move failed.",
         "contact": true
@@ -8607,7 +8607,7 @@
         "category": "Special",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User on terrain: power doubles, type varies.",
         "classifications": [
@@ -8619,7 +8619,7 @@
         "category": "Physical",
         "basePower": 60,
         "accuracy": 100,
-        "pp": 25,
+        "pp": 20,
         "priority": 0,
         "description": "If the user has no item, it steals the target's.",
         "contact": true
@@ -8647,7 +8647,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lasts 2-3 turns. Confuses the user afterwards.",
         "contact": true
@@ -8657,7 +8657,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "For 2 turns, the target cannot use sound moves.",
         "contact": true
@@ -8667,7 +8667,7 @@
         "category": "Special",
         "basePower": 110,
         "accuracy": 70,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "30% chance to paralyze. Can't miss in rain."
     },
@@ -8676,7 +8676,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to paralyze the target."
     },
@@ -8703,7 +8703,7 @@
         "category": "Physical",
         "basePower": 65,
         "accuracy": 95,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to paralyze. 10% chance to flinch.",
         "classifications": [
@@ -8726,7 +8726,7 @@
         "category": "Physical",
         "basePower": 75,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "10% chance to paralyze the target.",
         "classifications": [
@@ -8766,7 +8766,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User +1 Atk, Spe. Clears all substitutes/hazards."
     },
@@ -8784,7 +8784,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "100% chance to raise the user's Sp. Atk by 1.",
         "classifications": [
@@ -8796,7 +8796,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Target can't select the same move twice in a row.",
         "classifications": [
@@ -8808,7 +8808,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Badly poisons the target. Poison types can't miss."
     },
@@ -8828,7 +8828,7 @@
         "accuracy": 100,
         "pp": 20,
         "priority": 0,
-        "description": "Lowers the target's Speed by 1 and poisons it."
+        "description": "Lowers the target's Speed by 2 and poisons it."
     },
     "Trailblaze": {
         "type": "Grass",
@@ -8845,7 +8845,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Copies target's stats, moves, types, and Ability."
     },
@@ -8854,7 +8854,7 @@
         "category": "Special",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "20% chance to paralyze or burn or freeze target."
     },
@@ -8863,7 +8863,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "User switches its held item with the target's."
     },
@@ -8881,7 +8881,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 5,
+        "pp": 8,
         "priority": -7,
         "description": "Goes last. For 5 turns, turn order is reversed."
     },
@@ -8890,7 +8890,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "High crit. Target: 50% -1 Defense, 30% flinch."
     },
@@ -8899,7 +8899,7 @@
         "category": "Physical",
         "basePower": 20,
         "accuracy": 90,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 3 times. Each hit can miss, but power rises.",
         "contact": true
@@ -8927,9 +8927,9 @@
     "Trop Kick": {
         "type": "Grass",
         "category": "Physical",
-        "basePower": 70,
+        "basePower": 85,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "100% chance to lower the target's Attack by 1.",
         "contact": true
@@ -8949,7 +8949,7 @@
         "category": "Special",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Hits 2 times in one turn."
     },
@@ -8988,7 +8988,7 @@
         "category": "Physical",
         "basePower": 65,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 3,
         "description": "100% flinch. Fails unless target using priority.",
         "contact": true
@@ -8998,7 +8998,7 @@
         "category": "Special",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Lasts 3 turns. Active Pokemon cannot fall asleep.",
         "classifications": [
@@ -9020,7 +9020,7 @@
         "category": "Special",
         "basePower": 40,
         "accuracy": 100,
-        "pp": 30,
+        "pp": 20,
         "priority": 1,
         "description": "Usually goes first."
     },
@@ -9058,7 +9058,7 @@
         "category": "Special",
         "basePower": 65,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles if the target is poisoned."
     },
@@ -9118,7 +9118,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Has 33% recoil. 10% chance to paralyze target.",
         "contact": true
@@ -9138,7 +9138,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "20% chance to make the target flinch.",
         "contact": true
@@ -9196,7 +9196,7 @@
         "category": "Special",
         "basePower": 150,
         "accuracy": 100,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "Less power as user's HP decreases. Hits foe(s)."
     },
@@ -9205,7 +9205,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Has 33% recoil.",
         "contact": true
@@ -9215,7 +9215,7 @@
         "category": "Special",
         "basePower": 50,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Power doubles and type varies in each weather.",
         "classifications": [
@@ -9227,7 +9227,7 @@
         "category": "Special",
         "basePower": 35,
         "accuracy": 85,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Traps and damages the target for 4-5 turns."
     },
@@ -9270,7 +9270,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 3,
         "description": "Protects allies from multi-target moves this turn."
     },
@@ -9291,7 +9291,7 @@
         "category": "Physical",
         "basePower": 90,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Has 1/4 recoil.",
         "contact": true
@@ -9301,7 +9301,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 85,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Burns the target."
     },
@@ -9320,7 +9320,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Next turn, 50% of the user's max HP is restored.",
         "classifications": [
@@ -9341,7 +9341,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "For 5 turns, all Defense and Sp. Def stats switch."
     },
@@ -9350,7 +9350,7 @@
         "category": "Physical",
         "basePower": 120,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "Has 33% recoil.",
         "contact": true
@@ -9369,7 +9369,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": 100,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "The target's Ability becomes Insomnia."
     },
@@ -9398,7 +9398,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 100,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "No additional effect.",
         "classifications": [
@@ -9411,7 +9411,7 @@
         "category": "Status",
         "basePower": 0,
         "accuracy": true,
-        "pp": 10,
+        "pp": 12,
         "priority": 0,
         "description": "Puts the target to sleep after 1 turn."
     },
@@ -9420,7 +9420,7 @@
         "category": "Special",
         "basePower": 120,
         "accuracy": 50,
-        "pp": 5,
+        "pp": 8,
         "priority": 0,
         "description": "100% chance to paralyze the target.",
         "classifications": [
@@ -9432,7 +9432,7 @@
         "category": "Physical",
         "basePower": 80,
         "accuracy": 90,
-        "pp": 15,
+        "pp": 16,
         "priority": 0,
         "description": "20% chance to make the target flinch.",
         "contact": true

@@ -9701,5 +9701,692 @@
             "Electric"
         ],
         "stats": "100/100/100/100/100/100"
+    },
+    "Alolan Raichu": {
+        "types": [
+            "Electric",
+            "Psychic"
+        ],
+        "stats": "60/85/50/95/85/110"
+    },
+    "Alolan Ninetales": {
+        "types": [
+            "Ice",
+            "Fairy"
+        ],
+        "stats": "73/67/75/81/100/109"
+    },
+    "Hisuian Arcanine": {
+        "types": [
+            "Fire",
+            "Rock"
+        ],
+        "stats": "95/115/80/95/80/90"
+    },
+    "Galarian Slowbro": {
+        "types": [
+            "Poison",
+            "Psychic"
+        ],
+        "stats": "95/100/95/100/70/30"
+    },
+    "Paldean Tauros Blaze Breed": {
+        "types": [
+            "Fighting",
+            "Fire"
+        ],
+        "stats": "75/110/105/30/70/100"
+    },
+    "Paldean Tauros Aqua Breed": {
+        "types": [
+            "Fighting",
+            "Water"
+        ],
+        "stats": "75/110/105/30/70/100"
+    },
+    "Hisuian Typhlosion": {
+        "types": [
+            "Fire",
+            "Ghost"
+        ],
+        "stats": "73/84/78/119/85/95"
+    },
+    "Galarian Slowking": {
+        "types": [
+            "Poison",
+            "Psychic"
+        ],
+        "stats": "95/65/80/110/110/30"
+    },
+    "Heat Rotom": {
+        "types": [
+            "Electric",
+            "Fire"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Wash Rotom": {
+        "types": [
+            "Electric",
+            "Water"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Frost Rotom": {
+        "types": [
+            "Electric",
+            "Ice"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Fan Rotom": {
+        "types": [
+            "Electric",
+            "Flying"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Mow Rotom": {
+        "types": [
+            "Electric",
+            "Grass"
+        ],
+        "stats": "50/65/107/105/107/86"
+    },
+    "Hisuian Samurott": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "90/108/80/100/65/85"
+    },
+    "Hisuian Zoroark": {
+        "types": [
+            "Normal",
+            "Ghost"
+        ],
+        "stats": "55/100/60/125/60/110"
+    },
+    "Galarian Stunfisk": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "109/81/99/66/84/32"
+    },
+    "Eternal Flower Floette": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "74/65/67/125/128/92"
+    },
+    "Female Meowstic": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/83/81/104"
+    },
+    "Hisuian Goodra": {
+        "types": [
+            "Steel",
+            "Dragon"
+        ],
+        "stats": "80/100/100/110/150/60"
+    },
+    "Hisuian Avalugg": {
+        "types": [
+            "Ice",
+            "Rock"
+        ],
+        "stats": "95/127/184/34/36/38"
+    },
+    "Hisuian Decidueye": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "88/112/80/95/95/60"
+    },
+    "Lycanroc Midnight": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "85/115/75/55/75/82"
+    },
+    "Lycanroc Dusk": {
+        "types": [
+            "Rock"
+        ],
+        "stats": "75/117/65/55/65/110"
+    },
+    "Female Basculegion": {
+        "types": [
+            "Water",
+            "Ghost"
+        ],
+        "stats": "120/92/65/100/75/78"
+    },
+    "Mega Abomasnow": {
+        "types": [
+            "Grass",
+            "Ice"
+        ],
+        "stats": "90/132/105/132/105/30"
+    },
+    "Mega Absol": {
+        "types": [
+            "Dark"
+        ],
+        "stats": "65/150/60/115/60/115"
+    },
+    "Mega Aerodactyl": {
+        "types": [
+            "Rock",
+            "Flying"
+        ],
+        "stats": "80/135/85/70/95/150"
+    },
+    "Mega Aggron": {
+        "types": [
+            "Steel"
+        ],
+        "stats": "70/140/230/60/80/50"
+    },
+    "Mega Alakazam": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "55/50/65/175/105/150"
+    },
+    "Mega Altaria": {
+        "types": [
+            "Dragon",
+            "Fairy"
+        ],
+        "stats": "75/110/110/110/105/80"
+    },
+    "Mega Ampharos": {
+        "types": [
+            "Electric",
+            "Dragon"
+        ],
+        "stats": "90/95/105/165/110/45"
+    },
+    "Mega Audino": {
+        "types": [
+            "Normal",
+            "Fairy"
+        ],
+        "stats": "103/60/126/80/126/50"
+    },
+    "Mega Banette": {
+        "types": [
+            "Ghost"
+        ],
+        "stats": "64/165/75/93/83/75"
+    },
+    "Mega Beedrill": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "65/150/40/15/80/145"
+    },
+    "Mega Blastoise": {
+        "types": [
+            "Water"
+        ],
+        "stats": "79/103/120/135/115/78"
+    },
+    "Mega Blaziken": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "80/160/80/130/80/100"
+    },
+    "Mega Camerupt": {
+        "types": [
+            "Fire",
+            "Ground"
+        ],
+        "stats": "70/120/100/145/105/20"
+    },
+    "Mega Charizard X": {
+        "types": [
+            "Fire",
+            "Dragon"
+        ],
+        "stats": "78/130/111/130/85/100"
+    },
+    "Mega Charizard Y": {
+        "types": [
+            "Fire",
+            "Flying"
+        ],
+        "stats": "78/104/78/159/115/100"
+    },
+    "Mega Gallade": {
+        "types": [
+            "Psychic",
+            "Fighting"
+        ],
+        "stats": "68/165/95/65/115/110"
+    },
+    "Mega Garchomp": {
+        "types": [
+            "Dragon",
+            "Ground"
+        ],
+        "stats": "108/170/115/120/95/92"
+    },
+    "Mega Gardevoir": {
+        "types": [
+            "Psychic",
+            "Fairy"
+        ],
+        "stats": "68/85/65/165/135/100"
+    },
+    "Mega Gengar": {
+        "types": [
+            "Ghost",
+            "Poison"
+        ],
+        "stats": "60/65/80/170/95/130"
+    },
+    "Mega Glalie": {
+        "types": [
+            "Ice"
+        ],
+        "stats": "80/120/80/120/80/100"
+    },
+    "Mega Gyarados": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "95/155/109/70/130/81"
+    },
+    "Mega Heracross": {
+        "types": [
+            "Bug",
+            "Fighting"
+        ],
+        "stats": "80/185/115/40/105/75"
+    },
+    "Mega Houndoom": {
+        "types": [
+            "Dark",
+            "Fire"
+        ],
+        "stats": "75/90/90/140/90/115"
+    },
+    "Mega Kangaskhan": {
+        "types": [
+            "Normal"
+        ],
+        "stats": "105/125/100/60/100/100"
+    },
+    "Mega Lopunny": {
+        "types": [
+            "Normal",
+            "Fighting"
+        ],
+        "stats": "65/136/94/54/96/135"
+    },
+    "Mega Lucario": {
+        "types": [
+            "Fighting",
+            "Steel"
+        ],
+        "stats": "70/145/88/140/70/112"
+    },
+    "Mega Manectric": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "70/75/80/135/80/135"
+    },
+    "Mega Mawile": {
+        "types": [
+            "Steel",
+            "Fairy"
+        ],
+        "stats": "50/105/125/55/95/50"
+    },
+    "Mega Medicham": {
+        "types": [
+            "Fighting",
+            "Psychic"
+        ],
+        "stats": "60/100/85/80/85/100"
+    },
+    "Mega Metagross": {
+        "types": [
+            "Steel",
+            "Psychic"
+        ],
+        "stats": "80/145/150/105/110/110"
+    },
+    "Mega Pidgeot": {
+        "types": [
+            "Normal",
+            "Flying"
+        ],
+        "stats": "83/80/80/135/80/121"
+    },
+    "Mega Pinsir": {
+        "types": [
+            "Bug",
+            "Flying"
+        ],
+        "stats": "65/155/120/65/90/105"
+    },
+    "Mega Sableye": {
+        "types": [
+            "Dark",
+            "Ghost"
+        ],
+        "stats": "50/85/125/85/115/20"
+    },
+    "Mega Sceptile": {
+        "types": [
+            "Grass",
+            "Dragon"
+        ],
+        "stats": "70/110/75/145/85/145"
+    },
+    "Mega Scizor": {
+        "types": [
+            "Bug",
+            "Steel"
+        ],
+        "stats": "70/150/140/65/100/75"
+    },
+    "Mega Sharpedo": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "70/140/70/110/65/105"
+    },
+    "Mega Slowbro": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "95/75/180/130/80/30"
+    },
+    "Mega Steelix": {
+        "types": [
+            "Steel",
+            "Ground"
+        ],
+        "stats": "75/125/230/55/95/30"
+    },
+    "Mega Swampert": {
+        "types": [
+            "Water",
+            "Ground"
+        ],
+        "stats": "100/150/110/95/110/70"
+    },
+    "Mega Tyranitar": {
+        "types": [
+            "Rock",
+            "Dark"
+        ],
+        "stats": "100/164/150/95/120/71"
+    },
+    "Mega Venusaur": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/100/123/122/120/80"
+    },
+    "Paldean Tauros": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "75/110/105/30/70/100"
+    },
+    "Mega Barbaracle": {
+        "types": [
+            "Rock",
+            "Fighting"
+        ],
+        "stats": "72/140/130/64/106/88"
+    },
+    "Mega Chandelure": {
+        "types": [
+            "Ghost",
+            "Fire"
+        ],
+        "stats": "60/75/110/175/110/90"
+    },
+    "Mega Chesnaught": {
+        "types": [
+            "Grass",
+            "Fighting"
+        ],
+        "stats": "88/137/172/74/115/44"
+    },
+    "Mega Chimecho": {
+        "types": [
+            "Psychic",
+            "Steel"
+        ],
+        "stats": "75/50/110/135/120/65"
+    },
+    "Mega Clefable": {
+        "types": [
+            "Fairy",
+            "Flying"
+        ],
+        "stats": "95/80/93/135/110/70"
+    },
+    "Mega Crabominable": {
+        "types": [
+            "Fighting",
+            "Ice"
+        ],
+        "stats": "97/157/122/62/107/33"
+    },
+    "Mega Delphox": {
+        "types": [
+            "Fire",
+            "Psychic"
+        ],
+        "stats": "75/69/72/159/125/134"
+    },
+    "Mega Dragalge": {
+        "types": [
+            "Poison",
+            "Dragon"
+        ],
+        "stats": "65/85/105/132/163/44"
+    },
+    "Mega Dragonite": {
+        "types": [
+            "Dragon",
+            "Flying"
+        ],
+        "stats": "91/124/115/145/125/100"
+    },
+    "Mega Drampa": {
+        "types": [
+            "Normal",
+            "Dragon"
+        ],
+        "stats": "78/85/110/160/116/36"
+    },
+    "Mega Eelektross": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "85/145/80/135/90/80"
+    },
+    "Mega Emboar": {
+        "types": [
+            "Fire",
+            "Fighting"
+        ],
+        "stats": "110/148/75/110/110/75"
+    },
+    "Mega Excadrill": {
+        "types": [
+            "Ground",
+            "Steel"
+        ],
+        "stats": "110/165/100/65/65/103"
+    },
+    "Mega Falinks": {
+        "types": [
+            "Fighting"
+        ],
+        "stats": "65/135/135/70/65/100"
+    },
+    "Mega Feraligatr": {
+        "types": [
+            "Water",
+            "Dragon"
+        ],
+        "stats": "85/160/125/89/93/78"
+    },
+    "Mega Eternal Flower Floette": {
+        "types": [
+            "Fairy"
+        ],
+        "stats": "74/85/87/155/148/102"
+    },
+    "Mega Froslass": {
+        "types": [
+            "Ice",
+            "Ghost"
+        ],
+        "stats": "70/80/70/140/100/120"
+    },
+    "Mega Glimmora": {
+        "types": [
+            "Rock",
+            "Poison"
+        ],
+        "stats": "83/90/105/150/96/101"
+    },
+    "Mega Golurk": {
+        "types": [
+            "Ground",
+            "Ghost"
+        ],
+        "stats": "89/159/105/70/105/55"
+    },
+    "Mega Greninja": {
+        "types": [
+            "Water",
+            "Dark"
+        ],
+        "stats": "72/125/77/133/81/142"
+    },
+    "Mega Hawlucha": {
+        "types": [
+            "Fighting",
+            "Flying"
+        ],
+        "stats": "78/137/100/74/93/118"
+    },
+    "Mega Malamar": {
+        "types": [
+            "Dark",
+            "Psychic"
+        ],
+        "stats": "86/102/88/98/120/88"
+    },
+    "Mega Meganium": {
+        "types": [
+            "Grass",
+            "Fairy"
+        ],
+        "stats": "80/92/115/143/115/80"
+    },
+    "Mega Meowstic": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/143/101/124"
+    },
+    "Mega Female Meowstic": {
+        "types": [
+            "Psychic"
+        ],
+        "stats": "74/48/76/143/101/124"
+    },
+    "Mega Pyroar": {
+        "types": [
+            "Fire",
+            "Normal"
+        ],
+        "stats": "86/88/92/129/86/126"
+    },
+    "Mega Raichu X": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/135/95/90/95/110"
+    },
+    "Mega Raichu Y": {
+        "types": [
+            "Electric"
+        ],
+        "stats": "60/100/55/160/80/130"
+    },
+    "Mega Scolipede": {
+        "types": [
+            "Bug",
+            "Poison"
+        ],
+        "stats": "60/140/149/75/99/62"
+    },
+    "Mega Scovillain": {
+        "types": [
+            "Grass",
+            "Fire"
+        ],
+        "stats": "65/138/85/138/85/75"
+    },
+    "Mega Scrafty": {
+        "types": [
+            "Dark",
+            "Fighting"
+        ],
+        "stats": "65/130/135/55/135/68"
+    },
+    "Mega Skarmory": {
+        "types": [
+            "Steel",
+            "Flying"
+        ],
+        "stats": "65/140/110/40/100/110"
+    },
+    "Mega Staraptor": {
+        "types": [
+            "Fighting",
+            "Flying"
+        ],
+        "stats": "85/140/100/60/90/110"
+    },
+    "Mega Starmie": {
+        "types": [
+            "Water",
+            "Psychic"
+        ],
+        "stats": "60/100/105/130/105/120"
+    },
+    "Mega Victreebel": {
+        "types": [
+            "Grass",
+            "Poison"
+        ],
+        "stats": "80/125/85/135/95/70"
     }
 }
